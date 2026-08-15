@@ -6956,6 +6956,985 @@
 
 {=== (I) Ports ==========================================================================================================================================
 
+    {— (I1) Device Ports --------------------------------------------------------------------------------------------------------------------
+
+        {
+            "@id": "#JacketInlet",
+            "@type": "ex:Port",
+            "schema:name": "Jacket Inlet",
+            "schema:description": "Inlet port of the jacket for the cooling fluid",
+            "ex:belongsTo":
+            {
+                "@id": "#Jacket"
+            },
+            "ex:hasRole": "ex:Inlet",
+            "ex:hasStream":
+            [
+                {
+                    "@id": "#CoolingFluidInletStream"
+                },
+                {
+                    "@id": "#CoolingFluidInletStream_Exp1"
+                },
+                {
+                    "@id": "#CoolingFluidInletStream_Exp2"
+                },
+                {
+                    "@id": "#CoolingFluidInletStream_Exp3"
+                },
+                {
+                    "@id": "#CoolingFluidInletStream_Exp4"
+                },
+                {
+                    "@id": "#CoolingFluidInletStream_Exp5"
+                },
+                {
+                    "@id": "#CoolingFluidInletStream_Exp6"
+                },
+                {
+                    "@id": "#CoolingFluidInletStream_Exp7"
+                },
+                {
+                    "@id": "#CoolingFluidInletStream_Exp8"
+                },
+                {
+                    "@id": "#CoolingFluidInletStream_Exp9"
+                },
+                {
+                    "@id": "#CoolingFluidStream"
+                },
+                {
+                    "@id": "#CoolingFluidStream_Exp1"
+                },
+                {
+                    "@id": "#CoolingFluidStream_Exp2"
+                },
+                {
+                    "@id": "#CoolingFluidStream_Exp3"
+                },
+                {
+                    "@id": "#CoolingFluidStream_Exp4"
+                },
+                {
+                    "@id": "#CoolingFluidStream_Exp5"
+                },
+                {
+                    "@id": "#CoolingFluidStream_Exp6"
+                },
+                {
+                    "@id": "#CoolingFluidStream_Exp7"
+                },
+                {
+                    "@id": "#CoolingFluidStream_Exp8"
+                },
+                {
+                    "@id": "#CoolingFluidStream_Exp9"
+                }
+            ]
+        },
+        {
+            "@id": "#JacketOutlet",
+            "@type": "ex:Port",
+            "schema:name": "Jacket Outlet",
+            "schema:description": "Outlet port of the jacket for the cooling fluid",
+            "ex:belongsTo":
+            {
+                "@id": "#Jacket"
+            },
+            "ex:hasRole": "ex:Outlet",
+            "ex:hasStream":
+            [
+                {
+                    "@id": "#CoolingFluidStream"
+                },
+                {
+                    "@id": "#CoolingFluidStream_Exp1"
+                },
+                {
+                    "@id": "#CoolingFluidStream_Exp2"
+                },
+                {
+                    "@id": "#CoolingFluidStream_Exp3"
+                },
+                {
+                    "@id": "#CoolingFluidStream_Exp4"
+                },
+                {
+                    "@id": "#CoolingFluidStream_Exp5"
+                },
+                {
+                    "@id": "#CoolingFluidStream_Exp6"
+                },
+                {
+                    "@id": "#CoolingFluidStream_Exp7"
+                },
+                {
+                    "@id": "#CoolingFluidStream_Exp8"
+                },
+                {
+                    "@id": "#CoolingFluidStream_Exp9"
+                },
+                {
+                    "@id": "#CoolingFluidOutletStream"
+                },
+                {
+                    "@id": "#CoolingFluidOutletStream_Exp1"
+                },
+                {
+                    "@id": "#CoolingFluidOutletStream_Exp2"
+                },
+                {
+                    "@id": "#CoolingFluidOutletStream_Exp3"
+                },
+                {
+                    "@id": "#CoolingFluidOutletStream_Exp4"
+                },
+                {
+                    "@id": "#CoolingFluidOutletStream_Exp5"
+                },
+                {
+                    "@id": "#CoolingFluidOutletStream_Exp6"
+                },
+                {
+                    "@id": "#CoolingFluidOutletStream_Exp7"
+                },
+                {
+                    "@id": "#CoolingFluidOutletStream_Exp8"
+                },
+                {
+                    "@id": "#CoolingFluidOutletStream_Exp9"
+                }
+            ]
+        },
+        {
+            "@id": "#SpargerInlet",
+            "@type": "ex:Port",
+            "schema:name": "Sparger Inlet",
+            "schema:description": "Inlet port of the sparger for hydrogen supply",
+            "ex:belongsTo":
+            {
+                "@id": "#Sparger"
+            },
+            "ex:hasRole": "ex:Inlet",
+            "ex:hasStream":
+            [
+                {
+                    "@id": "#HydrogenInletStream"
+                },
+                {
+                    "@id": "#HydrogenInletStream_Exp1"
+                },
+                {
+                    "@id": "#HydrogenInletStream_Exp2"
+                },
+                {
+                    "@id": "#HydrogenInletStream_Exp3"
+                },
+                {
+                    "@id": "#HydrogenInletStream_Exp4"
+                },
+                {
+                    "@id": "#HydrogenInletStream_Exp5"
+                },
+                {
+                    "@id": "#HydrogenInletStream_Exp6"
+                },
+                {
+                    "@id": "#HydrogenInletStream_Exp7"
+                },
+                {
+                    "@id": "#HydrogenInletStream_Exp8"
+                },
+                {
+                    "@id": "#HydrogenInletStream_Exp9"
+                },
+                {
+                    "@id": "#HydrogenStream"
+                },
+                {
+                    "@id": "#HydrogenStream_Exp1"
+                },
+                {
+                    "@id": "#HydrogenStream_Exp2"
+                },
+                {
+                    "@id": "#HydrogenStream_Exp3"
+                },
+                {
+                    "@id": "#HydrogenStream_Exp4"
+                },
+                {
+                    "@id": "#HydrogenStream_Exp5"
+                },
+                {
+                    "@id": "#HydrogenStream_Exp6"
+                },
+                {
+                    "@id": "#HydrogenStream_Exp7"
+                },
+                {
+                    "@id": "#HydrogenStream_Exp8"
+                },
+                {
+                    "@id": "#HydrogenStream_Exp9"
+                }
+            ]
+        },
+        {
+            "@id": "#SpargerOutlet",
+            "@type": "ex:Port",
+            "schema:name": "Sparger Outlet",
+            "schema:description": "Outlet port of the sparger for hydrogen delivery into the vessel",
+            "ex:belongsTo":
+            {
+                "@id": "#Sparger"
+            },
+            "ex:hasRole": "ex:Outlet",
+            "ex:hasStream":
+            [
+                {
+                    "@id": "#HydrogenStream"
+                },
+                {
+                    "@id": "#HydrogenStream_Exp1"
+                },
+                {
+                    "@id": "#HydrogenStream_Exp2"
+                },
+                {
+                    "@id": "#HydrogenStream_Exp3"
+                },
+                {
+                    "@id": "#HydrogenStream_Exp4"
+                },
+                {
+                    "@id": "#HydrogenStream_Exp5"
+                },
+                {
+                    "@id": "#HydrogenStream_Exp6"
+                },
+                {
+                    "@id": "#HydrogenStream_Exp7"
+                },
+                {
+                    "@id": "#HydrogenStream_Exp8"
+                },
+                {
+                    "@id": "#HydrogenStream_Exp9"
+                },
+                {
+                    "@id": "#HydrogenOutletStream"
+                },
+                {
+                    "@id": "#HydrogenOutletStream_Exp1"
+                },
+                {
+                    "@id": "#HydrogenOutletStream_Exp2"
+                },
+                {
+                    "@id": "#HydrogenOutletStream_Exp3"
+                },
+                {
+                    "@id": "#HydrogenOutletStream_Exp4"
+                },
+                {
+                    "@id": "#HydrogenOutletStream_Exp5"
+                },
+                {
+                    "@id": "#HydrogenOutletStream_Exp6"
+                },
+                {
+                    "@id": "#HydrogenOutletStream_Exp7"
+                },
+                {
+                    "@id": "#HydrogenOutletStream_Exp8"
+                },
+                {
+                    "@id": "#HydrogenOutletStream_Exp9"
+                }
+            ]
+        },
+        {
+            "@id": "#VesselOpening",
+            "@type": "ex:Port",
+            "schema:name": "Vessel Opening",
+            "schema:description": "Opening of the vessel through which material can be introduced into or removed from the vessel",
+            "ex:belongsTo":
+            {
+                "@id": "#Vessel"
+            },
+            "ex:hasRole":
+            [
+                "ex:Inlet",
+                "ex:Outlet"
+            ],
+            "ex:hasStream":
+            [
+                {
+                    "@id": "#HydrogenOutletStream"
+                },
+                {
+                    "@id": "#HydrogenOutletStream_Exp1"
+                },
+                {
+                    "@id": "#HydrogenOutletStream_Exp2"
+                },
+                {
+                    "@id": "#HydrogenOutletStream_Exp3"
+                },
+                {
+                    "@id": "#HydrogenOutletStream_Exp4"
+                },
+                {
+                    "@id": "#HydrogenOutletStream_Exp5"
+                },
+                {
+                    "@id": "#HydrogenOutletStream_Exp6"
+                },
+                {
+                    "@id": "#HydrogenOutletStream_Exp7"
+                },
+                {
+                    "@id": "#HydrogenOutletStream_Exp8"
+                },
+                {
+                    "@id": "#HydrogenOutletStream_Exp9"
+                },
+                {
+                    "@id": "#AddLiquidStream"
+                },
+                {
+                    "@id": "#AddLiquidStream_Exp1"
+                },
+                {
+                    "@id": "#AddLiquidStream_Exp2"
+                },
+                {
+                    "@id": "#AddLiquidStream_Exp3"
+                },
+                {
+                    "@id": "#AddLiquidStream_Exp4"
+                },
+                {
+                    "@id": "#AddLiquidStream_Exp5"
+                },
+                {
+                    "@id": "#AddLiquidStream_Exp6"
+                },
+                {
+                    "@id": "#AddLiquidStream_Exp7"
+                },
+                {
+                    "@id": "#AddLiquidStream_Exp8"
+                },
+                {
+                    "@id": "#AddLiquidStream_Exp9"
+                },
+                {
+                    "@id": "#AddSolidStream"
+                },
+                {
+                    "@id": "#AddSolidStream_Exp1"
+                },
+                {
+                    "@id": "#AddSolidStream_Exp2"
+                },
+                {
+                    "@id": "#AddSolidStream_Exp3"
+                },
+                {
+                    "@id": "#AddSolidStream_Exp4"
+                },
+                {
+                    "@id": "#AddSolidStream_Exp5"
+                },
+                {
+                    "@id": "#AddSolidStream_Exp6"
+                },
+                {
+                    "@id": "#AddSolidStream_Exp7"
+                },
+                {
+                    "@id": "#AddSolidStream_Exp8"
+                },
+                {
+                    "@id": "#AddSolidStream_Exp9"
+                },
+                {
+                    "@id": "#AddCatalystStream"
+                },
+                {
+                    "@id": "#AddCatalystStream_Exp1"
+                },
+                {
+                    "@id": "#AddCatalystStream_Exp2"
+                },
+                {
+                    "@id": "#AddCatalystStream_Exp3"
+                },
+                {
+                    "@id": "#AddCatalystStream_Exp4"
+                },
+                {
+                    "@id": "#AddCatalystStream_Exp5"
+                },
+                {
+                    "@id": "#AddCatalystStream_Exp6"
+                },
+                {
+                    "@id": "#AddCatalystStream_Exp7"
+                },
+                {
+                    "@id": "#AddCatalystStream_Exp8"
+                },
+                {
+                    "@id": "#AddCatalystStream_Exp9"
+                },
+                {
+                    "@id": "#RemoveLiquidStream"
+                },
+                {
+                    "@id": "#RemoveLiquidStream_Exp1"
+                },
+                {
+                    "@id": "#RemoveLiquidStream_Exp2"
+                },
+                {
+                    "@id": "#RemoveLiquidStream_Exp3"
+                },
+                {
+                    "@id": "#RemoveLiquidStream_Exp4"
+                },
+                {
+                    "@id": "#RemoveLiquidStream_Exp5"
+                },
+                {
+                    "@id": "#RemoveLiquidStream_Exp6"
+                },
+                {
+                    "@id": "#RemoveLiquidStream_Exp7"
+                },
+                {
+                    "@id": "#RemoveLiquidStream_Exp8"
+                },
+                {
+                    "@id": "#RemoveLiquidStream_Exp9"
+                },
+                {
+                    "@id": "#RemoveSolidStream"
+                },
+                {
+                    "@id": "#RemoveSolidStream_Exp1"
+                },
+                {
+                    "@id": "#RemoveSolidStream_Exp2"
+                },
+                {
+                    "@id": "#RemoveSolidStream_Exp3"
+                },
+                {
+                    "@id": "#RemoveSolidStream_Exp4"
+                },
+                {
+                    "@id": "#RemoveSolidStream_Exp5"
+                },
+                {
+                    "@id": "#RemoveSolidStream_Exp6"
+                },
+                {
+                    "@id": "#RemoveSolidStream_Exp7"
+                },
+                {
+                    "@id": "#RemoveSolidStream_Exp8"
+                },
+                {
+                    "@id": "#RemoveSolidStream_Exp9"
+                },
+                {
+                    "@id": "#RemoveCatalystStream"
+                },
+                {
+                    "@id": "#RemoveCatalystStream_Exp1"
+                },
+                {
+                    "@id": "#RemoveCatalystStream_Exp2"
+                },
+                {
+                    "@id": "#RemoveCatalystStream_Exp3"
+                },
+                {
+                    "@id": "#RemoveCatalystStream_Exp4"
+                },
+                {
+                    "@id": "#RemoveCatalystStream_Exp5"
+                },
+                {
+                    "@id": "#RemoveCatalystStream_Exp6"
+                },
+                {
+                    "@id": "#RemoveCatalystStream_Exp7"
+                },
+                {
+                    "@id": "#RemoveCatalystStream_Exp8"
+                },
+                {
+                    "@id": "#RemoveCatalystStream_Exp9"
+                }
+            ]
+        }
+
+    — (I1) Device Ports — END -----------------------------------------------------------------------------------------------------------------}
+
+
+    {— (I2) Sources and Sinks -----------------------------------------------------------------------------------------------------------------------------
+
+        {
+            "@id": "#H2Source",
+            "@type": "ex:Port",
+            "schema:name": "H2 Source",
+            "schema:description": "Source port for the hydrogen stream",
+            "ex:hasRole": "ex:Source",
+            "ex:hasStream":
+            [
+                {
+                    "@id": "#HydrogenInletStream"
+                },
+                {
+                    "@id": "#HydrogenInletStream_Exp1"
+                },
+                {
+                    "@id": "#HydrogenInletStream_Exp2"
+                },
+                {
+                    "@id": "#HydrogenInletStream_Exp3"
+                },
+                {
+                    "@id": "#HydrogenInletStream_Exp4"
+                },
+                {
+                    "@id": "#HydrogenInletStream_Exp5"
+                },
+                {
+                    "@id": "#HydrogenInletStream_Exp6"
+                },
+                {
+                    "@id": "#HydrogenInletStream_Exp7"
+                },
+                {
+                    "@id": "#HydrogenInletStream_Exp8"
+                },
+                {
+                    "@id": "#HydrogenInletStream_Exp9"
+                }
+            ]
+        },
+        {
+            "@id": "#CoolingFluidSource",
+            "@type": "ex:Port",
+            "schema:name": "Cooling Fluid Source",
+            "schema:description": "Source port for the cooling fluid stream",
+            "ex:hasRole": "ex:Source",
+            "ex:hasStream":
+            [
+                {
+                    "@id": "#CoolingFluidInletStream"
+                },
+                {
+                    "@id": "#CoolingFluidInletStream_Exp1"
+                },
+                {
+                    "@id": "#CoolingFluidInletStream_Exp2"
+                },
+                {
+                    "@id": "#CoolingFluidInletStream_Exp3"
+                },
+                {
+                    "@id": "#CoolingFluidInletStream_Exp4"
+                },
+                {
+                    "@id": "#CoolingFluidInletStream_Exp5"
+                },
+                {
+                    "@id": "#CoolingFluidInletStream_Exp6"
+                },
+                {
+                    "@id": "#CoolingFluidInletStream_Exp7"
+                },
+                {
+                    "@id": "#CoolingFluidInletStream_Exp8"
+                },
+                {
+                    "@id": "#CoolingFluidInletStream_Exp9"
+                }
+            ]
+        },
+        {
+            "@id": "#CoolingFluidSink",
+            "@type": "ex:Port",
+            "schema:name": "Cooling Fluid Sink",
+            "schema:description": "Sink port for the cooling fluid stream",
+            "ex:hasRole": "ex:Sink",
+            "ex:hasStream":
+                [
+                    {
+                        "@id": "#CoolingFluidOutletStream"
+                    },
+                    {
+                        "@id": "#CoolingFluidOutletStream_Exp1"
+                    },
+                    {
+                        "@id": "#CoolingFluidOutletStream_Exp2"
+                    },
+                    {
+                        "@id": "#CoolingFluidOutletStream_Exp3"
+                    },
+                    {
+                        "@id": "#CoolingFluidOutletStream_Exp4"
+                    },
+                    {
+                        "@id": "#CoolingFluidOutletStream_Exp5"
+                    },
+                    {
+                        "@id": "#CoolingFluidOutletStream_Exp6"
+                    },
+                    {
+                        "@id": "#CoolingFluidOutletStream_Exp7"
+                    },
+                    {
+                        "@id": "#CoolingFluidOutletStream_Exp8"
+                    },
+                    {
+                        "@id": "#CoolingFluidOutletStream_Exp9"
+                    }
+                ]
+        },
+        {
+            "@id": "#LiquidPhaseSource",
+            "@type": "ex:Port",
+            "schema:name": "Liquid Phase Source",
+            "schema:description": "Source port for a liquid phase stream",
+            "ex:hasRole": "ex:Source",
+            "ex:hasStream":
+                [
+                    {
+                        "@id": "#AddLiquidStream"
+                    },
+                    {
+                        "@id": "#AddLiquidStream_Exp1"
+                    },
+                    {
+                        "@id": "#AddLiquidStream_Exp2"
+                    },
+                    {
+                        "@id": "#AddLiquidStream_Exp3"
+                    },
+                    {
+                        "@id": "#AddLiquidStream_Exp4"
+                    },
+                    {
+                        "@id": "#AddLiquidStream_Exp5"
+                    },
+                    {
+                        "@id": "#AddLiquidStream_Exp6"
+                    },
+                    {
+                        "@id": "#AddLiquidStream_Exp7"
+                    },
+                    {
+                        "@id": "#AddLiquidStream_Exp8"
+                    },
+                    {
+                        "@id": "#AddLiquidStream_Exp9"
+                    }
+                ]
+        },
+        {
+            "@id": "#LiquidPhaseSink",
+            "@type": "ex:Port",
+            "schema:name": "Liquid Phase Sink",
+            "schema:description": "Sink port for a liquid phase stream",
+            "ex:hasRole": "ex:Sink",
+            "ex:hasStream":
+                [
+                    {
+                        "@id": "#RemoveLiquidStream"
+                    },
+                    {
+                        "@id": "#RemoveLiquidStream_Exp1"
+                    },
+                    {
+                        "@id": "#RemoveLiquidStream_Exp2"
+                    },
+                    {
+                        "@id": "#RemoveLiquidStream_Exp3"
+                    },
+                    {
+                        "@id": "#RemoveLiquidStream_Exp4"
+                    },
+                    {
+                        "@id": "#RemoveLiquidStream_Exp5"
+                    },
+                    {
+                        "@id": "#RemoveLiquidStream_Exp6"
+                    },
+                    {
+                        "@id": "#RemoveLiquidStream_Exp7"
+                    },
+                    {
+                        "@id": "#RemoveLiquidStream_Exp8"
+                    },
+                    {
+                        "@id": "#RemoveLiquidStream_Exp9"
+                    }
+                ]
+        },
+        {
+            "@id": "#SolidPhaseSource",
+            "@type": "ex:Port",
+            "schema:name": "Solid Phase Source",
+            "schema:description": "Source port for a solid phase stream",
+            "ex:hasRole": "ex:Source",
+            "ex:hasStream":
+                [
+                    {
+                        "@id": "#AddSolidStream"
+                    },
+                    {
+                        "@id": "#AddSolidStream_Exp1"
+                    },
+                    {
+                        "@id": "#AddSolidStream_Exp2"
+                    },
+                    {
+                        "@id": "#AddSolidStream_Exp3"
+                    },
+                    {
+                        "@id": "#AddSolidStream_Exp4"
+                    },
+                    {
+                        "@id": "#AddSolidStream_Exp5"
+                    },
+                    {
+                        "@id": "#AddSolidStream_Exp6"
+                    },
+                    {
+                        "@id": "#AddSolidStream_Exp7"
+                    },
+                    {
+                        "@id": "#AddSolidStream_Exp8"
+                    },
+                    {
+                        "@id": "#AddSolidStream_Exp9"
+                    }
+                ]
+        },
+        {
+            "@id": "#SolidPhaseSink",
+            "@type": "ex:Port",
+            "schema:name": "Solid Phase Sink",
+            "schema:description": "Sink port for a solid phase stream",
+            "ex:hasRole": "ex:Sink",
+            "ex:hasStream":
+                [
+                    {
+                        "@id": "#RemoveSolidStream"
+                    },
+                    {
+                        "@id": "#RemoveSolidStream_Exp1"
+                    },
+                    {
+                        "@id": "#RemoveSolidStream_Exp2"
+                    },
+                    {
+                        "@id": "#RemoveSolidStream_Exp3"
+                    },
+                    {
+                        "@id": "#RemoveSolidStream_Exp4"
+                    },
+                    {
+                        "@id": "#RemoveSolidStream_Exp5"
+                    },
+                    {
+                        "@id": "#RemoveSolidStream_Exp6"
+                    },
+                    {
+                        "@id": "#RemoveSolidStream_Exp7"
+                    },
+                    {
+                        "@id": "#RemoveSolidStream_Exp8"
+                    },
+                    {
+                        "@id": "#RemoveSolidStream_Exp9"
+                    }
+                ]
+        },
+        {
+            "@id": "#CatalystPhaseSource",
+            "@type": "ex:Port",
+            "schema:name": "Catalyst Phase Source",
+            "schema:description": "Source port for a catalyst phase stream",
+            "ex:hasRole": "ex:Source",
+            "ex:hasStream":
+                [
+                    {
+                        "@id": "#AddCatalystStream"
+                    },
+                    {
+                        "@id": "#AddCatalystStream_Exp1"
+                    },
+                    {
+                        "@id": "#AddCatalystStream_Exp2"
+                    },
+                    {
+                        "@id": "#AddCatalystStream_Exp3"
+                    },
+                    {
+                        "@id": "#AddCatalystStream_Exp4"
+                    },
+                    {
+                        "@id": "#AddCatalystStream_Exp5"
+                    },
+                    {
+                        "@id": "#AddCatalystStream_Exp6"
+                    },
+                    {
+                        "@id": "#AddCatalystStream_Exp7"
+                    },
+                    {
+                        "@id": "#AddCatalystStream_Exp8"
+                    },
+                    {
+                        "@id": "#AddCatalystStream_Exp9"
+                    }
+                ]
+        },
+        {
+            "@id": "#CatalystPhaseSink",
+            "@type": "ex:Port",
+            "schema:name": "Catalyst Phase Sink",
+            "schema:description": "Sink port for a catalyst phase stream",
+            "ex:hasRole": "ex:Sink",
+            "ex:hasStream":
+                [
+                    {
+                        "@id": "#RemoveCatalystStream"
+                    },
+                    {
+                        "@id": "#RemoveCatalystStream_Exp1"
+                    },
+                    {
+                        "@id": "#RemoveCatalystStream_Exp2"
+                    },
+                    {
+                        "@id": "#RemoveCatalystStream_Exp3"
+                    },
+                    {
+                        "@id": "#RemoveCatalystStream_Exp4"
+                    },
+                    {
+                        "@id": "#RemoveCatalystStream_Exp5"
+                    },
+                    {
+                        "@id": "#RemoveCatalystStream_Exp6"
+                    },
+                    {
+                        "@id": "#RemoveCatalystStream_Exp7"
+                    },
+                    {
+                        "@id": "#RemoveCatalystStream_Exp8"
+                    },
+                    {
+                        "@id": "#RemoveCatalystStream_Exp9"
+                    }
+                ]
+        },
+
+
+        {
+            "@id": "#CleaningFluidSource",
+            "@type": "ex:Port",
+            "schema:name": "Cleaning Fluid Source",
+            "schema:description": "Source port for the cleaning fluid stream",
+            "ex:hasRole": "ex:Source",
+            "ex:hasStream":
+            [
+                {
+                    "@id": "#AddCleaningFluidStream"
+                },
+                {
+                    "@id": "#AddCleaningFluidStream_Exp1"
+                },
+                {
+                    "@id": "#AddCleaningFluidStream_Exp2"
+                },
+                {
+                    "@id": "#AddCleaningFluidStream_Exp3"
+                },
+                {
+                    "@id": "#AddCleaningFluidStream_Exp4"
+                },
+                {
+                    "@id": "#AddCleaningFluidStream_Exp5"
+                },
+                {
+                    "@id": "#AddCleaningFluidStream_Exp6"
+                },
+                {
+                    "@id": "#AddCleaningFluidStream_Exp7"
+                },
+                {
+                    "@id": "#AddCleaningFluidStream_Exp8"
+                },
+                {
+                    "@id": "#AddCleaningFluidStream_Exp9"
+                }
+            ]
+        },
+
+        {
+            "@id": "#CleaningFluidSink",
+            "@type": "ex:Port",
+            "schema:name": "Cleaning Fluid Sink",
+            "schema:description": "Sink port for the cleaning fluid stream",
+            "ex:hasRole": "ex:Sink",
+            "ex:hasStream":
+            [
+                {
+                    "@id": "#RemoveCleaningFluidStream"
+                },
+                {
+                    "@id": "#RemoveCleaningFluidStream_Exp1"
+                },
+                {
+                    "@id": "#RemoveCleaningFluidStream_Exp2"
+                },
+                {
+                    "@id": "#RemoveCleaningFluidStream_Exp3"
+                },
+                {
+                    "@id": "#RemoveCleaningFluidStream_Exp4"
+                },
+                {
+                    "@id": "#RemoveCleaningFluidStream_Exp5"
+                },
+                {
+                    "@id": "#RemoveCleaningFluidStream_Exp6"
+                },
+                {
+                    "@id": "#RemoveCleaningFluidStream_Exp7"
+                },
+                {
+                    "@id": "#RemoveCleaningFluidStream_Exp8"
+                },
+                {
+                    "@id": "#RemoveCleaningFluidStream_Exp9"
+                }
+            ]
+        },
+
+
+    — (I2) Sources and Sinks — END --------------------------------------------------------------------------------------------------------------------------}
+
 
 
 ==== (I) Ports — END ======================================================================================================================================}
@@ -6995,21 +7974,185 @@
 
 {=== (L) Categorical Properties ==========================================================================================================================
 
+         {
+                "@id": "#OperatingMode_Reactor",
+                "@type": "ontocape:ModeOfOperation",
+                "schema:name": "OperatingMode Reactor",
+                "ex:describesContext": 
+                    {
+                        "@id": "#ReactorInformation"
+                    },
+                "ex:hasReferenceValue": "ex:fedbatch"
 
+            },
 
 ==== (L) Categorical Properties — END ======================================================================================================================}
 
 
 {=== (M) Property Values =================================================================================================================================
 
+    {
+        "@id": "#DigitalObjectID_Reactor",
+        "@type": "ex:DigitalObjectID",
+        "schema:name": "DigitalObjectID Reactor",
+        "ex:describesContext": 
+            {
+                "@id": "#ReactorInformation"
+            },
+        "rdf:value": "id_reactor123"
 
+    },
+
+
+    {
+        "@id": "#DigitalObjectID_Vessel",
+        "@type": "ex:DigitalObjectID",
+        "schema:name": "DigitalObjectID Vessel",
+        "ex:describesContext": 
+            {
+                "@id": "#VesselInformation"
+            },
+        "rdf:value": "id_vessel123"
+    },
+
+
+    {
+        "@id": "#DigitalObjectID_Stirrer",
+        "@type": "ex:DigitalObjectID",
+        "schema:name": "DigitalObjectID Stirrer",
+        "ex:describesContext": 
+            {
+                "@id": "#StirrerInformation"
+            },
+        "rdf:value": "id_stirrer456"
+
+    },
+
+    {
+        "@id": "#DigitalObjectID_Sparger",
+        "@type": "ex:DigitalObjectID",
+        "schema:name": "DigitalObjectID Sparger",
+        "ex:describesContext": 
+            {
+                "@id": "#SpargerInformation"
+            },
+        "rdf:value": "id_sparger789"
+    },
+
+
+        {
+        "@id": "#DigitalObjectID_Jacket",
+        "@type": "ex:DigitalObjectID",
+        "schema:name": "DigitalObjectID Jacket",
+        "ex:describesContext": 
+            {
+                "@id": "#JacketInformation"
+            },
+        "rdf:value": "id_jacket789"
+    },
 
 ==== (M) Property Values — END ==============================================================================================================================}
 
 
 {=== (N) Times =========================================================================================================================================
 
+        {
+                "@id": "#LastServicedTime_Reactor",
+                "@type": "time:Instance",
+                "schema:name": "LastServicedTime Reactor",
+                "@comment": "time:Instance means one specific point in time (other possible versions: time:Duration, time:Interval, time:TemporalEntity) ",
+                "ex:describesContext": 
+                    {
+                        "@id": "#ReactorTime"
+                    },
+                "rdf:value": 
+                    { 
+                        "@value": "2026-07-28T10:00:00Z", 
+                        "@type": "xsd:dateTime" 
+                    }
+            },
 
+            {
+                "@id": "#LastUsedTime_Reactor",
+                "@type": "time:Instance",
+                "schema:name": "LastUsedTime Reactor",
+                "@comment": "time:Instance means one specific point in time (other possible versions: time:Duration, time:Interval, time:TemporalEntity) ",
+                "ex:describesContext": 
+                    {
+                        "@id": "#ReactorTime"
+                    },
+                "rdf:value": 
+                    { 
+                        "@value": "2026-07-28T10:00:00Z", 
+                        "@type": "xsd:dateTime" 
+                    }
+            },
+
+
+             {
+                "@id": "#LastUsedTime_Stirrer",
+                "@type": "ex:Timestamp",
+                "schema:name": "LastUsedTime Stirrer",
+                "schema:description": "The time of when the stirrer was used last",
+                "ex:describesContext": 
+                    {
+                        "@id": "#StirrerInformation"
+                    },
+                "rdf:value":
+                    {  
+                        "@value": "2026-07-28T10:00:00Z",  
+                        "@type": "xsd:dateTime" 
+                    }
+
+            },
+
+             {
+                "@id": "#LastUsedTime_Sparger",
+                "@type": "ex:Timestamp",
+                "schema:name": "LastUsedTime Sparger",
+                "schema:description": "The time of when the sparger was used last",
+                "ex:describesContext": 
+                    {
+                        "@id": "#SpargerTime"
+                    },
+                "rdf:value":
+                    {  
+                        "@value": "2026-07-28T10:00:00Z",  
+                        "@type": "xsd:dateTime" 
+                    }
+            },
+
+            {
+                "@id": "#LastUsedTime_Jacket",
+                "@type": "ex:Timestamp",
+                "schema:name": "LastUsedTime Jacket",
+                "schema:description": "The time of when the jacket was used last",
+                "ex:describesContext": 
+                    {
+                        "@id": "#JacketTime"
+                    },
+                "rdf:value":
+                    {  
+                        "@value": "2026-07-28T10:00:00Z",  
+                        "@type": "xsd:dateTime" 
+                    }
+            },
+
+
+
+
+            {
+                "@id": "#TransferTaskDuration",
+                "@type": "time:Duration",
+                "schema:name": "Transfer Task Duration",
+                "schema:description": "Estimated time for a transfer of substances in these experiments",
+                "ex:describesContext": 
+                [
+
+                ],
+                "rdf:value": "PT30S",
+                "ex:hasProvenanceType": "ex:Estimated",
+            }
 
 ==== (N) Times — END ======================================================================================================================================}
 
@@ -9242,994 +10385,7 @@
 
 
 
-{++++++ Ports ++++++
 
-
-
-    {++++++ Device Ports ++++++
-
-    {
-        "@id": "#JacketInlet",
-        "@type": "ex:Port",
-        "schema:name": "Jacket Inlet",
-        "schema:description": "Inlet port of the jacket for the cooling fluid",
-        "ex:belongsTo":
-        {
-            "@id": "#Jacket"
-        },
-        "ex:hasRole": "ex:Inlet",
-        "ex:hasStream":
-        [
-            {
-                "@id": "#CoolingFluidInletStream"
-            },
-            {
-                "@id": "#CoolingFluidInletStream_Exp1"
-            },
-            {
-                "@id": "#CoolingFluidInletStream_Exp2"
-            },
-            {
-                "@id": "#CoolingFluidInletStream_Exp3"
-            },
-            {
-                "@id": "#CoolingFluidInletStream_Exp4"
-            },
-            {
-                "@id": "#CoolingFluidInletStream_Exp5"
-            },
-            {
-                "@id": "#CoolingFluidInletStream_Exp6"
-            },
-            {
-                "@id": "#CoolingFluidInletStream_Exp7"
-            },
-            {
-                "@id": "#CoolingFluidInletStream_Exp8"
-            },
-            {
-                "@id": "#CoolingFluidInletStream_Exp9"
-            },
-            {
-                "@id": "#CoolingFluidStream"
-            },
-            {
-                "@id": "#CoolingFluidStream_Exp1"
-            },
-            {
-                "@id": "#CoolingFluidStream_Exp2"
-            },
-            {
-                "@id": "#CoolingFluidStream_Exp3"
-            },
-            {
-                "@id": "#CoolingFluidStream_Exp4"
-            },
-            {
-                "@id": "#CoolingFluidStream_Exp5"
-            },
-            {
-                "@id": "#CoolingFluidStream_Exp6"
-            },
-            {
-                "@id": "#CoolingFluidStream_Exp7"
-            },
-            {
-                "@id": "#CoolingFluidStream_Exp8"
-            },
-            {
-                "@id": "#CoolingFluidStream_Exp9"
-            }
-        ]
-    },
-    {
-        "@id": "#JacketOutlet",
-        "@type": "ex:Port",
-        "schema:name": "Jacket Outlet",
-        "schema:description": "Outlet port of the jacket for the cooling fluid",
-        "ex:belongsTo":
-        {
-            "@id": "#Jacket"
-        },
-        "ex:hasRole": "ex:Outlet",
-        "ex:hasStream":
-        [
-            {
-                "@id": "#CoolingFluidStream"
-            },
-            {
-                "@id": "#CoolingFluidStream_Exp1"
-            },
-            {
-                "@id": "#CoolingFluidStream_Exp2"
-            },
-            {
-                "@id": "#CoolingFluidStream_Exp3"
-            },
-            {
-                "@id": "#CoolingFluidStream_Exp4"
-            },
-            {
-                "@id": "#CoolingFluidStream_Exp5"
-            },
-            {
-                "@id": "#CoolingFluidStream_Exp6"
-            },
-            {
-                "@id": "#CoolingFluidStream_Exp7"
-            },
-            {
-                "@id": "#CoolingFluidStream_Exp8"
-            },
-            {
-                "@id": "#CoolingFluidStream_Exp9"
-            },
-            {
-                "@id": "#CoolingFluidOutletStream"
-            },
-            {
-                "@id": "#CoolingFluidOutletStream_Exp1"
-            },
-            {
-                "@id": "#CoolingFluidOutletStream_Exp2"
-            },
-            {
-                "@id": "#CoolingFluidOutletStream_Exp3"
-            },
-            {
-                "@id": "#CoolingFluidOutletStream_Exp4"
-            },
-            {
-                "@id": "#CoolingFluidOutletStream_Exp5"
-            },
-            {
-                "@id": "#CoolingFluidOutletStream_Exp6"
-            },
-            {
-                "@id": "#CoolingFluidOutletStream_Exp7"
-            },
-            {
-                "@id": "#CoolingFluidOutletStream_Exp8"
-            },
-            {
-                "@id": "#CoolingFluidOutletStream_Exp9"
-            }
-        ]
-    },
-    {
-        "@id": "#SpargerInlet",
-        "@type": "ex:Port",
-        "schema:name": "Sparger Inlet",
-        "schema:description": "Inlet port of the sparger for hydrogen supply",
-        "ex:belongsTo":
-        {
-            "@id": "#Sparger"
-        },
-        "ex:hasRole": "ex:Inlet",
-        "ex:hasStream":
-        [
-            {
-                "@id": "#HydrogenInletStream"
-            },
-            {
-                "@id": "#HydrogenInletStream_Exp1"
-            },
-            {
-                "@id": "#HydrogenInletStream_Exp2"
-            },
-            {
-                "@id": "#HydrogenInletStream_Exp3"
-            },
-            {
-                "@id": "#HydrogenInletStream_Exp4"
-            },
-            {
-                "@id": "#HydrogenInletStream_Exp5"
-            },
-            {
-                "@id": "#HydrogenInletStream_Exp6"
-            },
-            {
-                "@id": "#HydrogenInletStream_Exp7"
-            },
-            {
-                "@id": "#HydrogenInletStream_Exp8"
-            },
-            {
-                "@id": "#HydrogenInletStream_Exp9"
-            },
-            {
-                "@id": "#HydrogenStream"
-            },
-            {
-                "@id": "#HydrogenStream_Exp1"
-            },
-            {
-                "@id": "#HydrogenStream_Exp2"
-            },
-            {
-                "@id": "#HydrogenStream_Exp3"
-            },
-            {
-                "@id": "#HydrogenStream_Exp4"
-            },
-            {
-                "@id": "#HydrogenStream_Exp5"
-            },
-            {
-                "@id": "#HydrogenStream_Exp6"
-            },
-            {
-                "@id": "#HydrogenStream_Exp7"
-            },
-            {
-                "@id": "#HydrogenStream_Exp8"
-            },
-            {
-                "@id": "#HydrogenStream_Exp9"
-            }
-        ]
-    },
-    {
-        "@id": "#SpargerOutlet",
-        "@type": "ex:Port",
-        "schema:name": "Sparger Outlet",
-        "schema:description": "Outlet port of the sparger for hydrogen delivery into the vessel",
-        "ex:belongsTo":
-        {
-            "@id": "#Sparger"
-        },
-        "ex:hasRole": "ex:Outlet",
-        "ex:hasStream":
-        [
-            {
-                "@id": "#HydrogenStream"
-            },
-            {
-                "@id": "#HydrogenStream_Exp1"
-            },
-            {
-                "@id": "#HydrogenStream_Exp2"
-            },
-            {
-                "@id": "#HydrogenStream_Exp3"
-            },
-            {
-                "@id": "#HydrogenStream_Exp4"
-            },
-            {
-                "@id": "#HydrogenStream_Exp5"
-            },
-            {
-                "@id": "#HydrogenStream_Exp6"
-            },
-            {
-                "@id": "#HydrogenStream_Exp7"
-            },
-            {
-                "@id": "#HydrogenStream_Exp8"
-            },
-            {
-                "@id": "#HydrogenStream_Exp9"
-            },
-            {
-                "@id": "#HydrogenOutletStream"
-            },
-            {
-                "@id": "#HydrogenOutletStream_Exp1"
-            },
-            {
-                "@id": "#HydrogenOutletStream_Exp2"
-            },
-            {
-                "@id": "#HydrogenOutletStream_Exp3"
-            },
-            {
-                "@id": "#HydrogenOutletStream_Exp4"
-            },
-            {
-                "@id": "#HydrogenOutletStream_Exp5"
-            },
-            {
-                "@id": "#HydrogenOutletStream_Exp6"
-            },
-            {
-                "@id": "#HydrogenOutletStream_Exp7"
-            },
-            {
-                "@id": "#HydrogenOutletStream_Exp8"
-            },
-            {
-                "@id": "#HydrogenOutletStream_Exp9"
-            }
-        ]
-    },
-    {
-        "@id": "#VesselOpening",
-        "@type": "ex:Port",
-        "schema:name": "Vessel Opening",
-        "schema:description": "Opening of the vessel through which material can be introduced into or removed from the vessel",
-        "ex:belongsTo":
-        {
-            "@id": "#Vessel"
-        },
-        "ex:hasRole":
-        [
-            "ex:Inlet",
-            "ex:Outlet"
-        ],
-        "ex:hasStream":
-        [
-            {
-                "@id": "#HydrogenOutletStream"
-            },
-            {
-                "@id": "#HydrogenOutletStream_Exp1"
-            },
-            {
-                "@id": "#HydrogenOutletStream_Exp2"
-            },
-            {
-                "@id": "#HydrogenOutletStream_Exp3"
-            },
-            {
-                "@id": "#HydrogenOutletStream_Exp4"
-            },
-            {
-                "@id": "#HydrogenOutletStream_Exp5"
-            },
-            {
-                "@id": "#HydrogenOutletStream_Exp6"
-            },
-            {
-                "@id": "#HydrogenOutletStream_Exp7"
-            },
-            {
-                "@id": "#HydrogenOutletStream_Exp8"
-            },
-            {
-                "@id": "#HydrogenOutletStream_Exp9"
-            },
-            {
-                "@id": "#AddLiquidStream"
-            },
-            {
-                "@id": "#AddLiquidStream_Exp1"
-            },
-            {
-                "@id": "#AddLiquidStream_Exp2"
-            },
-            {
-                "@id": "#AddLiquidStream_Exp3"
-            },
-            {
-                "@id": "#AddLiquidStream_Exp4"
-            },
-            {
-                "@id": "#AddLiquidStream_Exp5"
-            },
-            {
-                "@id": "#AddLiquidStream_Exp6"
-            },
-            {
-                "@id": "#AddLiquidStream_Exp7"
-            },
-            {
-                "@id": "#AddLiquidStream_Exp8"
-            },
-            {
-                "@id": "#AddLiquidStream_Exp9"
-            },
-            {
-                "@id": "#AddSolidStream"
-            },
-            {
-                "@id": "#AddSolidStream_Exp1"
-            },
-            {
-                "@id": "#AddSolidStream_Exp2"
-            },
-            {
-                "@id": "#AddSolidStream_Exp3"
-            },
-            {
-                "@id": "#AddSolidStream_Exp4"
-            },
-            {
-                "@id": "#AddSolidStream_Exp5"
-            },
-            {
-                "@id": "#AddSolidStream_Exp6"
-            },
-            {
-                "@id": "#AddSolidStream_Exp7"
-            },
-            {
-                "@id": "#AddSolidStream_Exp8"
-            },
-            {
-                "@id": "#AddSolidStream_Exp9"
-            },
-            {
-                "@id": "#AddCatalystStream"
-            },
-            {
-                "@id": "#AddCatalystStream_Exp1"
-            },
-            {
-                "@id": "#AddCatalystStream_Exp2"
-            },
-            {
-                "@id": "#AddCatalystStream_Exp3"
-            },
-            {
-                "@id": "#AddCatalystStream_Exp4"
-            },
-            {
-                "@id": "#AddCatalystStream_Exp5"
-            },
-            {
-                "@id": "#AddCatalystStream_Exp6"
-            },
-            {
-                "@id": "#AddCatalystStream_Exp7"
-            },
-            {
-                "@id": "#AddCatalystStream_Exp8"
-            },
-            {
-                "@id": "#AddCatalystStream_Exp9"
-            },
-            {
-                "@id": "#RemoveLiquidStream"
-            },
-            {
-                "@id": "#RemoveLiquidStream_Exp1"
-            },
-            {
-                "@id": "#RemoveLiquidStream_Exp2"
-            },
-            {
-                "@id": "#RemoveLiquidStream_Exp3"
-            },
-            {
-                "@id": "#RemoveLiquidStream_Exp4"
-            },
-            {
-                "@id": "#RemoveLiquidStream_Exp5"
-            },
-            {
-                "@id": "#RemoveLiquidStream_Exp6"
-            },
-            {
-                "@id": "#RemoveLiquidStream_Exp7"
-            },
-            {
-                "@id": "#RemoveLiquidStream_Exp8"
-            },
-            {
-                "@id": "#RemoveLiquidStream_Exp9"
-            },
-            {
-                "@id": "#RemoveSolidStream"
-            },
-            {
-                "@id": "#RemoveSolidStream_Exp1"
-            },
-            {
-                "@id": "#RemoveSolidStream_Exp2"
-            },
-            {
-                "@id": "#RemoveSolidStream_Exp3"
-            },
-            {
-                "@id": "#RemoveSolidStream_Exp4"
-            },
-            {
-                "@id": "#RemoveSolidStream_Exp5"
-            },
-            {
-                "@id": "#RemoveSolidStream_Exp6"
-            },
-            {
-                "@id": "#RemoveSolidStream_Exp7"
-            },
-            {
-                "@id": "#RemoveSolidStream_Exp8"
-            },
-            {
-                "@id": "#RemoveSolidStream_Exp9"
-            },
-            {
-                "@id": "#RemoveCatalystStream"
-            },
-            {
-                "@id": "#RemoveCatalystStream_Exp1"
-            },
-            {
-                "@id": "#RemoveCatalystStream_Exp2"
-            },
-            {
-                "@id": "#RemoveCatalystStream_Exp3"
-            },
-            {
-                "@id": "#RemoveCatalystStream_Exp4"
-            },
-            {
-                "@id": "#RemoveCatalystStream_Exp5"
-            },
-            {
-                "@id": "#RemoveCatalystStream_Exp6"
-            },
-            {
-                "@id": "#RemoveCatalystStream_Exp7"
-            },
-            {
-                "@id": "#RemoveCatalystStream_Exp8"
-            },
-            {
-                "@id": "#RemoveCatalystStream_Exp9"
-            }
-        ]
-    }
-
-    ------ Device Ports ------}
-
-
-
-    {++++++ Source/Sink Ports ++++++
-
-        {
-            "@id": "#H2Source",
-            "@type": "ex:Port",
-            "schema:name": "H2 Source",
-            "schema:description": "Source port for the hydrogen stream",
-            "ex:hasRole": "ex:Source",
-            "ex:hasStream":
-            [
-                {
-                    "@id": "#HydrogenInletStream"
-                },
-                {
-                    "@id": "#HydrogenInletStream_Exp1"
-                },
-                {
-                    "@id": "#HydrogenInletStream_Exp2"
-                },
-                {
-                    "@id": "#HydrogenInletStream_Exp3"
-                },
-                {
-                    "@id": "#HydrogenInletStream_Exp4"
-                },
-                {
-                    "@id": "#HydrogenInletStream_Exp5"
-                },
-                {
-                    "@id": "#HydrogenInletStream_Exp6"
-                },
-                {
-                    "@id": "#HydrogenInletStream_Exp7"
-                },
-                {
-                    "@id": "#HydrogenInletStream_Exp8"
-                },
-                {
-                    "@id": "#HydrogenInletStream_Exp9"
-                }
-            ]
-        },
-        {
-            "@id": "#CoolingFluidSource",
-            "@type": "ex:Port",
-            "schema:name": "Cooling Fluid Source",
-            "schema:description": "Source port for the cooling fluid stream",
-            "ex:hasRole": "ex:Source",
-            "ex:hasStream":
-            [
-                {
-                    "@id": "#CoolingFluidInletStream"
-                },
-                {
-                    "@id": "#CoolingFluidInletStream_Exp1"
-                },
-                {
-                    "@id": "#CoolingFluidInletStream_Exp2"
-                },
-                {
-                    "@id": "#CoolingFluidInletStream_Exp3"
-                },
-                {
-                    "@id": "#CoolingFluidInletStream_Exp4"
-                },
-                {
-                    "@id": "#CoolingFluidInletStream_Exp5"
-                },
-                {
-                    "@id": "#CoolingFluidInletStream_Exp6"
-                },
-                {
-                    "@id": "#CoolingFluidInletStream_Exp7"
-                },
-                {
-                    "@id": "#CoolingFluidInletStream_Exp8"
-                },
-                {
-                    "@id": "#CoolingFluidInletStream_Exp9"
-                }
-            ]
-        },
-        {
-            "@id": "#CoolingFluidSink",
-            "@type": "ex:Port",
-            "schema:name": "Cooling Fluid Sink",
-            "schema:description": "Sink port for the cooling fluid stream",
-            "ex:hasRole": "ex:Sink",
-            "ex:hasStream":
-                [
-                    {
-                        "@id": "#CoolingFluidOutletStream"
-                    },
-                    {
-                        "@id": "#CoolingFluidOutletStream_Exp1"
-                    },
-                    {
-                        "@id": "#CoolingFluidOutletStream_Exp2"
-                    },
-                    {
-                        "@id": "#CoolingFluidOutletStream_Exp3"
-                    },
-                    {
-                        "@id": "#CoolingFluidOutletStream_Exp4"
-                    },
-                    {
-                        "@id": "#CoolingFluidOutletStream_Exp5"
-                    },
-                    {
-                        "@id": "#CoolingFluidOutletStream_Exp6"
-                    },
-                    {
-                        "@id": "#CoolingFluidOutletStream_Exp7"
-                    },
-                    {
-                        "@id": "#CoolingFluidOutletStream_Exp8"
-                    },
-                    {
-                        "@id": "#CoolingFluidOutletStream_Exp9"
-                    }
-                ]
-        },
-        {
-            "@id": "#LiquidPhaseSource",
-            "@type": "ex:Port",
-            "schema:name": "Liquid Phase Source",
-            "schema:description": "Source port for a liquid phase stream",
-            "ex:hasRole": "ex:Source",
-            "ex:hasStream":
-                [
-                    {
-                        "@id": "#AddLiquidStream"
-                    },
-                    {
-                        "@id": "#AddLiquidStream_Exp1"
-                    },
-                    {
-                        "@id": "#AddLiquidStream_Exp2"
-                    },
-                    {
-                        "@id": "#AddLiquidStream_Exp3"
-                    },
-                    {
-                        "@id": "#AddLiquidStream_Exp4"
-                    },
-                    {
-                        "@id": "#AddLiquidStream_Exp5"
-                    },
-                    {
-                        "@id": "#AddLiquidStream_Exp6"
-                    },
-                    {
-                        "@id": "#AddLiquidStream_Exp7"
-                    },
-                    {
-                        "@id": "#AddLiquidStream_Exp8"
-                    },
-                    {
-                        "@id": "#AddLiquidStream_Exp9"
-                    }
-                ]
-        },
-        {
-            "@id": "#LiquidPhaseSink",
-            "@type": "ex:Port",
-            "schema:name": "Liquid Phase Sink",
-            "schema:description": "Sink port for a liquid phase stream",
-            "ex:hasRole": "ex:Sink",
-            "ex:hasStream":
-                [
-                    {
-                        "@id": "#RemoveLiquidStream"
-                    },
-                    {
-                        "@id": "#RemoveLiquidStream_Exp1"
-                    },
-                    {
-                        "@id": "#RemoveLiquidStream_Exp2"
-                    },
-                    {
-                        "@id": "#RemoveLiquidStream_Exp3"
-                    },
-                    {
-                        "@id": "#RemoveLiquidStream_Exp4"
-                    },
-                    {
-                        "@id": "#RemoveLiquidStream_Exp5"
-                    },
-                    {
-                        "@id": "#RemoveLiquidStream_Exp6"
-                    },
-                    {
-                        "@id": "#RemoveLiquidStream_Exp7"
-                    },
-                    {
-                        "@id": "#RemoveLiquidStream_Exp8"
-                    },
-                    {
-                        "@id": "#RemoveLiquidStream_Exp9"
-                    }
-                ]
-        },
-        {
-            "@id": "#SolidPhaseSource",
-            "@type": "ex:Port",
-            "schema:name": "Solid Phase Source",
-            "schema:description": "Source port for a solid phase stream",
-            "ex:hasRole": "ex:Source",
-            "ex:hasStream":
-                [
-                    {
-                        "@id": "#AddSolidStream"
-                    },
-                    {
-                        "@id": "#AddSolidStream_Exp1"
-                    },
-                    {
-                        "@id": "#AddSolidStream_Exp2"
-                    },
-                    {
-                        "@id": "#AddSolidStream_Exp3"
-                    },
-                    {
-                        "@id": "#AddSolidStream_Exp4"
-                    },
-                    {
-                        "@id": "#AddSolidStream_Exp5"
-                    },
-                    {
-                        "@id": "#AddSolidStream_Exp6"
-                    },
-                    {
-                        "@id": "#AddSolidStream_Exp7"
-                    },
-                    {
-                        "@id": "#AddSolidStream_Exp8"
-                    },
-                    {
-                        "@id": "#AddSolidStream_Exp9"
-                    }
-                ]
-        },
-        {
-            "@id": "#SolidPhaseSink",
-            "@type": "ex:Port",
-            "schema:name": "Solid Phase Sink",
-            "schema:description": "Sink port for a solid phase stream",
-            "ex:hasRole": "ex:Sink",
-            "ex:hasStream":
-                [
-                    {
-                        "@id": "#RemoveSolidStream"
-                    },
-                    {
-                        "@id": "#RemoveSolidStream_Exp1"
-                    },
-                    {
-                        "@id": "#RemoveSolidStream_Exp2"
-                    },
-                    {
-                        "@id": "#RemoveSolidStream_Exp3"
-                    },
-                    {
-                        "@id": "#RemoveSolidStream_Exp4"
-                    },
-                    {
-                        "@id": "#RemoveSolidStream_Exp5"
-                    },
-                    {
-                        "@id": "#RemoveSolidStream_Exp6"
-                    },
-                    {
-                        "@id": "#RemoveSolidStream_Exp7"
-                    },
-                    {
-                        "@id": "#RemoveSolidStream_Exp8"
-                    },
-                    {
-                        "@id": "#RemoveSolidStream_Exp9"
-                    }
-                ]
-        },
-        {
-            "@id": "#CatalystPhaseSource",
-            "@type": "ex:Port",
-            "schema:name": "Catalyst Phase Source",
-            "schema:description": "Source port for a catalyst phase stream",
-            "ex:hasRole": "ex:Source",
-            "ex:hasStream":
-                [
-                    {
-                        "@id": "#AddCatalystStream"
-                    },
-                    {
-                        "@id": "#AddCatalystStream_Exp1"
-                    },
-                    {
-                        "@id": "#AddCatalystStream_Exp2"
-                    },
-                    {
-                        "@id": "#AddCatalystStream_Exp3"
-                    },
-                    {
-                        "@id": "#AddCatalystStream_Exp4"
-                    },
-                    {
-                        "@id": "#AddCatalystStream_Exp5"
-                    },
-                    {
-                        "@id": "#AddCatalystStream_Exp6"
-                    },
-                    {
-                        "@id": "#AddCatalystStream_Exp7"
-                    },
-                    {
-                        "@id": "#AddCatalystStream_Exp8"
-                    },
-                    {
-                        "@id": "#AddCatalystStream_Exp9"
-                    }
-                ]
-        },
-        {
-            "@id": "#CatalystPhaseSink",
-            "@type": "ex:Port",
-            "schema:name": "Catalyst Phase Sink",
-            "schema:description": "Sink port for a catalyst phase stream",
-            "ex:hasRole": "ex:Sink",
-            "ex:hasStream":
-                [
-                    {
-                        "@id": "#RemoveCatalystStream"
-                    },
-                    {
-                        "@id": "#RemoveCatalystStream_Exp1"
-                    },
-                    {
-                        "@id": "#RemoveCatalystStream_Exp2"
-                    },
-                    {
-                        "@id": "#RemoveCatalystStream_Exp3"
-                    },
-                    {
-                        "@id": "#RemoveCatalystStream_Exp4"
-                    },
-                    {
-                        "@id": "#RemoveCatalystStream_Exp5"
-                    },
-                    {
-                        "@id": "#RemoveCatalystStream_Exp6"
-                    },
-                    {
-                        "@id": "#RemoveCatalystStream_Exp7"
-                    },
-                    {
-                        "@id": "#RemoveCatalystStream_Exp8"
-                    },
-                    {
-                        "@id": "#RemoveCatalystStream_Exp9"
-                    }
-                ]
-        },
-
-
-        {
-            "@id": "#CleaningFluidSource",
-            "@type": "ex:Port",
-            "schema:name": "Cleaning Fluid Source",
-            "schema:description": "Source port for the cleaning fluid stream",
-            "ex:hasRole": "ex:Source",
-            "ex:hasStream":
-            [
-                {
-                    "@id": "#AddCleaningFluidStream"
-                },
-                {
-                    "@id": "#AddCleaningFluidStream_Exp1"
-                },
-                {
-                    "@id": "#AddCleaningFluidStream_Exp2"
-                },
-                {
-                    "@id": "#AddCleaningFluidStream_Exp3"
-                },
-                {
-                    "@id": "#AddCleaningFluidStream_Exp4"
-                },
-                {
-                    "@id": "#AddCleaningFluidStream_Exp5"
-                },
-                {
-                    "@id": "#AddCleaningFluidStream_Exp6"
-                },
-                {
-                    "@id": "#AddCleaningFluidStream_Exp7"
-                },
-                {
-                    "@id": "#AddCleaningFluidStream_Exp8"
-                },
-                {
-                    "@id": "#AddCleaningFluidStream_Exp9"
-                }
-            ]
-        },
-
-        {
-            "@id": "#CleaningFluidSink",
-            "@type": "ex:Port",
-            "schema:name": "Cleaning Fluid Sink",
-            "schema:description": "Sink port for the cleaning fluid stream",
-            "ex:hasRole": "ex:Sink",
-            "ex:hasStream":
-            [
-                {
-                    "@id": "#RemoveCleaningFluidStream"
-                },
-                {
-                    "@id": "#RemoveCleaningFluidStream_Exp1"
-                },
-                {
-                    "@id": "#RemoveCleaningFluidStream_Exp2"
-                },
-                {
-                    "@id": "#RemoveCleaningFluidStream_Exp3"
-                },
-                {
-                    "@id": "#RemoveCleaningFluidStream_Exp4"
-                },
-                {
-                    "@id": "#RemoveCleaningFluidStream_Exp5"
-                },
-                {
-                    "@id": "#RemoveCleaningFluidStream_Exp6"
-                },
-                {
-                    "@id": "#RemoveCleaningFluidStream_Exp7"
-                },
-                {
-                    "@id": "#RemoveCleaningFluidStream_Exp8"
-                },
-                {
-                    "@id": "#RemoveCleaningFluidStream_Exp9"
-                }
-            ]
-        },
-
-
-
-
-    ------ Source/Sink Ports ------}
-
-
------- Ports ------}
 
 
 
@@ -13476,124 +13632,12 @@
 %--------------------------------------------------------------------------------------------------------------------------------------------
 
 
-{++++++ Times ++++++
-
-            {
-                "@id": "#LastServicedTime_Reactor",
-                "@type": "time:Instance",
-                "schema:name": "LastServicedTime Reactor",
-                "@comment": "time:Instance means one specific point in time (other possible versions: time:Duration, time:Interval, time:TemporalEntity) ",
-                "ex:describesContext": 
-                    {
-                        "@id": "#ReactorTime"
-                    },
-                "rdf:value": 
-                    { 
-                        "@value": "2026-07-28T10:00:00Z", 
-                        "@type": "xsd:dateTime" 
-                    }
-            },
-
-            {
-                "@id": "#LastUsedTime_Reactor",
-                "@type": "time:Instance",
-                "schema:name": "LastUsedTime Reactor",
-                "@comment": "time:Instance means one specific point in time (other possible versions: time:Duration, time:Interval, time:TemporalEntity) ",
-                "ex:describesContext": 
-                    {
-                        "@id": "#ReactorTime"
-                    },
-                "rdf:value": 
-                    { 
-                        "@value": "2026-07-28T10:00:00Z", 
-                        "@type": "xsd:dateTime" 
-                    }
-            },
-
-
-             {
-                "@id": "#LastUsedTime_Stirrer",
-                "@type": "ex:Timestamp",
-                "schema:name": "LastUsedTime Stirrer",
-                "schema:description": "The time of when the stirrer was used last",
-                "ex:describesContext": 
-                    {
-                        "@id": "#StirrerInformation"
-                    },
-                "rdf:value":
-                    {  
-                        "@value": "2026-07-28T10:00:00Z",  
-                        "@type": "xsd:dateTime" 
-                    }
-
-            },
-
-             {
-                "@id": "#LastUsedTime_Sparger",
-                "@type": "ex:Timestamp",
-                "schema:name": "LastUsedTime Sparger",
-                "schema:description": "The time of when the sparger was used last",
-                "ex:describesContext": 
-                    {
-                        "@id": "#SpargerTime"
-                    },
-                "rdf:value":
-                    {  
-                        "@value": "2026-07-28T10:00:00Z",  
-                        "@type": "xsd:dateTime" 
-                    }
-            },
-
-            {
-                "@id": "#LastUsedTime_Jacket",
-                "@type": "ex:Timestamp",
-                "schema:name": "LastUsedTime Jacket",
-                "schema:description": "The time of when the jacket was used last",
-                "ex:describesContext": 
-                    {
-                        "@id": "#JacketTime"
-                    },
-                "rdf:value":
-                    {  
-                        "@value": "2026-07-28T10:00:00Z",  
-                        "@type": "xsd:dateTime" 
-                    }
-            },
-
-
-
-
-            {
-                "@id": "#TransferTaskDuration",
-                "@type": "time:Duration",
-                "schema:name": "Transfer Task Duration",
-                "schema:description": "Estimated time for a transfer of substances in these experiments",
-                "ex:describesContext": 
-                [
-
-                ],
-                "rdf:value": "PT30S",
-                "ex:hasProvenanceType": "ex:Estimated",
-            }
-
-
------- Times ------}
 %--------------------------------------------------------------------------------------------------------------------------------------------
 
 
 {++++++ Categorical Properties ++++++
 
-            {
-                "@id": "#OperatingMode_Reactor",
-                "@type": "ontocape:ModeOfOperation",
-                "schema:name": "OperatingMode Reactor",
-                "ex:describesContext": 
-                    {
-                        "@id": "#ReactorInformation"
-                    },
-                "ex:hasReferenceValue": "ex:fedbatch"
-
-            },
+           
 
 ------ Categorial Properties ------}
 %--------------------------------------------------------------------------------------------------------------------------------------------
@@ -13601,65 +13645,7 @@
 
 {++++++ Property Values ++++++
 
-            {
-                "@id": "#DigitalObjectID_Reactor",
-                "@type": "ex:DigitalObjectID",
-                "schema:name": "DigitalObjectID Reactor",
-                "ex:describesContext": 
-                    {
-                        "@id": "#ReactorInformation"
-                    },
-                "rdf:value": "id_reactor123"
-
-            },
-
-
-            {
-                "@id": "#DigitalObjectID_Vessel",
-                "@type": "ex:DigitalObjectID",
-                "schema:name": "DigitalObjectID Vessel",
-                "ex:describesContext": 
-                    {
-                        "@id": "#VesselInformation"
-                    },
-                "rdf:value": "id_vessel123"
-            },
-
-
-            {
-                "@id": "#DigitalObjectID_Stirrer",
-                "@type": "ex:DigitalObjectID",
-                "schema:name": "DigitalObjectID Stirrer",
-                "ex:describesContext": 
-                    {
-                        "@id": "#StirrerInformation"
-                    },
-                "rdf:value": "id_stirrer456"
-
-            },
-
-            {
-                "@id": "#DigitalObjectID_Sparger",
-                "@type": "ex:DigitalObjectID",
-                "schema:name": "DigitalObjectID Sparger",
-                "ex:describesContext": 
-                    {
-                        "@id": "#SpargerInformation"
-                    },
-                "rdf:value": "id_sparger789"
-            },
-
-
-             {
-                "@id": "#DigitalObjectID_Jacket",
-                "@type": "ex:DigitalObjectID",
-                "schema:name": "DigitalObjectID Jacket",
-                "ex:describesContext": 
-                    {
-                        "@id": "#JacketInformation"
-                    },
-                "rdf:value": "id_jacket789"
-            },
+            
 
 
 ------ Property Values ------}
