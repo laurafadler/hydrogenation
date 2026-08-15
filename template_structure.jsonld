@@ -27,6 +27,70 @@
 
 · · · (X) - Y  · · · · · · Main Entity  — END · · ·},
 
+
+%------------Template for entities with context ------------------------------------------------------------------------------------------------------------------------------------------
+
+{· · · (X) - Y  · · · · · · Main Entity · · ·
+
+    {· · · (X) - Ya  · · · · · · Main Entity: General · · ·
+
+        % entity here
+
+
+        {· · · (X) - Ya - Context  · · · · · · Context of Main Entity: General · · ·
+
+            % contexts of entity here (all six context entities)
+
+
+        · · · (X) - Ya - Context  · · · · · · Context of Main Entity: General · · ·},
+
+
+    · · · (X) - Ya · · · · · · Main Entity: General  — END · · ·},
+
+    {· · · (X) - Yb  · · · · · · Main Entity: Specific · · ·
+
+
+        {· · · (X) - Yb - 1  · · · · · · Main Entity - Experiment 1 · · ·
+
+            % entity here
+            
+            {· · · (X) - Yb - 1 - Context  · · · · · · Context of Main Entity: Specific · · ·
+
+                % contexts of entity here (all six context entities)
+
+
+            · · · (X) - Yb - 1 - Context  · · · · · · Context of Main Entity: Specific · · ·},
+
+        · · · (X) - Yb - 1  · · · · · · Main Entity: Specific - Experiment 1  — END · · ·},
+
+        {· · · (X) - Yb - 2  · · · · · · Main Entity: Specific - Experiment 2 · · ·
+
+
+             % entity here
+
+            {· · · (X) - Yb - 2 - Context  · · · · · · Context of Main Entity: Specific · · ·
+
+                % contexts of entity here (all six context entities)
+
+
+            · · · (X) - Yb - 2 - Context  · · · · · · Context of Main Entity: Specific · · ·},
+
+
+
+        · · · (X) - Yb - 2  · · · · · · Main Entity: Specific - Experiment 2  — END · · ·},
+
+
+
+    · · · (X) - Yb · · · · · · Main Entity: Specific  — END · · ·},
+
+
+· · · (X) - Y  · · · · · · Main Entity  — END · · ·},
+
+
+
+
+%------------------------------------------------------------------------------------------------------------------------------------------------------
+
                 
 MIttlerer Punkt: alt + 0149 (Nummernblock)
 
