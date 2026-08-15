@@ -2297,8 +2297,29 @@
 
             {· · · (G1.2) - 3  · · · · · · Cooling Fluid Outlet Stream · · ·
 
-                {· · · (G1.2) - 3a  · · · · · · Cooling Fluid Outlet Stream: General · · ·
+            {· · · (G1.2) - 3a  · · · · · · Cooling Fluid Outlet Stream: General · · ·
 
+                {
+                    "@id": "#CoolingFluidOutletStream",
+                    "@type": "ex:Stream",
+                    "schema:name": "Cooling Fluid Outlet Stream",
+                    "schema:description": "Cooling fluid stream flowing from the jacket outlet to the cooling fluid sink",
+                    "ex:hasPhase": [{ "@id": "#CoolingFluidPhase" }],
+                    "ex:flowsFrom": { "@id": "#JacketOutlet" },
+                    "ex:flowsTo": { "@id": "#CoolingFluidSink" },
+                    "ex:describedBy": [],
+                    "ex:hasInstances": [
+                        { "@id": "#CoolingFluidOutletStream_Exp1" },
+                        { "@id": "#CoolingFluidOutletStream_Exp2" },
+                        { "@id": "#CoolingFluidOutletStream_Exp3" },
+                        { "@id": "#CoolingFluidOutletStream_Exp4" },
+                        { "@id": "#CoolingFluidOutletStream_Exp5" },
+                        { "@id": "#CoolingFluidOutletStream_Exp6" },
+                        { "@id": "#CoolingFluidOutletStream_Exp7" },
+                        { "@id": "#CoolingFluidOutletStream_Exp8" },
+                        { "@id": "#CoolingFluidOutletStream_Exp9" }
+                    ]
+                },
 
                 · · · (G1.2) - 3a · · · · · · Cooling Fluid Outlet Stream: General  — END · · ·},
 
@@ -2307,8 +2328,17 @@
 
                     {· · · (G1.2) - 3b - 1  · · · · · · Cooling Fluid Outlet Stream - Experiment 1 · · ·
 
-                    
-                        
+                    {
+                        "@id": "#CoolingFluidOutletStream_Exp1",
+                        "@type": "ex:Stream",
+                        "schema:name": "Cooling Fluid Outlet Stream Exp1",
+                        "schema:description": "Cooling fluid stream flowing from the jacket to the cooling fluid sink during experiment 1",
+                        "ex:hasPhase": [{ "@id": "#CoolingFluidPhase_Exp1" }],
+                        "ex:flowsFrom": { "@id": "#JacketOutlet" },
+                        "ex:flowsTo": { "@id": "#CoolingFluidSink" },
+                        "ex:describedBy": [],
+                        "ex:isInstanceOf": { "@id": "#CoolingFluidOutletStream" }
+                    },
 
 
                     · · · (G1.2) - 3b - 1  · · · · · · Cooling Fluid Outlet Stream: Specific - Experiment 1  — END · · ·},
@@ -2326,16 +2356,48 @@
 
             {· · · (G1.2) - 4  · · · · · · Hydrogen Stream · · ·
 
-                {· · · (G1.2) - 4a  · · · · · · Hydrogen Stream: General · · ·
+               {· · · (G1.2) - 4a  · · · · · · Hydrogen Stream: General · · ·
 
+                {
+                    "@id": "#HydrogenStream",
+                    "@type": "ex:Stream",
+                    "schema:name": "Hydrogen Stream",
+                    "schema:description": "Hydrogen stream flowing through the sparger from the sparger inlet to the sparger outlet",
+                    "ex:hasPhase": [{ "@id": "#HydrogenSpargerPhase" }],
+                    "ex:flowsFrom": { "@id": "#SpargerInlet" },
+                    "ex:flowsTo": { "@id": "#SpargerOutlet" },
+                    "ex:describedBy": [],
+                    "ex:hasInstances": [
+                        { "@id": "#HydrogenStream_Exp1" },
+                        { "@id": "#HydrogenStream_Exp2" },
+                        { "@id": "#HydrogenStream_Exp3" },
+                        { "@id": "#HydrogenStream_Exp4" },
+                        { "@id": "#HydrogenStream_Exp5" },
+                        { "@id": "#HydrogenStream_Exp6" },
+                        { "@id": "#HydrogenStream_Exp7" },
+                        { "@id": "#HydrogenStream_Exp8" },
+                        { "@id": "#HydrogenStream_Exp9" }
+                    ]
+                },
 
                 · · · (G1.2) - 4a · · · · · · Hydrogen Stream: General  — END · · ·},
 
                 {· · · (G1.2) - 4b  · · · · · · Hydrogen Stream: Specific · · ·
 
 
-                    {· · · (G1.2) - 4b - 1  · · · · · · Hydrogen Stream - Experiment 1 · · ·
+                   {· · · (G1.2) - 4b - 1  · · · · · · Hydrogen Stream - Experiment 1 · · ·
 
+                    {
+                        "@id": "#HydrogenStream_Exp1",
+                        "@type": "ex:Stream",
+                        "schema:name": "Hydrogen Stream Exp1",
+                        "schema:description": "Hydrogen stream flowing through the sparger from the sparger inlet to the sparger outlet during experiment 1",
+                        "ex:hasPhase": [{ "@id": "#HydrogenSpargerPhase_Exp1" }],
+                        "ex:flowsFrom": { "@id": "#SpargerInlet" },
+                        "ex:flowsTo": { "@id": "#SpargerOutlet" },
+                        "ex:describedBy": [],
+                        "ex:isInstanceOf": { "@id": "#HydrogenStream" }
+                    },
                     
                         
 
@@ -2355,16 +2417,48 @@
             
             {· · · (G1.2) - 5  · · · · · · Hydrogen Inlet Stream · · ·
 
-                {· · · (G1.2) - 5a  · · · · · · Hydrogen Inlet Stream: General · · ·
+               {· · · (G1.2) - 5a  · · · · · · Hydrogen Inlet Stream: General · · ·
 
+                {
+                    "@id": "#HydrogenInletStream",
+                    "@type": "ex:Stream",
+                    "schema:name": "Hydrogen Inlet Stream",
+                    "schema:description": "Hydrogen stream flowing from the hydrogen source to the sparger inlet",
+                    "ex:hasPhase": [{ "@id": "#HydrogenSpargerPhase" }],
+                    "ex:flowsFrom": { "@id": "#H2Source" },
+                    "ex:flowsTo": { "@id": "#SpargerInlet" },
+                    "ex:describedBy": [],
+                    "ex:hasInstances": [
+                        { "@id": "#HydrogenInletStream_Exp1" },
+                        { "@id": "#HydrogenInletStream_Exp2" },
+                        { "@id": "#HydrogenInletStream_Exp3" },
+                        { "@id": "#HydrogenInletStream_Exp4" },
+                        { "@id": "#HydrogenInletStream_Exp5" },
+                        { "@id": "#HydrogenInletStream_Exp6" },
+                        { "@id": "#HydrogenInletStream_Exp7" },
+                        { "@id": "#HydrogenInletStream_Exp8" },
+                        { "@id": "#HydrogenInletStream_Exp9" }
+                    ]
+                },
 
                 · · · (G1.2) - 5a · · · · · · Hydrogen Inlet Stream: General  — END · · ·},
 
                 {· · · (G1.2) - 5b  · · · · · · Hydrogen Inlet Stream: Specific · · ·
 
 
-                    {· · · (G1.2) - 5b - 1  · · · · · · Hydrogen Inlet Stream - Experiment 1 · · ·
+                   {· · · (G1.2) - 5b - 1  · · · · · · Hydrogen Inlet Stream - Experiment 1 · · ·
 
+                    {
+                        "@id": "#HydrogenInletStream_Exp1",
+                        "@type": "ex:Stream",
+                        "schema:name": "Hydrogen Inlet Stream Exp1",
+                        "schema:description": "Hydrogen stream flowing from the hydrogen source to the sparger inlet during experiment 1",
+                        "ex:hasPhase": [{ "@id": "#HydrogenSpargerPhase_Exp1" }],
+                        "ex:flowsFrom": { "@id": "#H2Source" },
+                        "ex:flowsTo": { "@id": "#SpargerInlet" },
+                        "ex:describedBy": [],
+                        "ex:isInstanceOf": { "@id": "#HydrogenInletStream" }
+                    },
                     
                         
 
@@ -2384,16 +2478,52 @@
 
             {· · · (G1.2) - 6  · · · · · · Hydrogen Outlet Stream · · ·
 
-                {· · · (G1.2) - 6a  · · · · · · Hydrogen Outlet Stream: General · · ·
+               {· · · (G1.2) - 6a  · · · · · · Hydrogen Outlet Stream: General · · ·
 
+                {
+                    "@id": "#HydrogenOutletStream",
+                    "@type": "ex:Stream",
+                    "schema:name": "Hydrogen Outlet Stream",
+                    "schema:description": "Hydrogen stream flowing from the sparger outlet into the vessel",
+                    "ex:hasPhase": [{ "@id": "#HydrogenSpargerPhase" }],
+                    "ex:flowsFrom": { "@id": "#SpargerOutlet" },
+                    "ex:flowsTo": { "@id": "#VesselOpening" },
+                    "ex:addsToPhase": { "@id": "#DispersedGasPhase" },
+                    "ex:removesFromPhase": { "@id": "#HydrogenSpargerPhase" },
+                    "ex:describedBy": [],
+                    "ex:hasInstances": [
+                        { "@id": "#HydrogenOutletStream_Exp1" },
+                        { "@id": "#HydrogenOutletStream_Exp2" },
+                        { "@id": "#HydrogenOutletStream_Exp3" },
+                        { "@id": "#HydrogenOutletStream_Exp4" },
+                        { "@id": "#HydrogenOutletStream_Exp5" },
+                        { "@id": "#HydrogenOutletStream_Exp6" },
+                        { "@id": "#HydrogenOutletStream_Exp7" },
+                        { "@id": "#HydrogenOutletStream_Exp8" },
+                        { "@id": "#HydrogenOutletStream_Exp9" }
+                    ]
+                },
 
                 · · · (G1.2) - 6a · · · · · · Hydrogen Outlet Stream: General  — END · · ·},
 
                 {· · · (G1.2) - 6b  · · · · · · Hydrogen Outlet Stream: Specific · · ·
 
 
-                    {· · · (G1.2) - 6b - 1  · · · · · · Hydrogen Outlet Stream - Experiment 1 · · ·
+                   {· · · (G1.2) - 6b - 1  · · · · · · Hydrogen Outlet Stream - Experiment 1 · · ·
 
+                    {
+                        "@id": "#HydrogenOutletStream_Exp1",
+                        "@type": "ex:Stream",
+                        "schema:name": "Hydrogen Outlet Stream Exp1",
+                        "schema:description": "Hydrogen stream flowing from the sparger outlet into the vessel during experiment 1",
+                        "ex:hasPhase": [{ "@id": "#HydrogenSpargerPhase_Exp1" }],
+                        "ex:flowsFrom": { "@id": "#SpargerOutlet" },
+                        "ex:flowsTo": { "@id": "#VesselOpening" },
+                        "ex:addsToPhase": { "@id": "#DispersedGasPhase_Exp1" },
+                        "ex:removesFromPhase": { "@id": "#HydrogenSpargerPhase_Exp1" },
+                        "ex:describedBy": [],
+                        "ex:isInstanceOf": { "@id": "#HydrogenOutletStream" }
+                    },
                     
                         
 
@@ -2417,16 +2547,50 @@
 
             {· · · (G1.2) - 7  · · · · · · Add Liquid Stream · · ·
 
-                {· · · (G1.2) - 7a  · · · · · · Add Liquid Stream: General · · ·
+               {· · · (G1.2) - 7a  · · · · · · Add Liquid Stream: General · · ·
 
+                {
+                    "@id": "#AddLiquidStream",
+                    "@type": "ex:Stream",
+                    "schema:name": "Add Liquid Stream",
+                    "schema:description": "Liquid stream flowing from a liquid source into the vessel",
+                    "ex:hasPhase": [{ "@id": "#LiquidPhase" }],
+                    "ex:flowsFrom": { "@id": "#LiquidPhaseSource" },
+                    "ex:flowsTo": { "@id": "#VesselOpening" },
+                    "ex:addsToPhase": { "@id": "#LiquidPhase" },
+                    "ex:describedBy": [],
+                    "ex:hasInstances": [
+                        { "@id": "#AddLiquidStream_Exp1" },
+                        { "@id": "#AddLiquidStream_Exp2" },
+                        { "@id": "#AddLiquidStream_Exp3" },
+                        { "@id": "#AddLiquidStream_Exp4" },
+                        { "@id": "#AddLiquidStream_Exp5" },
+                        { "@id": "#AddLiquidStream_Exp6" },
+                        { "@id": "#AddLiquidStream_Exp7" },
+                        { "@id": "#AddLiquidStream_Exp8" },
+                        { "@id": "#AddLiquidStream_Exp9" }
+                    ]
+                },
 
                 · · · (G1.2) - 7a · · · · · · Add Liquid Stream: General  — END · · ·},
 
                 {· · · (G1.2) - 7b  · · · · · · Add Liquid Stream: Specific · · ·
 
 
-                    {· · · (G1.2) - 7b - 1  · · · · · · Add Liquid Stream - Experiment 1 · · ·
+                   {· · · (G1.2) - 7b - 1  · · · · · · Add Liquid Stream - Experiment 1 · · ·
 
+                    {
+                        "@id": "#AddLiquidStream_Exp1",
+                        "@type": "ex:Stream",
+                        "schema:name": "Add Liquid Stream Exp1",
+                        "schema:description": "Liquid stream flowing from a liquid source into the vessel during experiment 1",
+                        "ex:hasPhase": [{ "@id": "#LiquidPhase_Exp1" }],
+                        "ex:flowsFrom": { "@id": "#LiquidPhaseSource" },
+                        "ex:flowsTo": { "@id": "#VesselOpening" },
+                        "ex:addsToPhase": { "@id": "#LiquidPhase_Exp1" },
+                        "ex:describedBy": [],
+                        "ex:isInstanceOf": { "@id": "#AddLiquidStream" }
+                    },
                     
                         
 
@@ -2447,16 +2611,50 @@
 
             {· · · (G1.2) - 8  · · · · · · Add Solid Stream · · ·
 
-                {· · · (G1.2) - 8a  · · · · · · Add Solid Stream: General · · ·
+               {· · · (G1.2) - 8a  · · · · · · Add Solid Stream: General · · ·
 
+                {
+                    "@id": "#AddSolidStream",
+                    "@type": "ex:Stream",
+                    "schema:name": "Add Solid Stream",
+                    "schema:description": "Solid stream flowing from a solid source into the vessel",
+                    "ex:hasPhase": [{ "@id": "#SolidPhase" }],
+                    "ex:flowsFrom": { "@id": "#SolidPhaseSource" },
+                    "ex:flowsTo": { "@id": "#VesselOpening" },
+                    "ex:addsToPhase": { "@id": "#SolidPhase" },
+                    "ex:describedBy": [],
+                    "ex:hasInstances": [
+                        { "@id": "#AddSolidStream_Exp1" },
+                        { "@id": "#AddSolidStream_Exp2" },
+                        { "@id": "#AddSolidStream_Exp3" },
+                        { "@id": "#AddSolidStream_Exp4" },
+                        { "@id": "#AddSolidStream_Exp5" },
+                        { "@id": "#AddSolidStream_Exp6" },
+                        { "@id": "#AddSolidStream_Exp7" },
+                        { "@id": "#AddSolidStream_Exp8" },
+                        { "@id": "#AddSolidStream_Exp9" }
+                    ]
+                },
 
                 · · · (G1.2) - 8a · · · · · · Add Solid Stream: General  — END · · ·},
 
                 {· · · (G1.2) - 8b  · · · · · · Add Solid Stream: Specific · · ·
 
 
-                    {· · · (G1.2) - 8b - 1  · · · · · · Add Solid Stream - Experiment 1 · · ·
+                   {· · · (G1.2) - 8b - 1  · · · · · · Add Solid Stream - Experiment 1 · · ·
 
+                    {
+                        "@id": "#AddSolidStream_Exp1",
+                        "@type": "ex:Stream",
+                        "schema:name": "Add Solid Stream Exp1",
+                        "schema:description": "Solid stream flowing from a solid source into the vessel during experiment 1",
+                        "ex:hasPhase": [{ "@id": "#SolidPhase_Exp1" }],
+                        "ex:flowsFrom": { "@id": "#SolidPhaseSource" },
+                        "ex:flowsTo": { "@id": "#VesselOpening" },
+                        "ex:addsToPhase": { "@id": "#SolidPhase_Exp1" },
+                        "ex:describedBy": [],
+                        "ex:isInstanceOf": { "@id": "#AddSolidStream" }
+                    },
                     
                         
 
@@ -2476,16 +2674,50 @@
 
             {· · · (G1.2) - 9  · · · · · · Add Catalyst Stream · · ·
 
-                {· · · (G1.2) - 9a  · · · · · · Add Catalyst Stream: General · · ·
+               {· · · (G1.2) - 9a  · · · · · · Add Catalyst Stream: General · · ·
 
+                {
+                    "@id": "#AddCatalystStream",
+                    "@type": "ex:Stream",
+                    "schema:name": "Add Catalyst Stream",
+                    "schema:description": "Catalyst stream flowing from a catalyst source into the vessel",
+                    "ex:hasPhase": [{ "@id": "#CatalystPhase" }],
+                    "ex:flowsFrom": { "@id": "#CatalystPhaseSource" },
+                    "ex:flowsTo": { "@id": "#VesselOpening" },
+                    "ex:addsToPhase": { "@id": "#CatalystPhase" },
+                    "ex:describedBy": [],
+                    "ex:hasInstances": [
+                        { "@id": "#AddCatalystStream_Exp1" },
+                        { "@id": "#AddCatalystStream_Exp2" },
+                        { "@id": "#AddCatalystStream_Exp3" },
+                        { "@id": "#AddCatalystStream_Exp4" },
+                        { "@id": "#AddCatalystStream_Exp5" },
+                        { "@id": "#AddCatalystStream_Exp6" },
+                        { "@id": "#AddCatalystStream_Exp7" },
+                        { "@id": "#AddCatalystStream_Exp8" },
+                        { "@id": "#AddCatalystStream_Exp9" }
+                    ]
+                },
 
                 · · · (G1.2) - 9a · · · · · · Add Catalyst Stream: General  — END · · ·},
 
                 {· · · (G1.2) - 9b  · · · · · · Add Catalyst Stream: Specific · · ·
 
 
-                    {· · · (G1.2) - 9b - 1  · · · · · · Add Catalyst Stream - Experiment 1 · · ·
+                   {· · · (G1.2) - 9b - 1  · · · · · · Add Catalyst Stream - Experiment 1 · · ·
 
+                    {
+                        "@id": "#AddCatalystStream_Exp1",
+                        "@type": "ex:Stream",
+                        "schema:name": "Add Catalyst Stream Exp1",
+                        "schema:description": "Catalyst stream flowing from a catalyst source into the vessel during experiment 1",
+                        "ex:hasPhase": [{ "@id": "#CatalystPhase_Exp1" }],
+                        "ex:flowsFrom": { "@id": "#CatalystPhaseSource" },
+                        "ex:flowsTo": { "@id": "#VesselOpening" },
+                        "ex:addsToPhase": { "@id": "#CatalystPhase_Exp1" },
+                        "ex:describedBy": [],
+                        "ex:isInstanceOf": { "@id": "#AddCatalystStream" }
+                    },
                     
                         
 
@@ -2506,16 +2738,50 @@
 
             {· · · (G1.2) - 10  · · · · · · Remove Liquid Stream · · ·
 
-                {· · · (G1.2) - 10a  · · · · · · Remove Liquid Stream: General · · ·
+               {· · · (G1.2) - 10a  · · · · · · Remove Liquid Stream: General · · ·
 
+                {
+                    "@id": "#RemoveLiquidStream",
+                    "@type": "ex:Stream",
+                    "schema:name": "Remove Liquid Stream",
+                    "schema:description": "Liquid stream flowing from the vessel to a liquid sink",
+                    "ex:hasPhase": [{ "@id": "#LiquidPhase" }],
+                    "ex:flowsFrom": { "@id": "#VesselOpening" },
+                    "ex:flowsTo": { "@id": "#LiquidPhaseSink" },
+                    "ex:removesFromPhase": { "@id": "#LiquidPhase" },
+                    "ex:describedBy": [],
+                    "ex:hasInstances": [
+                        { "@id": "#RemoveLiquidStream_Exp1" },
+                        { "@id": "#RemoveLiquidStream_Exp2" },
+                        { "@id": "#RemoveLiquidStream_Exp3" },
+                        { "@id": "#RemoveLiquidStream_Exp4" },
+                        { "@id": "#RemoveLiquidStream_Exp5" },
+                        { "@id": "#RemoveLiquidStream_Exp6" },
+                        { "@id": "#RemoveLiquidStream_Exp7" },
+                        { "@id": "#RemoveLiquidStream_Exp8" },
+                        { "@id": "#RemoveLiquidStream_Exp9" }
+                    ]
+                },
 
                 · · · (G1.2) - 10a · · · · · · Remove Liquid Stream: General  — END · · ·},
 
                 {· · · (G1.2) - 10b  · · · · · · Remove Liquid Stream: Specific · · ·
 
 
-                    {· · · (G1.2) - 10b - 1  · · · · · · Remove Liquid Stream - Experiment 1 · · ·
+                   {· · · (G1.2) - 10b - 1  · · · · · · Remove Liquid Stream - Experiment 1 · · ·
 
+                    {
+                        "@id": "#RemoveLiquidStream_Exp1",
+                        "@type": "ex:Stream",
+                        "schema:name": "Remove Liquid Stream Exp1",
+                        "schema:description": "Liquid stream flowing from the vessel to a liquid sink during experiment 1",
+                        "ex:hasPhase": [{ "@id": "#LiquidPhase_Exp1" }],
+                        "ex:flowsFrom": { "@id": "#VesselOpening" },
+                        "ex:flowsTo": { "@id": "#LiquidPhaseSink" },
+                        "ex:removesFromPhase": { "@id": "#LiquidPhase_Exp1" },
+                        "ex:describedBy": [],
+                        "ex:isInstanceOf": { "@id": "#RemoveLiquidStream" }
+                    },
                     
                         
 
@@ -2536,16 +2802,50 @@
 
             {· · · (G1.2) - 11  · · · · · · Remove Solid Stream · · ·
 
-                {· · · (G1.2) - 11a  · · · · · · Remove Solid Stream: General · · ·
+               {· · · (G1.2) - 11a  · · · · · · Remove Solid Stream: General · · ·
 
+                {
+                    "@id": "#RemoveSolidStream",
+                    "@type": "ex:Stream",
+                    "schema:name": "Remove Solid Stream",
+                    "schema:description": "Solid stream flowing from the vessel to a solid sink",
+                    "ex:hasPhase": [{ "@id": "#SolidPhase" }],
+                    "ex:flowsFrom": { "@id": "#VesselOpening" },
+                    "ex:flowsTo": { "@id": "#SolidPhaseSink" },
+                    "ex:removesFromPhase": { "@id": "#SolidPhase" },
+                    "ex:describedBy": [],
+                    "ex:hasInstances": [
+                        { "@id": "#RemoveSolidStream_Exp1" },
+                        { "@id": "#RemoveSolidStream_Exp2" },
+                        { "@id": "#RemoveSolidStream_Exp3" },
+                        { "@id": "#RemoveSolidStream_Exp4" },
+                        { "@id": "#RemoveSolidStream_Exp5" },
+                        { "@id": "#RemoveSolidStream_Exp6" },
+                        { "@id": "#RemoveSolidStream_Exp7" },
+                        { "@id": "#RemoveSolidStream_Exp8" },
+                        { "@id": "#RemoveSolidStream_Exp9" }
+                    ]
+                },
 
                 · · · (G1.2) - 11a · · · · · · Remove Solid Stream: General  — END · · ·},
 
                 {· · · (G1.2) - 11b  · · · · · · Remove Solid Stream: Specific · · ·
 
 
-                    {· · · (G1.2) - 11b - 1  · · · · · · Remove Solid Stream - Experiment 1 · · ·
+                   {· · · (G1.2) - 11b - 1  · · · · · · Remove Solid Stream - Experiment 1 · · ·
 
+                    {
+                        "@id": "#RemoveSolidStream_Exp1",
+                        "@type": "ex:Stream",
+                        "schema:name": "Remove Solid Stream Exp1",
+                        "schema:description": "Solid stream flowing from the vessel to a solid sink during experiment 1",
+                        "ex:hasPhase": [{ "@id": "#SolidPhase_Exp1" }],
+                        "ex:flowsFrom": { "@id": "#VesselOpening" },
+                        "ex:flowsTo": { "@id": "#SolidPhaseSink" },
+                        "ex:removesFromPhase": { "@id": "#SolidPhase_Exp1" },
+                        "ex:describedBy": [],
+                        "ex:isInstanceOf": { "@id": "#RemoveSolidStream" }
+                    },
                     
                         
 
@@ -2566,16 +2866,50 @@
 
             {· · · (G1.2) - 12  · · · · · · Remove Catalyst Stream · · ·
 
-                {· · · (G1.2) - 12a  · · · · · · Remove Catalyst Stream: General · · ·
+               {· · · (G1.2) - 12a  · · · · · · Remove Catalyst Stream: General · · ·
 
+                {
+                    "@id": "#RemoveCatalystStream",
+                    "@type": "ex:Stream",
+                    "schema:name": "Remove Catalyst Stream",
+                    "schema:description": "Catalyst stream flowing from the vessel to a catalyst sink",
+                    "ex:hasPhase": [{ "@id": "#CatalystPhase" }],
+                    "ex:flowsFrom": { "@id": "#VesselOpening" },
+                    "ex:flowsTo": { "@id": "#CatalystPhaseSink" },
+                    "ex:removesFromPhase": { "@id": "#CatalystPhase" },
+                    "ex:describedBy": [],
+                    "ex:hasInstances": [
+                        { "@id": "#RemoveCatalystStream_Exp1" },
+                        { "@id": "#RemoveCatalystStream_Exp2" },
+                        { "@id": "#RemoveCatalystStream_Exp3" },
+                        { "@id": "#RemoveCatalystStream_Exp4" },
+                        { "@id": "#RemoveCatalystStream_Exp5" },
+                        { "@id": "#RemoveCatalystStream_Exp6" },
+                        { "@id": "#RemoveCatalystStream_Exp7" },
+                        { "@id": "#RemoveCatalystStream_Exp8" },
+                        { "@id": "#RemoveCatalystStream_Exp9" }
+                    ]
+                },
 
                 · · · (G1.2) - 12a · · · · · · Remove Catalyst Stream: General  — END · · ·},
 
                 {· · · (G1.2) - 12b  · · · · · · Remove Catalyst Stream: Specific · · ·
 
 
-                    {· · · (G1.2) - 12b - 1  · · · · · · Remove Catalyst Stream - Experiment 1 · · ·
+                   {· · · (G1.2) - 12b - 1  · · · · · · Remove Catalyst Stream - Experiment 1 · · ·
 
+                    {
+                        "@id": "#RemoveCatalystStream_Exp1",
+                        "@type": "ex:Stream",
+                        "schema:name": "Remove Catalyst Stream Exp1",
+                        "schema:description": "Catalyst stream flowing from the vessel to a catalyst sink during experiment 1",
+                        "ex:hasPhase": [{ "@id": "#CatalystPhase_Exp1" }],
+                        "ex:flowsFrom": { "@id": "#VesselOpening" },
+                        "ex:flowsTo": { "@id": "#CatalystPhaseSink" },
+                        "ex:removesFromPhase": { "@id": "#CatalystPhase_Exp1" },
+                        "ex:describedBy": [],
+                        "ex:isInstanceOf": { "@id": "#RemoveCatalystStream" }
+                    },
                     
                         
 
@@ -2596,16 +2930,50 @@
 
             {· · · (G1.2) - 13  · · · · · · Add Cleaning Fluid Stream · · ·
 
-                {· · · (G1.2) - 13a  · · · · · · Add Cleaning Fluid Stream: General · · ·
+               {· · · (G1.2) - 13a  · · · · · · Add Cleaning Fluid Stream: General · · ·
 
+                {
+                    "@id": "#AddCleaningFluidStream",
+                    "@type": "ex:TransferStream",
+                    "schema:name": "Add Cleaning Fluid Stream",
+                    "schema:description": "Cleaning fluid stream flowing into the vessel",
+                    "ex:hasPhase": [{ "@id": "#CleaningFluidPhase" }],
+                    "ex:flowsFrom": { "@id": "#CleaningFluidSource" },
+                    "ex:flowsTo": { "@id": "#VesselOpening" },
+                    "ex:addsToPhase": { "@id": "#CleaningFluidPhase" },
+                    "ex:describedBy": [],
+                    "ex:hasInstances": [
+                        { "@id": "#AddCleaningFluidStream_Exp1" },
+                        { "@id": "#AddCleaningFluidStream_Exp2" },
+                        { "@id": "#AddCleaningFluidStream_Exp3" },
+                        { "@id": "#AddCleaningFluidStream_Exp4" },
+                        { "@id": "#AddCleaningFluidStream_Exp5" },
+                        { "@id": "#AddCleaningFluidStream_Exp6" },
+                        { "@id": "#AddCleaningFluidStream_Exp7" },
+                        { "@id": "#AddCleaningFluidStream_Exp8" },
+                        { "@id": "#AddCleaningFluidStream_Exp9" }
+                    ]
+                },
 
                 · · · (G1.2) - 13a · · · · · · Add Cleaning Fluid Stream: General  — END · · ·},
 
                 {· · · (G1.2) - 13b  · · · · · · Add Cleaning Fluid Stream: Specific · · ·
 
 
-                    {· · · (G1.2) - 13b - 1  · · · · · · Add Cleaning Fluid Stream - Experiment 1 · · ·
+                   {· · · (G1.2) - 13b - 1  · · · · · · Add Cleaning Fluid Stream - Experiment 1 · · ·
 
+                    {
+                        "@id": "#AddCleaningFluidStream_Exp1",
+                        "@type": "ex:TransferStream",
+                        "schema:name": "Add Cleaning Fluid Stream Exp1",
+                        "schema:description": "Cleaning fluid stream flowing into the vessel during experiment 1",
+                        "ex:hasPhase": [{ "@id": "#CleaningFluidPhase_Exp1" }],
+                        "ex:flowsFrom": { "@id": "#CleaningFluidSource" },
+                        "ex:flowsTo": { "@id": "#VesselOpening" },
+                        "ex:addsToPhase": { "@id": "#CleaningFluidPhase_Exp1" },
+                        "ex:describedBy": [],
+                        "ex:isInstanceOf": { "@id": "#AddCleaningFluidStream" }
+                    },
                     
                         
 
@@ -2627,16 +2995,50 @@
 
             {· · · (G1.2) - 14  · · · · · · Remove Cleaning Fluid Stream · · ·
 
-                {· · · (G1.2) - 14a  · · · · · · Remove Cleaning Fluid Stream: General · · ·
+               {· · · (G1.2) - 14a  · · · · · · Remove Cleaning Fluid Stream: General · · ·
 
+                {
+                    "@id": "#RemoveCleaningFluidStream",
+                    "@type": "ex:TransferStream",
+                    "schema:name": "Remove Cleaning Fluid Stream",
+                    "schema:description": "Cleaning fluid stream flowing out of the vessel",
+                    "ex:hasPhase": [{ "@id": "#CleaningFluidPhase" }],
+                    "ex:flowsFrom": { "@id": "#VesselOpening" },
+                    "ex:flowsTo": { "@id": "#CleaningFluidSink" },
+                    "ex:removesFromPhase": { "@id": "#CleaningFluidPhase" },
+                    "ex:describedBy": [],
+                    "ex:hasInstances": [
+                        { "@id": "#RemoveCleaningFluidStream_Exp1" },
+                        { "@id": "#RemoveCleaningFluidStream_Exp2" },
+                        { "@id": "#RemoveCleaningFluidStream_Exp3" },
+                        { "@id": "#RemoveCleaningFluidStream_Exp4" },
+                        { "@id": "#RemoveCleaningFluidStream_Exp5" },
+                        { "@id": "#RemoveCleaningFluidStream_Exp6" },
+                        { "@id": "#RemoveCleaningFluidStream_Exp7" },
+                        { "@id": "#RemoveCleaningFluidStream_Exp8" },
+                        { "@id": "#RemoveCleaningFluidStream_Exp9" }
+                    ]
+                },
 
                 · · · (G1.2) - 14a · · · · · · Remove Cleaning Fluid Stream: General  — END · · ·},
 
                 {· · · (G1.2) - 14b  · · · · · · Remove Cleaning Fluid Stream: Specific · · ·
 
 
-                    {· · · (G1.2) - 14b - 1  · · · · · · Remove Cleaning Fluid Stream - Experiment 1 · · ·
+                   {· · · (G1.2) - 14b - 1  · · · · · · Remove Cleaning Fluid Stream - Experiment 1 · · ·
 
+                    {
+                        "@id": "#RemoveCleaningFluidStream_Exp1",
+                        "@type": "ex:TransferStream",
+                        "schema:name": "Remove Cleaning Fluid Stream Exp1",
+                        "schema:description": "Cleaning fluid stream flowing out of the vessel during experiment 1",
+                        "ex:hasPhase": [{ "@id": "#CleaningFluidPhase_Exp1" }],
+                        "ex:flowsFrom": { "@id": "#VesselOpening" },
+                        "ex:flowsTo": { "@id": "#CleaningFluidSink" },
+                        "ex:removesFromPhase": { "@id": "#CleaningFluidPhase_Exp1" },
+                        "ex:describedBy": [],
+                        "ex:isInstanceOf": { "@id": "#RemoveCleaningFluidStream" }
+                    },
                     
                         
 
