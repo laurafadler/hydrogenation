@@ -1,0 +1,93 @@
+
+{· · · (X) - Y  · · · · · · Main Entity · · ·
+
+    {· · · (X) - Ya  · · · · · · Main Entity: General · · ·
+
+
+    · · · (X) - Ya · · · · · · Main Entity: General  — END · · ·},
+
+    {· · · (X) - Yb  · · · · · · Main Entity: Specific · · ·
+
+
+        {· · · (X) - Yb - 1  · · · · · · Main Entity - Experiment 1 · · ·
+
+        
+            
+
+
+        · · · (X) - Yb - 1  · · · · · · Main Entity: Specific - Experiment 1  — END · · ·},
+
+        {· · · (X) - Yb - 2  · · · · · · Main Entity: Specific - Experiment 2 · · ·
+        · · · (X) - Yb - 2  · · · · · · Main Entity: Specific - Experiment 2  — END · · ·},
+
+
+
+    · · · (X) - Yb · · · · · · Main Entity: Specific  — END · · ·},
+
+
+· · · (X) - Y  · · · · · · Main Entity  — END · · ·},
+
+                
+MIttlerer Punkt: alt + 0149 (Nummernblock)
+
+Für X kann eingesetzt werden:
+Alles von A bis H in beliebiger Tiefe 
+
+(A) General
+
+(B) Ontologies
+(B1) Snapshot
+(B2) Ontologies
+
+(C) People
+
+(D) Files and Columns
+(D1) Files
+(D2) Columns
+
+(E) Experiments
+(E1) Experimental Series
+(E2) Experiments
+
+(F) Reactions
+(F1) Stoichiometric Reactions
+(F2) Elementary Reactions
+(F3) Reaction Mechanisms
+(F4) Reaction Participants
+
+(G) Materials
+(G1) Material Representations
+(G1.1) Material Volumes
+(G1.2) Streams
+(G2) Phases
+(G3) Catalysts
+(G4) Molecules
+
+(H) Devices
+(H1) Process Devices
+(H2) Sensors
+
+(I) Ports
+
+(J) Tasks
+
+(K) Process Variables
+(K1) Scalar Variables
+(K2) Profile Variables
+(K3) Series Variables
+
+(L) Categorical Properties
+
+(M) Property Values
+
+(N) Times
+
+
+
+
+Für Y kann eingesetzt werden:
+Jede ganze Zahl, dabei wird jede Main Entity durchnummeriert
+
+
+Für Main Entity kann eingesetzt werden:
+Der Name der Bezeichnung der jeweiligen Entity
