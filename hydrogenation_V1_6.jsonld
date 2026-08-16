@@ -7943,7 +7943,7 @@
 
 {=== (J) Tasks ==========================================================================================================================================
 
-    {· · · (J)  · · · · · · Experimental Procedure · · ·
+    {· · · (J) - 1  · · · · · · Experimental Procedure · · ·
         
         {· · · (J) - 1  · · · · · · Experimental Procedure (Main) · · ·
 
@@ -8446,6 +8446,295 @@
 
 
     · · · (J)  · · · · · · Experimental Procedure — END · · ·},
+
+    {· · · (J) - 2  · · · · · · Cleaning Procedure Vessel and Stirrer (Main)· · ·
+
+        {· · · (J) - 2a  · · · · · · Cleaning Procedure Vessel and Stirrer (Main): General · · ·
+
+
+        · · · (J) - 2a · · · · · · Cleaning Procedure Vessel and Stirrer (Main): General  — END · · ·},
+
+        {· · · (J) - 2b  · · · · · · Cleaning Procedure Vessel and Stirrer (Main): Specific · · ·
+
+
+            {· · · (J) - 2b - 1  · · · · · · Cleaning Procedure Vessel and Stirrer (Main): Specific - Experiment 1 · · ·
+
+            
+                
+
+
+            · · · (J) - 2b - 1  · · · · · · Cleaning Procedure Vessel and Stirrer (Main): Specific - Experiment 1  — END · · ·},
+
+            {· · · (J) - 2b - 2  · · · · · · Cleaning Procedure Vessel and Stirrer (Main): Specific - Experiment 2 · · ·
+            · · · (J) - 2b - 2  · · · · · · Cleaning Procedure Vessel and Stirrer (Main): Specific - Experiment 2  — END · · ·},
+
+
+
+        · · · (J) - 2b · · · · · · Cleaning Procedure Vessel and Stirrer (Main): Specific  — END · · ·},
+
+
+        {· · · (J) - 2.X  · · · · · · Cleaning Procedure Vessel and Stirrer (Subtasks) · · ·
+
+
+            {· · · (J) - 2.1  · · · · · · Add Cleaning Fluid · · ·
+
+                {· · · (J) - 2.1a  · · · · · · Add Cleaning Fluid: General · · ·
+
+
+                · · · (J) - 2.1a · · · · · · Add Cleaning Fluid: General  — END · · ·},
+
+                {· · · (J) - 2.1b  · · · · · · Add Cleaning Fluid: Specific · · ·
+
+
+                    {· · · (J) - 2.1b - 1  · · · · · · Add Cleaning Fluid - Experiment 1 · · ·
+
+                    
+                        
+
+
+                    · · · (J) - 2.1b - 1  · · · · · · Add Cleaning Fluid: Specific - Experiment 1  — END · · ·},
+
+                    {· · · (J) - 2.1b - 2  · · · · · · Add Cleaning Fluid - Experiment 2 · · ·
+                    · · · (J) - 2.1b - 2  · · · · · · Add Cleaning Fluid: Specific - Experiment 2  — END · · ·},
+
+
+
+                · · · (J) - 2.1b · · · · · · Add Cleaning Fluid: Specific  — END · · ·},
+
+
+            · · · (J) - 2.1  · · · · · · Add Cleaning Fluid  — END · · ·},
+
+
+            {· · · (J) - 2.2  · · · · · · Stir Cleaning Fluid · · ·
+
+                {· · · (J) - 2.2a  · · · · · · Stir Cleaning Fluid: General · · ·
+
+
+                · · · (J) - 2.2a · · · · · · Stir Cleaning Fluid: General  — END · · ·},
+
+                {· · · (J) - 2.2b  · · · · · · Stir Cleaning Fluid: Specific · · ·
+
+
+                    {· · · (J) - 2.2b - 1  · · · · · · Stir Cleaning Fluid - Experiment 1 · · ·
+
+                    
+                        
+
+
+                    · · · (J) - 2.2b - 1  · · · · · · Stir Cleaning Fluid: Specific - Experiment 1  — END · · ·},
+
+                    {· · · (J) - 2.2b - 2  · · · · · · Stir Cleaning Fluid - Experiment 2 · · ·
+                    · · · (J) - 2.2b - 2  · · · · · · Stir Cleaning Fluid: Specific - Experiment 2  — END · · ·},
+
+
+
+                · · · (J) - 2.2b · · · · · · Stir Cleaning Fluid: Specific  — END · · ·},
+
+
+            · · · (J) - 2.2  · · · · · · Stir Cleaning Fluid  — END · · ·},
+
+
+            {· · · (J) - 2.3  · · · · · · Remove Cleaning Fluid · · ·
+
+                {· · · (J) - 2.3a  · · · · · · Remove Cleaning Fluid: General · · ·
+
+
+                · · · (J) - 2.3a · · · · · · Remove Cleaning Fluid: General  — END · · ·},
+
+                {· · · (J) - 2.3b  · · · · · · Remove Cleaning Fluid: Specific · · ·
+
+
+                    {· · · (J) - 2.3b - 1  · · · · · · Remove Cleaning Fluid - Experiment 1 · · ·
+
+                    
+                        
+
+
+                    · · · (J) - 2.3b - 1  · · · · · · Remove Cleaning Fluid: Specific - Experiment 1  — END · · ·},
+
+                    {· · · (J) - 2.3b - 2  · · · · · · Remove Cleaning Fluid - Experiment 2 · · ·
+                    · · · (J) - 2.3b - 2  · · · · · · Remove Cleaning Fluid: Specific - Experiment 2  — END · · ·},
+
+
+
+                · · · (J) - 2.3b · · · · · · Remove Cleaning Fluid: Specific  — END · · ·},
+
+
+            · · · (J) - 2.3  · · · · · · Remove Cleaning Fluid  — END · · ·},
+
+        · · · (J) - 2.X · · · · · · Cleaning Procedure Vessel and Stirrer (Subtasks)  — END · · ·},
+
+
+    · · · (J) - 2  · · · · · · Cleaning Procedure Vessel and Stirrer  — END · · ·},
+
+
+    % hier evtl Cleaning Procedure Jacket (3) und SParger (4)
+
+
+
+
+
+
+
+
+    {· · · (J) - 5  · · · · · · Weighing · · ·
+
+        {· · · (J) - 5a  · · · · · · Weighing: General · · ·
+
+
+        · · · (J) - 5a · · · · · · Weighing: General  — END · · ·},
+
+        {· · · (J) - 5b  · · · · · · Weighing: Specific · · ·
+
+
+            {· · · (J) - 5b - Start Mass RDY - 1  · · · · · · Weighing - Experiment 1 · · ·
+
+            
+                
+
+
+            · · · (J) - 5b - Start Mass RDY - 1  · · · · · · Weighing: Specific - Experiment 1  — END · · ·},
+
+            {· · · (J) - 5b - Start Mass RDY - 2  · · · · · · Weighing - Experiment 2 · · ·
+            · · · (J) - 5b - Start Mass RDY - 2  · · · · · · Weighing: Specific - Experiment 2  — END · · ·},
+
+
+
+            {· · · (J) - 5b - Final Mass RDY - 1  · · · · · · Weighing - Experiment 1 · · ·
+
+            
+                
+
+
+            · · · (J) - 5b - Final Mass RDY - 1  · · · · · · Weighing: Specific - Experiment 1  — END · · ·},
+
+            {· · · (J) - 5b - Final Mass RDY - 2  · · · · · · Weighing - Experiment 2 · · ·
+            · · · (J) - 5b - Final Mass RDY - 2  · · · · · · Weighing: Specific - Experiment 2  — END · · ·},
+
+
+
+            {· · · (J) - 5b - Final Mass RDEt - 1  · · · · · · Weighing - Experiment 1 · · ·
+
+            
+                
+
+
+            · · · (J) - 5b - Final Mass RDEt - 1  · · · · · · Weighing: Specific - Experiment 1  — END · · ·},
+
+            {· · · (J) - 5b - Final Mass RDEt - 2  · · · · · · Weighing - Experiment 2 · · ·
+            · · · (J) - 5b - Final Mass RDEt - 2  · · · · · · Weighing: Specific - Experiment 2  — END · · ·},
+
+
+
+            {· · · (J) - 5b - Final Mass Dimer - 1  · · · · · · Weighing - Experiment 1 · · ·
+
+            
+                
+
+
+            · · · (J) - 5b - Final Mass Dimer - 1  · · · · · · Weighing: Specific - Experiment 1  — END · · ·},
+
+            {· · · (J) - 5b - Final Mass Dimer - 2  · · · · · · Weighing - Experiment 2 · · ·
+            · · · (J) - 5b - Final Mass Dimer - 2  · · · · · · Weighing: Specific - Experiment 2  — END · · ·},
+
+            
+
+
+
+        · · · (J) - 5b · · · · · · Weighing: Specific  — END · · ·},
+
+
+    · · · (J) - 5  · · · · · · Weighing  — END · · ·},
+
+
+    {· · · (J) - 6  · · · · · · Measuring Temperature · · ·
+
+        {· · · (J) - 6a  · · · · · · Measuring Temperature: General · · ·
+
+
+        · · · (J) - 6a · · · · · · Measuring Temperature: General  — END · · ·},
+
+        {· · · (J) - 6b  · · · · · · Measuring Temperature: Specific · · ·
+
+
+            {· · · (J) - 6b - 1  · · · · · · Measuring Temperature - Experiment 1 · · ·
+
+            
+                
+
+
+            · · · (J) - 6b - 1  · · · · · · Measuring Temperature: Specific - Experiment 1  — END · · ·},
+
+            {· · · (J) - 6b - 2  · · · · · · Measuring Temperature - Experiment 2 · · ·
+            · · · (J) - 6b - 2  · · · · · · Measuring Temperature: Specific - Experiment 2  — END · · ·},
+
+
+
+        · · · (J) - 6b · · · · · · Measuring Temperature: Specific  — END · · ·},
+
+
+    · · · (J) - 6  · · · · · · Measuring Temperature  — END · · ·},
+
+
+    {· · · (J) - 7  · · · · · · Measuring Pressure · · ·
+
+        {· · · (J) - 7a  · · · · · · Measuring Pressure: General · · ·
+
+
+        · · · (J) - 7a · · · · · · Measuring Pressure: General  — END · · ·},
+
+        {· · · (J) - 7b  · · · · · · Measuring Pressure: Specific · · ·
+
+
+            {· · · (J) - 7b - 1  · · · · · · Measuring Pressure - Experiment 1 · · ·
+
+            
+                
+
+
+            · · · (J) - 7b - 1  · · · · · · Measuring Pressure: Specific - Experiment 1  — END · · ·},
+
+            {· · · (J) - 7b - 2  · · · · · · Measuring Pressure - Experiment 2 · · ·
+            · · · (J) - 7b - 2  · · · · · · Measuring Pressure: Specific - Experiment 2  — END · · ·},
+
+
+
+        · · · (J) - 7b · · · · · · Measuring Pressure: Specific  — END · · ·},
+
+
+    · · · (J) - 7  · · · · · · Measuring Pressure  — END · · ·},
+
+
+    {· · · (J) - 8  · · · · · · Measuring Gas Volume · · ·
+
+        {· · · (J) - 8a  · · · · · · Measuring Gas Volume: General · · ·
+
+
+        · · · (J) - 8a · · · · · · Measuring Gas Volume: General  — END · · ·},
+
+        {· · · (J) - 8b  · · · · · · Measuring Gas Volume: Specific · · ·
+
+
+            {· · · (J) - 8b - 1  · · · · · · Measuring Gas Volume - Experiment 1 · · ·
+
+            
+                
+
+
+            · · · (J) - 8b - 1  · · · · · · Measuring Gas Volume: Specific - Experiment 1  — END · · ·},
+
+            {· · · (J) - 8b - 2  · · · · · · Measuring Gas Volume - Experiment 2 · · ·
+            · · · (J) - 8b - 2  · · · · · · Measuring Gas Volume: Specific - Experiment 2  — END · · ·},
+
+
+
+        · · · (J) - 8b · · · · · · Measuring Gas Volume: Specific  — END · · ·},
+
+
+    · · · (J) - 8  · · · · · · Measuring Gas Volume  — END · · ·},
+
+
+    
 
 ==== (J) Tasks — END ======================================================================================================================================}
 
