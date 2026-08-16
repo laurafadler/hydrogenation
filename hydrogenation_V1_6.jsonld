@@ -7943,7 +7943,509 @@
 
 {=== (J) Tasks ==========================================================================================================================================
 
-       
+    {· · · (J)  · · · · · · Experimental Procedure · · ·
+        
+        {· · · (J) - 1  · · · · · · Experimental Procedure (Main) · · ·
+
+            {· · · (J) - 1a  · · · · · · Experimental Procedure (Main): General · · ·
+
+
+                {
+                    "@id": "#ExperimentalProcedure",
+                    "@type": "ex:Task",
+                    "schema:name": "Experimental Procedure",
+                    "schema:description": "General task representing the complete experimental procedure",
+                    "ex:describesContext":
+                    [
+                    ],
+                    "schema:hasPart":
+                    [
+                        {
+                            "@id": "#AddLiquidTask"
+                        },
+                        {
+                            "@id": "#AddSolidTask"
+                        },
+                        {
+                            "@id": "#AddingCatalystTask"
+                        },
+                        {
+                            "@id": "#RemoveLiquidTask"
+                        },
+                        {
+                            "@id": "#RemoveSolidTask"
+                        },
+                        {
+                            "@id": "#RemoveCatalystTask"
+                        },
+                        {
+                            "@id": "#SpargingTask"
+                        },
+                        {
+                            "@id": "#CoolingTask"
+                        },
+                        {
+                            "@id": "#StirringTask"
+                        },
+                        {
+                            "@id": "#PressurizeReactorTask"
+                        },
+                        {
+                            "@id": "#WeighingTask"
+                        },
+                        {
+                            "@id": "#TemperatureMeasurementTask"
+                        },
+                        {
+                            "@id": "#PressureMeasurementTask"
+                        },
+                        {
+                            "@id": "#GasVolumeMeasurementTask"
+                        }
+                    ],
+                    "ex:hasInstance":
+                    [
+                        {
+                            "@id": "#ExperimentalProcedure_Exp1"
+                        },
+                        {
+                            "@id": "#ExperimentalProcedure_Exp2"
+                        },
+                        {
+                            "@id": "#ExperimentalProcedure_Exp3"
+                        },
+                        {
+                            "@id": "#ExperimentalProcedure_Exp4"
+                        },
+                        {
+                            "@id": "#ExperimentalProcedure_Exp5"
+                        },
+                        {
+                            "@id": "#ExperimentalProcedure_Exp6"
+                        },
+                        {
+                            "@id": "#ExperimentalProcedure_Exp7"
+                        },
+                        {
+                            "@id": "#ExperimentalProcedure_Exp8"
+                        },
+                        {
+                            "@id": "#ExperimentalProcedure_Exp9"
+                        }
+                    ],
+                    "ex:isProcedureOf":
+                        {
+                            "@id": "#ExperimentalSeries"
+                        }
+                },
+
+
+            · · · (J) - 1a · · · · · · Experimental Procedure (Main): General  — END · · ·},
+
+            {· · · (J) - 1b  · · · · · · Experimental Procedure (Main): Specific · · ·
+
+
+                {· · · (J) - 1b - 1  · · · · · · Experimental Procedure (Main): Specific - Experiment 1 · · ·
+
+                
+                    {
+                        "@id": "#ExperimentalProcedure_Exp1",
+                        "@type": "ex:Task",
+                        "schema:name": "Experimental Procedure - Experiment 1",
+                        "schema:description": "Experimental procedure performed during Experiment 1",
+                        "ex:describesContext":
+                        [
+                        ],
+                        "schema:hasPart":
+                        [
+                            {
+                                "@id": "#AddLiquidTask_Exp1"
+                            },
+                            {
+                                "@id": "#AddSolidTask_Exp1"
+                            },
+                            {
+                                "@id": "#AddingCatalystTask_Exp1"
+                            },
+                            {
+                                "@id": "#RemoveLiquidTask_Exp1"
+                            },
+                            {
+                                "@id": "#RemoveSolidTask_Exp1"
+                            },
+                            {
+                                "@id": "#RemoveCatalystTask_Exp1"
+                            },
+                            {
+                                "@id": "#SpargingTask_Exp1"
+                            },
+                            {
+                                "@id": "#CoolingTask_Exp1"
+                            },
+                            {
+                                "@id": "#StirringTask_Exp1"
+                            },
+                            {
+                                "@id": "#PressurizeReactorTask_Exp1"
+                            },
+                            {
+                                "@id": "#WeighingTask_StartMassRDY_Exp1"
+                            },
+                            {
+                                "@id": "#WeighingTask_FinalMass_RDEt_Exp1"
+                            },
+                            {
+                                "@id": "#WeighingTask_FinalMass_Dimer_Exp1"
+                            },
+                            {
+                                "@id": "#WeighingTask_FinalMass_RDY_Exp1"
+                            },
+                            {
+                                "@id": "#TemperatureMeasurementTask_Exp1"
+                            },
+                            {
+                                "@id": "#PressureMeasurementTask_Exp1"
+                            },
+                            {
+                                "@id": "#GasVolumeMeasurementTask_Exp1"
+                            }
+                        ],
+                        "ex:hasStartTime":
+                        {
+                            "value": "2026-07-28T10:00:00Z",
+                            "ex:hasProvenanceType": "ex:Estimated"
+                        },
+                        "ex:isInstanceOf":
+                        {
+                            "@id": "#ExperimentalProcedure"
+                        },
+                        "ex:isProcedureOf":
+                        {
+                            "@id": "#Experiment1"
+                        }
+                    }
+
+
+                · · · (J) - 1b - 1  · · · · · · Experimental Procedure (Main): Specific - Experiment 1  — END · · ·},
+
+                {· · · (J) - 1b - 2  · · · · · · Experimental Procedure (Main) - Experiment 2 · · ·
+                · · · (J) - 1b - 2  · · · · · · Experimental Procedure (Main): Specific - Experiment 2  — END · · ·},
+
+
+
+            · · · (J) - 1b · · · · · · Experimental Procedure (Main): Specific  — END · · ·},
+
+
+
+
+            {· · · (J) - 1.X  · · · · · · Experimental Procedure (Subtasks) · · ·
+
+                {· · · (J) - 1.1  · · · · · · Add Liquid Task · · ·
+
+                    {· · · (J) - 1.1a  · · · · · · Add Liquid Task: General · · ·
+
+
+                    · · · (J) - 1.1a · · · · · · Add Liquid Task: General  — END · · ·},
+
+                    {· · · (J) - 1.1b  · · · · · · Add Liquid Task: Specific · · ·
+
+
+                        {· · · (J) - 1.1b - 1  · · · · · · Add Liquid Task - Experiment 1 · · ·
+
+                        
+                            
+
+
+                        · · · (J) - 1.1b - 1  · · · · · · Add Liquid Task: Specific - Experiment 1  — END · · ·},
+
+                        {· · · (J) - 1.1b - 2  · · · · · · Add Liquid Task - Experiment 2 · · ·
+                        · · · (J) - 1.1b - 2  · · · · · · Add Liquid Task: Specific - Experiment 2  — END · · ·},
+
+
+
+                    · · · (J) - 1.1b · · · · · · Add Liquid Task: Specific  — END · · ·},
+
+
+                · · · (J) - 1.1  · · · · · · Add Liquid Task  — END · · ·},
+
+
+                {· · · (J) - 1.2  · · · · · · Add Solid Task · · ·
+
+                    {· · · (J) - 1.2a  · · · · · · Add Solid Task: General · · ·
+
+
+                    · · · (J) - 1.2a · · · · · · Add Solid Task: General  — END · · ·},
+
+                    {· · · (J) - 1.2b  · · · · · · Add Solid Task: Specific · · ·
+
+
+                        {· · · (J) - 1.2b - 1  · · · · · · Add Solid Task - Experiment 1 · · ·
+
+                        
+                            
+
+
+                        · · · (J) - 1.2b - 1  · · · · · · Add Solid Task: Specific - Experiment 1  — END · · ·},
+
+                        {· · · (J) - 1.2b - 2  · · · · · · Add Solid Task - Experiment 2 · · ·
+                        · · · (J) - 1.2b - 2  · · · · · · Add Solid Task: Specific - Experiment 2  — END · · ·},
+
+
+
+                    · · · (J) - 1.2b · · · · · · Add Solid Task: Specific  — END · · ·},
+
+
+                · · · (J) - 1.2  · · · · · · Add Solid Task  — END · · ·},
+
+
+                {· · · (J) - 1.3  · · · · · · Add Catalyst Task · · ·
+
+                    {· · · (J) - 1.3a  · · · · · · Add Catalyst Task: General · · ·
+
+
+                    · · · (J) - 1.3a · · · · · · Add Catalyst Task: General  — END · · ·},
+
+                    {· · · (J) - 1.3b  · · · · · · Add Catalyst Task: Specific · · ·
+
+
+                        {· · · (J) - 1.3b - 1  · · · · · · Add Catalyst Task - Experiment 1 · · ·
+
+                        
+                            
+
+
+                        · · · (J) - 1.3b - 1  · · · · · · Add Catalyst Task: Specific - Experiment 1  — END · · ·},
+
+                        {· · · (J) - 1.3b - 2  · · · · · · Add Catalyst Task - Experiment 2 · · ·
+                        · · · (J) - 1.3b - 2  · · · · · · Add Catalyst Task: Specific - Experiment 2  — END · · ·},
+
+
+
+                    · · · (J) - 1.3b · · · · · · Add Catalyst Task: Specific  — END · · ·},
+
+
+                · · · (J) - 1.3  · · · · · · Add Catalyst Task  — END · · ·},
+
+
+                {· · · (J) - 1.4  · · · · · · Remove Liquid Task · · ·
+
+                    {· · · (J) - 1.4a  · · · · · · Remove Liquid Task: General · · ·
+
+
+                    · · · (J) - 1.4a · · · · · · Remove Liquid Task: General  — END · · ·},
+
+                    {· · · (J) - 1.4b  · · · · · · Remove Liquid Task: Specific · · ·
+
+
+                        {· · · (J) - 1.4b - 1  · · · · · · Remove Liquid Task - Experiment 1 · · ·
+
+                        
+                            
+
+
+                        · · · (J) - 1.4b - 1  · · · · · · Remove Liquid Task: Specific - Experiment 1  — END · · ·},
+
+                        {· · · (J) - 1.4b - 2  · · · · · · Remove Liquid Task - Experiment 2 · · ·
+                        · · · (J) - 1.4b - 2  · · · · · · Remove Liquid Task: Specific - Experiment 2  — END · · ·},
+
+
+
+                    · · · (J) - 1.4b · · · · · · Remove Liquid Task: Specific  — END · · ·},
+
+
+                · · · (J) - 1.4  · · · · · · Remove Liquid Task  — END · · ·},
+
+
+                {· · · (J) - 1.5  · · · · · · Remove Solid Task · · ·
+
+                    {· · · (J) - 1.5a  · · · · · · Remove Solid Task: General · · ·
+
+
+                    · · · (J) - 1.5a · · · · · · Remove Solid Task: General  — END · · ·},
+
+                    {· · · (J) - 1.5b  · · · · · · Remove Solid Task: Specific · · ·
+
+
+                        {· · · (J) - 1.5b - 1  · · · · · · Remove Solid Task - Experiment 1 · · ·
+
+                        
+                            
+
+
+                        · · · (J) - 1.5b - 1  · · · · · · Remove Solid Task: Specific - Experiment 1  — END · · ·},
+
+                        {· · · (J) - 1.5b - 2  · · · · · · Remove Solid Task - Experiment 2 · · ·
+                        · · · (J) - 1.5b - 2  · · · · · · Remove Solid Task: Specific - Experiment 2  — END · · ·},
+
+
+
+                    · · · (J) - 1.5b · · · · · · Remove Solid Task: Specific  — END · · ·},
+
+
+                · · · (J) - 1.5  · · · · · · Remove Solid Task  — END · · ·},
+
+
+                {· · · (J) - 1.6  · · · · · · Remove Catalyst Task · · ·
+
+                    {· · · (J) - 1.6a  · · · · · · Remove Catalyst Task: General · · ·
+
+
+                    · · · (J) - 1.6a · · · · · · Remove Catalyst Task: General  — END · · ·},
+
+                    {· · · (J) - 1.6b  · · · · · · Remove Catalyst Task: Specific · · ·
+
+
+                        {· · · (J) - 1.6b - 1  · · · · · · Remove Catalyst Task - Experiment 1 · · ·
+
+                        
+                            
+
+
+                        · · · (J) - 1.6b - 1  · · · · · · Remove Catalyst Task: Specific - Experiment 1  — END · · ·},
+
+                        {· · · (J) - 1.6b - 2  · · · · · · Remove Catalyst Task - Experiment 2 · · ·
+                        · · · (J) - 1.6b - 2  · · · · · · Remove Catalyst Task: Specific - Experiment 2  — END · · ·},
+
+
+
+                    · · · (J) - 1.6b · · · · · · Remove Catalyst Task: Specific  — END · · ·},
+
+
+                · · · (J) - 1.6  · · · · · · Remove Catalyst Task  — END · · ·},
+
+
+
+
+
+
+                {· · · (J) - 1.7  · · · · · · Stirring · · ·
+
+                    {· · · (J) - 1.7a  · · · · · · Stirring: General · · ·
+
+
+                    · · · (J) - 1.7a · · · · · · Stirring: General  — END · · ·},
+
+                    {· · · (J) - 1.7b  · · · · · · Stirring: Specific · · ·
+
+
+                        {· · · (J) - 1.7b - 1  · · · · · · Stirring - Experiment 1 · · ·
+
+                        
+                            
+
+
+                        · · · (J) - 1.7b - 1  · · · · · · Stirring: Specific - Experiment 1  — END · · ·},
+
+                        {· · · (J) - 1.7b - 2  · · · · · · Stirring - Experiment 2 · · ·
+                        · · · (J) - 1.7b - 2  · · · · · · Stirring: Specific - Experiment 2  — END · · ·},
+
+
+
+                    · · · (J) - 1.7b · · · · · · Stirring: Specific  — END · · ·},
+
+
+                · · · (J) - 1.7  · · · · · · Stirring  — END · · ·},
+
+
+                {· · · (J) - 1.8  · · · · · · Pressurizing · · ·
+
+                    {· · · (J) - 1.8a  · · · · · · Pressurizing: General · · ·
+
+
+                    · · · (J) - 1.8a · · · · · · Pressurizing: General  — END · · ·},
+
+                    {· · · (J) - 1.8b  · · · · · · Pressurizing: Specific · · ·
+
+
+                        {· · · (J) - 1.8b - 1  · · · · · · Pressurizing - Experiment 1 · · ·
+
+                        
+                            
+
+
+                        · · · (J) - 1.8b - 1  · · · · · · Pressurizing: Specific - Experiment 1  — END · · ·},
+
+                        {· · · (J) - 1.8b - 2  · · · · · · Pressurizing - Experiment 2 · · ·
+                        · · · (J) - 1.8b - 2  · · · · · · Pressurizing: Specific - Experiment 2  — END · · ·},
+
+
+
+                    · · · (J) - 1.8b · · · · · · Pressurizing: Specific  — END · · ·},
+
+
+                · · · (J) - 1.8  · · · · · · Pressurizing  — END · · ·},
+
+
+                {· · · (J) - 1.9  · · · · · · Sparging · · ·
+
+                    {· · · (J) - 1.9a  · · · · · · Sparging: General · · ·
+
+
+                    · · · (J) - 1.9a · · · · · · Sparging: General  — END · · ·},
+
+                    {· · · (J) - 1.9b  · · · · · · Sparging: Specific · · ·
+
+
+                        {· · · (J) - 1.9b - 1  · · · · · · Sparging - Experiment 1 · · ·
+
+                        
+                            
+
+
+                        · · · (J) - 1.9b - 1  · · · · · · Sparging: Specific - Experiment 1  — END · · ·},
+
+                        {· · · (J) - 1.9b - 2  · · · · · · Sparging - Experiment 2 · · ·
+                        · · · (J) - 1.9b - 2  · · · · · · Sparging: Specific - Experiment 2  — END · · ·},
+
+
+
+                    · · · (J) - 1.9b · · · · · · Sparging: Specific  — END · · ·},
+
+
+                · · · (J) - 1.9  · · · · · · Sparging  — END · · ·},
+
+
+                {· · · (J) - 1.10  · · · · · · Cooling · · ·
+
+                    {· · · (J) - 1.10a  · · · · · · Cooling: General · · ·
+
+
+                    · · · (J) - 1.10a · · · · · · Cooling: General  — END · · ·},
+
+                    {· · · (J) - 1.10b  · · · · · · Cooling: Specific · · ·
+
+
+                        {· · · (J) - 1.10b - 1  · · · · · · Cooling - Experiment 1 · · ·
+
+                        
+                            
+
+
+                        · · · (J) - 1.10b - 1  · · · · · · Cooling: Specific - Experiment 1  — END · · ·},
+
+                        {· · · (J) - 1.10b - 2  · · · · · · Cooling - Experiment 2 · · ·
+                        · · · (J) - 1.10b - 2  · · · · · · Cooling: Specific - Experiment 2  — END · · ·},
+
+
+
+                    · · · (J) - 1.10b · · · · · · Cooling: Specific  — END · · ·},
+
+
+                · · · (J) - 1.10  · · · · · · Cooling  — END · · ·},
+
+
+            · · · (J) - 1.X · · · · · · Experimental Procedure (Subtasks)  — END · · ·},
+
+
+        · · · (J) - 1  · · · · · · Experimental Procedure (Main)  — END · · ·},
+
+    
+        
+
+
+
+
+    · · · (J)  · · · · · · Experimental Procedure — END · · ·},
 
 ==== (J) Tasks — END ======================================================================================================================================}
 
@@ -10403,174 +10905,12 @@
     {++++++ Experimental Procedure ++++++
         
 
-        {
-            "@id": "#ExperimentalProcedure",
-            "@type": "ex:Task",
-            "schema:name": "Experimental Procedure",
-            "schema:description": "General task representing the complete experimental procedure",
-            "ex:describesContext":
-            [
-            ],
-            "schema:hasPart":
-            [
-                {
-                    "@id": "#AddLiquidTask"
-                },
-                {
-                    "@id": "#AddSolidTask"
-                },
-                {
-                    "@id": "#AddingCatalystTask"
-                },
-                {
-                    "@id": "#RemoveLiquidTask"
-                },
-                {
-                    "@id": "#RemoveSolidTask"
-                },
-                {
-                    "@id": "#RemoveCatalystTask"
-                },
-                {
-                    "@id": "#SpargingTask"
-                },
-                {
-                    "@id": "#CoolingTask"
-                },
-                {
-                    "@id": "#StirringTask"
-                },
-                {
-                    "@id": "#PressurizeReactorTask"
-                },
-                {
-                    "@id": "#WeighingTask"
-                },
-                {
-                    "@id": "#TemperatureMeasurementTask"
-                },
-                {
-                    "@id": "#PressureMeasurementTask"
-                },
-                {
-                    "@id": "#GasVolumeMeasurementTask"
-                }
-            ],
-            "ex:hasInstance":
-            [
-                {
-                    "@id": "#ExperimentalProcedure_Exp1"
-                },
-                {
-                    "@id": "#ExperimentalProcedure_Exp2"
-                },
-                {
-                    "@id": "#ExperimentalProcedure_Exp3"
-                },
-                {
-                    "@id": "#ExperimentalProcedure_Exp4"
-                },
-                {
-                    "@id": "#ExperimentalProcedure_Exp5"
-                },
-                {
-                    "@id": "#ExperimentalProcedure_Exp6"
-                },
-                {
-                    "@id": "#ExperimentalProcedure_Exp7"
-                },
-                {
-                    "@id": "#ExperimentalProcedure_Exp8"
-                },
-                {
-                    "@id": "#ExperimentalProcedure_Exp9"
-                }
-            ],
-            "ex:isProcedureOf":
-                {
-                    "@id": "#ExperimentalSeries"
-                }
-        },
+        
 
 
         {++++++ Specific Tasks - Experimental Procedure  ++++++
 
-            {
-                "@id": "#ExperimentalProcedure_Exp1",
-                "@type": "ex:Task",
-                "schema:name": "Experimental Procedure - Experiment 1",
-                "schema:description": "Experimental procedure performed during Experiment 1",
-                "ex:describesContext":
-                [
-                ],
-                "schema:hasPart":
-                [
-                    {
-                        "@id": "#AddLiquidTask_Exp1"
-                    },
-                    {
-                        "@id": "#AddSolidTask_Exp1"
-                    },
-                    {
-                        "@id": "#AddingCatalystTask_Exp1"
-                    },
-                    {
-                        "@id": "#RemoveLiquidTask_Exp1"
-                    },
-                    {
-                        "@id": "#RemoveSolidTask_Exp1"
-                    },
-                    {
-                        "@id": "#RemoveCatalystTask_Exp1"
-                    },
-                    {
-                        "@id": "#SpargingTask_Exp1"
-                    },
-                    {
-                        "@id": "#CoolingTask_Exp1"
-                    },
-                    {
-                        "@id": "#StirringTask_Exp1"
-                    },
-                    {
-                        "@id": "#PressurizeReactorTask_Exp1"
-                    },
-                    {
-                        "@id": "#WeighingTask_StartMassRDY_Exp1"
-                    },
-                    {
-                        "@id": "#WeighingTask_FinalMass_RDEt_Exp1"
-                    },
-                    {
-                        "@id": "#WeighingTask_FinalMass_Dimer_Exp1"
-                    },
-                    {
-                        "@id": "#WeighingTask_FinalMass_RDY_Exp1"
-                    },
-                    {
-                        "@id": "#TemperatureMeasurementTask_Exp1"
-                    },
-                    {
-                        "@id": "#PressureMeasurementTask_Exp1"
-                    },
-                    {
-                        "@id": "#GasVolumeMeasurementTask_Exp1"
-                    }
-                ],
-                "ex:hasStartTime":
-                {
-                    "value": "2026-07-28T10:00:00Z",
-                    "ex:hasProvenanceType": "ex:Estimated"
-                },
-                "ex:isInstanceOf":
-                {
-                    "@id": "#ExperimentalProcedure"
-                },
-                "ex:isProcedureOf":
-                {
-                    "@id": "#Experiment1"
-                }
-            }
+            
 
         ------ Specific Tasks - Experimental Procedure ------}
 
