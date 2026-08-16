@@ -8144,17 +8144,99 @@
 
                     {· · · (J) - 1.1a  · · · · · · Add Liquid Task: General · · ·
 
+                        {
+                            "@id": "#AddLiquidTask",
+                            "@type": "ex:Task",
+                            "schema:name": "Add Liquid",
+                            "schema:description": "Task for supplying a liquid stream to the reactor, where the supplied liquid becomes part of the liquid phase",
+                            "ex:describesContext":
+                            [
+                            ],
+                            "ex:hasDuration":
+                            {
+                                "@id": "#TransferTaskDuration"
+                            },
+                            "ex:realizes": "dexpi:SupplyingFluids",
+                            "ex:performedBy":
+                            {
+                                "@id": "#AlexeiLapkin"
+                            },
+                            "ex:hasTransferredStream":
+                            {
+                                "@id": "#AddLiquidStream"
+                            },
+                            "ex:generatesPhase":
+                            [
+                                {
+                                    "@id": "#LiquidPhase"
+                                }
+                            ],
+                            "ex:hasInstance":
+                            [
+                                {
+                                    "@id": "#AddLiquidTask_Exp1"
+                                },
+                                {
+                                    "@id": "#AddLiquidTask_Exp2"
+                                },
+                                {
+                                    "@id": "#AddLiquidTask_Exp3"
+                                },
+                                {
+                                    "@id": "#AddLiquidTask_Exp4"
+                                },
+                                {
+                                    "@id": "#AddLiquidTask_Exp5"
+                                },
+                                {
+                                    "@id": "#AddLiquidTask_Exp6"
+                                },
+                                {
+                                    "@id": "#AddLiquidTask_Exp7"
+                                },
+                                {
+                                    "@id": "#AddLiquidTask_Exp8"
+                                },
+                                {
+                                    "@id": "#AddLiquidTask_Exp9"
+                                }
+                            ]
+                        },
 
                     · · · (J) - 1.1a · · · · · · Add Liquid Task: General  — END · · ·},
 
                     {· · · (J) - 1.1b  · · · · · · Add Liquid Task: Specific · · ·
 
-
                         {· · · (J) - 1.1b - 1  · · · · · · Add Liquid Task - Experiment 1 · · ·
 
-                        
-                            
-
+                            {
+                                "@id": "#AddLiquidTask_Exp1",
+                                "@type": "ex:Task",
+                                "schema:name": "Add Liquid - Experiment 1",
+                                "schema:description": "Transfer of the liquid stream into the reactor during Experiment 1",
+                                "ex:describesContext":
+                                [
+                                ],
+                                "ex:hasStartOffset":
+                                {
+                                    "value": "PT2M",
+                                    "ex:hasProvenanceType": "ex:Estimated"
+                                },
+                                "ex:hasTransferredStream":
+                                {
+                                    "@id": "#AddLiquidStream_Exp1"
+                                },
+                                "ex:generatesPhase":
+                                [
+                                    {
+                                        "@id": "#LiquidPhase_Exp1"
+                                    }
+                                ],
+                                "ex:isInstanceOf":
+                                {
+                                    "@id": "#AddLiquidTask"
+                                }
+                            }
 
                         · · · (J) - 1.1b - 1  · · · · · · Add Liquid Task: Specific - Experiment 1  — END · · ·},
 
@@ -8173,17 +8255,99 @@
 
                     {· · · (J) - 1.2a  · · · · · · Add Solid Task: General · · ·
 
+                        {
+                            "@id": "#AddSolidTask",
+                            "@type": "ex:Task",
+                            "schema:name": "Add Solid",
+                            "schema:description": "Task for supplying a solid stream to the reactor, where the supplied solid becomes part of the solid phase",
+                            "ex:describesContext":
+                            [
+                            ],
+                            "ex:hasDuration":
+                            {
+                                "@id": "#TransferTaskDuration"
+                            },
+                            "ex:realizes": "dexpi:SupplyingSolids",
+                            "ex:performedBy":
+                            {
+                                "@id": "#AlexeiLapkin"
+                            },
+                            "ex:hasTransferredStream":
+                            {
+                                "@id": "#AddSolidStream"
+                            },
+                            "ex:generatesPhase":
+                            [
+                                {
+                                    "@id": "#SolidPhase"
+                                }
+                            ],
+                            "ex:hasInstance":
+                            [
+                                {
+                                    "@id": "#AddSolidTask_Exp1"
+                                },
+                                {
+                                    "@id": "#AddSolidTask_Exp2"
+                                },
+                                {
+                                    "@id": "#AddSolidTask_Exp3"
+                                },
+                                {
+                                    "@id": "#AddSolidTask_Exp4"
+                                },
+                                {
+                                    "@id": "#AddSolidTask_Exp5"
+                                },
+                                {
+                                    "@id": "#AddSolidTask_Exp6"
+                                },
+                                {
+                                    "@id": "#AddSolidTask_Exp7"
+                                },
+                                {
+                                    "@id": "#AddSolidTask_Exp8"
+                                },
+                                {
+                                    "@id": "#AddSolidTask_Exp9"
+                                }
+                            ]
+                        },
 
                     · · · (J) - 1.2a · · · · · · Add Solid Task: General  — END · · ·},
 
                     {· · · (J) - 1.2b  · · · · · · Add Solid Task: Specific · · ·
 
-
                         {· · · (J) - 1.2b - 1  · · · · · · Add Solid Task - Experiment 1 · · ·
 
-                        
-                            
-
+                            {
+                                "@id": "#AddSolidTask_Exp1",
+                                "@type": "ex:Task",
+                                "schema:name": "Add Solid - Experiment 1",
+                                "schema:description": "Transfer of the solid stream into the reactor during Experiment 1",
+                                "ex:describesContext":
+                                [
+                                ],
+                                "ex:hasStartOffset":
+                                {
+                                    "value": "PT2M",
+                                    "ex:hasProvenanceType": "ex:Estimated"
+                                },
+                                "ex:hasTransferredStream":
+                                {
+                                    "@id": "#AddSolidStream_Exp1"
+                                },
+                                "ex:generatesPhase":
+                                [
+                                    {
+                                        "@id": "#SolidPhase_Exp1"
+                                    }
+                                ],
+                                "ex:isInstanceOf":
+                                {
+                                    "@id": "#AddSolidTask"
+                                }
+                            }
 
                         · · · (J) - 1.2b - 1  · · · · · · Add Solid Task: Specific - Experiment 1  — END · · ·},
 
@@ -8202,17 +8366,99 @@
 
                     {· · · (J) - 1.3a  · · · · · · Add Catalyst Task: General · · ·
 
+                        {
+                            "@id": "#AddingCatalystTask",
+                            "@type": "ex:Task",
+                            "schema:name": "Adding Catalyst",
+                            "schema:description": "Task for supplying the catalyst to the reactor, where the supplied catalyst becomes part of the catalyst phase",
+                            "ex:describesContext":
+                            [
+                            ],
+                            "ex:hasDuration":
+                            {
+                                "@id": "#TransferTaskDuration"
+                            },
+                            "ex:realizes": "dexpi:SupplyingSolids",
+                            "ex:performedBy":
+                            {
+                                "@id": "#AlexeiLapkin"
+                            },
+                            "ex:hasTransferredStream":
+                            {
+                                "@id": "#AddCatalystStream"
+                            },
+                            "ex:generatesPhase":
+                            [
+                                {
+                                    "@id": "#CatalystPhase"
+                                }
+                            ],
+                            "ex:hasInstance":
+                            [
+                                {
+                                    "@id": "#AddingCatalystTask_Exp1"
+                                },
+                                {
+                                    "@id": "#AddingCatalystTask_Exp2"
+                                },
+                                {
+                                    "@id": "#AddingCatalystTask_Exp3"
+                                },
+                                {
+                                    "@id": "#AddingCatalystTask_Exp4"
+                                },
+                                {
+                                    "@id": "#AddingCatalystTask_Exp5"
+                                },
+                                {
+                                    "@id": "#AddingCatalystTask_Exp6"
+                                },
+                                {
+                                    "@id": "#AddingCatalystTask_Exp7"
+                                },
+                                {
+                                    "@id": "#AddingCatalystTask_Exp8"
+                                },
+                                {
+                                    "@id": "#AddingCatalystTask_Exp9"
+                                }
+                            ]
+                        },
 
                     · · · (J) - 1.3a · · · · · · Add Catalyst Task: General  — END · · ·},
 
                     {· · · (J) - 1.3b  · · · · · · Add Catalyst Task: Specific · · ·
 
-
                         {· · · (J) - 1.3b - 1  · · · · · · Add Catalyst Task - Experiment 1 · · ·
 
-                        
-                            
-
+                            {
+                                "@id": "#AddingCatalystTask_Exp1",
+                                "@type": "ex:Task",
+                                "schema:name": "Adding Catalyst - Experiment 1",
+                                "schema:description": "Transfer of the catalyst into the reactor during Experiment 1",
+                                "ex:describesContext":
+                                [
+                                ],
+                                "ex:hasStartOffset":
+                                {
+                                    "value": "PT2M",
+                                    "ex:hasProvenanceType": "ex:Estimated"
+                                },
+                                "ex:hasTransferredStream":
+                                {
+                                    "@id": "#AddCatalystStream_Exp1"
+                                },
+                                "ex:generatesPhase":
+                                [
+                                    {
+                                        "@id": "#CatalystPhase_Exp1"
+                                    }
+                                ],
+                                "ex:isInstanceOf":
+                                {
+                                    "@id": "#AddingCatalystTask"
+                                }
+                            }
 
                         · · · (J) - 1.3b - 1  · · · · · · Add Catalyst Task: Specific - Experiment 1  — END · · ·},
 
@@ -8231,17 +8477,87 @@
 
                     {· · · (J) - 1.4a  · · · · · · Remove Liquid Task: General · · ·
 
+                        {
+                            "@id": "#RemoveLiquidTask",
+                            "@type": "ex:Task",
+                            "schema:name": "Remove Liquid",
+                            "schema:description": "Task for removing a liquid stream from the reactor",
+                            "ex:describesContext":
+                            [
+                            ],
+                            "ex:hasDuration":
+                            {
+                                "@id": "#TransferTaskDuration"
+                            },
+                            "ex:realizes": "dexpi:TransportingFluids",
+                            "ex:performedBy":
+                            {
+                                "@id": "#AlexeiLapkin"
+                            },
+                            "ex:hasTransferredStream":
+                            {
+                                "@id": "#RemoveLiquidStream"
+                            },
+                            "ex:hasInstance":
+                            [
+                                {
+                                    "@id": "#RemoveLiquidTask_Exp1"
+                                },
+                                {
+                                    "@id": "#RemoveLiquidTask_Exp2"
+                                },
+                                {
+                                    "@id": "#RemoveLiquidTask_Exp3"
+                                },
+                                {
+                                    "@id": "#RemoveLiquidTask_Exp4"
+                                },
+                                {
+                                    "@id": "#RemoveLiquidTask_Exp5"
+                                },
+                                {
+                                    "@id": "#RemoveLiquidTask_Exp6"
+                                },
+                                {
+                                    "@id": "#RemoveLiquidTask_Exp7"
+                                },
+                                {
+                                    "@id": "#RemoveLiquidTask_Exp8"
+                                },
+                                {
+                                    "@id": "#RemoveLiquidTask_Exp9"
+                                }
+                            ]
+                        },
 
                     · · · (J) - 1.4a · · · · · · Remove Liquid Task: General  — END · · ·},
 
                     {· · · (J) - 1.4b  · · · · · · Remove Liquid Task: Specific · · ·
 
-
                         {· · · (J) - 1.4b - 1  · · · · · · Remove Liquid Task - Experiment 1 · · ·
 
-                        
-                            
-
+                            {
+                                "@id": "#RemoveLiquidTask_Exp1",
+                                "@type": "ex:Task",
+                                "schema:name": "Remove Liquid - Experiment 1",
+                                "schema:description": "Transfer of the liquid stream out of the reactor during Experiment 1",
+                                "ex:describesContext":
+                                [
+                                ],
+                                "ex:hasStartOffset":
+                                {
+                                    "value": "PT2M",
+                                    "ex:hasProvenanceType": "ex:Estimated"
+                                },
+                                "ex:hasTransferredStream":
+                                {
+                                    "@id": "#RemoveLiquidStream_Exp1"
+                                },
+                                "ex:isInstanceOf":
+                                {
+                                    "@id": "#RemoveLiquidTask"
+                                }
+                            }
 
                         · · · (J) - 1.4b - 1  · · · · · · Remove Liquid Task: Specific - Experiment 1  — END · · ·},
 
@@ -8260,17 +8576,87 @@
 
                     {· · · (J) - 1.5a  · · · · · · Remove Solid Task: General · · ·
 
+                        {
+                            "@id": "#RemoveSolidTask",
+                            "@type": "ex:Task",
+                            "schema:name": "Remove Solid",
+                            "schema:description": "Task for removing a solid stream from the reactor",
+                            "ex:describesContext":
+                            [
+                            ],
+                            "ex:hasDuration":
+                            {
+                                "@id": "#TransferTaskDuration"
+                            },
+                            "ex:realizes": "dexpi:TransportingSolids",
+                            "ex:performedBy":
+                            {
+                                "@id": "#AlexeiLapkin"
+                            },
+                            "ex:hasTransferredStream":
+                            {
+                                "@id": "#RemoveSolidStream"
+                            },
+                            "ex:hasInstance":
+                            [
+                                {
+                                    "@id": "#RemoveSolidTask_Exp1"
+                                },
+                                {
+                                    "@id": "#RemoveSolidTask_Exp2"
+                                },
+                                {
+                                    "@id": "#RemoveSolidTask_Exp3"
+                                },
+                                {
+                                    "@id": "#RemoveSolidTask_Exp4"
+                                },
+                                {
+                                    "@id": "#RemoveSolidTask_Exp5"
+                                },
+                                {
+                                    "@id": "#RemoveSolidTask_Exp6"
+                                },
+                                {
+                                    "@id": "#RemoveSolidTask_Exp7"
+                                },
+                                {
+                                    "@id": "#RemoveSolidTask_Exp8"
+                                },
+                                {
+                                    "@id": "#RemoveSolidTask_Exp9"
+                                }
+                            ]
+                        },
 
                     · · · (J) - 1.5a · · · · · · Remove Solid Task: General  — END · · ·},
 
                     {· · · (J) - 1.5b  · · · · · · Remove Solid Task: Specific · · ·
 
-
                         {· · · (J) - 1.5b - 1  · · · · · · Remove Solid Task - Experiment 1 · · ·
 
-                        
-                            
-
+                            {
+                                "@id": "#RemoveSolidTask_Exp1",
+                                "@type": "ex:Task",
+                                "schema:name": "Remove Solid - Experiment 1",
+                                "schema:description": "Transfer of the solid stream out of the reactor during Experiment 1",
+                                "ex:describesContext":
+                                [
+                                ],
+                                "ex:hasStartOffset":
+                                {
+                                    "value": "PT2M",
+                                    "ex:hasProvenanceType": "ex:Estimated"
+                                },
+                                "ex:hasTransferredStream":
+                                {
+                                    "@id": "#RemoveSolidStream_Exp1"
+                                },
+                                "ex:isInstanceOf":
+                                {
+                                    "@id": "#RemoveSolidTask"
+                                }
+                            }
 
                         · · · (J) - 1.5b - 1  · · · · · · Remove Solid Task: Specific - Experiment 1  — END · · ·},
 
@@ -8289,17 +8675,87 @@
 
                     {· · · (J) - 1.6a  · · · · · · Remove Catalyst Task: General · · ·
 
+                        {
+                            "@id": "#RemoveCatalystTask",
+                            "@type": "ex:Task",
+                            "schema:name": "Remove Catalyst",
+                            "schema:description": "Task for removing the catalyst from the reactor",
+                            "ex:describesContext":
+                            [
+                            ],
+                            "ex:hasDuration":
+                            {
+                                "@id": "#TransferTaskDuration"
+                            },
+                            "ex:realizes": "dexpi:TransportingSolids",
+                            "ex:performedBy":
+                            {
+                                "@id": "#AlexeiLapkin"
+                            },
+                            "ex:hasTransferredStream":
+                            {
+                                "@id": "#RemoveCatalystStream"
+                            },
+                            "ex:hasInstance":
+                            [
+                                {
+                                    "@id": "#RemoveCatalystTask_Exp1"
+                                },
+                                {
+                                    "@id": "#RemoveCatalystTask_Exp2"
+                                },
+                                {
+                                    "@id": "#RemoveCatalystTask_Exp3"
+                                },
+                                {
+                                    "@id": "#RemoveCatalystTask_Exp4"
+                                },
+                                {
+                                    "@id": "#RemoveCatalystTask_Exp5"
+                                },
+                                {
+                                    "@id": "#RemoveCatalystTask_Exp6"
+                                },
+                                {
+                                    "@id": "#RemoveCatalystTask_Exp7"
+                                },
+                                {
+                                    "@id": "#RemoveCatalystTask_Exp8"
+                                },
+                                {
+                                    "@id": "#RemoveCatalystTask_Exp9"
+                                }
+                            ]
+                        },
 
                     · · · (J) - 1.6a · · · · · · Remove Catalyst Task: General  — END · · ·},
 
                     {· · · (J) - 1.6b  · · · · · · Remove Catalyst Task: Specific · · ·
 
-
                         {· · · (J) - 1.6b - 1  · · · · · · Remove Catalyst Task - Experiment 1 · · ·
 
-                        
-                            
-
+                            {
+                                "@id": "#RemoveCatalystTask_Exp1",
+                                "@type": "ex:Task",
+                                "schema:name": "Remove Catalyst - Experiment 1",
+                                "schema:description": "Transfer of the catalyst out of the reactor during Experiment 1",
+                                "ex:describesContext":
+                                [
+                                ],
+                                "ex:hasStartOffset":
+                                {
+                                    "value": "PT2M",
+                                    "ex:hasProvenanceType": "ex:Estimated"
+                                },
+                                "ex:hasTransferredStream":
+                                {
+                                    "@id": "#RemoveCatalystStream_Exp1"
+                                },
+                                "ex:isInstanceOf":
+                                {
+                                    "@id": "#RemoveCatalystTask"
+                                }
+                            }
 
                         · · · (J) - 1.6b - 1  · · · · · · Remove Catalyst Task: Specific - Experiment 1  — END · · ·},
 
@@ -8322,17 +8778,87 @@
 
                     {· · · (J) - 1.7a  · · · · · · Stirring: General · · ·
 
+                        {
+                            "@id": "#StirringTask",
+                            "@type": "ex:Task",
+                            "schema:name": "Stirring",
+                            "schema:description": "Task for stirring the reactor according to the specified rotational speed profile",
+                            "ex:describesContext":
+                            [
+                            ],
+                            "ex:realizes": "dexpi:Mixing",
+                            "ex:usedEquipment":
+                            {
+                                "@id": "#Stirrer"
+                            },
+                            "ex:hasSetProfile":
+                            {
+                                "@id": "#RPMProfile"
+                            },
+                            "ex:hasInstance":
+                            [
+                                {
+                                    "@id": "#StirringTask_Exp1"
+                                },
+                                {
+                                    "@id": "#StirringTask_Exp2"
+                                },
+                                {
+                                    "@id": "#StirringTask_Exp3"
+                                },
+                                {
+                                    "@id": "#StirringTask_Exp4"
+                                },
+                                {
+                                    "@id": "#StirringTask_Exp5"
+                                },
+                                {
+                                    "@id": "#StirringTask_Exp6"
+                                },
+                                {
+                                    "@id": "#StirringTask_Exp7"
+                                },
+                                {
+                                    "@id": "#StirringTask_Exp8"
+                                },
+                                {
+                                    "@id": "#StirringTask_Exp9"
+                                }
+                            ]
+                        },
 
                     · · · (J) - 1.7a · · · · · · Stirring: General  — END · · ·},
 
                     {· · · (J) - 1.7b  · · · · · · Stirring: Specific · · ·
 
-
                         {· · · (J) - 1.7b - 1  · · · · · · Stirring - Experiment 1 · · ·
 
-                        
-                            
-
+                            {
+                                "@id": "#StirringTask_Exp1",
+                                "@type": "ex:Task",
+                                "schema:name": "Stirring - Experiment 1",
+                                "schema:description": "Stirring of the reactor according to the specified RPM profile during Experiment 1",
+                                "ex:describesContext":
+                                [
+                                ],
+                                "ex:usedEquipment":
+                                {
+                                    "@id": "#Stirrer_Exp1"
+                                },
+                                "ex:hasStartTime":
+                                {
+                                    "value": "2026-07-28T10:00:00Z",
+                                    "ex:hasProvenanceType": "ex:Estimated"
+                                },
+                                "ex:hasSetProfile":
+                                {
+                                    "@id": "#RPMProfile_Exp1"
+                                },
+                                "ex:isInstanceOf":
+                                {
+                                    "@id": "#StirringTask"
+                                }
+                            }
 
                         · · · (J) - 1.7b - 1  · · · · · · Stirring: Specific - Experiment 1  — END · · ·},
 
@@ -8351,17 +8877,87 @@
 
                     {· · · (J) - 1.8a  · · · · · · Pressurizing: General · · ·
 
+                        {
+                            "@id": "#PressurizeReactorTask",
+                            "@type": "ex:Task",
+                            "schema:name": "Pressurize Reactor",
+                            "schema:description": "Task for pressurizing the reactor according to the specified pressure profile",
+                            "ex:describesContext":
+                            [
+                            ],
+                            "ex:realizes": "ex:Pressurizing",
+                            "ex:usedEquipment":
+                            {
+                                "@id": "#Vessel"
+                            },
+                            "ex:hasSetProfile":
+                            {
+                                "@id": "#ReactorPressureProfile"
+                            },
+                            "ex:hasInstance":
+                            [
+                                {
+                                    "@id": "#PressurizeReactorTask_Exp1"
+                                },
+                                {
+                                    "@id": "#PressurizeReactorTask_Exp2"
+                                },
+                                {
+                                    "@id": "#PressurizeReactorTask_Exp3"
+                                },
+                                {
+                                    "@id": "#PressurizeReactorTask_Exp4"
+                                },
+                                {
+                                    "@id": "#PressurizeReactorTask_Exp5"
+                                },
+                                {
+                                    "@id": "#PressurizeReactorTask_Exp6"
+                                },
+                                {
+                                    "@id": "#PressurizeReactorTask_Exp7"
+                                },
+                                {
+                                    "@id": "#PressurizeReactorTask_Exp8"
+                                },
+                                {
+                                    "@id": "#PressurizeReactorTask_Exp9"
+                                }
+                            ]
+                        },
 
                     · · · (J) - 1.8a · · · · · · Pressurizing: General  — END · · ·},
 
                     {· · · (J) - 1.8b  · · · · · · Pressurizing: Specific · · ·
 
-
                         {· · · (J) - 1.8b - 1  · · · · · · Pressurizing - Experiment 1 · · ·
 
-                        
-                            
-
+                            {
+                                "@id": "#PressurizeReactorTask_Exp1",
+                                "@type": "ex:Task",
+                                "schema:name": "Pressurize Reactor - Experiment 1",
+                                "schema:description": "Pressurizing of the reactor according to the specified pressure profile during Experiment 1",
+                                "ex:describesContext":
+                                [
+                                ],
+                                "ex:usedEquipment":
+                                {
+                                    "@id": "#Vessel_Exp1"
+                                },
+                                "ex:hasStartTime":
+                                {
+                                    "value": "2026-07-28T10:00:00Z",
+                                    "ex:hasProvenanceType": "ex:Estimated"
+                                },
+                                "ex:hasSetProfile":
+                                {
+                                    "@id": "#ReactorPressureProfile_Exp1"
+                                },
+                                "ex:isInstanceOf":
+                                {
+                                    "@id": "#PressurizeReactorTask"
+                                }
+                            }
 
                         · · · (J) - 1.8b - 1  · · · · · · Pressurizing: Specific - Experiment 1  — END · · ·},
 
@@ -8380,17 +8976,95 @@
 
                     {· · · (J) - 1.9a  · · · · · · Sparging: General · · ·
 
+                        {
+                            "@id": "#SpargingTask",
+                            "@type": "ex:Task",
+                            "schema:name": "Sparging",
+                            "schema:description": "Task for sparging the reactor by supplying gas through the sparger according to the specified pressure profile",
+                            "ex:describesContext":
+                            [
+                            ],
+                            "ex:realizes": "dexpi:GeneratingFlow",
+                            "ex:usedEquipment":
+                            {
+                                "@id": "#Sparger"
+                            },
+                            "ex:generatesPhase":
+                                {
+                                    "@id": "#HydrogenSpargerPhase"
+                                },
+                            "ex:hasSetProfile":
+                            {
+                                "@id": "#SpargerPressureProfile"
+                            },
+                            "ex:hasInstance":
+                            [
+                                {
+                                    "@id": "#SpargingTask_Exp1"
+                                },
+                                {
+                                    "@id": "#SpargingTask_Exp2"
+                                },
+                                {
+                                    "@id": "#SpargingTask_Exp3"
+                                },
+                                {
+                                    "@id": "#SpargingTask_Exp4"
+                                },
+                                {
+                                    "@id": "#SpargingTask_Exp5"
+                                },
+                                {
+                                    "@id": "#SpargingTask_Exp6"
+                                },
+                                {
+                                    "@id": "#SpargingTask_Exp7"
+                                },
+                                {
+                                    "@id": "#SpargingTask_Exp8"
+                                },
+                                {
+                                    "@id": "#SpargingTask_Exp9"
+                                }
+                            ]
+                        },
 
                     · · · (J) - 1.9a · · · · · · Sparging: General  — END · · ·},
 
                     {· · · (J) - 1.9b  · · · · · · Sparging: Specific · · ·
 
-
                         {· · · (J) - 1.9b - 1  · · · · · · Sparging - Experiment 1 · · ·
 
-                        
-                            
-
+                            {
+                                "@id": "#SpargingTask_Exp1",
+                                "@type": "ex:Task",
+                                "schema:name": "Sparging - Experiment 1",
+                                "schema:description": "Sparging of the reactor according to the specified sparger pressure profile during Experiment 1",
+                                "ex:describesContext":
+                                [
+                                ],
+                                "ex:generatesPhase":
+                                {
+                                    "@id": "#HydrogenSpargerPhase_Exp1"
+                                },
+                                "ex:hasStartTime":
+                                {
+                                    "value": "2026-07-28T10:00:00Z",
+                                    "ex:hasProvenanceType": "ex:Estimated"
+                                },
+                                "ex:usedEquipment":
+                                {
+                                    "@id": "#Sparger_Exp1"
+                                },
+                                "ex:hasSetProfile":
+                                {
+                                    "@id": "#SpargerPressureProfile_Exp1"
+                                },
+                                "ex:isInstanceOf":
+                                {
+                                    "@id": "#SpargingTask"
+                                }
+                            }
 
                         · · · (J) - 1.9b - 1  · · · · · · Sparging: Specific - Experiment 1  — END · · ·},
 
@@ -8409,17 +9083,109 @@
 
                     {· · · (J) - 1.10a  · · · · · · Cooling: General · · ·
 
+                        {
+                            "@id": "#CoolingTask",
+                            "@type": "ex:Task",
+                            "schema:name": "Cooling",
+                            "schema:description": "Task for cooling the reactor according to the specified cooling fluid flowrate and reactor temperature profiles",
+                            "ex:describesContext":
+                            [
+                            ],
+                            "ex:realizes": "dexpi:Cooling",
+                            "ex:usedEquipment":
+                            {
+                                "@id": "#Jacket"
+                            },
+                            "ex:hasSetProfile":
+                            [
+                                {
+                                    "@id": "#CoolingFluidFlowrateProfile"
+                                },
+                                {
+                                    "@id": "#ReactorTemperatureProfile"
+                                }
+                            ],
+                            "ex:generatesPhase":
+                            [
+                                {
+                                    "@id": "#CoolingFluidPhase"
+                                }
+                            ],
+                            "ex:hasInstance":
+                            [
+                                {
+                                    "@id": "#CoolingTask_Exp1"
+                                },
+                                {
+                                    "@id": "#CoolingTask_Exp2"
+                                },
+                                {
+                                    "@id": "#CoolingTask_Exp3"
+                                },
+                                {
+                                    "@id": "#CoolingTask_Exp4"
+                                },
+                                {
+                                    "@id": "#CoolingTask_Exp5"
+                                },
+                                {
+                                    "@id": "#CoolingTask_Exp6"
+                                },
+                                {
+                                    "@id": "#CoolingTask_Exp7"
+                                },
+                                {
+                                    "@id": "#CoolingTask_Exp8"
+                                },
+                                {
+                                    "@id": "#CoolingTask_Exp9"
+                                }
+                            ]
+                        },
 
                     · · · (J) - 1.10a · · · · · · Cooling: General  — END · · ·},
 
                     {· · · (J) - 1.10b  · · · · · · Cooling: Specific · · ·
 
-
                         {· · · (J) - 1.10b - 1  · · · · · · Cooling - Experiment 1 · · ·
 
-                        
-                            
-
+                            {
+                                "@id": "#CoolingTask_Exp1",
+                                "@type": "ex:Task",
+                                "schema:name": "Cooling - Experiment 1",
+                                "schema:description": "Cooling of the reactor according to the specified cooling fluid flowrate and reactor temperature profiles during Experiment 1",
+                                "ex:describesContext":
+                                [
+                                ],
+                                "ex:usedEquipment":
+                                {
+                                    "@id": "#Jacket_Exp1"
+                                },
+                                "ex:hasStartTime":
+                                {
+                                    "value": "2026-07-28T10:00:00Z",
+                                    "ex:hasProvenanceType": "ex:Estimated"
+                                },
+                                "ex:hasSetProfile":
+                                [
+                                    {
+                                        "@id": "#CoolingFluidFlowrateProfile_Exp1"
+                                    },
+                                    {
+                                        "@id": "#ReactorTemperatureProfile_Exp1"
+                                    }
+                                ],
+                                "ex:generatesPhase":
+                                [
+                                    {
+                                        "@id": "#CoolingFluidPhase_Exp1"
+                                    }
+                                ],
+                                "ex:isInstanceOf":
+                                {
+                                    "@id": "#CoolingTask"
+                                }
+                            }
 
                         · · · (J) - 1.10b - 1  · · · · · · Cooling: Specific - Experiment 1  — END · · ·},
 
@@ -8447,10 +9213,76 @@
 
     · · · (J)  · · · · · · Experimental Procedure — END · · ·},
 
+
+
+    
+
     {· · · (J) - 2  · · · · · · Cleaning Procedure Vessel and Stirrer (Main)· · ·
 
         {· · · (J) - 2a  · · · · · · Cleaning Procedure Vessel and Stirrer (Main): General · · ·
-
+            
+            {
+                "@id": "#Vessel_Stirrer_CleaningProcedure",
+                "@type": "ex:Task",
+                "schema:name": "Vessel Cleaning Procedure",
+                "schema:description": "Procedure for cleaning the reactor vessel and reactor after each experiment",
+                "ex:describesContext":
+                [
+                ],
+                "schema:hasPart":
+                    [
+                        {
+                            "@id": "#AddCleaningFluidTask"
+                        },
+                        {
+                            "@id": "#StirCleaningFluidTask"
+                        },
+                        {
+                            "@id": "#RemoveCleaningFluidTask"
+                        }
+                    ],
+                "ex:realizes": "ex:Cleaning",
+                "ex:usedEquipment":
+                [
+                    {
+                        "@id": "#Vessel"
+                    },
+                    {
+                        "@id": "#Stirrer"
+                    },
+                ],
+                
+                "ex:hasInstance":
+                [
+                    {
+                        "@id": "#Vessel_Stirrer_CleaningProcedure_Exp1"
+                    },
+                    {
+                        "@id": "#Vessel_Stirrer_CleaningProcedure_Exp2"
+                    },
+                    {
+                        "@id": "#Vessel_Stirrer_CleaningProcedure_Exp3"
+                    },
+                    {
+                        "@id": "#Vessel_Stirrer_CleaningProcedure_Exp4"
+                    },
+                    {
+                        "@id": "#Vessel_Stirrer_CleaningProcedure_Exp5"
+                    },
+                    {
+                        "@id": "#Vessel_Stirrer_CleaningProcedure_Exp6"
+                    },
+                    {
+                        "@id": "#Vessel_Stirrer_CleaningProcedure_Exp7"
+                    },
+                    {
+                        "@id": "#Vessel_Stirrer_CleaningProcedure_Exp8"
+                    },
+                    {
+                        "@id": "#Vessel_Stirrer_CleaningProcedure_Exp9"
+                    }
+                ]
+            }
 
         · · · (J) - 2a · · · · · · Cleaning Procedure Vessel and Stirrer (Main): General  — END · · ·},
 
@@ -8459,7 +9291,50 @@
 
             {· · · (J) - 2b - 1  · · · · · · Cleaning Procedure Vessel and Stirrer (Main): Specific - Experiment 1 · · ·
 
-            
+                {
+                    "@id": "#Vessel_Stirrer_CleaningProcedure_Exp1",
+                    "@type": "ex:Task",
+                    "schema:name": "Vessel Cleaning Procedure - Experiment 1",
+                    "schema:description": "Procedure for cleaning the reactor vessel and stirrer after Experiment 1",
+                    "ex:describesContext":
+                    [
+                    ],
+                    "schema:hasPart":
+                    [
+                        {
+                            "@id": "#AddCleaningFluidTask_Exp1"
+                        },
+                        {
+                            "@id": "#StirCleaningFluidTask_Exp1"
+                        },
+                        {
+                            "@id": "#RemoveCleaningFluidTask_Exp1"
+                        }
+                    ],
+                    "ex:hasStartTime":
+                    {
+                        "value": "2026-07-28T12:00:00Z",
+                        "ex:hasProvenanceType": "ex:Estimated"
+                    },
+                    "ex:usedEquipment":
+                    [
+                        {
+                            "@id": "#Vessel_Exp1"
+                        },
+                        {
+                            "@id": "#Stirrer_Exp1"
+                        },
+                    ],
+                
+                    "ex:isInstanceOf":
+                    {
+                        "@id": "#Vessel_Stirrer_CleaningProcedure"
+                    },
+                    "ex:isProcedureOf":
+                    {
+                        "@id": "#Experiment1"
+                    }
+                }
                 
 
 
@@ -8480,17 +9355,95 @@
 
                 {· · · (J) - 2.1a  · · · · · · Add Cleaning Fluid: General · · ·
 
+                    {
+                        "@id": "#AddCleaningFluidTask",
+                        "@type": "ex:Task",
+                        "schema:name": "Add Cleaning Fluid",
+                        "schema:description": "Task for supplying a cleaning fluid to the reactor vessel for cleaning the vessel and stirrer",
+                        "ex:describesContext":
+                        [
+                        ],
+                        "ex:realizes": "dexpi:SupplyingFluid",
+                        "ex:performedBy":
+                        {
+                            "@id": "#AlexeiLapkin"
+                        },
+                        "ex:hasTransferredStream":
+                        {
+                            "@id": "#AddCleaningFluidStream"
+                        },
+                        "ex:generatesPhase":
+                        [
+                            {
+                                "@id": "#CleaningFluidPhase"
+                            }
+                        ],
+                        "ex:hasInstance":
+                        [
+                            {
+                                "@id": "#AddCleaningFluidTask_Exp1"
+                            },
+                            {
+                                "@id": "#AddCleaningFluidTask_Exp2"
+                            },
+                            {
+                                "@id": "#AddCleaningFluidTask_Exp3"
+                            },
+                            {
+                                "@id": "#AddCleaningFluidTask_Exp4"
+                            },
+                            {
+                                "@id": "#AddCleaningFluidTask_Exp5"
+                            },
+                            {
+                                "@id": "#AddCleaningFluidTask_Exp6"
+                            },
+                            {
+                                "@id": "#AddCleaningFluidTask_Exp7"
+                            },
+                            {
+                                "@id": "#AddCleaningFluidTask_Exp8"
+                            },
+                            {
+                                "@id": "#AddCleaningFluidTask_Exp9"
+                            }
+                        ]
+                    }
 
                 · · · (J) - 2.1a · · · · · · Add Cleaning Fluid: General  — END · · ·},
 
                 {· · · (J) - 2.1b  · · · · · · Add Cleaning Fluid: Specific · · ·
 
-
                     {· · · (J) - 2.1b - 1  · · · · · · Add Cleaning Fluid - Experiment 1 · · ·
 
-                    
-                        
-
+                        {
+                            "@id": "#AddCleaningFluidTask_Exp1",
+                            "@type": "ex:Task",
+                            "schema:name": "Add Cleaning Fluid - Experiment 1",
+                            "schema:description": "Task for supplying cleaning fluid to the reactor vessel during the cleaning procedure after Experiment 1",
+                            "ex:describesContext":
+                            [
+                            ],
+                            "ex:hasStartTime":
+                            {
+                                "value": "2026-07-28T12:00:00Z",
+                                "ex:hasProvenanceType": "ex:Estimated"
+                            },
+                            "ex:hasTransferredStream":
+                            {
+                                "@id": "#AddCleaningFluidStream_Exp1"
+                            },
+                            "ex:generatesPhase":
+                            [
+                                {
+                                    "@id": "#CleaningFluidPhase_Exp1"
+                                }
+                            ],
+                            "ex:isInstanceOf":
+                            {
+                                "@id": "#AddCleaningFluidTask"
+                            }
+                        }
 
                     · · · (J) - 2.1b - 1  · · · · · · Add Cleaning Fluid: Specific - Experiment 1  — END · · ·},
 
@@ -8509,16 +9462,97 @@
 
                 {· · · (J) - 2.2a  · · · · · · Stir Cleaning Fluid: General · · ·
 
+                    {
+                        "@id": "#StirCleaningFluidTask",
+                        "@type": "ex:Task",
+                        "schema:name": "Stir Cleaning Fluid",
+                        "schema:description": "Task for stirring the cleaning fluid inside the reactor vessel to clean the vessel and stirrer",
+                        "ex:describesContext":
+                        [
+                        ],
+                        "ex:realizes": "dexpi:Mixing",
+                        "ex:performedBy":
+                        {
+                            "@id": "#AlexeiLapkin"
+                        },
+                        "ex:usedEquipment":
+                        {
+                            "@id": "#Stirrer"
+                        },
+                        "ex:hasSetProfile":
+                        {
+                            "@id": "#CleaningStirringProfile"
+                        },
+                        "ex:hasInstance":
+                        [
+                            {
+                                "@id": "#StirCleaningFluidTask_Exp1"
+                            },
+                            {
+                                "@id": "#StirCleaningFluidTask_Exp2"
+                            },
+                            {
+                                "@id": "#StirCleaningFluidTask_Exp3"
+                            },
+                            {
+                                "@id": "#StirCleaningFluidTask_Exp4"
+                            },
+                            {
+                                "@id": "#StirCleaningFluidTask_Exp5"
+                            },
+                            {
+                                "@id": "#StirCleaningFluidTask_Exp6"
+                            },
+                            {
+                                "@id": "#StirCleaningFluidTask_Exp7"
+                            },
+                            {
+                                "@id": "#StirCleaningFluidTask_Exp8"
+                            },
+                            {
+                                "@id": "#StirCleaningFluidTask_Exp9"
+                            }
+                        ]
+                    }
 
                 · · · (J) - 2.2a · · · · · · Stir Cleaning Fluid: General  — END · · ·},
 
                 {· · · (J) - 2.2b  · · · · · · Stir Cleaning Fluid: Specific · · ·
 
+                    
+
 
                     {· · · (J) - 2.2b - 1  · · · · · · Stir Cleaning Fluid - Experiment 1 · · ·
 
                     
-                        
+                        {
+                            "@id": "#StirCleaningFluidTask_Exp1",
+                            "@type": "ex:Task",
+                            "schema:name": "Stir Cleaning Fluid - Experiment 1",
+                            "schema:description": "Task for stirring the cleaning fluid inside the reactor vessel during the cleaning procedure following Experiment 1",
+                            "ex:describesContext":
+                            [
+                            ],
+                            "ex:hasStartTime":
+                            {
+                                "value": "2026-07-28T12:10:00Z",
+                                "ex:hasProvenanceType": "ex:Estimated"
+                            },
+                            "ex:usedEquipment":
+                            {
+                                "@id": "#Stirrer_Exp1"
+                            },
+                            "ex:generatesPhase":
+                            [
+                                {
+                                    "@id": "#CleaningFluidPhase_Exp1"
+                                }
+                            ],
+                            "ex:isInstanceOf":
+                            {
+                                "@id": "#StirCleaningFluidTask"
+                            }
+                        }
 
 
                     · · · (J) - 2.2b - 1  · · · · · · Stir Cleaning Fluid: Specific - Experiment 1  — END · · ·},
@@ -8538,17 +9572,83 @@
 
                 {· · · (J) - 2.3a  · · · · · · Remove Cleaning Fluid: General · · ·
 
+                    {
+                        "@id": "#RemoveCleaningFluidTask",
+                        "@type": "ex:Task",
+                        "schema:name": "Remove Cleaning Fluid",
+                        "schema:description": "Task for removing the cleaning fluid from the reactor vessel after cleaning the vessel and stirrer",
+                        "ex:describesContext":
+                        [
+                        ],
+                        "ex:realizes": "dexpi:TransportingLiquids",
+                        "ex:performedBy":
+                        {
+                            "@id": "#AlexeiLapkin"
+                        },
+                        "ex:hasTransferredStream":
+                        {
+                            "@id": "#RemoveCleaningFluidStream"
+                        },
+                        "ex:hasInstance":
+                        [
+                            {
+                                "@id": "#RemoveCleaningFluidTask_Exp1"
+                            },
+                            {
+                                "@id": "#RemoveCleaningFluidTask_Exp2"
+                            },
+                            {
+                                "@id": "#RemoveCleaningFluidTask_Exp3"
+                            },
+                            {
+                                "@id": "#RemoveCleaningFluidTask_Exp4"
+                            },
+                            {
+                                "@id": "#RemoveCleaningFluidTask_Exp5"
+                            },
+                            {
+                                "@id": "#RemoveCleaningFluidTask_Exp6"
+                            },
+                            {
+                                "@id": "#RemoveCleaningFluidTask_Exp7"
+                            },
+                            {
+                                "@id": "#RemoveCleaningFluidTask_Exp8"
+                            },
+                            {
+                                "@id": "#RemoveCleaningFluidTask_Exp9"
+                            }
+                        ]
+                    }
 
                 · · · (J) - 2.3a · · · · · · Remove Cleaning Fluid: General  — END · · ·},
 
                 {· · · (J) - 2.3b  · · · · · · Remove Cleaning Fluid: Specific · · ·
 
-
                     {· · · (J) - 2.3b - 1  · · · · · · Remove Cleaning Fluid - Experiment 1 · · ·
 
-                    
-                        
-
+                        {
+                            "@id": "#RemoveCleaningFluidTask_Exp1",
+                            "@type": "ex:Task",
+                            "schema:name": "Remove Cleaning Fluid - Experiment 1",
+                            "schema:description": "Task for removing the cleaning fluid from the reactor vessel after the cleaning procedure following Experiment 1",
+                            "ex:describesContext":
+                            [
+                            ],
+                            "ex:hasStartTime":
+                            {
+                                "value": "2026-07-28T12:30:00Z",
+                                "ex:hasProvenanceType": "ex:Estimated"
+                            },
+                            "ex:hasTransferredStream":
+                            {
+                                "@id": "#RemoveCleaningFluidStream_Exp1"
+                            },
+                            "ex:isInstanceOf":
+                            {
+                                "@id": "#RemoveCleaningFluidTask"
+                            }
+                        }
 
                     · · · (J) - 2.3b - 1  · · · · · · Remove Cleaning Fluid: Specific - Experiment 1  — END · · ·},
 
@@ -8583,15 +9683,91 @@
 
             {· · · (J) - 5.1a  · · · · · · Weighing: Start Mass RDY: General · · ·
 
-                % entity here
+                {
+                    "@id": "#WeighingTask_StartMassRDY",
+                    "@type": "ex:Task",
+                    "schema:name": "Weighing",
+                    "schema:description": "Task for measuring the initial mass of RDY using a balance",
+                    "ex:describesContext":
+                    [
+                    ],
+                    "ex:realizes": "ex:Weighing",
+                    "ex:hasDuration":
+                        {
+                            "value": "PT2M",
+                            "ex:hasProvenanceType": "ex:Estimated"
+                        },
+                    "ex:performedBy":
+                        {
+                            "@id": "#AlexeiLapkin"
+                        },
+                    "ex:usedEquipment":
+                        {
+                            "@id": "#Balance"
+                        },
+                    "ex:hasInstance":
+                    [
+                        {
+                            "@id": "#WeighingTask_StartMassRDY_Exp1"
+                        },
+                        {
+                            "@id": "#WeighingTask_StartMassRDY_Exp2"
+                        },
+                        {
+                            "@id": "#WeighingTask_StartMassRDY_Exp3"
+                        },
+                        {
+                            "@id": "#WeighingTask_StartMassRDY_Exp4"
+                        },
+                        {
+                            "@id": "#WeighingTask_StartMassRDY_Exp5"
+                        },
+                        {
+                            "@id": "#WeighingTask_StartMassRDY_Exp6"
+                        },
+                        {
+                            "@id": "#WeighingTask_StartMassRDY_Exp7"
+                        },
+                        {
+                            "@id": "#WeighingTask_StartMassRDY_Exp8"
+                        },
+                        {
+                            "@id": "#WeighingTask_StartMassRDY_Exp9"
+                        }
+                    ]
+                },
+
 
             · · · (J) - 5.1a · · · · · · Weighing: Start Mass RDY: General  — END · · ·},
 
             {· · · (J) - 5.1b  · · · · · · Weighing: Start Mass RDY: Specific · · ·
 
+                
+
                 {· · · (J) - 5.1b - 1  · · · · · · Weighing: Start Mass RDY - Experiment 1 · · ·
 
-                    % entity here
+                    {
+                        "@id": "#WeighingTask_StartMassRDY_Exp1",
+                        "@type": "ex:Task",
+                        "schema:name": "Weighing Start Mass RDY - Experiment 1",
+                        "schema:description": "Measurement of the initial mass of RDY before the beginning of Experiment 1",
+                        "ex:describesContext":
+                        [
+                        ],
+                        "ex:hasStartTime":
+                        {
+                            "value": "2026-07-28T10:00:00Z",
+                            "ex:hasProvenanceType": "ex:Estimated"
+                        },
+                        "ex:hasMeasuredVariable":
+                        {
+                            "@id": "#StartMassRDY_Exp1"
+                        },
+                        "ex:isInstanceOf":
+                        {
+                            "@id": "#WeighingTask"
+                        }
+                    }
 
                 · · · (J) - 5.1b - 1 · · · · · · Weighing: Start Mass RDY: Specific - Experiment 1  — END · · ·},
 
@@ -8609,15 +9785,90 @@
 
             {· · · (J) - 5.2a  · · · · · · Weighing: Final Mass RDY: General · · ·
 
-                % entity here
+                {
+                    "@id": "#WeighingTask_FinalMassRDY",
+                    "@type": "ex:Task",
+                    "schema:name": "Weighing",
+                    "schema:description": "Task for measuring the final mass of RDY using a balance",
+                    "ex:describesContext":
+                    [
+                    ],
+                    "ex:realizes": "ex:Weighing",
+                    "ex:hasDuration":
+                        {
+                            "value": "PT2M",
+                            "ex:hasProvenanceType": "ex:Estimated"
+                        },
+                    "ex:performedBy":
+                        {
+                            "@id": "#AlexeiLapkin"
+                        },
+                    "ex:usedEquipment":
+                        {
+                            "@id": "#Balance"
+                        },
+                    "ex:hasInstance":
+                    [
+                        {
+                            "@id": "#WeighingTask_FinalMassRDY_Exp1"
+                        },
+                        {
+                            "@id": "#WeighingTask_FinalMassRDY_Exp2"
+                        },
+                        {
+                            "@id": "#WeighingTask_FinalMassRDY_Exp3"
+                        },
+                        {
+                            "@id": "#WeighingTask_FinalMassRDY_Exp4"
+                        },
+                        {
+                            "@id": "#WeighingTask_FinalMassRDY_Exp5"
+                        },
+                        {
+                            "@id": "#WeighingTask_FinalMassRDY_Exp6"
+                        },
+                        {
+                            "@id": "#WeighingTask_FinalMassRDY_Exp7"
+                        },
+                        {
+                            "@id": "#WeighingTask_FinalMassRDY_Exp8"
+                        },
+                        {
+                            "@id": "#WeighingTask_FinalMassRDY_Exp9"
+                        }
+                    ]
+                },
 
+                
             · · · (J) - 5.2a · · · · · · Weighing: Final Mass RDY: General  — END · · ·},
 
             {· · · (J) - 5.2b  · · · · · · Weighing: Final Mass RDY: Specific · · ·
 
                 {· · · (J) - 5.2b - 1  · · · · · · Weighing: Final Mass RDY - Experiment 1 · · ·
 
-                    % entity here
+                    {
+                        "@id": "#WeighingTask_FinalMass_RDY_Exp1",
+                        "@type": "ex:Task",
+                        "schema:name": "Weighing Final Mass RDY - Experiment 1",
+                        "schema:description": "Measurement of the final mass of RDY at the end of Experiment 1",
+                        "ex:describesContext":
+                        [
+                        ],
+                        "ex:hasStartTime":
+                        {
+                            "value": "2026-07-28T10:00:00Z",
+                            "ex:hasProvenanceType": "ex:Recorded"
+                        },
+                        "ex:hasMeasuredVariable":
+                        {
+                            "@id": "#FinalMass_RDY_Exp1"
+                        },
+                        "ex:isInstanceOf":
+                        {
+                            "@id": "#WeighingTask"
+                        }
+                    }
+
 
                 · · · (J) - 5.2b - 1 · · · · · · Weighing: Final Mass RDY: Specific - Experiment 1  — END · · ·},
 
@@ -8635,7 +9886,59 @@
 
             {· · · (J) - 5.3a  · · · · · · Weighing: Final Mass RDEt: General · · ·
 
-                % entity here
+                {
+                    "@id": "#WeighingTask_FinalMass_RDEt",
+                    "@type": "ex:Task",
+                    "schema:name": "Weighing",
+                    "schema:description": "Task for measuring the final mass of RDEt using a balance",
+                    "ex:describesContext":
+                    [
+                    ],
+                    "ex:realizes": "ex:Weighing",
+                    "ex:hasDuration":
+                        {
+                            "value": "PT2M",
+                            "ex:hasProvenanceType": "ex:Estimated"
+                        },
+                    "ex:performedBy":
+                        {
+                            "@id": "#AlexeiLapkin"
+                        },
+                    "ex:usedEquipment":
+                        {
+                            "@id": "#Balance"
+                        },
+                    "ex:hasInstance":
+                    [
+                        {
+                            "@id": "#WeighingTask_FinalMass_RDEt_Exp1"
+                        },
+                        {
+                            "@id": "#WeighingTask_FinalMass_RDEt_Exp2"
+                        },
+                        {
+                            "@id": "#WeighingTask_FinalMass_RDEt_Exp3"
+                        },
+                        {
+                            "@id": "#WeighingTask_FinalMass_RDEt_Exp4"
+                        },
+                        {
+                            "@id": "#WeighingTask_FinalMass_RDEt_Exp5"
+                        },
+                        {
+                            "@id": "#WeighingTask_FinalMass_RDEt_Exp6"
+                        },
+                        {
+                            "@id": "#WeighingTask_FinalMass_RDEt_Exp7"
+                        },
+                        {
+                            "@id": "#WeighingTask_FinalMass_RDEt_Exp8"
+                        },
+                        {
+                            "@id": "#WeighingTask_FinalMass_RDEt_Exp9"
+                        }
+                    ]
+                },
 
             · · · (J) - 5.3a · · · · · · Weighing: Final Mass RDEt: General  — END · · ·},
 
@@ -8643,7 +9946,28 @@
 
                 {· · · (J) - 5.3b - 1  · · · · · · Weighing: Final Mass RDEt - Experiment 1 · · ·
 
-                    % entity here
+                    {
+                        "@id": "#WeighingTask_FinalMass_RDEt_Exp1",
+                        "@type": "ex:Task",
+                        "schema:name": "Weighing Final Mass RDEt - Experiment 1",
+                        "schema:description": "Measurement of the final mass of RDEt at the end of Experiment 1",
+                        "ex:describesContext":
+                        [
+                        ],
+                        "ex:hasStartTime":
+                        {
+                            "value": "2026-07-28T10:00:00Z",
+                            "ex:hasProvenanceType": "ex:Recorded"
+                        },
+                        "ex:hasMeasuredVariable":
+                        {
+                            "@id": "#FinalMass_RDEt_Exp1"
+                        },
+                        "ex:isInstanceOf":
+                        {
+                            "@id": "#WeighingTask"
+                        }
+                    }
 
                 · · · (J) - 5.3b - 1 · · · · · · Weighing: Final Mass RDEt: Specific - Experiment 1  — END · · ·},
 
@@ -8661,7 +9985,59 @@
 
             {· · · (J) - 5.4a  · · · · · · Weighing: Final Mass Dimer: General · · ·
 
-                % entity here
+                {
+                    "@id": "#WeighingTask_FinalMass_Dimer",
+                    "@type": "ex:Task",
+                    "schema:name": "Weighing",
+                    "schema:description": "Task for measuring the final mass of Dimer using a balance",
+                    "ex:describesContext":
+                    [
+                    ],
+                    "ex:realizes": "ex:Weighing",
+                    "ex:hasDuration":
+                        {
+                            "value": "PT2M",
+                            "ex:hasProvenanceType": "ex:Estimated"
+                        },
+                    "ex:performedBy":
+                        {
+                            "@id": "#AlexeiLapkin"
+                        },
+                    "ex:usedEquipment":
+                        {
+                            "@id": "#Balance"
+                        },
+                    "ex:hasInstance":
+                    [
+                        {
+                            "@id": "#WeighingTask_FinalMass_Dimer_Exp1"
+                        },
+                        {
+                            "@id": "#WeighingTask_FinalMass_Dimer_Exp2"
+                        },
+                        {
+                            "@id": "#WeighingTask_FinalMass_Dimer_Exp3"
+                        },
+                        {
+                            "@id": "#WeighingTask_FinalMass_Dimer_Exp4"
+                        },
+                        {
+                            "@id": "#WeighingTask_FinalMass_Dimer_Exp5"
+                        },
+                        {
+                            "@id": "#WeighingTask_FinalMass_Dimer_Exp6"
+                        },
+                        {
+                            "@id": "#WeighingTask_FinalMass_Dimer_Exp7"
+                        },
+                        {
+                            "@id": "#WeighingTask_FinalMass_Dimer_Exp8"
+                        },
+                        {
+                            "@id": "#WeighingTask_FinalMass_Dimer_Exp9"
+                        }
+                    ]
+                },
 
             · · · (J) - 5.4a · · · · · · Weighing: Final Mass Dimer: General  — END · · ·},
 
@@ -8669,7 +10045,28 @@
 
                 {· · · (J) - 5.4b - 1  · · · · · · Weighing: Final Mass Dimer - Experiment 1 · · ·
 
-                    % entity here
+                    {
+                        "@id": "#WeighingTask_FinalMass_Dimer_Exp1",
+                        "@type": "ex:Task",
+                        "schema:name": "Weighing Final Mass Dimer - Experiment 1",
+                        "schema:description": "Measurement of the final mass of the dimer at the end of Experiment 1",
+                        "ex:describesContext":
+                        [
+                        ],
+                        "ex:hasStartTime":
+                        {
+                            "value": "2026-07-28T10:00:00Z",
+                            "ex:hasProvenanceType": "ex:Recorded"
+                        },
+                        "ex:hasMeasuredVariable":
+                        {
+                            "@id": "#FinalMass_Dimer_Exp1"
+                        },
+                        "ex:isInstanceOf":
+                        {
+                            "@id": "#WeighingTask"
+                        }
+                    }
 
                 · · · (J) - 5.4b - 1 · · · · · · Weighing: Final Mass Dimer: Specific - Experiment 1  — END · · ·},
 
@@ -8691,17 +10088,83 @@
 
         {· · · (J) - 6a  · · · · · · Measuring Temperature: General · · ·
 
+            {
+                "@id": "#TemperatureMeasurementTask",
+                "@type": "ex:Task",
+                "schema:name": "Temperature Measurement",
+                "schema:description": "Task for measuring the temperature using a temperature sensor",
+                "ex:describesContext":
+                [
+                ],
+                "ex:realizes": "ex:MeasuringTemperature",
+                "ex:usedEquipment":
+                {
+                    "@id": "#TemperatureSensor"
+                },
+                "ex:hasMeasuredVariable":
+                {
+                    "@id": "#RecordedTemperature_Reactor"
+                },
+                "ex:hasInstance":
+                [
+                    {
+                        "@id": "#TemperatureMeasurementTask_Exp1"
+                    },
+                    {
+                        "@id": "#TemperatureMeasurementTask_Exp2"
+                    },
+                    {
+                        "@id": "#TemperatureMeasurementTask_Exp3"
+                    },
+                    {
+                        "@id": "#TemperatureMeasurementTask_Exp4"
+                    },
+                    {
+                        "@id": "#TemperatureMeasurementTask_Exp5"
+                    },
+                    {
+                        "@id": "#TemperatureMeasurementTask_Exp6"
+                    },
+                    {
+                        "@id": "#TemperatureMeasurementTask_Exp7"
+                    },
+                    {
+                        "@id": "#TemperatureMeasurementTask_Exp8"
+                    },
+                    {
+                        "@id": "#TemperatureMeasurementTask_Exp9"
+                    }
+                ]
+            },
 
         · · · (J) - 6a · · · · · · Measuring Temperature: General  — END · · ·},
 
         {· · · (J) - 6b  · · · · · · Measuring Temperature: Specific · · ·
 
-
             {· · · (J) - 6b - 1  · · · · · · Measuring Temperature - Experiment 1 · · ·
 
-            
-                
-
+                {
+                    "@id": "#TemperatureMeasurementTask_Exp1",
+                    "@type": "ex:Task",
+                    "schema:name": "Temperature Measurement - Experiment 1",
+                    "schema:description": "Measurement of the reactor temperature during Experiment 1",
+                    "ex:describesContext":
+                    [
+                    ],
+                    "ex:hasStartTime":
+                    {
+                        "value": "2026-07-28T10:00:00Z",
+                        "ex:hasProvenanceType": "ex:Recorded"
+                    },
+                    "ex:hasMeasuredVariable":
+                    {
+                        "@id": "#RecordedTemperature_Reactor_Exp1"
+                    },
+                    "ex:isInstanceOf":
+                    {
+                        "@id": "#TemperatureMeasurementTask"
+                    }
+                }
 
             · · · (J) - 6b - 1  · · · · · · Measuring Temperature: Specific - Experiment 1  — END · · ·},
 
@@ -8720,17 +10183,83 @@
 
         {· · · (J) - 7a  · · · · · · Measuring Pressure: General · · ·
 
+            {
+                "@id": "#PressureMeasurementTask",
+                "@type": "ex:Task",
+                "schema:name": "Pressure Measurement",
+                "schema:description": "Task for measuring the reactor pressure using a pressure sensor",
+                "ex:describesContext":
+                [
+                ],
+                "ex:realizes": "ex:MeasuringPressure",
+                "ex:usedEquipment":
+                {
+                    "@id": "#PressureSensor"
+                },
+                "ex:hasMeasuredVariable":
+                {
+                    "@id": "#RecordedPressure_Reactor"
+                },
+                "ex:hasInstance":
+                [
+                    {
+                        "@id": "#PressureMeasurementTask_Exp1"
+                    },
+                    {
+                        "@id": "#PressureMeasurementTask_Exp2"
+                    },
+                    {
+                        "@id": "#PressureMeasurementTask_Exp3"
+                    },
+                    {
+                        "@id": "#PressureMeasurementTask_Exp4"
+                    },
+                    {
+                        "@id": "#PressureMeasurementTask_Exp5"
+                    },
+                    {
+                        "@id": "#PressureMeasurementTask_Exp6"
+                    },
+                    {
+                        "@id": "#PressureMeasurementTask_Exp7"
+                    },
+                    {
+                        "@id": "#PressureMeasurementTask_Exp8"
+                    },
+                    {
+                        "@id": "#PressureMeasurementTask_Exp9"
+                    }
+                ]
+            }
 
         · · · (J) - 7a · · · · · · Measuring Pressure: General  — END · · ·},
 
         {· · · (J) - 7b  · · · · · · Measuring Pressure: Specific · · ·
 
-
             {· · · (J) - 7b - 1  · · · · · · Measuring Pressure - Experiment 1 · · ·
 
-            
-                
-
+                {
+                    "@id": "#PressureMeasurementTask_Exp1",
+                    "@type": "ex:Task",
+                    "schema:name": "Pressure Measurement - Experiment 1",
+                    "schema:description": "Measurement of the reactor pressure during Experiment 1",
+                    "ex:describesContext":
+                    [
+                    ],
+                    "ex:hasStartTime":
+                    {
+                        "value": "2026-07-28T10:00:00Z",
+                        "ex:hasProvenanceType": "ex:Recorded"
+                    },
+                    "ex:hasMeasuredVariable":
+                    {
+                        "@id": "#RecordedPressure_Reactor_Exp1"
+                    },
+                    "ex:isInstanceOf":
+                    {
+                        "@id": "#PressureMeasurementTask"
+                    }
+                }
 
             · · · (J) - 7b - 1  · · · · · · Measuring Pressure: Specific - Experiment 1  — END · · ·},
 
@@ -8749,17 +10278,83 @@
 
         {· · · (J) - 8a  · · · · · · Measuring Gas Volume: General · · ·
 
+            {
+                "@id": "#GasVolumeMeasurementTask",
+                "@type": "ex:Task",
+                "schema:name": "Gas Volume Measurement",
+                "schema:description": "Task for measuring the volume of the gas using a mass flow meter or mass flow controller",
+                "ex:describesContext":
+                [
+                ],
+                "ex:realizes": "ex:MeasuringGasVolume",
+                "ex:usedEquipment":
+                {
+                    "@id": "#MFM"
+                },
+                "ex:hasMeasuredVariable":
+                {
+                    "@id": "#GasVolume"
+                },
+                "ex:hasInstance":
+                [
+                    {
+                        "@id": "#GasVolumeMeasurementTask_Exp1"
+                    },
+                    {
+                        "@id": "#GasVolumeMeasurementTask_Exp2"
+                    },
+                    {
+                        "@id": "#GasVolumeMeasurementTask_Exp3"
+                    },
+                    {
+                        "@id": "#GasVolumeMeasurementTask_Exp4"
+                    },
+                    {
+                        "@id": "#GasVolumeMeasurementTask_Exp5"
+                    },
+                    {
+                        "@id": "#GasVolumeMeasurementTask_Exp6"
+                    },
+                    {
+                        "@id": "#GasVolumeMeasurementTask_Exp7"
+                    },
+                    {
+                        "@id": "#GasVolumeMeasurementTask_Exp8"
+                    },
+                    {
+                        "@id": "#GasVolumeMeasurementTask_Exp9"
+                    }
+                ]
+            }
 
         · · · (J) - 8a · · · · · · Measuring Gas Volume: General  — END · · ·},
 
         {· · · (J) - 8b  · · · · · · Measuring Gas Volume: Specific · · ·
 
-
             {· · · (J) - 8b - 1  · · · · · · Measuring Gas Volume - Experiment 1 · · ·
 
-            
-                
-
+                {
+                    "@id": "#GasVolumeMeasurementTask_Exp1",
+                    "@type": "ex:Task",
+                    "schema:name": "Gas Volume Measurement - Experiment 1",
+                    "schema:description": "Measurement of the gas volume during Experiment 1",
+                    "ex:describesContext":
+                    [
+                    ],
+                    "ex:hasStartTime":
+                    {
+                        "value": "2026-07-28T10:00:00Z",
+                        "ex:hasProvenanceType": "ex:Recorded"
+                    },
+                    "ex:hasMeasuredVariable":
+                    {
+                        "@id": "#GasVolume_Exp1"
+                    },
+                    "ex:isInstanceOf":
+                    {
+                        "@id": "#GasVolumeMeasurementTask"
+                    }
+                }
 
             · · · (J) - 8b - 1  · · · · · · Measuring Gas Volume: Specific - Experiment 1  — END · · ·},
 
