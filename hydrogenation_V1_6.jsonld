@@ -4911,7 +4911,7 @@
 
         {· · · (G2) - 5  · · · · · · Dispersed Gas Phase · · ·
 
-{· · · (G2) - 5a  · · · · · · Dispersed Gas Phase: General · · ·
+            {· · · (G2) - 5a  · · · · · · Dispersed Gas Phase: General · · ·
 
                 {
                     "@id": "#DispersedGasPhase",
@@ -4990,7 +4990,7 @@
                     ]
                 },
 
-{· · · (G2) - 5a - Context  · · · · · · Context of Dispersed Gas Phase: General · · ·
+                {· · · (G2) - 5a - Context  · · · · · · Context of Dispersed Gas Phase: General · · ·
 
                     {
                         "@id": "#DispersedGasPhaseInformation",
@@ -5215,7 +5215,7 @@
 
             {· · · (G2) - 5b  · · · · · · Dispersed Gas Phase: Specific · · ·
 
-{· · · (G2) - 5b - 1  · · · · · · Dispersed Gas Phase - Experiment 1 · · ·
+                {· · · (G2) - 5b - 1  · · · · · · Dispersed Gas Phase - Experiment 1 · · ·
 
                     {
                         "@id": "#DispersedGasPhase_Exp1",
@@ -7654,11 +7654,123 @@
 
             {· · · (H) - 1.1b - 1  · · · · · · Vessel - Experiment 1 · · ·
 
-                % entity here
+                {
+                    "@id": "#Vessel_Exp1",
+                    "@type": "Device",
+                    "schema:name": "Vessel Exp 1",
+                    "schema:description": "Vessel of the reactor that is contains the MaterialVolume in Experiment 1",
+                    "ex:hasContext":
+                        [
+                            {
+                                "@id": "#VesselInformation_Exp1"
+                            },
+                            {
+                                "@id": "#VesselEnergy_Exp1"
+                            },
+                            {
+                                "@id": "#VesselTime_Exp1"
+                            },
+                            {
+                                "@id": "#VesselSpace_Exp1"
+                            },
+                            {
+                                "@id": "#VesselStructure_Exp1"
+                            },
+                            {
+                                "@id": "#VesselSubstance_Exp1"
+                            }
+                        ],
+                    "ex:lastUsedTime": 
+                        {  
+                            "@value": "2026-07-28T10:00:00Z",  
+                            "@type": "xsd:dateTime" 
+                        },
+                    "ex:lastUsedPurpose": 
+                        {
+                            "@id": "#Vessel_Stirrer_CleaningProcedure_Exp1"
+                        },
+                    "ex:hasSetProfiles": 
+                        [
+                            {
+                                "@id": "#SetPressureProfile_Reactor_Exp1"
+                            }
+                        ],
+                    "ex:hasContainedMaterial": 
+                        [
+                            {
+                                "@id": "#MaterialVolume_Reactor_Exp1"
+                            }
+                        ],
+                    "ex:isInstanceOf": 
+                        {
+                            "@id": "#Vessel"
+                        },
+                    
+
+
+                },
 
                 {· · · (H) - 1.1b - 1 - Context  · · · · · · Context of Vessel: Specific · · ·
 
-                    % contexts of entity here (all six context entities)
+                    {
+                        "@id": "#VesselInformation_Exp1",
+                        "@type": "ex:InformationContext",
+                        "schema:name": "Vessel Exp1 Information",
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#VesselInformation"
+                            }
+                    },
+
+                    {
+                        "@id": "#VesselEnergy_Exp1",
+                        "@type": "ex:EnergyContext",
+                        "schema:name": "Vessel Exp1 Energy",
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#VesselEnergy"
+                            }
+                    },
+
+                    {
+                        "@id": "#VesselTime_Exp1",
+                        "@type": "ex:TimeContext",
+                        "schema:name": "Vessel Exp1 Time",
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#VesselTime"
+                            }
+                    },
+
+                    {
+                        "@id": "#VesselSpace_Exp1",
+                        "@type": "ex:SpaceContext",
+                        "schema:name": "Vessel Exp1 Space",
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#VesselSpace"
+                            }
+                    },
+
+                    {
+                        "@id": "#VesselStructure_Exp1",
+                        "@type": "ex:StructureContext",
+                        "schema:name": "Vessel Exp1 Structure",
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#VesselStructure"
+                            }
+                    },
+
+                    {
+                        "@id": "#VesselSubstance_Exp1",
+                        "@type": "ex:SubstanceContext",
+                        "schema:name": "Vessel Exp1 Substance",
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#VesselSubstance"
+                            }
+                    },
 
 
                 · · · (H) - 1.1b - 1 - Context  · · · · · · Context of Vessel: Specific · · ·},
@@ -7687,12 +7799,309 @@
 
         {· · · (H) - 1.2a  · · · · · · Jacket: General · · ·
 
-            % entity here
+            {
+                "@id": "#Jacket",
+                "@type": "ex:Jacket",
+                "schema:name": "Jacket",
+                "schema:description": "Jacket with which the reactor is cooled",
+                "@comment": "refers only to the shell/housing part. The cooling fluid is specified in the hasHeattransferUnit property, but is not part of the device itself. This results in no hasPart property",
+                "ex:hasContext": 
+                    [
+                        {
+                            "@id": "#JacketInformation"
+                        },
+                        {
+                            "@id": "#JacketEnergy"
+                        },
+                        {
+                            "@id": "#JacketTime"
+                        },
+                        {
+                            "@id": "#JacketSpace"
+                        },
+                        {
+                            "@id": "#JacketStructure"
+                        },
+                        {
+                            "@id": "#JacketSubstance"
+                        }
+                    ],
+                "ex:hasDigitalObjectID": 
+                    {
+                        "@id": "#DigitalObjectID_Jacket"
+                    },
+                
+                "ex:hasSetSetpointProfiles": 
+                    {
+                        "@id": "#SetFlowrateProfile_Jacket"
+                    },
+                "ex:hasContainedMaterial": 
+                    {
+                        "@id": "#CoolingFluidStream"
+                    },
+                "ex:hasPorts": 
+                    [
+                        {
+                            "@id": "#JacketInlet"
+                        },
+                        {
+                            "@id": "#JacketOutlet"
+                        }
+                    ],
+                "ex:hasInstances":
+                    [
+                        {
+                            "@id": "#Jacket_Exp1"
+                        },
+                        {
+                            "@id": "#Jacket_Exp2"
+                        },
+                        {
+                            "@id": "#Jacket_Exp3"
+                        },
+                        {
+                            "@id": "#Jacket_Exp4"
+                        },
+                        {
+                            "@id": "#Jacket_Exp5"
+                        },
+                        {
+                            "@id": "#Jacket_Exp6"
+                        },
+                        {
+                            "@id": "#Jacket_Exp7"
+                        },
+                        {
+                            "@id": "#Jacket_Exp8"
+                        },
+                        {
+                            "@id": "#Jacket_Exp9"
+                        }
+                    ],
+                
+
+                
+
+
+            },
 
             {· · · (H) - 1.2a - Context  · · · · · · Context of Jacket: General · · ·
 
-                % contexts of entity here (all six context entities)
+                {
+                    "@id": "#JacketInformation",
+                    "@type": "ex:InformationContext",
+                    "schema:name": "Jacket Information",
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#JacketInformation_Exp1"
+                            },
+                            {
+                                "@id": "#JacketInformation_Exp2"
+                            },
+                            {
+                                "@id": "#JacketInformation_Exp3"
+                            },
+                            {
+                                "@id": "#JacketInformation_Exp4"
+                            },
+                            {
+                                "@id": "#JacketInformation_Exp5"
+                            },
+                            {
+                                "@id": "#JacketInformation_Exp6"
+                            },
+                            {
+                                "@id": "#JacketInformation_Exp7"
+                            },
+                            {
+                                "@id": "#JacketInformation_Exp8"
+                            },
+                            {
+                                "@id": "#JacketInformation_Exp9"
+                            }
+                        ]
+                },
 
+                {
+                    "@id": "#JacketEnergy",
+                    "@type": "ex:EnergyContext",
+                    "schema:name": "Jacket Energy",
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#JacketEnergy_Exp1"
+                            },
+                            {
+                                "@id": "#JacketEnergy_Exp2"
+                            },
+                            {
+                                "@id": "#JacketEnergy_Exp3"
+                            },
+                            {
+                                "@id": "#JacketEnergy_Exp4"
+                            },
+                            {
+                                "@id": "#JacketEnergy_Exp5"
+                            },
+                            {
+                                "@id": "#JacketEnergy_Exp6"
+                            },
+                            {
+                                "@id": "#JacketEnergy_Exp7"
+                            },
+                            {
+                                "@id": "#JacketEnergy_Exp8"
+                            },
+                            {
+                                "@id": "#JacketEnergy_Exp9"
+                            }
+                        ]
+                },
+
+                {
+                    "@id": "#JacketTime",
+                    "@type": "ex:TimeContext",
+                    "schema:name": "Jacket Time",
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#JacketTime_Exp1"
+                            },
+                            {
+                                "@id": "#JacketTime_Exp2"
+                            },
+                            {
+                                "@id": "#JacketTime_Exp3"
+                            },
+                            {
+                                "@id": "#JacketTime_Exp4"
+                            },
+                            {
+                                "@id": "#JacketTime_Exp5"
+                            },
+                            {
+                                "@id": "#JacketTime_Exp6"
+                            },
+                            {
+                                "@id": "#JacketTime_Exp7"
+                            },
+                            {
+                                "@id": "#JacketTime_Exp8"
+                            },
+                            {
+                                "@id": "#JacketTime_Exp9"
+                            }
+                        ]
+                },
+
+                {
+                    "@id": "#JacketSpace",
+                    "@type": "ex:SpaceContext",
+                    "schema:name": "Jacket Space",
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#JacketSpace_Exp1"
+                            },
+                            {
+                                "@id": "#JacketSpace_Exp2"
+                            },
+                            {
+                                "@id": "#JacketSpace_Exp3"
+                            },
+                            {
+                                "@id": "#JacketSpace_Exp4"
+                            },
+                            {
+                                "@id": "#JacketSpace_Exp5"
+                            },
+                            {
+                                "@id": "#JacketSpace_Exp6"
+                            },
+                            {
+                                "@id": "#JacketSpace_Exp7"
+                            },
+                            {
+                                "@id": "#JacketSpace_Exp8"
+                            },
+                            {
+                                "@id": "#JacketSpace_Exp9"
+                            }
+                        ]
+                },
+
+                {
+                    "@id": "#JacketStructure",
+                    "@type": "ex:StructureContext",
+                    "schema:name": "Jacket Structure",
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#JacketStructure_Exp1"
+                            },
+                            {
+                                "@id": "#JacketStructure_Exp2"
+                            },
+                            {
+                                "@id": "#JacketStructure_Exp3"
+                            },
+                            {
+                                "@id": "#JacketStructure_Exp4"
+                            },
+                            {
+                                "@id": "#JacketStructure_Exp5"
+                            },
+                            {
+                                "@id": "#JacketStructure_Exp6"
+                            },
+                            {
+                                "@id": "#JacketStructure_Exp7"
+                            },
+                            {
+                                "@id": "#JacketStructure_Exp8"
+                            },
+                            {
+                                "@id": "#JacketStructure_Exp9"
+                            }
+                        ]
+                },
+
+                {
+                    "@id": "#JacketSubstance",
+                    "@type": "ex:SubstanceContext",
+                    "schema:name": "Jacket Substance",
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#JacketSubstance_Exp1"
+                            },
+                            {
+                                "@id": "#JacketSubstance_Exp2"
+                            },
+                            {
+                                "@id": "#JacketSubstance_Exp3"
+                            },
+                            {
+                                "@id": "#JacketSubstance_Exp4"
+                            },
+                            {
+                                "@id": "#JacketSubstance_Exp5"
+                            },
+                            {
+                                "@id": "#JacketSubstance_Exp6"
+                            },
+                            {
+                                "@id": "#JacketSubstance_Exp7"
+                            },
+                            {
+                                "@id": "#JacketSubstance_Exp8"
+                            },
+                            {
+                                "@id": "#JacketSubstance_Exp9"
+                            }
+                        ]
+                },
 
             · · · (H) - 1.2a - Context  · · · · · · Context of Jacket: General · · ·},
 
@@ -7702,11 +8111,128 @@
 
             {· · · (H) - 1.2b - 1  · · · · · · Jacket - Experiment 1 · · ·
 
-                % entity here
+                {
+                    "@id": "#Jacket",
+                    "@type": "ex:Jacket",
+                    "schema:name": "Jacket",
+                    "schema:description": "Jacket with which the reactor is cooled",
+                    "@comment": "refers only to the shell/housing part. The cooling fluid is specified in the hasHeattransferUnit property, but is not part of the device itself. This results in no hasPart property",
+                    "ex:hasContext":
+                        [
+                            {
+                                "@id": "#JacketInformation_Exp1"
+                            },
+                            {
+                                "@id": "#JacketEnergy_Exp1"
+                            },
+                            {
+                                "@id": "#JacketTime_Exp1"
+                            },
+                            {
+                                "@id": "#JacketSpace_Exp1"
+                            },
+                            {
+                                "@id": "#JacketStructure_Exp1"
+                            },
+                            {
+                                "@id": "#JacketSubstance_Exp1"
+                            }
+                        ],
+                    
+                    "ex:lastUsedTime": 
+                        {
+                            "@id": "#LastUsedTime_Jacket_Exp1"
+                        },
+                    "ex:lastUsedPurpose": 
+                        {
+                            % den process muss ich noch erstellen
+                            "@id": "#CleaningProcess_Jacket_before_Exp1"
+                        },
+                    "ex:hasSetSetpointProfiles": 
+                        {
+                            "@id": "#SetFlowrateProfile_Jacket_Exp1"
+                        },
+                    "ex:hasContainedMaterial": 
+                        {
+                            "@id": "#CoolingFluidStream_Exp1"
+                        },
+                    "ex:hasIngoingStream": 
+                        {
+                            "@id": "#CoolingFluidInletStream_Exp1"
+                        },
+                    "ex:hasOutgoingStream": 
+                        {
+                            "@id": "#HCoolingFluidOutletStream_Exp1"
+                        },
+                    "ex:isInstanceOf": 
+                        {
+                            "@id": "#Jacket"
+                        }
+
+
+                },
 
                 {· · · (H) - 1.2b - 1 - Context  · · · · · · Context of Jacket: Specific · · ·
 
-                    % contexts of entity here (all six context entities)
+                    {
+                        "@id": "#JacketInformation_Exp1",
+                        "@type": "ex:InformationContext",
+                        "schema:name": "Jacket Exp1 Information",
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#JacketInformation"
+                            }
+                    },
+
+                    {
+                        "@id": "#JacketEnergy_Exp1",
+                        "@type": "ex:EnergyContext",
+                        "schema:name": "Jacket Exp1 Energy",
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#JacketEnergy"
+                            }
+                    },
+
+                    {
+                        "@id": "#JacketTime_Exp1",
+                        "@type": "ex:TimeContext",
+                        "schema:name": "Jacket Exp1 Time",
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#JacketTime"
+                            }
+                    },
+
+                    {
+                        "@id": "#JacketSpace_Exp1",
+                        "@type": "ex:SpaceContext",
+                        "schema:name": "Jacket Exp1 Space",
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#JacketSpace"
+                            }
+                    },
+
+                    {
+                        "@id": "#JacketStructure_Exp1",
+                        "@type": "ex:StructureContext",
+                        "schema:name": "Jacket Exp1 Structure",
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#JacketStructure"
+                            }
+                    },
+
+                    {
+                        "@id": "#JacketSubstance_Exp1",
+                        "@type": "ex:SubstanceContext",
+                        "schema:name": "Jacket Exp1 Substance",
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#JacketSubstance"
+                            }
+                    },
 
 
                 · · · (H) - 1.2b - 1 - Context  · · · · · · Context of Jacket: Specific · · ·},
@@ -7735,11 +8261,311 @@
 
         {· · · (H) - 1.3a  · · · · · · Sparger: General · · ·
 
-            % entity here
+            {
+                "@id": "#Sparger",
+                "@type": "ex:Sparger",
+                "schema:name": "Sparger",
+                "schema:description": "Sparger that was used to disperse the ingoing H2",
+                "ex:hasContext": 
+                    [
+                        {
+                            "@id": "#SpargerInformation"
+                        },
+                        {
+                            "@id": "#SpargerEnergy"
+                        },
+                        {
+                            "@id": "#SpargerTime"
+                        },
+                        {
+                            "@id": "#SpargerSpace"
+                        },
+                        {
+                            "@id": "#SpargerStructure"
+                        },
+                        {
+                            "@id": "#SpargerSubstance"
+                        }
+                    ],
+                "ex:hasDigitalObjectID": 
+                    {
+                        "@id": "#DigitalObjectID_Sparger"
+                    },
+                "ex:hasSetSetpointProfiles":
+                    {
+                        "@id": "#SetPressureProfile_Sparger"
+                    },
+                "ex:hasContainedMaterial": 
+                    {
+                        "@id": "#HydrogenStream"
+                    },
+                "ex:hasIngoingStream": 
+                    {
+                        "@id": "#HydrogenInletStream"
+                    },
+                "ex:hasOutgoingStream": 
+                    {
+                        "@id": "#HydrogenOutletStream"
+                    },
+                "ex:hasPorts": 
+                    [
+                        {
+                            "@id": "#SpargerInlet"
+                        },
+                        {
+                            "@id": "#SpargerOutlet"
+                        }
+                    ],
+                "ex:hasInstances":
+                    [
+                        {
+                            "@id": "#Sparger_Exp1"
+                        },
+                        {
+                            "@id": "#Sparger_Exp2"
+                        },
+                        {
+                            "@id": "#Sparger_Exp3"
+                        },
+                        {
+                            "@id": "#Sparger_Exp4"
+                        },
+                        {
+                            "@id": "#Sparger_Exp5"
+                        },
+                        {
+                            "@id": "#Sparger_Exp6"
+                        },
+                        {
+                            "@id": "#Sparger_Exp7"
+                        },
+                        {
+                            "@id": "#Sparger_Exp8"
+                        },
+                        {
+                            "@id": "#Sparger_Exp9"
+                        }
+                    ]
+
+            }
 
             {· · · (H) - 1.3a - Context  · · · · · · Context of Sparger: General · · ·
 
-                % contexts of entity here (all six context entities)
+                {
+                    "@id": "#SpargerInformation",
+                    "@type": "ex:InformationContext",
+                    "schema:name": "Sparger Information",
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#SpargerInformation_Exp1"
+                            },
+                            {
+                                "@id": "#SpargerInformation_Exp2"
+                            },
+                            {
+                                "@id": "#SpargerInformation_Exp3"
+                            },
+                            {
+                                "@id": "#SpargerInformation_Exp4"
+                            },
+                            {
+                                "@id": "#SpargerInformation_Exp5"
+                            },
+                            {
+                                "@id": "#SpargerInformation_Exp6"
+                            },
+                            {
+                                "@id": "#SpargerInformation_Exp7"
+                            },
+                            {
+                                "@id": "#SpargerInformation_Exp8"
+                            },
+                            {
+                                "@id": "#SpargerInformation_Exp9"
+                            }
+                        ]
+                },
+
+                {
+                    "@id": "#SpargerEnergy",
+                    "@type": "ex:EnergyContext",
+                    "schema:name": "Sparger Energy",
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#SpargerEnergy_Exp1"
+                            },
+                            {
+                                "@id": "#SpargerEnergy_Exp2"
+                            },
+                            {
+                                "@id": "#SpargerEnergy_Exp3"
+                            },
+                            {
+                                "@id": "#SpargerEnergy_Exp4"
+                            },
+                            {
+                                "@id": "#SpargerEnergy_Exp5"
+                            },
+                            {
+                                "@id": "#SpargerEnergy_Exp6"
+                            },
+                            {
+                                "@id": "#SpargerEnergy_Exp7"
+                            },
+                            {
+                                "@id": "#SpargerEnergy_Exp8"
+                            },
+                            {
+                                "@id": "#SpargerEnergy_Exp9"
+                            }
+                        ]
+                },
+
+                {
+                    "@id": "#SpargerTime",
+                    "@type": "ex:TimeContext",
+                    "schema:name": "Sparger Time",
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#SpargerTime_Exp1"
+                            },
+                            {
+                                "@id": "#SpargerTime_Exp2"
+                            },
+                            {
+                                "@id": "#SpargerTime_Exp3"
+                            },
+                            {
+                                "@id": "#SpargerTime_Exp4"
+                            },
+                            {
+                                "@id": "#SpargerTime_Exp5"
+                            },
+                            {
+                                "@id": "#SpargerTime_Exp6"
+                            },
+                            {
+                                "@id": "#SpargerTime_Exp7"
+                            },
+                            {
+                                "@id": "#SpargerTime_Exp8"
+                            },
+                            {
+                                "@id": "#SpargerTime_Exp9"
+                            }
+                        ]
+                },
+
+                {
+                    "@id": "#SpargerSpace",
+                    "@type": "ex:SpaceContext",
+                    "schema:name": "Sparger Space",
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#SpargerSpace_Exp1"
+                            },
+                            {
+                                "@id": "#SpargerSpace_Exp2"
+                            },
+                            {
+                                "@id": "#SpargerSpace_Exp3"
+                            },
+                            {
+                                "@id": "#SpargerSpace_Exp4"
+                            },
+                            {
+                                "@id": "#SpargerSpace_Exp5"
+                            },
+                            {
+                                "@id": "#SpargerSpace_Exp6"
+                            },
+                            {
+                                "@id": "#SpargerSpace_Exp7"
+                            },
+                            {
+                                "@id": "#SpargerSpace_Exp8"
+                            },
+                            {
+                                "@id": "#SpargerSpace_Exp9"
+                            }
+                        ]
+                },
+
+                {
+                    "@id": "#SpargerStructure",
+                    "@type": "ex:StructureContext",
+                    "schema:name": "Sparger Structure",
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#SpargerStructure_Exp1"
+                            },
+                            {
+                                "@id": "#SpargerStructure_Exp2"
+                            },
+                            {
+                                "@id": "#SpargerStructure_Exp3"
+                            },
+                            {
+                                "@id": "#SpargerStructure_Exp4"
+                            },
+                            {
+                                "@id": "#SpargerStructure_Exp5"
+                            },
+                            {
+                                "@id": "#SpargerStructure_Exp6"
+                            },
+                            {
+                                "@id": "#SpargerStructure_Exp7"
+                            },
+                            {
+                                "@id": "#SpargerStructure_Exp8"
+                            },
+                            {
+                                "@id": "#SpargerStructure_Exp9"
+                            }
+                        ]
+                },
+
+                {
+                    "@id": "#SpargerSubstance",
+                    "@type": "ex:SubstanceContext",
+                    "schema:name": "Sparger Substance",
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#SpargerSubstance_Exp1"
+                            },
+                            {
+                                "@id": "#SpargerSubstance_Exp2"
+                            },
+                            {
+                                "@id": "#SpargerSubstance_Exp3"
+                            },
+                            {
+                                "@id": "#SpargerSubstance_Exp4"
+                            },
+                            {
+                                "@id": "#SpargerSubstance_Exp5"
+                            },
+                            {
+                                "@id": "#SpargerSubstance_Exp6"
+                            },
+                            {
+                                "@id": "#SpargerSubstance_Exp7"
+                            },
+                            {
+                                "@id": "#SpargerSubstance_Exp8"
+                            },
+                            {
+                                "@id": "#SpargerSubstance_Exp9"
+                            }
+                        ]
+                },
 
 
             · · · (H) - 1.3a - Context  · · · · · · Context of Sparger: General · · ·},
@@ -7750,11 +8576,126 @@
 
             {· · · (H) - 1.3b - 1  · · · · · · Sparger - Experiment 1 · · ·
 
-                % entity here
+                {
+                    "@id": "#Sparger_Exp1",
+                    "@type": "ex:Sparger",
+                    "schema:name": "Sparger Exp1",
+                    "schema:description": "Sparger that was used to disperse the ingoing H2",
+                    "ex:hasContext":
+                        [
+                            {
+                                "@id": "#SpargerInformation_Exp1"
+                            },
+                            {
+                                "@id": "#SpargerEnergy_Exp1"
+                            },
+                            {
+                                "@id": "#SpargerTime_Exp1"
+                            },
+                            {
+                                "@id": "#SpargerSpace_Exp1"
+                            },
+                            {
+                                "@id": "#SpargerStructure_Exp1"
+                            },
+                            {
+                                "@id": "#SpargerSubstance_Exp1"
+                            }
+                        ],
+                    
+                    "ex:lastUsedTime": 
+                        {
+                            "@id": "#LastUsedTime_Sparger_Exp1"
+                        },
+                    "ex:lastUsedPurpose":
+                        {
+                            % den process muss ich noch erstellen
+                            "@id": "#CleaningProcedure_Sparger"
+                        },
+                    "ex:hasSetSetpointProfiles":
+                        {
+                            "@id": "#SetPressureProfile_Sparger_Exp1"
+                        },
+                    "ex:hasInnerMaterial": 
+                        {
+                            "@id": "#HydrogenStream_Exp1"
+                        },
+                    "ex:hasIngoingStream": 
+                        {
+                            "@id": "#HydrogenInletStream_Exp1"
+                        },
+                    "ex:hasOutgoingStream": 
+                        {
+                            "@id": "#HydrogenOutletStream_Exp1"
+                        },
+                    "ex:isInstanceOf": 
+                        {
+                            "@id": "#Sparger"
+                        }
 
-                {· · · (H) - 1.3b - 1 - Context  · · · · · · Context of Sparger: Specific · · ·
+                }
 
-                    % contexts of entity here (all six context entities)
+                {· · · (H) - 1.3b - 1 - Context  · · · · · · Context of Sparger: Specific -Experiment 1 · · ·
+
+                    {
+                        "@id": "#SpargerInformation_Exp1",
+                        "@type": "ex:InformationContext",
+                        "schema:name": "Sparger Exp1 Information",
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#SpargerInformation"
+                            }
+                    },
+
+                    {
+                        "@id": "#SpargerEnergy_Exp1",
+                        "@type": "ex:EnergyContext",
+                        "schema:name": "Sparger Exp1 Energy",
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#SpargerEnergy"
+                            }
+                    },
+
+                    {
+                        "@id": "#SpargerTime_Exp1",
+                        "@type": "ex:TimeContext",
+                        "schema:name": "Sparger Exp1 Time",
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#SpargerTime"
+                            }
+                    },
+
+                    {
+                        "@id": "#SpargerSpace_Exp1",
+                        "@type": "ex:SpaceContext",
+                        "schema:name": "Sparger Exp1 Space",
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#SpargerSpace"
+                            }
+                    },
+
+                    {
+                        "@id": "#SpargerStructure_Exp1",
+                        "@type": "ex:StructureContext",
+                        "schema:name": "Sparger Exp1 Structure",
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#SpargerStructure"
+                            }
+                    },
+
+                    {
+                        "@id": "#SpargerSubstance_Exp1",
+                        "@type": "ex:SubstanceContext",
+                        "schema:name": "Sparger Exp1 Substance",
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#SpargerSubstance"
+                            }
+                    },
 
 
                 · · · (H) - 1.3b - 1 - Context  · · · · · · Context of Sparger: Specific · · ·},
@@ -7783,11 +8724,302 @@
 
         {· · · (H) - 1.4a  · · · · · · Stirrer: General · · ·
 
-            % entity here
+             {
+                "@id": "#Stirrer",
+                "@type": "ex:Stirrer",
+                "schema:name": "Stirrer",
+                "schema:description": "Stirrer that has been used inside the reactor",
+                "ex:hasContext": 
+                    [
+                        {
+                            "@id": "#StirrerInformation"
+                        },
+                        {
+                            "@id": "#StirrerEnergy"
+                        },
+                        {
+                            "@id": "#StirrerTime"
+                        },
+                        {
+                            "@id": "#StirrerSpace"
+                        },
+                        {
+                            "@id": "#StirrerStructure"
+                        },
+                        {
+                            "@id": "#StirrerSubstance"
+                        }
+                    ],
+                "ex:hasDigitalObjectID": 
+                    {
+                        "@id": "#DigitalObjectID_Stirrer"
+                    },
+                "ex:lastUsedTime": 
+                    {
+                        "@id": "#LastUsedTime_Stirrer"
+                    },
+                "ex:lastUsedPurpose": 
+                    {
+                        "@id": "#CleaningProcedure_Stirrer"
+                    },
+                "ex:hasSetSetpointProfiles": 
+                    {
+                        "@id": "#SetRPMProfile_Reactor"
+                    },
+                "ex:hasPowerInput": 
+                    {
+                        "@id": "#PowerInput_Stirrer"
+                    },
+                "ex:hasInstances":
+                    [
+                        {
+                            "@id": "#Stirrer_Exp1"
+                        },
+                        {
+                            "@id": "#Stirrer_Exp2"
+                        },
+                        {
+                            "@id": "#Stirrer_Exp3"
+                        },
+                        {
+                            "@id": "#Stirrer_Exp4"
+                        },
+                        {
+                            "@id": "#Stirrer_Exp5"
+                        },
+                        {
+                            "@id": "#Stirrer_Exp6"
+                        },
+                        {
+                            "@id": "#Stirrer_Exp7"
+                        },
+                        {
+                            "@id": "#Stirrer_Exp8"
+                        },
+                        {
+                            "@id": "#Stirrer_Exp9"
+                        }
+                    ]
+
+            }
 
             {· · · (H) - 1.4a - Context  · · · · · · Context of Stirrer: General · · ·
 
-                % contexts of entity here (all six context entities)
+                 {
+                    "@id": "#StirrerInformation",
+                    "@type": "ex:InformationContext",
+                    "schema:name": "Stirrer Information",
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#StirrerInformation_Exp1"
+                            },
+                            {
+                                "@id": "#StirrerInformation_Exp2"
+                            },
+                            {
+                                "@id": "#StirrerInformation_Exp3"
+                            },
+                            {
+                                "@id": "#StirrerInformation_Exp4"
+                            },
+                            {
+                                "@id": "#StirrerInformation_Exp5"
+                            },
+                            {
+                                "@id": "#StirrerInformation_Exp6"
+                            },
+                            {
+                                "@id": "#StirrerInformation_Exp7"
+                            },
+                            {
+                                "@id": "#StirrerInformation_Exp8"
+                            },
+                            {
+                                "@id": "#StirrerInformation_Exp9"
+                            }
+                        ]
+                },
+
+                {
+                    "@id": "#StirrerEnergy",
+                    "@type": "ex:EnergyContext",
+                    "schema:name": "Stirrer Energy",
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#StirrerEnergy_Exp1"
+                            },
+                            {
+                                "@id": "#StirrerEnergy_Exp2"
+                            },
+                            {
+                                "@id": "#StirrerEnergy_Exp3"
+                            },
+                            {
+                                "@id": "#StirrerEnergy_Exp4"
+                            },
+                            {
+                                "@id": "#StirrerEnergy_Exp5"
+                            },
+                            {
+                                "@id": "#StirrerEnergy_Exp6"
+                            },
+                            {
+                                "@id": "#StirrerEnergy_Exp7"
+                            },
+                            {
+                                "@id": "#StirrerEnergy_Exp8"
+                            },
+                            {
+                                "@id": "#StirrerEnergy_Exp9"
+                            }
+                        ]
+                },
+
+                {
+                    "@id": "#StirrerTime",
+                    "@type": "ex:TimeContext",
+                    "schema:name": "Stirrer Time",
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#StirrerTime_Exp1"
+                            },
+                            {
+                                "@id": "#StirrerTime_Exp2"
+                            },
+                            {
+                                "@id": "#StirrerTime_Exp3"
+                            },
+                            {
+                                "@id": "#StirrerTime_Exp4"
+                            },
+                            {
+                                "@id": "#StirrerTime_Exp5"
+                            },
+                            {
+                                "@id": "#StirrerTime_Exp6"
+                            },
+                            {
+                                "@id": "#StirrerTime_Exp7"
+                            },
+                            {
+                                "@id": "#StirrerTime_Exp8"
+                            },
+                            {
+                                "@id": "#StirrerTime_Exp9"
+                            }
+                        ]
+                },
+
+                {
+                    "@id": "#StirrerSpace",
+                    "@type": "ex:SpaceContext",
+                    "schema:name": "Stirrer Space",
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#StirrerSpace_Exp1"
+                            },
+                            {
+                                "@id": "#StirrerSpace_Exp2"
+                            },
+                            {
+                                "@id": "#StirrerSpace_Exp3"
+                            },
+                            {
+                                "@id": "#StirrerSpace_Exp4"
+                            },
+                            {
+                                "@id": "#StirrerSpace_Exp5"
+                            },
+                            {
+                                "@id": "#StirrerSpace_Exp6"
+                            },
+                            {
+                                "@id": "#StirrerSpace_Exp7"
+                            },
+                            {
+                                "@id": "#StirrerSpace_Exp8"
+                            },
+                            {
+                                "@id": "#StirrerSpace_Exp9"
+                            }
+                        ]
+                },
+
+                {
+                    "@id": "#StirrerStructure",
+                    "@type": "ex:StructureContext",
+                    "schema:name": "Stirrer Structure",
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#StirrerStructure_Exp1"
+                            },
+                            {
+                                "@id": "#StirrerStructure_Exp2"
+                            },
+                            {
+                                "@id": "#StirrerStructure_Exp3"
+                            },
+                            {
+                                "@id": "#StirrerStructure_Exp4"
+                            },
+                            {
+                                "@id": "#StirrerStructure_Exp5"
+                            },
+                            {
+                                "@id": "#StirrerStructure_Exp6"
+                            },
+                            {
+                                "@id": "#StirrerStructure_Exp7"
+                            },
+                            {
+                                "@id": "#StirrerStructure_Exp8"
+                            },
+                            {
+                                "@id": "#StirrerStructure_Exp9"
+                            }
+                        ]
+                },
+
+                {
+                    "@id": "#StirrerSubstance",
+                    "@type": "ex:SubstanceContext",
+                    "schema:name": "Stirrer Substance",
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#StirrerSubstance_Exp1"
+                            },
+                            {
+                                "@id": "#StirrerSubstance_Exp2"
+                            },
+                            {
+                                "@id": "#StirrerSubstance_Exp3"
+                            },
+                            {
+                                "@id": "#StirrerSubstance_Exp4"
+                            },
+                            {
+                                "@id": "#StirrerSubstance_Exp5"
+                            },
+                            {
+                                "@id": "#StirrerSubstance_Exp6"
+                            },
+                            {
+                                "@id": "#StirrerSubstance_Exp7"
+                            },
+                            {
+                                "@id": "#StirrerSubstance_Exp8"
+                            },
+                            {
+                                "@id": "#StirrerSubstance_Exp9"
+                            }
+                        ]
+                },
 
 
             · · · (H) - 1.4a - Context  · · · · · · Context of Stirrer: General · · ·},
@@ -7798,14 +9030,120 @@
 
             {· · · (H) - 1.4b - 1  · · · · · · Stirrer - Experiment 1 · · ·
 
-                % entity here
+                {
+                    "@id": "#Stirrer",
+                    "@type": "ex:Stirrer",
+                    "schema:name": "Stirrer",
+                    "schema:description": "Stirrer that has been used inside the reactor",
+                    "ex:hasContext":
+                        [
+                            {
+                                "@id": "#StirrerInformation_Exp1"
+                            },
+                            {
+                                "@id": "#StirrerEnergy_Exp1"
+                            },
+                            {
+                                "@id": "#StirrerTime_Exp1"
+                            },
+                            {
+                                "@id": "#StirrerSpace_Exp1"
+                            },
+                            {
+                                "@id": "#StirrerStructure_Exp1"
+                            },
+                            {
+                                "@id": "#StirrerSubstance_Exp1"
+                            }
+                        ],
+                    "ex:hasDigitalObjectID": 
+                        {
+                            "@id": "#DigitalObjectID_Stirrer"
+                        },
+                    "ex:lastUsedTime": 
+                        {
+                            "@id": "#LastUsedTime_Stirrer"
+                        },
+                    "ex:lastUsedPurpose": 
+                        {
+                            "@id": "#CleaningProcedure_Stirrer"
+                        },
+                    "ex:hasSetSetpointProfiles": 
+                        {
+                            "@id": "#SetRPMProfile_Reactor"
+                        },
+                    "ex:hasPowerInput": 
+                        {
+                            "@id": "#PowerInput_Stirrer"
+                        },
 
-                {· · · (H) - 1.4b - 1 - Context  · · · · · · Context of Stirrer: Specific · · ·
-
-                    % contexts of entity here (all six context entities)
+                },
 
 
-                · · · (H) - 1.4b - 1 - Context  · · · · · · Context of Stirrer: Specific · · ·},
+                {· · · (H) - 1.4b - 1 - Context  · · · · · · Context of Stirrer: Specific - Experiment 1 · · ·
+
+                    {
+                        "@id": "#StirrerInformation_Exp1",
+                        "@type": "ex:InformationContext",
+                        "schema:name": "Stirrer Exp1 Information",
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#StirrerInformation"
+                            }
+                    },
+
+                    {
+                        "@id": "#StirrerEnergy_Exp1",
+                        "@type": "ex:EnergyContext",
+                        "schema:name": "Stirrer Exp1 Energy",
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#StirrerEnergy"
+                            }
+                    },
+
+                    {
+                        "@id": "#StirrerTime_Exp1",
+                        "@type": "ex:TimeContext",
+                        "schema:name": "Stirrer Exp1 Time",
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#StirrerTime"
+                            }
+                    },
+
+                    {
+                        "@id": "#StirrerSpace_Exp1",
+                        "@type": "ex:SpaceContext",
+                        "schema:name": "Stirrer Exp1 Space",
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#StirrerSpace"
+                            }
+                    },
+
+                    {
+                        "@id": "#StirrerStructure_Exp1",
+                        "@type": "ex:StructureContext",
+                        "schema:name": "Stirrer Exp1 Structure",
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#StirrerStructure"
+                            }
+                    },
+
+                    {
+                        "@id": "#StirrerSubstance_Exp1",
+                        "@type": "ex:SubstanceContext",
+                        "schema:name": "Stirrer Exp1 Substance",
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#StirrerSubstance"
+                            }
+                    },
+
+
+                · · · (H) - 1.4b - 1 - Context  · · · · · · Context of Stirrer: Specific Experiment 1 · · ·},
 
             · · · (H) - 1.4b - 1  · · · · · · Stirrer: Specific - Experiment 1  — END · · ·},
 
@@ -7813,12 +9151,12 @@
 
                 % entity here
 
-                {· · · (H) - 1.4b - 2 - Context  · · · · · · Context of Stirrer: Specific · · ·
+                {· · · (H) - 1.4b - 2 - Context  · · · · · · Context of Stirrer: Specific - Experiment 2 · · ·
 
                     % contexts of entity here (all six context entities)
 
 
-                · · · (H) - 1.4b - 2 - Context  · · · · · · Context of Stirrer: Specific · · ·},
+                · · · (H) - 1.4b - 2 - Context  · · · · · · Context of Stirrer: Specific - Experiment 2 · · ·},
 
             · · · (H) - 1.4b - 2  · · · · · · Stirrer: Specific - Experiment 2  — END · · ·},
 
