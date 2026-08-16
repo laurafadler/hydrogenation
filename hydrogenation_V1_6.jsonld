@@ -12734,7 +12734,422 @@
 
     {— (K1) Scalar Variables --------------------------------------------------------------------------------------------------------------------
 
+        {· · · (K1) - 1  · · · · · · Stirrer Acceleration · · ·
 
+            {
+                "@id": "#StirrerAcceleration",
+                "@type": "ex:ScalarVariable",
+                "schema:name": "Stirrer acceleration",
+                "schema:description": "Acceleration of the stirrer during the start-up of the stirring process",
+                "ex:describesContext":
+                    {
+                        "@id": "#StirrerSpace"
+                    },
+                "ex:quantityKind": "quantitykind:AngularAcceleration",
+                "ex:hasUnit": "unit:REV-PER-SEC2",
+                "ex:hasProvenanceType": "ex:Specified",
+                "ex:value": 5
+            },
+
+        · · · (K1) - 1  · · · · · · Stirrer Acceleration  — END · · ·},
+
+
+        {· · · (K1) - 2  · · · · · · Initial Mass Fraction Water Liquid Phase · · ·
+
+            {
+                "@id": "#InitialMassFraction_Water_LiquidPhase",
+                "@type": "ScalarVariable",
+                "schema:name": "Initial Mass Fraction of Water in Liquid Phase",
+                "schema:description": "Initial mass fraction of water in the liquid phase before the beginning of the experiments",
+                "ex:describesContext":
+                {
+                    "@id": "#LiquidPhase"
+                },
+                "qudt:quantityKind": "quantitykind:MassFraction",
+                "qudt:hasUnit": "unit:UNITLESS",
+                "ex:hasProvenanceType": "ex:Specified",
+                "rdf:value": 0.70
+            },
+
+        · · · (K1) - 2  · · · · · · Initial Mass Fraction Water Liquid Phase  — END · · ·},
+
+
+        {· · · (K1) - 3  · · · · · · Initial Mass Fraction Solvent Liquid Phase · · ·
+
+            {
+                "@id": "#InitialMassFraction_Solvent_LiquidPhase",
+                "@type": "ScalarVariable",
+                "schema:name": "Initial Mass Fraction of Solvent in Liquid Phase",
+                "schema:description": "Initial mass fraction of solvent in the liquid phase before the beginning of the experiments",
+                "ex:describesContext":
+                {
+                    "@id": "#LiquidPhase"
+                },
+                "qudt:quantityKind": "quantitykind:MassFraction",
+                "qudt:hasUnit": "unit:UNITLESS",
+                "ex:hasProvenanceType": "ex:Specified",
+                "rdf:value": 0.30
+            },
+
+        · · · (K1) - 3  · · · · · · Initial Mass Fraction Solvent Liquid Phase  — END · · ·},
+
+
+        {· · · (K1) - 4  · · · · · · Initial Volume Liquid Phase · · ·
+
+           {
+                "@id": "#InitialVolume_LiquidPhase",
+                "@type": "ScalarVariable",
+                "schema:name": "Initial Volume of Liquid Phase",
+                "schema:description": "Initial total volume of the liquid phase containing water and solvent before the beginning of the experiments",
+                "ex:describesContext":
+                {
+                    "@id": "#LiquidPhase"
+                },
+                "qudt:quantityKind": "quantitykind:Volume",
+                "qudt:hasUnit": "unit:L",
+                "ex:hasProvenanceType": "ex:Specified",
+                "rdf:value": 1.0
+            },
+
+        · · · (K1) - 4  · · · · · · Initial Volume Liquid Phase  — END · · ·},
+
+
+
+
+
+
+
+
+        {· · · (K1) - 5  · · · · · · Start Mass RDY · · ·
+
+            {· · · (K1) - 5a  · · · · · · Start Mass RDY: General · · ·
+
+                {
+                    "@id": "#StartMassRDY",
+                    "@type": "ex:ScalarVariable",
+                    "schema:name": "Hydrogenator set mass of RDY",
+                    "schema:description": "Start Mass of RDY that was added to the reactor before the beginning of the experiment",
+                    "ex:describesContext": 
+                        {
+                            "@id": "#RDYSpace"
+                        },
+                    "ex:quantityKind": "quantitykind:Mass",
+                    "ex:hasUnit": "unit:GM",
+                    "ex:hasProvenanceType": "ex:Set",
+                    "ex:hasProvenance":
+                            {
+                                "@id": "#WeighingTask_StartMassRDY"
+                            },
+                    "ex:hasInstances": 
+                        [
+                            {
+                                "@id": "#StartMassRDY_Exp1"
+                            },
+                            {
+                                "@id": "#StartMassRDY_Exp2"
+                            },
+                            {
+                                "@id": "#StartMassRDY_Exp3"
+                            },
+                            {
+                                "@id": "#StartMassRDY_Exp4"
+                            },
+                            {
+                                "@id": "#StartMassRDY_Exp5"
+                            },
+                            {
+                                "@id": "#StartMassRDY_Exp6"
+                            },
+                            {
+                                "@id": "#StartMassRDY_Exp7"
+                            },
+                            {
+                                "@id": "#StartMassRDY_Exp8"
+                            },
+                            {
+                                "@id": "#StartMassRDY_Exp9"
+                            }
+                        ]
+                    },
+
+            · · · (K1) - 5a · · · · · · Start Mass RDY: General  — END · · ·},
+
+            {· · · (K1) - 5b  · · · · · · Start Mass RDY: Specific · · ·
+
+
+                {· · · (K1) - 5b - 1  · · · · · · Start Mass RDY - Experiment 1 · · ·
+
+                    {
+                        "@id": "#StartMassRDY_Exp1",
+                        "@type": "ex:ScalarVariable",
+                        "schema:name": "StartMassRDY_Exp1",
+                        "schema:description": "Mass of RDY that is added to the reactor before the beginning of Experiment 1",
+                        "ex:value": 87.84,
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#StartMassRDY"
+                            }
+                    },
+
+
+                · · · (K1) - 5b - 1  · · · · · · Start Mass RDY: Specific - Experiment 1  — END · · ·},
+
+                {· · · (K1) - 5b - 2  · · · · · · Start Mass RDY - Experiment 2 · · ·
+                · · · (K1) - 5b - 2  · · · · · · Start Mass RDY: Specific - Experiment 2  — END · · ·},
+
+
+            · · · (K1) - 5b · · · · · · Start Mass RDY: Specific  — END · · ·},
+
+        · · · (K1) - 5  · · · · · · Start Mass RDY  — END · · ·},
+
+
+        {· · · (K1) - 6  · · · · · · Final Mass RDY · · ·
+
+            {· · · (K1) - 6a  · · · · · · Final Mass RDY: General · · ·
+
+                {
+                    "@id": "#FinalMass_RDY",
+                    "@type": "ex:ScalarVariable",
+                    "schema:name": "Hydrogenator measured mass of RDY",
+                    "schema:description": "Final mass of RDY that was measured in the reactor in the end",
+                    "ex:describesContext":
+                        {
+                            "@id": "#RDYSpace"
+                        },
+                    "ex:quantityKind": "quantitykind:Mass",
+                    "ex:hasUnit": "unit:GM",
+                    "ex:hasProvenanceType": "ex:Observed",
+                    "ex:hasProvenance":
+                        {
+                            "@id": "#WeighingTask_FinalMass_RDY"
+                        },
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#FinalMass_RDY_Exp1"
+                            },
+                            {
+                                "@id": "#FinalMass_RDY_Exp2"
+                            },
+                            {
+                                "@id": "#FinalMass_RDY_Exp3"
+                            },
+                            {
+                                "@id": "#FinalMass_RDY_Exp4"
+                            },
+                            {
+                                "@id": "#FinalMass_RDY_Exp5"
+                            },
+                            {
+                                "@id": "#FinalMass_RDY_Exp6"
+                            },
+                            {
+                                "@id": "#FinalMass_RDY_Exp7"
+                            },
+                            {
+                                "@id": "#FinalMass_RDY_Exp8"
+                            },
+                            {
+                                "@id": "#FinalMass_RDY_Exp9"
+                            }
+                        ]
+                },
+
+
+            · · · (K1) - 6a · · · · · · Final Mass RDY: General  — END · · ·},
+
+            {· · · (K1) - 6b  · · · · · · Final Mass RDY: Specific · · ·
+
+
+                {· · · (K1) - 6b - 1  · · · · · · Final Mass RDY - Experiment 1 · · ·
+
+                     {
+                        "@id": "#FinalMass_RDY_Exp1",
+                        "@type": "ex:ScalarVariable",
+                        "schema:name": "FinalMass_RDY_Exp1",
+                        "schema:description": "Final mass of RDY that was measured in the reactor at the end of Experiment 1",
+                        "ex:value": 0,
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#FinalMass_RDY"
+                            }
+                    },
+
+
+
+                · · · (K1) - 6b - 1  · · · · · · Final Mass RDY: Specific - Experiment 1  — END · · ·},
+
+                {· · · (K1) - 6b - 2  · · · · · · Final Mass RDY - Experiment 2 · · ·
+                · · · (K1) - 6b - 2  · · · · · · Final Mass RDY: Specific - Experiment 2  — END · · ·},
+
+
+            · · · (K1) - 6b · · · · · · Final Mass RDY: Specific  — END · · ·},
+
+        · · · (K1) - 6  · · · · · · Final Mass RDY  — END · · ·},
+
+
+        {· · · (K1) - 7  · · · · · · Final Mass RDEt · · ·
+
+            {· · · (K1) - 7a  · · · · · · Final Mass RDEt: General · · ·
+
+                {
+                    "@id": "#FinalMass_RDEt",
+                    "@type": "ex:ScalarVariable",
+                    "schema:name": "Hydrogenator measured mass of RDEt",
+                    "schema:description": "Final mass of RDEt that was measured in the reactor in the end",
+                    "ex:describesContext":
+                        {
+                            "@id": "#RDEtSpace"
+                        },
+                    "ex:quantityKind": "quantitykind:Mass",
+                    "ex:hasUnit": "unit:GM",
+                    "ex:hasProvenanceType": "ex:Observed",
+                    "ex:hasProvenance":
+                        {
+                            "@id": "#WeighingTask_FinalMass_RDEt"
+                        },
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#FinalMass_RDEt_Exp1"
+                            },
+                            {
+                                "@id": "#FinalMass_RDEt_Exp2"
+                            },
+                            {
+                                "@id": "#FinalMass_RDEt_Exp3"
+                            },
+                            {
+                                "@id": "#FinalMass_RDEt_Exp4"
+                            },
+                            {
+                                "@id": "#FinalMass_RDEt_Exp5"
+                            },
+                            {
+                                "@id": "#FinalMass_RDEt_Exp6"
+                            },
+                            {
+                                "@id": "#FinalMass_RDEt_Exp7"
+                            },
+                            {
+                                "@id": "#FinalMass_RDEt_Exp8"
+                            },
+                            {
+                                "@id": "#FinalMass_RDEt_Exp9"
+                            }
+                        ]
+                },
+
+            · · · (K1) - 7a · · · · · · Final Mass RDEt: General  — END · · ·},
+
+            {· · · (K1) - 7b  · · · · · · Final Mass RDEt: Specific · · ·
+
+
+                {· · · (K1) - 7b - 1  · · · · · · Final Mass RDEt - Experiment 1 · · ·
+
+                    {
+                        "@id": "#FinalMass_RDEt_Exp1",
+                        "@type": "ex:ScalarVariable",
+                        "schema:name": "FinalMass_RDEt_Exp1",
+                        "schema:description": "Final mass of RDEt that was measured in the reactor at the end of Experiment 1",
+                        "ex:value": 92.49897,
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#FinalMass_RDEt"
+                            }
+                    },
+
+                · · · (K1) - 7b - 1  · · · · · · Final Mass RDEt: Specific - Experiment 1  — END · · ·},
+
+                {· · · (K1) - 7b - 2  · · · · · · Final Mass RDEt - Experiment 2 · · ·
+                · · · (K1) - 7b - 2  · · · · · · Final Mass RDEt: Specific - Experiment 2  — END · · ·},
+
+
+            · · · (K1) - 7b · · · · · · Final Mass RDEt: Specific  — END · · ·},
+
+        · · · (K1) - 7  · · · · · · Final Mass RDEt  — END · · ·},
+
+
+        {· · · (K1) - 8  · · · · · · Final Mass Dimer · · ·
+
+            {· · · (K1) - 8a  · · · · · · Final Mass Dimer: General · · ·
+
+                {
+                    "@id": "#FinalMass_Dimer",
+                    "@type": "ex:ScalarVariable",
+                    "schema:name": "Hydrogenator measured mass of the dimer",
+                    "schema:description": "Final mass of the dimer that was measured in the reactor in the end",
+                    "ex:describesContext":
+                        {
+                        "@id": "#DimerSpace"
+                        },
+                    "ex:quantityKind": "quantitykind:Mass",
+                    "ex:hasUnit": "unit:GM",
+                    "ex:hasProvenanceType": "ex:Observed",
+                    "ex:hasProvenance":
+                        {
+                        "@id": "#WeighingTask_FinalMass_Dimer"
+                        },
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#FinalMass_Dimer_Exp1"
+                            },
+                            {
+                                "@id": "#FinalMass_Dimer_Exp2"
+                            },
+                            {
+                                "@id": "#FinalMass_Dimer_Exp3"
+                            },
+                            {
+                                "@id": "#FinalMass_Dimer_Exp4"
+                            },
+                            {
+                                "@id": "#FinalMass_Dimer_Exp5"
+                            },
+                            {
+                                "@id": "#FinalMass_Dimer_Exp6"
+                            },
+                            {
+                                "@id": "#FinalMass_Dimer_Exp7"
+                            },
+                            {
+                                "@id": "#FinalMass_Dimer_Exp8"
+                            },
+                            {
+                                "@id": "#FinalMass_Dimer_Exp9"
+                            }
+                        ]
+                },
+
+            · · · (K1) - 8a · · · · · · Final Mass Dimer: General  — END · · ·},
+
+            {· · · (K1) - 8b  · · · · · · Final Mass Dimer: Specific · · ·
+
+
+                {· · · (K1) - 8b - 1  · · · · · · Final Mass Dimer - Experiment 1 · · ·
+
+                    {
+                        "@id": "#FinalMass_Dimer_Exp1",
+                        "@type": "ex",
+                        "schema": "FinalMass_Dimer_Exp1",
+                        "schema": "Final mass of the dimer that was measured in the reactor at the end of Experiment 1",
+                        "ex": 3.809745,
+                        "ex":
+                            {
+                                "@id": "#FinalMass_Dimer"
+                            }
+                    },
+
+                · · · (K1) - 8b - 1  · · · · · · Final Mass Dimer: Specific - Experiment 1  — END · · ·},
+
+                {· · · (K1) - 8b - 2  · · · · · · Final Mass Dimer - Experiment 2 · · ·
+                · · · (K1) - 8b - 2  · · · · · · Final Mass Dimer: Specific - Experiment 2  — END · · ·},
+
+
+            · · · (K1) - 8b · · · · · · Final Mass Dimer: Specific  — END · · ·},
+
+        · · · (K1) - 8  · · · · · · Final Mass Dimer  — END · · ·},
 
     — (K1) Scalar Variables — END ---------------------------------------------------------------------------------------------------------------}
 
