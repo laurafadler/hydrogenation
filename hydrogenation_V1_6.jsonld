@@ -161,7 +161,12 @@
             "ex:namespace": "http://schema.org/",
             "ex:version": "V30.0",
             "ex:ontologyFile": "",
-            "ex:lastAccessDate": "2026-07-24T15:30:00+01:00"
+            "ex:lastAccessDate": 
+                {
+                    "@value": "2026-07-24T15:30:00+01:00",
+                    "@type": "xsd:dateTimeStamp"
+                },
+            
 
         },
 
@@ -171,7 +176,11 @@
             "ex:namespace": "http://xmlns.com/foaf/0.1/",
             "ex:usedVersion": "0.99",
             "ex:ontologyFile": "",
-            "ex:lastAccessDate": "2026-07-24T15:30:00+01:00"
+            "ex:lastAccessDate": 
+                {
+                    "@value": "2026-07-24T15:30:00+01:00",
+                    "@type": "xsd:dateTimeStamp"
+                },
 
         },
 
@@ -181,7 +190,11 @@
             "ex:namespace": "http://dublincore.org/specifications/dublin-core/dcmi-terms/2020-01-20/",
             "ex:usedVersion": "2020-01-20",
             "ex:ontologyFile": "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/",
-            "ex:lastAccessDate": "2026-07-27T09:30:00+01:00"
+            "ex:lastAccessDate": 
+                {
+                    "@value": "2026-07-27T09:30:00+01:00",
+                    "@type": "xsd:dateTimeStamp"
+                },
 
         },
 
@@ -262,10 +275,19 @@
                 {
                     "@id": "#AlexeiLapkin"
                 },
-            "schema:dateCreated": "2025-05-05T14:05:00+02:00",
-            "schema:dateModified": "YYYY-MM-DDTHH:MM:SS+00:00",
+            "schema:dateCreated": 
+                {
+                    "@value": "2025-05-05T14:05:00+02:00",
+                    "@type": "xsd:dateTimeStamp"
+                },
+            "schema:dateModified": 
+                {
+                    "@value": "YYYY-MM-DDTHH:MM:SS+00:00",
+                    "@type": "xsd:dateTimeStamp"
+                },
             "schema:encodingFormat": "application/pdf",
-            "schema:contentSize": "1567"
+            "schema:contentSize": "1567",
+
         },
 
 
@@ -278,8 +300,16 @@
                 {
                     "@id": "#AlexeiLapkin"
                 },
-            "schema:dateCreated": "2025-05-05T14:05:00+02:00",
-            "schema:dateModified": "YYYY-MM-DDTHH:MM:SS+00:00",
+            "schema:dateCreated": 
+                {
+                    "@value": "2025-05-05T14:05:00+02:00",
+                    "@type": "xsd:dateTimeStamp"
+                },
+            "schema:dateModified": 
+                {
+                    "@value": "YYYY-MM-DDTHH:MM:SS+00:00",
+                    "@type": "xsd:dateTimeStamp"
+                },
             "schema:encodingFormat": "application/pdf",
             "schema:contentSize": "1454"
         },
@@ -299,8 +329,16 @@
                     {
                         "@id": "#AlexeiLapkin"
                     },
-                "schema:dateCreated": "YYYY-MM-DDTHH:MM:SS+00:00",
-                "schema:dateModified": "YYYY-MM-DDTHH:MM:SS+00:00",
+                "schema:dateCreated": 
+                    {
+                        "@value": "YYYY-MM-DDTHH:MM:SS+00:00",
+                        "@type": "xsd:dateTimeStamp"
+                    },
+                "schema:dateModified": 
+                    {
+                        "@value": "YYYY-MM-DDTHH:MM:SS+00:00",
+                        "@type": "xsd:dateTimeStamp"
+                    },
                 "schema:encodingFormat": "text/csv",
                 "schema:contentSize": "1234",
                 "ex:generatedBySoftware":
@@ -10548,75 +10586,74 @@
                         "schema:name": "Experimental Procedure - Experiment 1",
                         "schema:description": "Experimental procedure performed during Experiment 1",
                         "ex:describesContext":
-                        [
-                        ],
+                            [
+                            ],
                         "schema:hasPart":
-                        [
-                            {
-                                "@id": "#AddLiquidTask_Exp1"
-                            },
-                            {
-                                "@id": "#AddSolidTask_Exp1"
-                            },
-                            {
-                                "@id": "#AddingCatalystTask_Exp1"
-                            },
-                            {
-                                "@id": "#RemoveLiquidTask_Exp1"
-                            },
-                            {
-                                "@id": "#RemoveSolidTask_Exp1"
-                            },
-                            {
-                                "@id": "#RemoveCatalystTask_Exp1"
-                            },
-                            {
-                                "@id": "#SpargingTask_Exp1"
-                            },
-                            {
-                                "@id": "#CoolingTask_Exp1"
-                            },
-                            {
-                                "@id": "#StirringTask_Exp1"
-                            },
-                            {
-                                "@id": "#PressurizeReactorTask_Exp1"
-                            },
-                            {
-                                "@id": "#WeighingTask_StartMassRDY_Exp1"
-                            },
-                            {
-                                "@id": "#WeighingTask_FinalMass_RDEt_Exp1"
-                            },
-                            {
-                                "@id": "#WeighingTask_FinalMass_Dimer_Exp1"
-                            },
-                            {
-                                "@id": "#WeighingTask_FinalMass_RDY_Exp1"
-                            },
-                            {
-                                "@id": "#TemperatureMeasurementTask_Exp1"
-                            },
-                            {
-                                "@id": "#PressureMeasurementTask_Exp1"
-                            },
-                            {
-                                "@id": "#GasVolumeMeasurementTask_Exp1"
-                            }
-                        ],
+                            [
+                                {
+                                    "@id": "#AddLiquidTask_Exp1"
+                                },
+                                {
+                                    "@id": "#AddSolidTask_Exp1"
+                                },
+                                {
+                                    "@id": "#AddingCatalystTask_Exp1"
+                                },
+                                {
+                                    "@id": "#RemoveLiquidTask_Exp1"
+                                },
+                                {
+                                    "@id": "#RemoveSolidTask_Exp1"
+                                },
+                                {
+                                    "@id": "#RemoveCatalystTask_Exp1"
+                                },
+                                {
+                                    "@id": "#SpargingTask_Exp1"
+                                },
+                                {
+                                    "@id": "#CoolingTask_Exp1"
+                                },
+                                {
+                                    "@id": "#StirringTask_Exp1"
+                                },
+                                {
+                                    "@id": "#PressurizeReactorTask_Exp1"
+                                },
+                                {
+                                    "@id": "#WeighingTask_StartMassRDY_Exp1"
+                                },
+                                {
+                                    "@id": "#WeighingTask_FinalMass_RDEt_Exp1"
+                                },
+                                {
+                                    "@id": "#WeighingTask_FinalMass_Dimer_Exp1"
+                                },
+                                {
+                                    "@id": "#WeighingTask_FinalMass_RDY_Exp1"
+                                },
+                                {
+                                    "@id": "#TemperatureMeasurementTask_Exp1"
+                                },
+                                {
+                                    "@id": "#PressureMeasurementTask_Exp1"
+                                },
+                                {
+                                    "@id": "#GasVolumeMeasurementTask_Exp1"
+                                }
+                            ],
                         "ex:hasStartTime":
-                        {
-                            "value": "2026-07-28T10:00:00Z",
-                            "ex:hasProvenanceType": "ex:Estimated"
-                        },
+                            {
+                                "@id": "#ExperimentalProcedure_Exp1_StartTime"
+                            },
                         "ex:isInstanceOf":
-                        {
-                            "@id": "#ExperimentalProcedure"
-                        },
+                            {
+                                "@id": "#ExperimentalProcedure"
+                            },
                         "ex:isProcedureOf":
-                        {
-                            "@id": "#Experiment1"
-                        }
+                            {
+                                "@id": "#Experiment1"
+                            }
                     }
 
 
@@ -14417,7 +14454,22 @@
                 ],
                 "rdf:value": "PT30S",
                 "ex:hasProvenanceType": "ex:Estimated",
-            }
+            },
+
+
+
+            {
+                "@id": "#ExperimentalProcedure_Exp1_StartTime",
+                "@type": "time:Instance",
+                "schema:name": "ExperimentalProcedure_Exp1_StartTime",
+                "schema:description": "Start time of the experimental procedure for experiment 1",
+                "rdf:value":
+                    {  
+                        "@value": "2026-07-28T10:00:00Z",  
+                        "@type": "xsd:dateTimeStamp" 
+                    },
+                "ex:hasProvenanceType": "ex:Estimated",
+            },
 
 ==== (N) Times — END ======================================================================================================================================}
 
