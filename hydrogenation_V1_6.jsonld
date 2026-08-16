@@ -13821,7 +13821,266 @@
 
     {— (K3) Series Variables -------------------------------------------------------------------------------------------------------------------
 
+        {· · · (K3) - 1  · · · · · · Recorded Temperature Reactor · · ·
 
+            {· · · (K3) - 1a  · · · · · · Recorded Temperature Reactor: General · · ·
+
+                {
+                    "@id": "#RecordedTemperature_Reactor",
+                    "@type": "ex:SeriesVariable",
+                    "schema:name": "Hydrogenator Measured Temperature",
+                    "schema:description": "Temperature that was measured in the reactor during the experiment",
+                    "ex:describesContext":
+                        {
+                            "@id": "#ReactorEnergy"
+                        },
+                    "qudt:quantityKind": "quantitykind:Temperature",
+                    "qudt:hasUnit": "unit:DEG_C",
+                    "ex:hasProvenanceType": "ex:Observed",
+                    "ex:hasProvenance":
+                        {
+                            "@id": "#TemperatureMeasurementTask"
+                        },
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#RecordedTemperature_Reactor_Exp1"
+                            },
+                            {
+                                "@id": "#RecordedTemperature_Reactor_Exp2"
+                            },
+                            {
+                                "@id": "#RecordedTemperature_Reactor_Exp3"
+                            },
+                            {
+                                "@id": "#RecordedTemperature_Reactor_Exp4"
+                            },
+                            {
+                                "@id": "#RecordedTemperature_Reactor_Exp5"
+                            },
+                            {
+                                "@id": "#RecordedTemperature_Reactor_Exp6"
+                            },
+                            {
+                                "@id": "#RecordedTemperature_Reactor_Exp7"
+                            },
+                            {
+                                "@id": "#RecordedTemperature_Reactor_Exp8"
+                            },
+                            {
+                                "@id": "#RecordedTemperature_Reactor_Exp9"
+                            }
+                        ]
+                },
+
+            · · · (K3) - 1a · · · · · · Recorded Temperature Reactor: General  — END · · ·},
+
+            {· · · (K3) - 1b  · · · · · · Recorded Temperature Reactor: Specific · · ·
+
+
+                {· · · (K3) - 1b - 1  · · · · · · Recorded Temperature Reactor - Experiment 1 · · ·
+
+                    {
+                        "@id": "#RecordedTemperature_Reactor_Exp1",
+                        "@type": "ex:SeriesVariable",
+                        "schema:name": "RecordedTemperature_Reactor_Exp1",
+                        "schema:description": "The temperature inside the reactor during Experiment 1",
+                        "ex:hasProvenanceType": "ex:Observed",
+                        "ex:hasProvenance":
+                            {
+                                "@id": "#TemperatureMeasurementTask_Exp1"
+                            },
+                        "ex:hasDataReference":
+                            {
+                                "@id": "#Column_Temperature_Reactor_Exp1"
+                            },
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#RecordedTemperature_Reactor"
+                            }
+                    },
+
+                · · · (K3) - 1b - 1  · · · · · · Recorded Temperature Reactor: Specific - Experiment 1  — END · · ·},
+
+                {· · · (K3) - 1b - 2  · · · · · · Recorded Temperature Reactor - Experiment 2 · · ·
+                · · · (K3) - 1b - 2  · · · · · · Recorded Temperature Reactor: Specific - Experiment 2  — END · · ·},
+
+
+            · · · (K3) - 1b · · · · · · Recorded Temperature Reactor: Specific  — END · · ·},
+
+        · · · (K3) - 1  · · · · · · Recorded Temperature Reactor  — END · · ·},
+
+
+        {· · · (K3) - 2  · · · · · · Recorded Pressure Reactor · · ·
+
+            {· · · (K3) - 2a  · · · · · · Recorded Pressure Reactor: General · · ·
+
+                {
+                    "@id": "#RecordedPressure_Reactor",
+                    "@type": "ex:SeriesVariable",
+                    "schema:name": "Hydrogenator Measured Pressure",
+                    "schema:description": "Pressure that was measured in the reactor during the experiment",
+                    "ex:describesContext":
+                        {
+                            "@id": "#ReactorEnergy"
+                        },
+                    "qudt:quantityKind": "quantitykind:Pressure",
+                    "qudt:hasUnit": "unit:BAR",
+                    "ex:hasProvenanceType": "ex:Observed",
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#RecordedPressure_Reactor_Exp1"
+                            },
+                            {
+                                "@id": "#RecordedPressure_Reactor_Exp2"
+                            },
+                            {
+                                "@id": "#RecordedPressure_Reactor_Exp3"
+                            },
+                            {
+                                "@id": "#RecordedPressure_Reactor_Exp4"
+                            },
+                            {
+                                "@id": "#RecordedPressure_Reactor_Exp5"
+                            },
+                            {
+                                "@id": "#RecordedPressure_Reactor_Exp6"
+                            },
+                            {
+                                "@id": "#RecordedPressure_Reactor_Exp7"
+                            },
+                            {
+                                "@id": "#RecordedPressure_Reactor_Exp8"
+                            },
+                            {
+                                "@id": "#RecordedPressure_Reactor_Exp9"
+                            }
+                        ]
+                },
+
+            · · · (K3) - 2a · · · · · · Recorded Pressure Reactor: General  — END · · ·},
+
+            {· · · (K3) - 2b  · · · · · · Recorded Pressure Reactor: Specific · · ·
+
+
+                {· · · (K3) - 2b - 1  · · · · · · Recorded Pressure Reactor - Experiment 1 · · ·
+
+                    {
+                        "@id": "#RecordedPressure_Reactor_Exp1",
+                        "@type": "ex:SeriesVariable",
+                        "schema:name": "RecordedPressure_Reactor_Exp1",
+                        "schema:description": "The pressure inside the reactor during Experiment 1",
+                        "ex:hasProvenanceType": "ex:Observed",
+                        "ex:hasProvenance":
+                            {
+                                "@id": "#PressureMeasurementTask_Exp1"
+                            },
+                        "ex:hasDataReference":
+                            {
+                                "@id": "#Column_pressure_Exp1"
+                            },
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#RecordedPressure_Reactor"
+                            }
+                    },
+
+                · · · (K3) - 2b - 1  · · · · · · Recorded Pressure Reactor: Specific - Experiment 1  — END · · ·},
+
+                {· · · (K3) - 2b - 2  · · · · · · Recorded Pressure Reactor - Experiment 2 · · ·
+                · · · (K3) - 2b - 2  · · · · · · Recorded Pressure Reactor: Specific - Experiment 2  — END · · ·},
+
+
+            · · · (K3) - 2b · · · · · · Recorded Pressure Reactor: Specific  — END · · ·},
+
+        · · · (K3) - 2  · · · · · · Recorded Pressure Reactor  — END · · ·},
+
+
+        {· · · (K3) - 3  · · · · · · Used Gas Volume · · ·
+
+            {· · · (K3) - 3a  · · · · · · Used Gas Volume: General · · ·
+
+                {
+                    "@id": "#UsedGasVolume_H2",
+                    "@type": "ex:SeriesVariable",
+                    "schema:name": "Hydrogenator used total gas volume of H2",
+                    "schema:description": "Accumulated volume of H2 that was used in the process",
+                    "ex:describesContext":
+                        {
+                            "@id": "#H2Space"
+                        },
+                    "qudt:quantityKind": "quantitykind:Volume",
+                    "qudt:hasUnit": "unit:L",
+                    "ex:hasProvenanceType": "ex:Observed",
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#UsedGasVolume_H2_Exp1"
+                            },
+                            {
+                                "@id": "#UsedGasVolume_H2_Exp2"
+                            },
+                            {
+                                "@id": "#UsedGasVolume_H2_Exp3"
+                            },
+                            {
+                                "@id": "#UsedGasVolume_H2_Exp4"
+                            },
+                            {
+                                "@id": "#UsedGasVolume_H2_Exp5"
+                            },
+                            {
+                                "@id": "#UsedGasVolume_H2_Exp6"
+                            },
+                            {
+                                "@id": "#UsedGasVolume_H2_Exp7"
+                            },
+                            {
+                                "@id": "#UsedGasVolume_H2_Exp8"
+                            },
+                            {
+                                "@id": "#UsedGasVolume_H2_Exp9"
+                            }
+                        ]
+                },
+
+            · · · (K3) - 3a · · · · · · Used Gas Volume: General  — END · · ·},
+
+            {· · · (K3) - 3b  · · · · · · Used Gas Volume: Specific · · ·
+
+
+                {· · · (K3) - 3b - 1  · · · · · · Used Gas Volume - Experiment 1 · · ·
+
+                    {
+                        "@id": "#UsedGasVolume_H2_Exp1",
+                        "@type": "ex:SeriesVariable",
+                        "schema:name": "UsedGasVolume_H2_Exp1",
+                        "schema:description": "Accumulated volume of H2 that was used in the process during Experiment 1",
+                        "ex:hasProvenanceType": "ex:Observed",
+                        "ex:hasProvenance":
+                            {
+                                "@id": "#GasVolumeMeasurementTask_Exp1"
+                            },
+                        "ex:hasDataReference":
+                            {
+                                "@id": "#Column_gas_Exp1"
+                            },
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#UsedGasVolume_H2"
+                            }
+                    },
+                    
+                · · · (K3) - 3b - 1  · · · · · · Used Gas Volume: Specific - Experiment 1  — END · · ·},
+
+                {· · · (K3) - 3b - 2  · · · · · · Used Gas Volume - Experiment 2 · · ·
+                · · · (K3) - 3b - 2  · · · · · · Used Gas Volume: Specific - Experiment 2  — END · · ·},
+
+
+            · · · (K3) - 3b · · · · · · Used Gas Volume: Specific  — END · · ·},
+
+        · · · (K3) - 3  · · · · · · Used Gas Volume  — END · · ·},
 
     — (K3) Series Variables — END --------------------------------------------------------------------------------------------------------------}
 
