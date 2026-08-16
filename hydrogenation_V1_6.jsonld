@@ -6939,18 +6939,1036 @@
 
 {=== (H) Devices ========================================================================================================================================
 
-    {— (H1) Process Devices --------------------------------------------------------------------------------------------------------------------
+    {· · · (H) - 1  · · · · · · Reactor · · ·
+
+        {· · · (H) - 1a  · · · · · · Reactor: General · · ·
+
+            {
+                "@id": "#Reactor",
+                "@type": "ontolab:Reactor",
+                "schema:name": "Reactor",
+                "schema:description": "The whole reactor with its parts: stirrer, jacket, sparger (should we add reactor vessel seperately?)",
+                "ex:hasPart": 
+                    [
+                        {
+                            "@id": "#Vessel"
+                        },
+                        {
+                            "@id": "#Jacket"
+                        },
+                        {
+                            "@id": "#Sparger"
+                        },
+                        {
+                            "@id": "#Stirrer"
+                        },
+                        
+                        {
+                            "@id": "#TemperatureSensor"
+                        },
+                        {
+                            "@id": "#PressureSensor"
+                        },
+                        {
+                            "@id": "#MFM"
+                        }
+                    ],
+                "ex:hasContext": 
+                    [
+                        {
+                            "@id": "#ReactorInformation"
+                        },
+                        {
+                            "@id": "#ReactorEnergy"
+                        },
+                        {
+                            "@id": "#ReactorTime"
+                        },
+                        {
+                            "@id": "#ReactorSpace"
+                        },
+                        {
+                            "@id": "#ReactorStructure"
+                        },
+                        {
+                            "@id": "#ReactorSubstance"
+                        }
+                    ],
+                "ex:hasDigitalObjectID": 
+                    {
+                        "@id": "#DigitalObjectID_Reactor"
+                    },
+                "ontocape:hasOperationMode": 
+                    {
+                        "@id": "#OperatingMode_Reactor"
+                    },
+                "ex:lastServicedTime": 
+                    {
+                        "@id": "#LastServicedTime_Reactor"
+                    },
+                "ex:lastUsedTime": 
+                    {
+                        "@id": "#LastUsedTime_Reactor"
+                    },
+                "ex:lastUsedPurpose": 
+                    {
+                        "@id": "#CleaningProcedure_Reactor"
+                    },
+                
+                "ex:hasSetPointProfiles": 
+                    [
+                        {
+                            "@id": "#SetTemperatureProfile_Reactor"
+                        },
+                        {
+                            "@id": "#SetPressureProfile_Reactor"
+                        },
+                        {
+                            "@id": "#SetRPMProfile_Reactor"
+                        }
+                    ],
+                "ex:hasInstances":
+                    [
+                        {
+                            "@id": "#Reactor_Exp1"
+                        },
+                        {
+                            "@id": "#Reactor_Exp2"
+                        },
+                        {
+                            "@id": "#Reactor_Exp3"
+                        },
+                        {
+                            "@id": "#Reactor_Exp4"
+                        },
+                        {
+                            "@id": "#Reactor_Exp5"
+                        },
+                        {
+                            "@id": "#Reactor_Exp6"
+                        },
+                        {
+                            "@id": "#Reactor_Exp7"
+                        },
+                        {
+                            "@id": "#Reactor_Exp8"
+                        },
+                        {
+                            "@id": "#Reactor_Exp9"
+                        }
+                    ]
+
+                    
+            },
+
+            {· · · (H) - 1a - Context  · · · · · · Context of Reactor: General · · ·
+
+                {
+                    "@id": "#ReactorInformation",
+                    "@type": "ex:InformationContext",
+                    "schema:name": "Reactor Information",
+                    "ex:hasInstances": 
+                        [
+                            { "@id": "#ReactorInformation_Exp1" },
+                            { "@id": "#ReactorInformation_Exp2" },
+                            { "@id": "#ReactorInformation_Exp3" },
+                            { "@id": "#ReactorInformation_Exp4" },
+                            { "@id": "#ReactorInformation_Exp5" },
+                            { "@id": "#ReactorInformation_Exp6" },
+                            { "@id": "#ReactorInformation_Exp7" },
+                            { "@id": "#ReactorInformation_Exp8" },
+                            { "@id": "#ReactorInformation_Exp9" }
+                        ]
+                },
+
+                {
+                    "@id": "#ReactorEnergy",
+                    "@type": "ex:EnergyContext",
+                    "schema:name": "Reactor Energy",
+                    "ex:hasInstances": 
+                        [
+                            { "@id": "#ReactorEnergy_Exp1" },
+                            { "@id": "#ReactorEnergy_Exp2" },
+                            { "@id": "#ReactorEnergy_Exp3" },
+                            { "@id": "#ReactorEnergy_Exp4" },
+                            { "@id": "#ReactorEnergy_Exp5" },
+                            { "@id": "#ReactorEnergy_Exp6" },
+                            { "@id": "#ReactorEnergy_Exp7" },
+                            { "@id": "#ReactorEnergy_Exp8" },
+                            { "@id": "#ReactorEnergy_Exp9" }
+                        ]
+                },
+
+                {
+                    "@id": "#ReactorTime",
+                    "@type": "ex:TimeContext",
+                    "schema:name": "Reactor Time",
+                    "ex:hasInstances": 
+                        [
+                            { "@id": "#ReactorTime_Exp1" },
+                            { "@id": "#ReactorTime_Exp2" },
+                            { "@id": "#ReactorTime_Exp3" },
+                            { "@id": "#ReactorTime_Exp4" },
+                            { "@id": "#ReactorTime_Exp5" },
+                            { "@id": "#ReactorTime_Exp6" },
+                            { "@id": "#ReactorTime_Exp7" },
+                            { "@id": "#ReactorTime_Exp8" },
+                            { "@id": "#ReactorTime_Exp9" }
+                        ]
+                },
+
+                {
+                    "@id": "#ReactorSpace",
+                    "@type": "ex:SpaceContext",
+                    "schema:name": "Reactor Space",
+                    "ex:hasInstances": 
+                        [
+                            { "@id": "#ReactorSpace_Exp1" },
+                            { "@id": "#ReactorSpace_Exp2" },
+                            { "@id": "#ReactorSpace_Exp3" },
+                            { "@id": "#ReactorSpace_Exp4" },
+                            { "@id": "#ReactorSpace_Exp5" },
+                            { "@id": "#ReactorSpace_Exp6" },
+                            { "@id": "#ReactorSpace_Exp7" },
+                            { "@id": "#ReactorSpace_Exp8" },
+                            { "@id": "#ReactorSpace_Exp9" }
+                        ]
+                },
+
+                {
+                    "@id": "#ReactorStructure",
+                    "@type": "ex:StructureContext",
+                    "schema:name": "Reactor Structure",
+                    "ex:hasInstances": 
+                        [
+                            { "@id": "#ReactorStructure_Exp1" },
+                            { "@id": "#ReactorStructure_Exp2" },
+                            { "@id": "#ReactorStructure_Exp3" },
+                            { "@id": "#ReactorStructure_Exp4" },
+                            { "@id": "#ReactorStructure_Exp5" },
+                            { "@id": "#ReactorStructure_Exp6" },
+                            { "@id": "#ReactorStructure_Exp7" },
+                            { "@id": "#ReactorStructure_Exp8" },
+                            { "@id": "#ReactorStructure_Exp9" }
+                        ]
+                },
+
+                {
+                    "@id": "#ReactorSubstance",
+                    "@type": "ex:SubstanceContext",
+                    "schema:name": "Reactor Substance",
+                    "ex:hasInstances": 
+                        [
+                            { "@id": "#ReactorSubstance_Exp1" },
+                            { "@id": "#ReactorSubstance_Exp2" },
+                            { "@id": "#ReactorSubstance_Exp3" },
+                            { "@id": "#ReactorSubstance_Exp4" },
+                            { "@id": "#ReactorSubstance_Exp5" },
+                            { "@id": "#ReactorSubstance_Exp6" },
+                            { "@id": "#ReactorSubstance_Exp7" },
+                            { "@id": "#ReactorSubstance_Exp8" },
+                            { "@id": "#ReactorSubstance_Exp9" }
+                        ]
+                },
+
+
+            · · · (H) - 1a - Context  · · · · · · Context of Reactor: General · · ·},
+
+        · · · (H) - 1a · · · · · · Reactor: General  — END · · ·},
+
+        {· · · (H) - 1b  · · · · · · Reactor: Specific · · ·
+
+
+            {· · · (H) - 1b - 1  · · · · · · Reactor - Experiment 1 · · ·
+
+                {
+                    "@id": "#Reactor_Exp1",
+                    "@type": "ontolab:Reactor",
+                    "schema:name": "Reactor Exp1",
+                    "schema:description": "The reactor in Experiment 1",
+                    "ex:hasPart": 
+                        [
+                            {
+                                "@id": "#Stirrer_Exp1"
+                            },
+                            {
+                                "@id": "#Jacket_Exp1"
+                            },
+                            {
+                                "@id": "#Sparger_Exp1"
+                            }
+                        ],
+                    "ex:hasContext": 
+                        [
+                            {
+                                "@id": "#Reactor_Exp1_Information"
+                            },
+                            {
+                                "@id": "#Reactor_Exp1_Energy"
+                            },
+                            {
+                                "@id": "#Reactor_Exp1_Time"
+                            },
+                            {
+                                "@id": "#Reactor_Exp1_Space"
+                            },
+                            {
+                                "@id": "#Reactor_Exp1_Structure"
+                            },
+                            {
+                                "@id": "#Reactor_Exp1_Substance"
+                            }
+                        ],
+                    
+                    "ex:lastUsedTime": 
+                        {
+                            "@id": "#LastUsedTime_Reactor_Exp1"
+                        },
+                    "ex:lastUsedPurpose": 
+                        {
+                            "@id": "#CleaningProcedure_Reactor_beforeExp1"
+                        },
+                    "ex:hasSetPointProfiles": 
+                        [
+                            {
+                                "@id": "#SetTemperatureProfile_Reactor_Exp1"
+                            },
+                            {
+                                "@id": "#SetPressureProfile_Reactor_Exp1"
+                            },
+                            {
+                                "@id": "#SetRPMProfile_Reactor_Exp1"
+                            }
+                        ],
+                    "ex:isInstanceOf": 
+                        {
+                            "@id": "#Reactor"
+                        }
+
+                        
+                },
+
+                {· · · (H) - 1b - 1 - Context  · · · · · · Context of Reactor: Specific Experiment 1 · · ·
+
+                    {
+                        "@id": "#ReactorInformation_Exp1",
+                        "@type": "ex:InformationContext",
+                        "schema:name": "Reactor Exp1 Information",
+                        "ex:isInstanceOf": 
+                            {
+                                "@id": "#ReactorInformation"
+                            }
+                    },
+
+                    {
+                        "@id": "#ReactorEnergy_Exp1",
+                        "@type": "ex:EnergyContext",
+                        "schema:name": "Reactor Exp1 Energy",
+                        "ex:isInstanceOf": 
+                            {
+                                "@id": "#ReactorEnergy"
+                            }
+                    },
+
+                    {
+                        "@id": "#ReactorTime_Exp1",
+                        "@type": "ex:TimeContext",
+                        "schema:name": "Reactor Exp1 Time",
+                        "ex:isInstanceOf": 
+                            {
+                                "@id": "#ReactorTime"
+                            }
+                    },
+
+                    {
+                        "@id": "#ReactorSpace_Exp1",
+                        "@type": "ex:SpaceContext",
+                        "schema:name": "Reactor Exp1 Space",
+                        "ex:isInstanceOf": 
+                            {
+                                "@id": "#ReactorSpace"
+                            }
+                    },
+
+                    {
+                        "@id": "#ReactorStructure_Exp1",
+                        "@type": "ex:StructureContext",
+                        "schema:name": "Reactor Exp1 Structure",
+                        "ex:isInstanceOf": 
+                            {
+                                "@id": "#ReactorStructure"
+                            }
+                    },
+
+                    {
+                        "@id": "#ReactorSubstance_Exp1",
+                        "@type": "ex:SubstanceContext",
+                        "schema:name": "Reactor Exp1 Substance",
+                        "ex:isInstanceOf": 
+                            {
+                                "@id": "#ReactorSubstance"
+                            }
+                    },
 
 
 
-    — (H1) Process Devices — END -----------------------------------------------------------------------------------------------------------------}
+
+                · · · (H) - 1b - 1 - Context  · · · · · · Context of Reactor: Specific Experiment 1· · ·},
+
+            · · · (H) - 1b - 1  · · · · · · Reactor: Specific - Experiment 1  — END · · ·},
+
+            {· · · (H) - 1b - 2  · · · · · · Reactor - Experiment 2 · · ·
+
+                % entity here
+
+                {· · · (H) - 1b - 2 - Context  · · · · · · Context of Reactor: Specific · · ·
+
+                    % contexts of entity here (all six context entities)
 
 
-    {— (H2) Sensors -----------------------------------------------------------------------------------------------------------------------------
+                · · · (H) - 1b - 2 - Context  · · · · · · Context of Reactor: Specific · · ·},
+
+            · · · (H) - 1b - 2  · · · · · · Reactor: Specific - Experiment 2  — END · · ·},
+
+
+        · · · (H) - 1b · · · · · · Reactor: Specific  — END · · ·},
+
+    · · · (H) - 1  · · · · · · Reactor  — END · · ·},
+
+
+    {· · · (H) - 1.1  · · · · · · Vessel · · ·
+
+        {· · · (H) - 1.1a  · · · · · · Vessel: General · · ·
+
+            {
+                "@id": "#Vessel",
+                "@type": "Device",
+                "schema:name": "Vessel",
+                "schema:description": "Vessel of the reactor that is contains the MaterialVolume",
+                "ex:hasContext":
+                    [
+                        {
+                            "@id": "#VesselInformation"
+                        },
+                        {
+                            "@id": "#VesselEnergy"
+                        },
+                        {
+                            "@id": "#VesselTime"
+                        },
+                        {
+                            "@id": "#VesselSpace"
+                        },
+                        {
+                            "@id": "#VesselStructure"
+                        },
+                        {
+                            "@id": "#VesselSubstance"
+                        }
+                    ],
+                "ex:hasDigitalObjectID": 
+                    {
+                        "@id": "#DigitalObjectID_Vessel"
+                    },
+                "ex:lastUsedPurpose": 
+                    {
+                        "@id": "#Vessel_Stirrer_CleaningProcedure"
+                    },
+                "ex:hasSetProfiles": 
+                    [
+                        {
+                            "@id": "#SetPressureProfile_Reactor"
+                        }
+                    ],
+                "ex:hasContainedMaterial": 
+                    [
+                        {
+                            "@id": "#MaterialVolume_Reactor"
+                        }
+                    ],
+                "ex:hasPorts": 
+                    [
+                        {
+                            "@id": "#VesselOpening"
+                        }
+                    ],
+                "ex:hasInstances":
+                    [
+                        {
+                            "@id": "#Vessel_Exp1"
+                        },
+                        {
+                            "@id": "#Vessel_Exp2"
+                        },
+                        {
+                            "@id": "#Vessel_Exp3"
+                        },
+                        {
+                            "@id": "#Vessel_Exp4"
+                        },
+                        {
+                            "@id": "#Vessel_Exp5"
+                        },
+                        {
+                            "@id": "#Vessel_Exp6"
+                        },
+                        {
+                            "@id": "#Vessel_Exp7"
+                        },
+                        {
+                            "@id": "#Vessel_Exp8"
+                        },
+                        {
+                            "@id": "#Vessel_Exp9"
+                        }
+                    ]
+
+
+                },
+
+            {· · · (H) - 1.1a - Context  · · · · · · Context of Vessel: General · · ·
+
+                {
+                    "@id": "#VesselInformation",
+                    "@type": "ex:InformationContext",
+                    "schema:name": "Vessel Information",
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#VesselInformation_Exp1"
+                            },
+                            {
+                                "@id": "#VesselInformation_Exp2"
+                            },
+                            {
+                                "@id": "#VesselInformation_Exp3"
+                            },
+                            {
+                                "@id": "#VesselInformation_Exp4"
+                            },
+                            {
+                                "@id": "#VesselInformation_Exp5"
+                            },
+                            {
+                                "@id": "#VesselInformation_Exp6"
+                            },
+                            {
+                                "@id": "#VesselInformation_Exp7"
+                            },
+                            {
+                                "@id": "#VesselInformation_Exp8"
+                            },
+                            {
+                                "@id": "#VesselInformation_Exp9"
+                            }
+                        ]
+                },
+
+                {
+                    "@id": "#VesselEnergy",
+                    "@type": "ex:EnergyContext",
+                    "schema:name": "Vessel Energy",
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#VesselEnergy_Exp1"
+                            },
+                            {
+                                "@id": "#VesselEnergy_Exp2"
+                            },
+                            {
+                                "@id": "#VesselEnergy_Exp3"
+                            },
+                            {
+                                "@id": "#VesselEnergy_Exp4"
+                            },
+                            {
+                                "@id": "#VesselEnergy_Exp5"
+                            },
+                            {
+                                "@id": "#VesselEnergy_Exp6"
+                            },
+                            {
+                                "@id": "#VesselEnergy_Exp7"
+                            },
+                            {
+                                "@id": "#VesselEnergy_Exp8"
+                            },
+                            {
+                                "@id": "#VesselEnergy_Exp9"
+                            }
+                        ]
+                },
+
+                {
+                    "@id": "#VesselTime",
+                    "@type": "ex:TimeContext",
+                    "schema:name": "Vessel Time",
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#VesselTime_Exp1"
+                            },
+                            {
+                                "@id": "#VesselTime_Exp2"
+                            },
+                            {
+                                "@id": "#VesselTime_Exp3"
+                            },
+                            {
+                                "@id": "#VesselTime_Exp4"
+                            },
+                            {
+                                "@id": "#VesselTime_Exp5"
+                            },
+                            {
+                                "@id": "#VesselTime_Exp6"
+                            },
+                            {
+                                "@id": "#VesselTime_Exp7"
+                            },
+                            {
+                                "@id": "#VesselTime_Exp8"
+                            },
+                            {
+                                "@id": "#VesselTime_Exp9"
+                            }
+                        ]
+                },
+
+                {
+                    "@id": "#VesselSpace",
+                    "@type": "ex:SpaceContext",
+                    "schema:name": "Vessel Space",
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#VesselSpace_Exp1"
+                            },
+                            {
+                                "@id": "#VesselSpace_Exp2"
+                            },
+                            {
+                                "@id": "#VesselSpace_Exp3"
+                            },
+                            {
+                                "@id": "#VesselSpace_Exp4"
+                            },
+                            {
+                                "@id": "#VesselSpace_Exp5"
+                            },
+                            {
+                                "@id": "#VesselSpace_Exp6"
+                            },
+                            {
+                                "@id": "#VesselSpace_Exp7"
+                            },
+                            {
+                                "@id": "#VesselSpace_Exp8"
+                            },
+                            {
+                                "@id": "#VesselSpace_Exp9"
+                            }
+                        ]
+                },
+
+                {
+                    "@id": "#VesselStructure",
+                    "@type": "ex:StructureContext",
+                    "schema:name": "Vessel Structure",
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#VesselStructure_Exp1"
+                            },
+                            {
+                                "@id": "#VesselStructure_Exp2"
+                            },
+                            {
+                                "@id": "#VesselStructure_Exp3"
+                            },
+                            {
+                                "@id": "#VesselStructure_Exp4"
+                            },
+                            {
+                                "@id": "#VesselStructure_Exp5"
+                            },
+                            {
+                                "@id": "#VesselStructure_Exp6"
+                            },
+                            {
+                                "@id": "#VesselStructure_Exp7"
+                            },
+                            {
+                                "@id": "#VesselStructure_Exp8"
+                            },
+                            {
+                                "@id": "#VesselStructure_Exp9"
+                            }
+                        ]
+                },
+
+                {
+                    "@id": "#VesselSubstance",
+                    "@type": "ex:SubstanceContext",
+                    "schema:name": "Vessel Substance",
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#VesselSubstance_Exp1"
+                            },
+                            {
+                                "@id": "#VesselSubstance_Exp2"
+                            },
+                            {
+                                "@id": "#VesselSubstance_Exp3"
+                            },
+                            {
+                                "@id": "#VesselSubstance_Exp4"
+                            },
+                            {
+                                "@id": "#VesselSubstance_Exp5"
+                            },
+                            {
+                                "@id": "#VesselSubstance_Exp6"
+                            },
+                            {
+                                "@id": "#VesselSubstance_Exp7"
+                            },
+                            {
+                                "@id": "#VesselSubstance_Exp8"
+                            },
+                            {
+                                "@id": "#VesselSubstance_Exp9"
+                            }
+                        ]
+                },
 
 
 
-    — (H2) Sensors — END --------------------------------------------------------------------------------------------------------------------------}
+            · · · (H) - 1.1a - Context  · · · · · · Context of Vessel: General · · ·},
+
+        · · · (H) - 1.1a · · · · · · Vessel: General  — END · · ·},
+
+        {· · · (H) - 1.1b  · · · · · · Vessel: Specific · · ·
+
+            {· · · (H) - 1.1b - 1  · · · · · · Vessel - Experiment 1 · · ·
+
+                % entity here
+
+                {· · · (H) - 1.1b - 1 - Context  · · · · · · Context of Vessel: Specific · · ·
+
+                    % contexts of entity here (all six context entities)
+
+
+                · · · (H) - 1.1b - 1 - Context  · · · · · · Context of Vessel: Specific · · ·},
+
+            · · · (H) - 1.1b - 1  · · · · · · Vessel: Specific - Experiment 1  — END · · ·},
+
+            {· · · (H) - 1.1b - 2  · · · · · · Vessel - Experiment 2 · · ·
+
+                % entity here
+
+                {· · · (H) - 1.1b - 2 - Context  · · · · · · Context of Vessel: Specific · · ·
+
+                    % contexts of entity here (all six context entities)
+
+
+                · · · (H) - 1.1b - 2 - Context  · · · · · · Context of Vessel: Specific · · ·},
+
+            · · · (H) - 1.1b - 2  · · · · · · Vessel: Specific - Experiment 2  — END · · ·},
+
+        · · · (H) - 1.1b · · · · · · Vessel: Specific  — END · · ·},
+
+    · · · (H) - 1.1  · · · · · · Vessel  — END · · ·},
+
+
+    {· · · (H) - 1.2  · · · · · · Jacket · · ·
+
+        {· · · (H) - 1.2a  · · · · · · Jacket: General · · ·
+
+            % entity here
+
+            {· · · (H) - 1.2a - Context  · · · · · · Context of Jacket: General · · ·
+
+                % contexts of entity here (all six context entities)
+
+
+            · · · (H) - 1.2a - Context  · · · · · · Context of Jacket: General · · ·},
+
+        · · · (H) - 1.2a · · · · · · Jacket: General  — END · · ·},
+
+        {· · · (H) - 1.2b  · · · · · · Jacket: Specific · · ·
+
+            {· · · (H) - 1.2b - 1  · · · · · · Jacket - Experiment 1 · · ·
+
+                % entity here
+
+                {· · · (H) - 1.2b - 1 - Context  · · · · · · Context of Jacket: Specific · · ·
+
+                    % contexts of entity here (all six context entities)
+
+
+                · · · (H) - 1.2b - 1 - Context  · · · · · · Context of Jacket: Specific · · ·},
+
+            · · · (H) - 1.2b - 1  · · · · · · Jacket: Specific - Experiment 1  — END · · ·},
+
+            {· · · (H) - 1.2b - 2  · · · · · · Jacket - Experiment 2 · · ·
+
+                % entity here
+
+                {· · · (H) - 1.2b - 2 - Context  · · · · · · Context of Jacket: Specific · · ·
+
+                    % contexts of entity here (all six context entities)
+
+
+                · · · (H) - 1.2b - 2 - Context  · · · · · · Context of Jacket: Specific · · ·},
+
+            · · · (H) - 1.2b - 2  · · · · · · Jacket: Specific - Experiment 2  — END · · ·},
+
+        · · · (H) - 1.2b · · · · · · Jacket: Specific  — END · · ·},
+
+    · · · (H) - 1.2  · · · · · · Jacket  — END · · ·},
+
+
+    {· · · (H) - 1.3  · · · · · · Sparger · · ·
+
+        {· · · (H) - 1.3a  · · · · · · Sparger: General · · ·
+
+            % entity here
+
+            {· · · (H) - 1.3a - Context  · · · · · · Context of Sparger: General · · ·
+
+                % contexts of entity here (all six context entities)
+
+
+            · · · (H) - 1.3a - Context  · · · · · · Context of Sparger: General · · ·},
+
+        · · · (H) - 1.3a · · · · · · Sparger: General  — END · · ·},
+
+        {· · · (H) - 1.3b  · · · · · · Sparger: Specific · · ·
+
+            {· · · (H) - 1.3b - 1  · · · · · · Sparger - Experiment 1 · · ·
+
+                % entity here
+
+                {· · · (H) - 1.3b - 1 - Context  · · · · · · Context of Sparger: Specific · · ·
+
+                    % contexts of entity here (all six context entities)
+
+
+                · · · (H) - 1.3b - 1 - Context  · · · · · · Context of Sparger: Specific · · ·},
+
+            · · · (H) - 1.3b - 1  · · · · · · Sparger: Specific - Experiment 1  — END · · ·},
+
+            {· · · (H) - 1.3b - 2  · · · · · · Sparger - Experiment 2 · · ·
+
+                % entity here
+
+                {· · · (H) - 1.3b - 2 - Context  · · · · · · Context of Sparger: Specific · · ·
+
+                    % contexts of entity here (all six context entities)
+
+
+                · · · (H) - 1.3b - 2 - Context  · · · · · · Context of Sparger: Specific · · ·},
+
+            · · · (H) - 1.3b - 2  · · · · · · Sparger: Specific - Experiment 2  — END · · ·},
+
+        · · · (H) - 1.3b · · · · · · Sparger: Specific  — END · · ·},
+
+    · · · (H) - 1.3  · · · · · · Sparger  — END · · ·},
+
+
+    {· · · (H) - 1.4  · · · · · · Stirrer · · ·
+
+        {· · · (H) - 1.4a  · · · · · · Stirrer: General · · ·
+
+            % entity here
+
+            {· · · (H) - 1.4a - Context  · · · · · · Context of Stirrer: General · · ·
+
+                % contexts of entity here (all six context entities)
+
+
+            · · · (H) - 1.4a - Context  · · · · · · Context of Stirrer: General · · ·},
+
+        · · · (H) - 1.4a · · · · · · Stirrer: General  — END · · ·},
+
+        {· · · (H) - 1.4b  · · · · · · Stirrer: Specific · · ·
+
+            {· · · (H) - 1.4b - 1  · · · · · · Stirrer - Experiment 1 · · ·
+
+                % entity here
+
+                {· · · (H) - 1.4b - 1 - Context  · · · · · · Context of Stirrer: Specific · · ·
+
+                    % contexts of entity here (all six context entities)
+
+
+                · · · (H) - 1.4b - 1 - Context  · · · · · · Context of Stirrer: Specific · · ·},
+
+            · · · (H) - 1.4b - 1  · · · · · · Stirrer: Specific - Experiment 1  — END · · ·},
+
+            {· · · (H) - 1.4b - 2  · · · · · · Stirrer - Experiment 2 · · ·
+
+                % entity here
+
+                {· · · (H) - 1.4b - 2 - Context  · · · · · · Context of Stirrer: Specific · · ·
+
+                    % contexts of entity here (all six context entities)
+
+
+                · · · (H) - 1.4b - 2 - Context  · · · · · · Context of Stirrer: Specific · · ·},
+
+            · · · (H) - 1.4b - 2  · · · · · · Stirrer: Specific - Experiment 2  — END · · ·},
+
+        · · · (H) - 1.4b · · · · · · Stirrer: Specific  — END · · ·},
+
+    · · · (H) - 1.4  · · · · · · Stirrer  — END · · ·},
+
+
+    {· · · (H) - 1.5  · · · · · · Temperature Sensor · · ·
+
+        {· · · (H) - 1.5a  · · · · · · Temperature Sensor: General · · ·
+
+            % entity here
+
+            {· · · (H) - 1.5a - Context  · · · · · · Context of Temperature Sensor: General · · ·
+
+                % contexts of entity here (all six context entities)
+
+
+            · · · (H) - 1.5a - Context  · · · · · · Context of Temperature Sensor: General · · ·},
+
+        · · · (H) - 1.5a · · · · · · Temperature Sensor: General  — END · · ·},
+
+        {· · · (H) - 1.5b  · · · · · · Temperature Sensor: Specific · · ·
+
+            {· · · (H) - 1.5b - 1  · · · · · · Temperature Sensor - Experiment 1 · · ·
+
+                % entity here
+
+                {· · · (H) - 1.5b - 1 - Context  · · · · · · Context of Temperature Sensor: Specific · · ·
+
+                    % contexts of entity here (all six context entities)
+
+
+                · · · (H) - 1.5b - 1 - Context  · · · · · · Context of Temperature Sensor: Specific · · ·},
+
+            · · · (H) - 1.5b - 1  · · · · · · Temperature Sensor: Specific - Experiment 1  — END · · ·},
+
+            {· · · (H) - 1.5b - 2  · · · · · · Temperature Sensor - Experiment 2 · · ·
+
+                % entity here
+
+                {· · · (H) - 1.5b - 2 - Context  · · · · · · Context of Temperature Sensor: Specific · · ·
+
+                    % contexts of entity here (all six context entities)
+
+
+                · · · (H) - 1.5b - 2 - Context  · · · · · · Context of Temperature Sensor: Specific · · ·},
+
+            · · · (H) - 1.5b - 2  · · · · · · Temperature Sensor: Specific - Experiment 2  — END · · ·},
+
+        · · · (H) - 1.5b · · · · · · Temperature Sensor: Specific  — END · · ·},
+
+    · · · (H) - 1.5  · · · · · · Temperature Sensor  — END · · ·},
+
+
+    {· · · (H) - 1.6  · · · · · · Pressure Sensor · · ·
+
+        {· · · (H) - 1.6a  · · · · · · Pressure Sensor: General · · ·
+
+            % entity here
+
+            {· · · (H) - 1.6a - Context  · · · · · · Context of Pressure Sensor: General · · ·
+
+                % contexts of entity here (all six context entities)
+
+
+            · · · (H) - 1.6a - Context  · · · · · · Context of Pressure Sensor: General · · ·},
+
+        · · · (H) - 1.6a · · · · · · Pressure Sensor: General  — END · · ·},
+
+        {· · · (H) - 1.6b  · · · · · · Pressure Sensor: Specific · · ·
+
+            {· · · (H) - 1.6b - 1  · · · · · · Pressure Sensor - Experiment 1 · · ·
+
+                % entity here
+
+                {· · · (H) - 1.6b - 1 - Context  · · · · · · Context of Pressure Sensor: Specific · · ·
+
+                    % contexts of entity here (all six context entities)
+
+
+                · · · (H) - 1.6b - 1 - Context  · · · · · · Context of Pressure Sensor: Specific · · ·},
+
+            · · · (H) - 1.6b - 1  · · · · · · Pressure Sensor: Specific - Experiment 1  — END · · ·},
+
+            {· · · (H) - 1.6b - 2  · · · · · · Pressure Sensor - Experiment 2 · · ·
+
+                % entity here
+
+                {· · · (H) - 1.6b - 2 - Context  · · · · · · Context of Pressure Sensor: Specific · · ·
+
+                    % contexts of entity here (all six context entities)
+
+
+                · · · (H) - 1.6b - 2 - Context  · · · · · · Context of Pressure Sensor: Specific · · ·},
+
+            · · · (H) - 1.6b - 2  · · · · · · Pressure Sensor: Specific - Experiment 2  — END · · ·},
+
+        · · · (H) - 1.6b · · · · · · Pressure Sensor: Specific  — END · · ·},
+
+    · · · (H) - 1.6  · · · · · · Pressure Sensor  — END · · ·},
+
+
+    {· · · (H) - 1.7  · · · · · · MFM · · ·
+
+        {· · · (H) - 1.7a  · · · · · · MFM: General · · ·
+
+            % entity here
+
+            {· · · (H) - 1.7a - Context  · · · · · · Context of MFM: General · · ·
+
+                % contexts of entity here (all six context entities)
+
+
+            · · · (H) - 1.7a - Context  · · · · · · Context of MFM: General · · ·},
+
+        · · · (H) - 1.7a · · · · · · MFM: General  — END · · ·},
+
+        {· · · (H) - 1.7b  · · · · · · MFM: Specific · · ·
+
+            {· · · (H) - 1.7b - 1  · · · · · · MFM - Experiment 1 · · ·
+
+                % entity here
+
+                {· · · (H) - 1.7b - 1 - Context  · · · · · · Context of MFM: Specific · · ·
+
+                    % contexts of entity here (all six context entities)
+
+
+                · · · (H) - 1.7b - 1 - Context  · · · · · · Context of MFM: Specific · · ·},
+
+            · · · (H) - 1.7b - 1  · · · · · · MFM: Specific - Experiment 1  — END · · ·},
+
+            {· · · (H) - 1.7b - 2  · · · · · · MFM - Experiment 2 · · ·
+
+                % entity here
+
+                {· · · (H) - 1.7b - 2 - Context  · · · · · · Context of MFM: Specific · · ·
+
+                    % contexts of entity here (all six context entities)
+
+
+                · · · (H) - 1.7b - 2 - Context  · · · · · · Context of MFM: Specific · · ·},
+
+            · · · (H) - 1.7b - 2  · · · · · · MFM: Specific - Experiment 2  — END · · ·},
+
+        · · · (H) - 1.7b · · · · · · MFM: Specific  — END · · ·},
+
+    · · · (H) - 1.7  · · · · · · MFM  — END · · ·},
 
 ==== (H) Devices — END =====================================================================================================================================}
 
@@ -9215,7 +10233,7 @@
 
 
 
-    
+
 
     {· · · (J) - 2  · · · · · · Cleaning Procedure Vessel and Stirrer (Main)· · ·
 
