@@ -1,5 +1,11 @@
 
 
+
+
+{
+
+    
+
 {++++++ Tasks ++++++
 
     {++++++ Experimental Procedure ++++++
@@ -18,285 +24,12 @@
 
                 {++++++ Transfer Tasks ++++++
 
-                    %------------------------------------------ Add Liquid ----------------------------
-
-                     {
-                        "@id": "#AddLiquidTask",
-                        "@type": "ex:Task",
-                        "schema:name": "Add Liquid",
-                        "schema:description": "Task for supplying a liquid stream to the reactor, where the supplied liquid becomes part of the liquid phase",
-                        "ex:describesContext":
-                        [
-                        ],
-                        "ex:hasDuration":
-                        {
-                            "@id": "#TransferTaskDuration"
-                        },
-                        "ex:realizes": "dexpi:SupplyingFluids",
-                        "ex:performedBy":
-                        {
-                            "@id": "#AlexeiLapkin"
-                        },
-                        "ex:hasTransferredStream":
-                        {
-                            "@id": "#AddLiquidStream"
-                        },
-                        "ex:generatesPhase":
-                        [
-                            {
-                                "@id": "#LiquidPhase"
-                            }
-                        ],
-                        "ex:hasInstance":
-                        [
-                            {
-                                "@id": "#AddLiquidTask_Exp1"
-                            },
-                            {
-                                "@id": "#AddLiquidTask_Exp2"
-                            },
-                            {
-                                "@id": "#AddLiquidTask_Exp3"
-                            },
-                            {
-                                "@id": "#AddLiquidTask_Exp4"
-                            },
-                            {
-                                "@id": "#AddLiquidTask_Exp5"
-                            },
-                            {
-                                "@id": "#AddLiquidTask_Exp6"
-                            },
-                            {
-                                "@id": "#AddLiquidTask_Exp7"
-                            },
-                            {
-                                "@id": "#AddLiquidTask_Exp8"
-                            },
-                            {
-                                "@id": "#AddLiquidTask_Exp9"
-                            }
-                        ]
-                    },
-
-                    {++++++ Specific Tasks: Add Liquid ++++++
-
-                        {
-                            "@id": "#AddLiquidTask_Exp1",
-                            "@type": "ex:Task",
-                            "schema:name": "Add Liquid - Experiment 1",
-                            "schema:description": "Transfer of the liquid stream into the reactor during Experiment 1",
-                            "ex:describesContext":
-                            [
-                            ],
-                            "ex:hasStartOffset":
-                            {
-                                "value": "PT2M",
-                                "ex:hasProvenanceType": "ex:Estimated"
-                            },
-                            "ex:hasTransferredStream":
-                            {
-                                "@id": "#AddLiquidStream_Exp1"
-                            },
-                            "ex:generatesPhase":
-                            [
-                                {
-                                    "@id": "#LiquidPhase_Exp1"
-                                }
-                            ],
-                            "ex:isInstanceOf":
-                            {
-                                "@id": "#AddLiquidTask"
-                            }
-                        }
-
-                    ------ Specific Tasks: Add Liquid ------}
 
                     %------------------------------------------ Add Solid ----------------------------
-                    {
-                        "@id": "#AddSolidTask",
-                        "@type": "ex:Task",
-                        "schema:name": "Add Solid",
-                        "schema:description": "Task for supplying a solid stream to the reactor, where the supplied solid becomes part of the solid phase",
-                        "ex:describesContext":
-                        [
-                        ],
-                        "ex:hasDuration":
-                        {
-                            "@id": "#TransferTaskDuration"
-                        },
-                        "ex:realizes": "dexpi:SupplyingSolids",
-                        "ex:performedBy":
-                        {
-                            "@id": "#AlexeiLapkin"
-                        },
-                        "ex:hasTransferredStream":
-                        {
-                            "@id": "#AddSolidStream"
-                        },
-                        "ex:generatesPhase":
-                        [
-                            {
-                                "@id": "#SolidPhase"
-                            }
-                        ],
-                        "ex:hasInstance":
-                        [
-                            {
-                                "@id": "#AddSolidTask_Exp1"
-                            },
-                            {
-                                "@id": "#AddSolidTask_Exp2"
-                            },
-                            {
-                                "@id": "#AddSolidTask_Exp3"
-                            },
-                            {
-                                "@id": "#AddSolidTask_Exp4"
-                            },
-                            {
-                                "@id": "#AddSolidTask_Exp5"
-                            },
-                            {
-                                "@id": "#AddSolidTask_Exp6"
-                            },
-                            {
-                                "@id": "#AddSolidTask_Exp7"
-                            },
-                            {
-                                "@id": "#AddSolidTask_Exp8"
-                            },
-                            {
-                                "@id": "#AddSolidTask_Exp9"
-                            }
-                        ]
-                    },
-
-                    {++++++ Specific Tasks: Add Solid ++++++
-
-                        {
-                            "@id": "#AddSolidTask_Exp1",
-                            "@type": "ex:Task",
-                            "schema:name": "Add Solid - Experiment 1",
-                            "schema:description": "Transfer of the solid stream into the reactor during Experiment 1",
-                            "ex:describesContext":
-                            [
-                            ],
-                            "ex:hasStartOffset":
-                            {
-                                "value": "PT2M",
-                                "ex:hasProvenanceType": "ex:Estimated"
-                            },
-                            "ex:hasTransferredStream":
-                            {
-                                "@id": "#AddSolidStream_Exp1"
-                            },
-                            "ex:generatesPhase":
-                            [
-                                {
-                                    "@id": "#SolidPhase_Exp1"
-                                }
-                            ],
-                            "ex:isInstanceOf":
-                            {
-                                "@id": "#AddSolidTask"
-                            }
-                        },
-
-                    ------ Specific Tasks: Add Solid ------}
-
+                    
 
                     %------------------------------------------ Add Catalyst ----------------------------
-                    {
-                        "@id": "#AddingCatalystTask",
-                        "@type": "ex:Task",
-                        "schema:name": "Adding Catalyst",
-                        "schema:description": "Task for supplying the catalyst to the reactor, where the supplied catalyst becomes part of the catalyst phase",
-                        "ex:describesContext":
-                        [
-                        ],
-                        "ex:hasDuration":
-                        {
-                            "@id": "#TransferTaskDuration"
-                        },
-                        "ex:realizes": "dexpi:SupplyingSolids",
-                        "ex:performedBy":
-                        {
-                            "@id": "#AlexeiLapkin"
-                        },
-                        "ex:hasTransferredStream":
-                        {
-                            "@id": "#AddCatalystStream"
-                        },
-                        "ex:generatesPhase":
-                        [
-                            {
-                                "@id": "#CatalystPhase"
-                            }
-                        ],
-                        "ex:hasInstance":
-                        [
-                            {
-                                "@id": "#AddingCatalystTask_Exp1"
-                            },
-                            {
-                                "@id": "#AddingCatalystTask_Exp2"
-                            },
-                            {
-                                "@id": "#AddingCatalystTask_Exp3"
-                            },
-                            {
-                                "@id": "#AddingCatalystTask_Exp4"
-                            },
-                            {
-                                "@id": "#AddingCatalystTask_Exp5"
-                            },
-                            {
-                                "@id": "#AddingCatalystTask_Exp6"
-                            },
-                            {
-                                "@id": "#AddingCatalystTask_Exp7"
-                            },
-                            {
-                                "@id": "#AddingCatalystTask_Exp8"
-                            },
-                            {
-                                "@id": "#AddingCatalystTask_Exp9"
-                            }
-                        ]
-                    },
-
-                    {++++++ Specific Tasks: Add Catalyst ++++++
-
-                        {
-                            "@id": "#AddingCatalystTask_Exp1",
-                            "@type": "ex:Task",
-                            "schema:name": "Adding Catalyst - Experiment 1",
-                            "schema:description": "Transfer of the catalyst into the reactor during Experiment 1",
-                            "ex:describesContext":
-                            [
-                            ],
-                            "ex:hasStartOffset":
-                            {
-                                "value": "PT2M",
-                                "ex:hasProvenanceType": "ex:Estimated"
-                            },
-                            "ex:hasTransferredStream":
-                            {
-                                "@id": "#AddCatalystStream_Exp1"
-                            },
-                            "ex:generatesPhase":
-                            [
-                                {
-                                    "@id": "#CatalystPhase_Exp1"
-                                }
-                            ],
-                            "ex:isInstanceOf":
-                            {
-                                "@id": "#AddingCatalystTask"
-                            }
-                        },
-
+              
                     ------ Specific Tasks: Add Catalyst ------},
 
                     %------------------------------------------ Remove Liquid ----------------------------
@@ -1875,3 +1608,242 @@
 
 
 ------ Tasks ------},
+
+}
+
+
+
+
+{++++++ Devices ++++++
+
+
+
+
+
+    {++++++ Reactor (general and specific) ++++++
+
+
+
+        {++++++ Reactor General ++++++
+
+            
+
+            {++++++ Reactor Context ++++++
+
+                
+
+            ------ Reactor Context ------}
+
+
+            
+
+        ------ Reactor General ------},
+
+
+
+        {++++++ Reactor Specific ++++++
+
+            {++++++ Reactor Specific - Experiment 1 ++++++
+
+                
+
+
+                
+
+            ------ Reactor Specific - Experiment 1 ------}
+
+        ------ Reactor Specific ------}
+
+
+    ------ Reactor (general and specific) ------}
+
+
+    {++++++ Vessel (general and specific) ++++++
+
+        
+        
+        {++++++ Vessel General ++++++
+
+                
+
+                {++++++ Vessel Context ++++++
+
+                   
+                ------ Vessel Context ------}
+
+        ------ Vessel General ------},
+
+        {++++++ Vessel Specific ++++++
+
+            
+
+
+            {++++++ Vessel Specific Context ++++++
+
+                
+
+            ------ Vessel Specific Context ------}
+
+        ------ Vessel Specific ------}
+
+        
+    
+
+
+           
+
+
+    ------ Vessel ------}
+
+
+
+
+    {++++++ Jacket (general and specific) ++++++
+
+        {++++++ Jacket General ++++++
+
+                
+
+                {++++++ General Jacket Context ++++++
+
+                    
+
+                ------ General Jacket Context ------}
+
+
+
+
+                
+
+
+        ------ Jacket General ------},
+
+        {++++++ Jacket Specific ++++++
+
+            {++++++ Jacket Specific - Experiment 1 ++++++
+
+                
+
+
+                {++++++ Specific Jacket Experiment 1 Context ++++++
+
+                    
+
+                ------ Specific Jacket Experiment 1  Context ------}
+
+                
+
+
+            ------ Jacket Specific - Experiment 1 ------},
+
+        ------ Jacket Specific ------}
+
+
+    ------ Jacket (general and specific) ------}
+    
+
+
+
+
+
+
+
+
+    {++++++ Sparger (general and specific) ++++++
+
+        {++++++ Sparger General ++++++
+
+                
+
+
+
+
+
+                
+
+
+            ------ Sparger General ------},
+
+        {++++++ Sparger Specific ++++++
+
+            {++++++ Sparger Specific - Experiment 1 ++++++
+
+                
+
+
+
+
+
+                
+
+
+            ------ Sparger Specific - Experiment 1 ------},
+
+        ------ Sparger Specific ------}
+
+    ------ Sparger (general and specific) ------}
+
+
+
+
+
+
+    {++++++ Stirrer (general and specific) ++++++
+
+        {++++++ Stirrer General ++++++
+
+           
+
+
+
+
+
+           
+
+
+        ------ Stirrer General ------}
+
+
+        {++++++ Stirrer Specific ++++++
+
+            {++++++ Stirrer Specific - Experiment 1 ++++++
+
+                
+
+
+
+
+
+                
+
+
+            ------ Stirrer Specific - Experiment 1 ------}
+
+        ------ Stirrer Specific ------}
+
+
+    ------ (general and specific) ------},
+
+
+    % Sensoren etc Liste 
+    {
+        "@id": "#TemperatureSensor"
+    },
+    {
+        "@id": "#PressureSensor"
+    },
+    {
+        "@id": "#GasFlowMeter"
+    },
+    {
+        "@id": "#Balance"
+    },
+
+
+
+
+
+
+
+
+------ Devices ------}
