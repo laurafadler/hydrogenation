@@ -646,6 +646,7 @@
             "@type": "ex:StoichiometricReaction",
             "schema:name": "Hydrogenation Reaction",
             "schema:description": "RDY + 4 H2 > RDEt",
+            % catalyst also in here? if yes, then I'll add the solid catalyst phase as well
             "schema:comment": "Should I put in catalyst and solvent here as well? How do we include the solvent?",
             "ex:hasParticipant": 
                 [      
@@ -664,6 +665,19 @@
                 {
                     "@id": "#ReactionMechanism1"
                 },
+            "ex:occursBetweenPhases": 
+                [
+                    {
+                        "@id": "#LiquidPhase"
+                    },
+                    % solid phase technically not, if we assume RDY is solved in the liquid phase
+                    {
+                        "@id": "#SolidPhase"
+                    },
+                    {
+                        "@id": "#DispersedGasPhase"
+                    }
+                ],
         },
 
 
@@ -689,7 +703,12 @@
             "ex:describedByMechanism": 
                 {
                     "@id": "#ReactionMechanism2"
-                }
+                },
+            % catalyst also in here? if yes, then I'll add the solid catalyst phase as well
+            "ex:occurrsInPhase": 
+                {
+                    "@id": "#LiquidPhase"
+                },
         },
 
         {
@@ -714,7 +733,12 @@
             "ex:describedByMechanism": 
                 {
                     "@id": "#ReactionMechanism3"
-                }
+                },
+            % catalyst also in here? if yes, then I'll add the solid catalyst phase as well
+            "ex:occurrsInPhase": 
+                {
+                    "@id": "#LiquidPhase"
+                },
 
             
 
@@ -748,7 +772,16 @@
                         {
                             "@id": "#Participant_R1_1_cat-H"
                         }
-                    ]
+                    ],
+                "ex:occursBetweenPhases": 
+                    [
+                        {
+                            "@id": "#DispersedGasPhase"
+                        },
+                        {
+                            "@id": "#CatalystPhase"
+                        }
+                    ],
                     
                 
             },
@@ -769,6 +802,15 @@
                         },
                         {
                             "@id": "#Participant_R1_2_cat-RYE"
+                        }
+                    ],
+                "ex:occursBetweenPhases": 
+                    [
+                        {
+                            "@id": "#LiquidPhase"
+                        },
+                        {
+                            "@id": "#CatalystPhase"
                         }
                     ],
                 
@@ -794,7 +836,16 @@
                         {
                             "@id": "#Participant_R1_3_cat(H)"
                         }
-                    ]
+                    ],
+                "ex:occursBetweenPhases": 
+                    [
+                        {
+                            "@id": "#LiquidPhase"
+                        },
+                        {
+                            "@id": "#CatalystPhase"
+                        }
+                    ],
                 
             },
 
@@ -816,7 +867,16 @@
                         {
                             "@id": "#Participant_R1_4_cat-RYA"
                         }
-                    ]
+                    ],
+                "ex:occursBetweenPhases": 
+                    [
+                        {
+                            "@id": "#LiquidPhase"
+                        },
+                        {
+                            "@id": "#CatalystPhase"
+                        }
+                    ],
                 
             },
 
@@ -841,7 +901,16 @@
                         {
                             "@id": "#Participant_R1_5_cat(H)"
                         }
-                    ]
+                    ],
+                "ex:occursBetweenPhases": 
+                    [
+                        {
+                            "@id": "#LiquidPhase"
+                        },
+                        {
+                            "@id": "#CatalystPhase"
+                        }
+                    ],
                 
             },
 
@@ -862,7 +931,16 @@
                         {
                             "@id": "#Participant_R1_6_cat-REA"
                         }
-                    ]
+                    ],
+                "ex:occursBetweenPhases": 
+                    [
+                        {
+                            "@id": "#LiquidPhase"
+                        },
+                        {
+                            "@id": "#CatalystPhase"
+                        }
+                    ],
                 
             },
 
@@ -889,7 +967,16 @@
                         {
                             "@id": "#Participant_R1_7_cat(H)"
                         }
-                    ]
+                    ],
+                "ex:occursBetweenPhases": 
+                    [
+                        {
+                            "@id": "#LiquidPhase"
+                        },
+                        {
+                            "@id": "#CatalystPhase"
+                        }
+                    ],
                 
             },
 
@@ -915,7 +1002,16 @@
                         {
                             "@id": "#Participant_R1_8_cat-RDEt"
                         }
-                    ]
+                    ],
+                "ex:occursBetweenPhases": 
+                    [
+                        {
+                            "@id": "#LiquidPhase"
+                        },
+                        {
+                            "@id": "#CatalystPhase"
+                        }
+                    ],
                 
             },
 
@@ -942,7 +1038,16 @@
                         {
                             "@id": "#Participant_R1_9_cat(H)"
                         }
-                    ]
+                    ],
+                "ex:occursBetweenPhases": 
+                    [
+                        {
+                            "@id": "#LiquidPhase"
+                        },
+                        {
+                            "@id": "#CatalystPhase"
+                        }
+                    ],
                 
             },
 
@@ -969,7 +1074,16 @@
                         {
                             "@id": "#Participant_R2_1_catx-RDEt"
                         }
-                    ]
+                    ],
+                "ex:occursBetweenPhases": 
+                    [
+                        {
+                            "@id": "#LiquidPhase"
+                        },
+                        {
+                            "@id": "#CatalystPhase"
+                        }
+                    ],
                     
                 
             },
@@ -998,7 +1112,16 @@
                         {
                             "@id": "#Participant_R2_2_cat(X)"
                         }
-                    ]
+                    ],
+                "ex:occursBetweenPhases": 
+                    [
+                        {
+                            "@id": "#LiquidPhase"
+                        },
+                        {
+                            "@id": "#CatalystPhase"
+                        }
+                    ],
                 
             },
 
@@ -1023,7 +1146,16 @@
                         {
                             "@id": "#Participant_R3_2_cat(X)"
                         }
-                    ]
+                    ],
+                "ex:occursBetweenPhases": 
+                    [
+                        {
+                            "@id": "#LiquidPhase"
+                        },
+                        {
+                            "@id": "#CatalystPhase"
+                        }
+                    ],
                 
             },
 
