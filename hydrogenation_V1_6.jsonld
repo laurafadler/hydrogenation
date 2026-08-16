@@ -8579,69 +8579,109 @@
 
     {· · · (J) - 5  · · · · · · Weighing · · ·
 
-        {· · · (J) - 5a  · · · · · · Weighing: General · · ·
+        {· · · (J) - 5.1  · · · · · · Weighing: Start Mass RDY · · ·
 
+            {· · · (J) - 5.1a  · · · · · · Weighing: Start Mass RDY: General · · ·
 
-        · · · (J) - 5a · · · · · · Weighing: General  — END · · ·},
+                % entity here
 
-        {· · · (J) - 5b  · · · · · · Weighing: Specific · · ·
+            · · · (J) - 5.1a · · · · · · Weighing: Start Mass RDY: General  — END · · ·},
 
+            {· · · (J) - 5.1b  · · · · · · Weighing: Start Mass RDY: Specific · · ·
 
-            {· · · (J) - 5b - Start Mass RDY - 1  · · · · · · Weighing - Experiment 1 · · ·
+                {· · · (J) - 5.1b - 1  · · · · · · Weighing: Start Mass RDY - Experiment 1 · · ·
 
-            
-                
+                    % entity here
 
+                · · · (J) - 5.1b - 1 · · · · · · Weighing: Start Mass RDY: Specific - Experiment 1  — END · · ·},
 
-            · · · (J) - 5b - Start Mass RDY - 1  · · · · · · Weighing: Specific - Experiment 1  — END · · ·},
+                {· · · (J) - 5.1b - 2  · · · · · · Weighing: Start Mass RDY - Experiment 2 · · ·
 
-            {· · · (J) - 5b - Start Mass RDY - 2  · · · · · · Weighing - Experiment 2 · · ·
-            · · · (J) - 5b - Start Mass RDY - 2  · · · · · · Weighing: Specific - Experiment 2  — END · · ·},
+                    % entity here
 
+                · · · (J) - 5.1b - 2 · · · · · · Weighing: Start Mass RDY: Specific - Experiment 2  — END · · ·},
 
+            · · · (J) - 5.1b · · · · · · Weighing: Start Mass RDY: Specific  — END · · ·},
 
-            {· · · (J) - 5b - Final Mass RDY - 1  · · · · · · Weighing - Experiment 1 · · ·
+        · · · (J) - 5.1 · · · · · · Weighing: Start Mass RDY  — END · · ·},
 
-            
-                
+        {· · · (J) - 5.2  · · · · · · Weighing: Final Mass RDY · · ·
 
+            {· · · (J) - 5.2a  · · · · · · Weighing: Final Mass RDY: General · · ·
 
-            · · · (J) - 5b - Final Mass RDY - 1  · · · · · · Weighing: Specific - Experiment 1  — END · · ·},
+                % entity here
 
-            {· · · (J) - 5b - Final Mass RDY - 2  · · · · · · Weighing - Experiment 2 · · ·
-            · · · (J) - 5b - Final Mass RDY - 2  · · · · · · Weighing: Specific - Experiment 2  — END · · ·},
+            · · · (J) - 5.2a · · · · · · Weighing: Final Mass RDY: General  — END · · ·},
 
+            {· · · (J) - 5.2b  · · · · · · Weighing: Final Mass RDY: Specific · · ·
 
+                {· · · (J) - 5.2b - 1  · · · · · · Weighing: Final Mass RDY - Experiment 1 · · ·
 
-            {· · · (J) - 5b - Final Mass RDEt - 1  · · · · · · Weighing - Experiment 1 · · ·
+                    % entity here
 
-            
-                
+                · · · (J) - 5.2b - 1 · · · · · · Weighing: Final Mass RDY: Specific - Experiment 1  — END · · ·},
 
+                {· · · (J) - 5.2b - 2  · · · · · · Weighing: Final Mass RDY - Experiment 2 · · ·
 
-            · · · (J) - 5b - Final Mass RDEt - 1  · · · · · · Weighing: Specific - Experiment 1  — END · · ·},
+                    % entity here
 
-            {· · · (J) - 5b - Final Mass RDEt - 2  · · · · · · Weighing - Experiment 2 · · ·
-            · · · (J) - 5b - Final Mass RDEt - 2  · · · · · · Weighing: Specific - Experiment 2  — END · · ·},
+                · · · (J) - 5.2b - 2 · · · · · · Weighing: Final Mass RDY: Specific - Experiment 2  — END · · ·},
 
+            · · · (J) - 5.2b · · · · · · Weighing: Final Mass RDY: Specific  — END · · ·},
 
+        · · · (J) - 5.2 · · · · · · Weighing: Final Mass RDY  — END · · ·},
 
-            {· · · (J) - 5b - Final Mass Dimer - 1  · · · · · · Weighing - Experiment 1 · · ·
+        {· · · (J) - 5.3  · · · · · · Weighing: Final Mass RDEt · · ·
 
-            
-                
+            {· · · (J) - 5.3a  · · · · · · Weighing: Final Mass RDEt: General · · ·
 
+                % entity here
 
-            · · · (J) - 5b - Final Mass Dimer - 1  · · · · · · Weighing: Specific - Experiment 1  — END · · ·},
+            · · · (J) - 5.3a · · · · · · Weighing: Final Mass RDEt: General  — END · · ·},
 
-            {· · · (J) - 5b - Final Mass Dimer - 2  · · · · · · Weighing - Experiment 2 · · ·
-            · · · (J) - 5b - Final Mass Dimer - 2  · · · · · · Weighing: Specific - Experiment 2  — END · · ·},
+            {· · · (J) - 5.3b  · · · · · · Weighing: Final Mass RDEt: Specific · · ·
 
-            
+                {· · · (J) - 5.3b - 1  · · · · · · Weighing: Final Mass RDEt - Experiment 1 · · ·
 
+                    % entity here
 
+                · · · (J) - 5.3b - 1 · · · · · · Weighing: Final Mass RDEt: Specific - Experiment 1  — END · · ·},
 
-        · · · (J) - 5b · · · · · · Weighing: Specific  — END · · ·},
+                {· · · (J) - 5.3b - 2  · · · · · · Weighing: Final Mass RDEt - Experiment 2 · · ·
+
+                    % entity here
+
+                · · · (J) - 5.3b - 2 · · · · · · Weighing: Final Mass RDEt: Specific - Experiment 2  — END · · ·},
+
+            · · · (J) - 5.3b · · · · · · Weighing: Final Mass RDEt: Specific  — END · · ·},
+
+        · · · (J) - 5.3 · · · · · · Weighing: Final Mass RDEt  — END · · ·},
+
+        {· · · (J) - 5.4  · · · · · · Weighing: Final Mass Dimer · · ·
+
+            {· · · (J) - 5.4a  · · · · · · Weighing: Final Mass Dimer: General · · ·
+
+                % entity here
+
+            · · · (J) - 5.4a · · · · · · Weighing: Final Mass Dimer: General  — END · · ·},
+
+            {· · · (J) - 5.4b  · · · · · · Weighing: Final Mass Dimer: Specific · · ·
+
+                {· · · (J) - 5.4b - 1  · · · · · · Weighing: Final Mass Dimer - Experiment 1 · · ·
+
+                    % entity here
+
+                · · · (J) - 5.4b - 1 · · · · · · Weighing: Final Mass Dimer: Specific - Experiment 1  — END · · ·},
+
+                {· · · (J) - 5.4b - 2  · · · · · · Weighing: Final Mass Dimer - Experiment 2 · · ·
+
+                    % entity here
+
+                · · · (J) - 5.4b - 2 · · · · · · Weighing: Final Mass Dimer: Specific - Experiment 2  — END · · ·},
+
+            · · · (J) - 5.4b · · · · · · Weighing: Final Mass Dimer: Specific  — END · · ·},
+
+        · · · (J) - 5.4 · · · · · · Weighing: Final Mass Dimer  — END · · ·},
 
 
     · · · (J) - 5  · · · · · · Weighing  — END · · ·},
