@@ -7140,7 +7140,7 @@
                             "@id": "#PressureSensor"
                         },
                         {
-                            "@id": "#MFM"
+                            "@id": "#MassFlowMeter"
                         }
                     ],
                 "ex:hasContext": 
@@ -9351,15 +9351,36 @@
                             "@id": "#RecordedTemperature_Reactor"
                         }
                     ],
-                "ex:hasInstances": 
+                "ex:hasInstances":
                     [
                         {
-                            "@id": "##TemperatureSensor_Exp1"
+                            "@id": "#TemperatureSensor_Exp1"
                         },
                         {
-                            "@id": "#"
+                            "@id": "#TemperatureSensor_Exp2"
+                        },
+                        {
+                            "@id": "#TemperatureSensor_Exp3"
+                        },
+                        {
+                            "@id": "#TemperatureSensor_Exp4"
+                        },
+                        {
+                            "@id": "#TemperatureSensor_Exp5"
+                        },
+                        {
+                            "@id": "#TemperatureSensor_Exp6"
+                        },
+                        {
+                            "@id": "#TemperatureSensor_Exp7"
+                        },
+                        {
+                            "@id": "#TemperatureSensor_Exp8"
+                        },
+                        {
+                            "@id": "#TemperatureSensor_Exp9"
                         }
-                    ],
+                    ]
             }
 
             {· · · (H) - 1.5a - Context  · · · · · · Context of Temperature Sensor: General · · ·
@@ -9387,12 +9408,12 @@
                         },
                     "ex:lastUsedTime":
                         {
-                            "@id": "#TemperatureSensor_Exp1_LastUsedTime"
+                            "@id": "#LastUsedTime_TemperatureSensor_BeforeFirstUse"
                         },
 
                     "ex:lastUsedPurpose":
                         {
-                            "@id": "#TemperatureSensor_Exp1_LastUsedPurpose"
+                            "@id": "#LastUsedPurpose_TemperatureSensor_BeforeFirstUse"
                         },
                     % wenn es geht sollte das bereits in general voll definiert sein
                     "sosa:implements":
@@ -9402,13 +9423,13 @@
 
                     "sosa:madeObservation":
                         {
-                            "@id": "#TemperatureMeasurementTask"
+                            "@id": "#TemperatureMeasurementTask_Exp1"
                         },
 
                     "sosa:observes":
                         [
                             {
-                                "@id": "#RecordedTemperature_Reactor"
+                                "@id": "#RecordedTemperature_Reactor_Exp1"
                             }
                         ]
                 }
@@ -9444,7 +9465,65 @@
 
         {· · · (H) - 1.6a  · · · · · · Pressure Sensor: General · · ·
 
-            % entity here
+            {
+                "@id": "#PressureSensor",
+                "@type": "sosa:Sensor",
+                "schema:name": "Pressure Sensor",
+                "schema:description": "Sensor for measuring the pressure of the reactor",
+
+                "ex:hasDigitalObjectID":
+                    {
+                        "@id": "#DigitalObjectID_PressureSensor"
+                    },
+                % vielleicht reicht das ja als Plan für die general entity und wir müssen nicht 9 separate procedures erstellen, oder wir können es sogar in der device library hinterlegen
+                "sosa:implements":
+                    {
+                        "@id": "#PressureObservingProcedure"
+                    },
+
+                "ex:location":
+                    {
+                        "@id": "#Reactor"
+                    },
+
+                "sosa:observes":
+                    [
+                        {
+                            "@id": "#RecordedPressure_Reactor"
+                        }
+                    ],
+
+                "ex:hasInstances":
+                    [
+                        {
+                            "@id": "#PressureSensor_Exp1"
+                        },
+                        {
+                            "@id": "#PressureSensor_Exp2"
+                        },
+                        {
+                            "@id": "#PressureSensor_Exp3"
+                        },
+                        {
+                            "@id": "#PressureSensor_Exp4"
+                        },
+                        {
+                            "@id": "#PressureSensor_Exp5"
+                        },
+                        {
+                            "@id": "#PressureSensor_Exp6"
+                        },
+                        {
+                            "@id": "#PressureSensor_Exp7"
+                        },
+                        {
+                            "@id": "#PressureSensor_Exp8"
+                        },
+                        {
+                            "@id": "#PressureSensor_Exp9"
+                        }
+                    ]
+            }
 
             {· · · (H) - 1.6a - Context  · · · · · · Context of Pressure Sensor: General · · ·
 
@@ -9459,7 +9538,40 @@
 
             {· · · (H) - 1.6b - 1  · · · · · · Pressure Sensor - Experiment 1 · · ·
 
-                % entity here
+                {
+                    "@id": "#PressureSensor_Exp1",
+                    "@type": "sosa:Sensor",
+
+                    "schema:name": "Pressure Sensor Reactor",
+                    "schema:description": "Pressure sensor used for measuring the pressure in the reactor",
+
+                    "ex:isInstanceOf":
+                        {
+                            "@id": "#PressureSensor"
+                        },
+
+                    "ex:lastUsedTime":
+                        {
+                            "@id": "#LastUsedTime_PressureSensor_BeforeFirstUse"
+                        },
+
+                    "ex:lastUsedPurpose":
+                        {
+                            "@id": "##LastUsedPurpose_PressureSensor_BeforeFirstUse"
+                        },
+
+                    "sosa:madeObservation":
+                        {
+                            "@id": "#PressureMeasurementTask_Exp1"
+                        },
+
+                    "sosa:observes":
+                        [
+                            {
+                                "@id": "#RecordedPressure_Reactor_Exp1"
+                            }
+                        ]
+                }
 
                 {· · · (H) - 1.6b - 1 - Context  · · · · · · Context of Pressure Sensor: Specific · · ·
 
@@ -9492,7 +9604,66 @@
 
         {· · · (H) - 1.7a  · · · · · · MFM: General · · ·
 
-            % entity here
+            {
+                "@id": "#MassFlowMeter",
+                "@type": "sosa:Sensor",
+
+                "schema:name": "Mass Flow Meter",
+                "schema:description": "Mass flow meter for measuring the used gas volume",
+
+                "ex:hasDigitalObjectID":
+                    {
+                        "@id": "#DigitalObjectID_MassFlowMeter"
+                    },
+
+                "sosa:implements":
+                    {
+                        "@id": "#UsedGasVolumeObservingProcedure"
+                    },
+
+                "ex:location":
+                    {
+                        "@id": "#Reactor"
+                    },
+
+                "sosa:observes":
+                    [
+                        {
+                            "@id": "#UsedGasVolume"
+                        }
+                    ],
+
+                "ex:hasInstances":
+                    [
+                        {
+                            "@id": "#MassFlowMeter_Exp1"
+                        },
+                        {
+                            "@id": "#MassFlowMeter_Exp2"
+                        },
+                        {
+                            "@id": "#MassFlowMeter_Exp3"
+                        },
+                        {
+                            "@id": "#MassFlowMeter_Exp4"
+                        },
+                        {
+                            "@id": "#MassFlowMeter_Exp5"
+                        },
+                        {
+                            "@id": "#MassFlowMeter_Exp6"
+                        },
+                        {
+                            "@id": "#MassFlowMeter_Exp7"
+                        },
+                        {
+                            "@id": "#MassFlowMeter_Exp8"
+                        },
+                        {
+                            "@id": "#MassFlowMeter_Exp9"
+                        }
+                    ]
+            }
 
             {· · · (H) - 1.7a - Context  · · · · · · Context of MFM: General · · ·
 
@@ -9507,7 +9678,40 @@
 
             {· · · (H) - 1.7b - 1  · · · · · · MFM - Experiment 1 · · ·
 
-                % entity here
+                {
+                    "@id": "#MassFlowMeter_Exp1",
+                    "@type": "sosa:Sensor",
+
+                    "schema:name": "Mass Flow Meter",
+                    "schema:description": "Mass flow meter used for measuring the used gas volume during experiment 1",
+
+                    "ex:isInstanceOf":
+                        {
+                            "@id": "#MassFlowMeter"
+                        },
+
+                    "ex:lastUsedTime":
+                        {
+                            "@id": "#LastUsedTime_MassFlowMeter_BeforeFirstUse"
+                        },
+
+                    "ex:lastUsedPurpose":
+                        {
+                            "@id": "#LastUsedPurpose_MassFlowMeter_BeforeFirstUse"
+                        },
+
+                    "sosa:madeObservation":
+                        {
+                            "@id": "#UsedGasVolumeMeasurementTask_Exp1"
+                        },
+
+                    "sosa:observes":
+                        [
+                            {
+                                "@id": "#UsedGasVolume_Exp1"
+                            }
+                        ]
+                }
 
                 {· · · (H) - 1.7b - 1 - Context  · · · · · · Context of MFM: Specific · · ·
 
@@ -12662,10 +12866,10 @@
             {
                 "@id": "#TemperatureMeasurementTask",
                 "@type": 
-                    {
+                    [
                         "ex:Task",
                         "sosa:Observation"
-                    },
+                    ],
                 "schema:name": "Temperature Measurement",
                 "schema:description": "Task for measuring the temperature using a temperature sensor",
                 "ex:describesContext":
@@ -12720,7 +12924,11 @@
 
                 {
                     "@id": "#TemperatureMeasurementTask_Exp1",
-                    "@type": "ex:Task",
+                    "@type": 
+                        [
+                            "ex:Task",
+                            "sosa:Observation"
+                        ],
                     "schema:name": "Temperature Measurement - Experiment 1",
                     "schema:description": "Measurement of the reactor temperature during Experiment 1",
                     "ex:describesContext":
@@ -12760,7 +12968,11 @@
 
             {
                 "@id": "#PressureMeasurementTask",
-                "@type": "ex:Task",
+                "@type": 
+                    [
+                        "ex:Task",
+                        "sosa:Observation"
+                    ],
                 "schema:name": "Pressure Measurement",
                 "schema:description": "Task for measuring the reactor pressure using a pressure sensor",
                 "ex:describesContext":
@@ -12815,7 +13027,11 @@
 
                 {
                     "@id": "#PressureMeasurementTask_Exp1",
-                    "@type": "ex:Task",
+                    "@type": 
+                        [
+                            "ex:Task",
+                            "sosa:Observation"
+                        ],
                     "schema:name": "Pressure Measurement - Experiment 1",
                     "schema:description": "Measurement of the reactor pressure during Experiment 1",
                     "ex:describesContext":
@@ -12855,7 +13071,11 @@
 
             {
                 "@id": "#GasVolumeMeasurementTask",
-                "@type": "ex:Task",
+                "@type": 
+                    [
+                        "ex:Task",
+                        "sosa:Observation"
+                    ],
                 "schema:name": "Gas Volume Measurement",
                 "schema:description": "Task for measuring the volume of the gas using a mass flow meter or mass flow controller",
                 "ex:describesContext":
@@ -12864,7 +13084,7 @@
                 "ex:realizes": "ex:MeasuringGasVolume",
                 "ex:usedEquipment":
                 {
-                    "@id": "#MFM"
+                    "@id": "#MassFlowMeter"
                 },
                 "ex:hasMeasuredVariable":
                 {
@@ -12910,7 +13130,11 @@
 
                 {
                     "@id": "#GasVolumeMeasurementTask_Exp1",
-                    "@type": "ex:Task",
+                    "@type": 
+                        [
+                            "ex:Task",
+                            "sosa:Observation"
+                        ],
                     "schema:name": "Gas Volume Measurement - Experiment 1",
                     "schema:description": "Measurement of the gas volume during Experiment 1",
                     "ex:describesContext":
@@ -14049,7 +14273,11 @@
 
                 {
                     "@id": "#RecordedTemperature_Reactor",
-                    "@type": "ex:SeriesVariable",
+                    "@type":
+                        [
+                            "ex:SeriesVariable",
+                            "sosa:ObservableProperty"
+                        ],
                     "schema:name": "Hydrogenator Measured Temperature",
                     "schema:description": "Temperature that was measured in the reactor during the experiment",
                     "ex:describesContext":
@@ -14104,7 +14332,11 @@
 
                     {
                         "@id": "#RecordedTemperature_Reactor_Exp1",
-                        "@type": "ex:SeriesVariable",
+                        "@type":
+                            [
+                                "ex:SeriesVariable",
+                                "sosa:ObservableProperty"
+                            ],
                         "schema:name": "RecordedTemperature_Reactor_Exp1",
                         "schema:description": "The temperature inside the reactor during Experiment 1",
                         "ex:hasProvenanceType": "ex:Observed",
@@ -14139,7 +14371,11 @@
 
                 {
                     "@id": "#RecordedPressure_Reactor",
-                    "@type": "ex:SeriesVariable",
+                    "@type":
+                        [
+                            "ex:SeriesVariable",
+                            "sosa:ObservableProperty"
+                        ],
                     "schema:name": "Hydrogenator Measured Pressure",
                     "schema:description": "Pressure that was measured in the reactor during the experiment",
                     "ex:describesContext":
@@ -14190,7 +14426,11 @@
 
                     {
                         "@id": "#RecordedPressure_Reactor_Exp1",
-                        "@type": "ex:SeriesVariable",
+                        "@type":
+                        [
+                            "ex:SeriesVariable",
+                            "sosa:ObservableProperty"
+                        ],
                         "schema:name": "RecordedPressure_Reactor_Exp1",
                         "schema:description": "The pressure inside the reactor during Experiment 1",
                         "ex:hasProvenanceType": "ex:Observed",
@@ -14225,7 +14465,11 @@
 
                 {
                     "@id": "#UsedGasVolume_H2",
-                    "@type": "ex:SeriesVariable",
+                    "@type":
+                        [
+                            "ex:SeriesVariable",
+                            "sosa:ObservableProperty"
+                        ],
                     "schema:name": "Hydrogenator used total gas volume of H2",
                     "schema:description": "Accumulated volume of H2 that was used in the process",
                     "ex:describesContext":
@@ -14276,7 +14520,11 @@
 
                     {
                         "@id": "#UsedGasVolume_H2_Exp1",
-                        "@type": "ex:SeriesVariable",
+                        "@type":
+                            [
+                                "ex:SeriesVariable",
+                                "sosa:ObservableProperty"
+                            ],
                         "schema:name": "UsedGasVolume_H2_Exp1",
                         "schema:description": "Accumulated volume of H2 that was used in the process during Experiment 1",
                         "ex:hasProvenanceType": "ex:Observed",
