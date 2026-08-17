@@ -9485,6 +9485,10 @@
                     {
                         "@id": "#Reactor"
                     },
+                "sosa:madeObservation":
+                        {
+                            "@id": "#PressureMeasurementTask"
+                        },
 
                 "sosa:observes":
                     [
@@ -9625,6 +9629,10 @@
                     {
                         "@id": "#Reactor"
                     },
+                "sosa:madeObservation":
+                        {
+                            "@id": "#UsedGasVolumeMeasurementTask"
+                        },
 
                 "sosa:observes":
                     [
@@ -9765,6 +9773,21 @@
                     {
                         "@id": "#Laboratory"
                     },
+                "sosa:madeObservation":
+                    [
+                        {
+                            "@id": "#WeighingTask_StartMassRDY"
+                        },
+                        {
+                            "@id": "#WeighingTask_FinalMass_RDY"
+                        },
+                        {
+                            "@id": "#WeighingTask_FinalMass_RDEt"
+                        },
+                        {
+                            "@id": "#WeighingTask_FinalMass_Dimer"
+                        }
+                    ],
 
                 "sosa:observes":
                     [
@@ -9849,11 +9872,21 @@
                             "@id": "#LastUsedPurpose_Balance_BeforeFirstUse"
                         },
 
-                    "sosa:madeObservation":
-                        {
-                            "@id": "#WeighingTask_Exp1"
-                        },
-
+                     "sosa:madeObservation":
+                        [
+                            {
+                                "@id": "#WeighingTask_StartMassRDY_Exp1"
+                            },
+                            {
+                                "@id": "#WeighingTask_FinalMass_RDY_Exp1"
+                            },
+                            {
+                                "@id": "#WeighingTask_FinalMass_RDEt_Exp1"
+                            },
+                            {
+                                "@id": "#WeighingTask_FinalMass_Dimer_Exp1"
+                            }
+                        ],
                     "sosa:observes":
                         [
                             {
