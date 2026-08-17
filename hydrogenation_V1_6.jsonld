@@ -7176,15 +7176,6 @@
                     {
                         "@id": "#LastServicedTime_Reactor"
                     },
-                "ex:lastUsedTime": 
-                    {
-                        "@id": "#LastUsedTime_Reactor"
-                    },
-                "ex:lastUsedPurpose": 
-                    {
-                        "@id": "#CleaningProcedure_Reactor"
-                    },
-                
                 "ex:hasSetPointProfiles": 
                     [
                         {
@@ -7392,11 +7383,11 @@
                     
                     "ex:lastUsedTime": 
                         {
-                            "@id": "#LastUsedTime_Reactor_Exp1"
+                            "@id": "#LastUsedTime_Reactor_BeforeFirstUse"
                         },
                     "ex:lastUsedPurpose": 
                         {
-                            "@id": "#CleaningProcedure_Reactor_beforeExp1"
+                            "@id": "#CleaningProcedure_Reactor_BeforeFirstUse"
                         },
                     "ex:hasSetPointProfiles": 
                         [
@@ -7539,10 +7530,6 @@
                 "ex:hasDigitalObjectID": 
                     {
                         "@id": "#DigitalObjectID_Vessel"
-                    },
-                "ex:lastUsedPurpose": 
-                    {
-                        "@id": "#Vessel_Stirrer_CleaningProcedure"
                     },
                 "ex:hasSetProfiles": 
                     [
@@ -7851,13 +7838,12 @@
                             }
                         ],
                     "ex:lastUsedTime": 
-                        {  
-                            "@value": "2026-07-28T10:00:00Z",  
-                            "@type": "xsd:dateTime" 
+                        {
+                            "@id": "#LastUsedTime_Vessel_BeforeFirstUse"
                         },
                     "ex:lastUsedPurpose": 
                         {
-                            "@id": "#Vessel_Stirrer_CleaningProcedure_Exp1"
+                            "@id": "#Vessel_Stirrer_CleaningProcedure_BeforeFirstUse"
                         },
                     "ex:hasSetProfiles": 
                         [
@@ -7880,7 +7866,7 @@
 
                 },
 
-                {· · · (H) - 1.1b - 1 - Context  · · · · · · Context of Vessel: Specific · · ·
+                {· · · (H) - 1.1b - 1 - Context  · · · · · · Context of Vessel: Specific - Experiment 1 · · ·
 
                     {
                         "@id": "#VesselInformation_Exp1",
@@ -7943,20 +7929,20 @@
                     },
 
 
-                · · · (H) - 1.1b - 1 - Context  · · · · · · Context of Vessel: Specific · · ·},
+                · · · (H) - 1.1b - 1 - Context  · · · · · · Context of Vessel: Specific - Experiment 1 - END · · ·},
 
             · · · (H) - 1.1b - 1  · · · · · · Vessel: Specific - Experiment 1  — END · · ·},
 
-            {· · · (H) - 1.1b - 2  · · · · · · Vessel - Experiment 2 · · ·
+            {· · · (H) - 1.1b - 2  · · · · · · Vessel: Specific - Experiment 2 · · ·
 
                 % entity here
 
-                {· · · (H) - 1.1b - 2 - Context  · · · · · · Context of Vessel: Specific · · ·
+                {· · · (H) - 1.1b - 2 - Context  · · · · · · Context of Vessel: Specific - Experiment 2 · · ·
 
                     % contexts of entity here (all six context entities)
 
 
-                · · · (H) - 1.1b - 2 - Context  · · · · · · Context of Vessel: Specific · · ·},
+                · · · (H) - 1.1b - 2 - Context  · · · · · · Context of Vessel: Specific - Experiment 2 - END · · ·},
 
             · · · (H) - 1.1b - 2  · · · · · · Vessel: Specific - Experiment 2  — END · · ·},
 
@@ -8311,12 +8297,12 @@
                     
                     "ex:lastUsedTime": 
                         {
-                            "@id": "#LastUsedTime_Jacket_Exp1"
+                            "@id": "#LastUsedTime_Jacket_BeforeFirstUse"
                         },
                     "ex:lastUsedPurpose": 
                         {
                             % den process muss ich noch erstellen
-                            "@id": "#CleaningProcess_Jacket_before_Exp1"
+                            "@id": "#CleaningProcess_Jacket_BeforeFirstUse"
                         },
                     "ex:hasSetSetpointProfiles": 
                         {
@@ -8409,16 +8395,16 @@
 
             · · · (H) - 1.2b - 1  · · · · · · Jacket: Specific - Experiment 1  — END · · ·},
 
-            {· · · (H) - 1.2b - 2  · · · · · · Jacket - Experiment 2 · · ·
+            {· · · (H) - 1.2b - 2  · · · · · · Jacket: Specific - Experiment 2 · · ·
 
                 % entity here
 
-                {· · · (H) - 1.2b - 2 - Context  · · · · · · Context of Jacket: Specific · · ·
+                {· · · (H) - 1.2b - 2 - Context  · · · · · · Context of Jacket: Specific - Experiment 2 · · ·
 
                     % contexts of entity here (all six context entities)
 
 
-                · · · (H) - 1.2b - 2 - Context  · · · · · · Context of Jacket: Specific · · ·},
+                · · · (H) - 1.2b - 2 - Context  · · · · · · Context of Jacket: Specific - Experiment 2 - END · · ·},
 
             · · · (H) - 1.2b - 2  · · · · · · Jacket: Specific - Experiment 2  — END · · ·},
 
@@ -8775,12 +8761,12 @@
                     
                     "ex:lastUsedTime": 
                         {
-                            "@id": "#LastUsedTime_Sparger_Exp1"
+                            "@id": "#LastUsedTime_Sparger_BeforeFirstUse"
                         },
                     "ex:lastUsedPurpose":
                         {
                             % den process muss ich noch erstellen
-                            "@id": "#CleaningProcedure_Sparger"
+                            "@id": "#CleaningProcedure_Sparger_BeforeFirstUse"
                         },
                     "ex:hasSetSetpointProfiles":
                         {
@@ -8923,14 +8909,6 @@
                 "ex:hasDigitalObjectID": 
                     {
                         "@id": "#DigitalObjectID_Stirrer"
-                    },
-                "ex:lastUsedTime": 
-                    {
-                        "@id": "#LastUsedTime_Stirrer"
-                    },
-                "ex:lastUsedPurpose": 
-                    {
-                        "@id": "#CleaningProcedure_Stirrer"
                     },
                 "ex:hasSetSetpointProfiles": 
                     {
@@ -9232,11 +9210,11 @@
                         },
                     "ex:lastUsedTime": 
                         {
-                            "@id": "#LastUsedTime_Stirrer"
+                            "@id": "#LastUsedTime_Stirrer_BeforeFirstUse"
                         },
                     "ex:lastUsedPurpose": 
                         {
-                            "@id": "#CleaningProcedure_Stirrer"
+                            "@id": "#CleaningProcedure_Stirrer_BeforeFirstUse"
                         },
                     "ex:hasSetSetpointProfiles": 
                         {
@@ -14341,87 +14319,16 @@
 
 {=== (N) Times =========================================================================================================================================
 
-    {
-        "@id": "#LastServicedTime_Reactor",
-        "@type": "time:Instance",
-        "schema:name": "LastServicedTime Reactor",
-        "@comment": "time:Instance means one specific point in time (other possible versions: time:Duration, time:Interval, time:TemporalEntity) ",
-        "ex:describesContext": 
-            {
-                "@id": "#ReactorTime"
-            },
-        "rdf:value": 
-            { 
-                "@value": "2026-07-28T10:00:00Z", 
-                "@type": "xsd:dateTime" 
-            }
-    },
+    
 
-    {
-        "@id": "#LastUsedTime_Reactor",
-        "@type": "time:Instance",
-        "schema:name": "LastUsedTime Reactor",
-        "@comment": "time:Instance means one specific point in time (other possible versions: time:Duration, time:Interval, time:TemporalEntity) ",
-        "ex:describesContext": 
-            {
-                "@id": "#ReactorTime"
-            },
-        "rdf:value": 
-            { 
-                "@value": "2026-07-28T10:00:00Z", 
-                "@type": "xsd:dateTime" 
-            }
-    },
+    
 
 
-        {
-        "@id": "#LastUsedTime_Stirrer",
-        "@type": "ex:Timestamp",
-        "schema:name": "LastUsedTime Stirrer",
-        "schema:description": "The time of when the stirrer was used last",
-        "ex:describesContext": 
-            {
-                "@id": "#StirrerInformation"
-            },
-        "rdf:value":
-            {  
-                "@value": "2026-07-28T10:00:00Z",  
-                "@type": "xsd:dateTime" 
-            }
+        
 
-    },
+        
 
-        {
-        "@id": "#LastUsedTime_Sparger",
-        "@type": "ex:Timestamp",
-        "schema:name": "LastUsedTime Sparger",
-        "schema:description": "The time of when the sparger was used last",
-        "ex:describesContext": 
-            {
-                "@id": "#SpargerTime"
-            },
-        "rdf:value":
-            {  
-                "@value": "2026-07-28T10:00:00Z",  
-                "@type": "xsd:dateTime" 
-            }
-    },
-
-    {
-        "@id": "#LastUsedTime_Jacket",
-        "@type": "ex:Timestamp",
-        "schema:name": "LastUsedTime Jacket",
-        "schema:description": "The time of when the jacket was used last",
-        "ex:describesContext": 
-            {
-                "@id": "#JacketTime"
-            },
-        "rdf:value":
-            {  
-                "@value": "2026-07-28T10:00:00Z",  
-                "@type": "xsd:dateTime" 
-            }
-    },
+    
 
 
 
@@ -14438,6 +14345,148 @@
         "rdf:value": "PT30S",
         "ex:hasProvenanceType": "ex:Estimated",
     },
+
+    {· · · (N)  · · · · · · Reactor · · ·
+
+        {· · · (N)  · · · · · · Last Used Time · · ·
+
+            {
+                "@id": "#LastUsedTime_Reactor",
+                "@type": "time:Instance",
+                "schema:name": "LastUsedTime Reactor",
+                "@comment": "time:Instance means one specific point in time (other possible versions: time:Duration, time:Interval, time:TemporalEntity) ",
+                "ex:describesContext": 
+                    {
+                        "@id": "#ReactorTime"
+                    },
+                "rdf:value": 
+                    { 
+                        "@value": "2026-07-28T10:00:00Z", 
+                        "@type": "xsd:dateTime" 
+                    }
+            },
+        · · · (N)  · · · · · · Last Used Time  — END · · ·},
+
+        {· · · (N)  · · · · · · Last Serviced Time · · ·
+
+            {
+                "@id": "#LastServicedTime_Reactor",
+                "@type": "time:Instance",
+                "schema:name": "LastServicedTime Reactor",
+                "@comment": "time:Instance means one specific point in time (other possible versions: time:Duration, time:Interval, time:TemporalEntity) ",
+                "ex:describesContext": 
+                    {
+                        "@id": "#ReactorTime"
+                    },
+                "rdf:value": 
+                    { 
+                        "@value": "2026-07-28T10:00:00Z", 
+                        "@type": "xsd:dateTime" 
+                    }
+            },
+
+        · · · (N)  · · · · · · Last Serviced Time  — END · · ·},
+
+    · · · (N)  · · · · · · Reactor  — END · · ·},
+
+
+    {· · · (N)  · · · · · · Vessel · · ·
+
+        {· · · (N)  · · · · · · Last Used Time · · ·
+
+            {
+                "@id": "#LastUsedTime_Vessel",
+                "@type": "time:Instance",
+                "schema:name": "LastUsedTime Vessel",
+                "schema:description": "The time of when the vessel was used last",
+                "ex:describesContext":
+                    {
+                        "@id": "#VesselTime"
+                    },
+                "rdf:value":
+                    {
+                        "@value": "2026-07-28T10:00:00Z",
+                        "@type": "xsd:dateTimeStamp"
+                    }
+            },
+
+        · · · (N)  · · · · · · Last Used Time  — END · · ·},
+
+    · · · (N)  · · · · · · Vessel  — END · · ·},
+
+
+    {· · · (N)  · · · · · · Stirrer · · ·
+
+        {· · · (N)  · · · · · · Last Used Time · · ·
+
+            {
+                "@id": "#LastUsedTime_Stirrer",
+                "@type": "time:Instance",
+                "schema:name": "LastUsedTime Stirrer",
+                "schema:description": "The time of when the stirrer was used last",
+                "ex:describesContext": 
+                    {
+                        "@id": "#StirrerInformation"
+                    },
+                "rdf:value":
+                    {  
+                        "@value": "2026-07-28T10:00:00Z",  
+                        "@type": "xsd:dateTime" 
+                    }
+
+            },
+        · · · (N)  · · · · · · Last Used Time  — END · · ·},
+
+    · · · (N)  · · · · · · Stirrer  — END · · ·},
+
+
+    {· · · (N)  · · · · · · Sparger · · ·
+
+        {· · · (N)  · · · · · · Last Used Time · · ·
+
+            {
+                "@id": "#LastUsedTime_Sparger",
+                "@type": "time:Instance",
+                "schema:name": "LastUsedTime Sparger",
+                "schema:description": "The time of when the sparger was used last",
+                "ex:describesContext": 
+                    {
+                        "@id": "#SpargerTime"
+                    },
+                "rdf:value":
+                    {  
+                        "@value": "2026-07-28T10:00:00Z",  
+                        "@type": "xsd:dateTime" 
+                    }
+            },
+
+        · · · (N)  · · · · · · Last Used Time  — END · · ·},
+
+    · · · (N)  · · · · · · Sparger  — END · · ·},
+
+
+    {· · · (N)  · · · · · · Jacket · · ·
+
+        {· · · (N)  · · · · · · Last Used Time · · ·
+
+            {
+                "@id": "#LastUsedTime_Jacket",
+                "@type": "time:Instance",
+                "schema:name": "LastUsedTime Jacket",
+                "schema:description": "The time of when the jacket was used last",
+                "ex:describesContext": 
+                    {
+                        "@id": "#JacketTime"
+                    },
+                "rdf:value":
+                    {  
+                        "@value": "2026-07-28T10:00:00Z",  
+                        "@type": "xsd:dateTimeStamp" 
+                    }
+            },
+        · · · (N)  · · · · · · Last Used Time  — END · · ·},
+
+    · · · (N)  · · · · · · Jacket  — END · · ·},
 
 
 
