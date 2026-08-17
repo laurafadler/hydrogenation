@@ -9317,7 +9317,50 @@
 
         {· · · (H) - 1.5a  · · · · · · Temperature Sensor: General · · ·
 
-            % entity here
+            {
+                "@id": "#TemperatureSensor",
+                "@type": "sosa:Sensor",
+
+                "schema:name": "Temperature Sensor",
+                "schema:description": "Sensor for measuring the temperature of the reactor",
+
+                "ex:hasDigitalObjectID":
+                    {
+                        "@id": "#DigitalObjectID_TemperatureSensor"
+                    },
+                % vielleicht reicht das ja als Plan für die general entity und wir müssen nicht 9 separate procedures erstellen, oder wir können es sogar in der device library hinterlegen
+                "sosa:implements":
+                    {
+                        % bis jetzt haben wir noch keine Procedures
+                        "@id": "#TemperatureObservingProcedure"
+                    },
+                % muss evtl nochmal angepasst werden wenn wir das Flowsheet hinterlegen
+                "ex:location":
+                    {
+                        "@id": "#Reactor"
+                    },
+
+                "sosa:madeObservation":
+                    {
+                        "@id": "#TemperatureMeasurementTask"
+                    },
+
+                "sosa:observes":
+                    [
+                        {
+                            "@id": "#RecordedTemperature_Reactor"
+                        }
+                    ],
+                "ex:hasInstances": 
+                    [
+                        {
+                            "@id": "##TemperatureSensor_Exp1"
+                        },
+                        {
+                            "@id": "#"
+                        }
+                    ],
+            }
 
             {· · · (H) - 1.5a - Context  · · · · · · Context of Temperature Sensor: General · · ·
 
@@ -9332,7 +9375,43 @@
 
             {· · · (H) - 1.5b - 1  · · · · · · Temperature Sensor - Experiment 1 · · ·
 
-                % entity here
+                {
+                    "@id": "#TemperatureSensor_Exp1",
+                    "@type": "sosa:Sensor",
+                    "schema:name": "Temperature Sensor Reactor",
+                    "schema:description": "Temperature sensor used for measuring the temperature in the reactor",
+
+                    "ex:isInstanceOf":
+                        {
+                            "@id": "#TemperatureSensor"
+                        },
+                    "ex:lastUsedTime":
+                        {
+                            "@id": "#TemperatureSensor_Exp1_LastUsedTime"
+                        },
+
+                    "ex:lastUsedPurpose":
+                        {
+                            "@id": "#TemperatureSensor_Exp1_LastUsedPurpose"
+                        },
+                    % wenn es geht sollte das bereits in general voll definiert sein
+                    "sosa:implements":
+                        {
+                            "@id": "#TemperatureObservingProcedure"
+                        },
+
+                    "sosa:madeObservation":
+                        {
+                            "@id": "#TemperatureMeasurementTask"
+                        },
+
+                    "sosa:observes":
+                        [
+                            {
+                                "@id": "#RecordedTemperature_Reactor"
+                            }
+                        ]
+                }
 
                 {· · · (H) - 1.5b - 1 - Context  · · · · · · Context of Temperature Sensor: Specific · · ·
 
@@ -12582,14 +12661,18 @@
 
             {
                 "@id": "#TemperatureMeasurementTask",
-                "@type": "ex:Task",
+                "@type": 
+                    {
+                        "ex:Task",
+                        "sosa:Observation"
+                    },
                 "schema:name": "Temperature Measurement",
                 "schema:description": "Task for measuring the temperature using a temperature sensor",
                 "ex:describesContext":
                 [
                 ],
                 "ex:realizes": "ex:MeasuringTemperature",
-                "ex:usedEquipment":
+                "sosa:madeBySensor":
                 {
                     "@id": "#TemperatureSensor"
                 },
@@ -14318,19 +14401,6 @@
 
 
 {=== (N) Times =========================================================================================================================================
-
-    
-
-    
-
-
-        
-
-        
-
-    
-
-
 
 
     {
