@@ -10488,83 +10488,83 @@
                     "schema:name": "Experimental Procedure",
                     "schema:description": "General task representing the complete experimental procedure",
                     "ex:describesContext":
-                    [
-                    ],
+                        [
+                        ],
                     "schema:hasPart":
-                    [
-                        {
-                            "@id": "#AddLiquidTask"
-                        },
-                        {
-                            "@id": "#AddSolidTask"
-                        },
-                        {
-                            "@id": "#AddingCatalystTask"
-                        },
-                        {
-                            "@id": "#RemoveLiquidTask"
-                        },
-                        {
-                            "@id": "#RemoveSolidTask"
-                        },
-                        {
-                            "@id": "#RemoveCatalystTask"
-                        },
-                        {
-                            "@id": "#SpargingTask"
-                        },
-                        {
-                            "@id": "#CoolingTask"
-                        },
-                        {
-                            "@id": "#StirringTask"
-                        },
-                        {
-                            "@id": "#PressurizeReactorTask"
-                        },
-                        {
-                            "@id": "#WeighingTask"
-                        },
-                        {
-                            "@id": "#TemperatureMeasurementTask"
-                        },
-                        {
-                            "@id": "#PressureMeasurementTask"
-                        },
-                        {
-                            "@id": "#GasVolumeMeasurementTask"
-                        }
-                    ],
+                        [
+                            {
+                                "@id": "#AddLiquidTask"
+                            },
+                            {
+                                "@id": "#AddSolidTask"
+                            },
+                            {
+                                "@id": "#AddingCatalystTask"
+                            },
+                            {
+                                "@id": "#RemoveLiquidTask"
+                            },
+                            {
+                                "@id": "#RemoveSolidTask"
+                            },
+                            {
+                                "@id": "#RemoveCatalystTask"
+                            },
+                            {
+                                "@id": "#SpargingTask"
+                            },
+                            {
+                                "@id": "#CoolingTask"
+                            },
+                            {
+                                "@id": "#StirringTask"
+                            },
+                            {
+                                "@id": "#PressurizeReactorTask"
+                            },
+                            {
+                                "@id": "#WeighingTask"
+                            },
+                            {
+                                "@id": "#TemperatureMeasurementTask"
+                            },
+                            {
+                                "@id": "#PressureMeasurementTask"
+                            },
+                            {
+                                "@id": "#GasVolumeMeasurementTask"
+                            }
+                        ],
                     "ex:hasInstance":
-                    [
-                        {
-                            "@id": "#ExperimentalProcedure_Exp1"
-                        },
-                        {
-                            "@id": "#ExperimentalProcedure_Exp2"
-                        },
-                        {
-                            "@id": "#ExperimentalProcedure_Exp3"
-                        },
-                        {
-                            "@id": "#ExperimentalProcedure_Exp4"
-                        },
-                        {
-                            "@id": "#ExperimentalProcedure_Exp5"
-                        },
-                        {
-                            "@id": "#ExperimentalProcedure_Exp6"
-                        },
-                        {
-                            "@id": "#ExperimentalProcedure_Exp7"
-                        },
-                        {
-                            "@id": "#ExperimentalProcedure_Exp8"
-                        },
-                        {
-                            "@id": "#ExperimentalProcedure_Exp9"
-                        }
-                    ],
+                        [
+                            {
+                                "@id": "#ExperimentalProcedure_Exp1"
+                            },
+                            {
+                                "@id": "#ExperimentalProcedure_Exp2"
+                            },
+                            {
+                                "@id": "#ExperimentalProcedure_Exp3"
+                            },
+                            {
+                                "@id": "#ExperimentalProcedure_Exp4"
+                            },
+                            {
+                                "@id": "#ExperimentalProcedure_Exp5"
+                            },
+                            {
+                                "@id": "#ExperimentalProcedure_Exp6"
+                            },
+                            {
+                                "@id": "#ExperimentalProcedure_Exp7"
+                            },
+                            {
+                                "@id": "#ExperimentalProcedure_Exp8"
+                            },
+                            {
+                                "@id": "#ExperimentalProcedure_Exp9"
+                            }
+                        ],
                     "ex:isProcedureOf":
                         {
                             "@id": "#ExperimentalSeries"
@@ -10746,27 +10746,26 @@
                                 "schema:name": "Add Liquid - Experiment 1",
                                 "schema:description": "Transfer of the liquid stream into the reactor during Experiment 1",
                                 "ex:describesContext":
-                                [
-                                ],
+                                    [
+                                    ],
                                 "ex:hasStartOffset":
-                                {
-                                    "value": "PT2M",
-                                    "ex:hasProvenanceType": "ex:Estimated"
-                                },
-                                "ex:hasTransferredStream":
-                                {
-                                    "@id": "#AddLiquidStream_Exp1"
-                                },
-                                "ex:generatesPhase":
-                                [
                                     {
-                                        "@id": "#LiquidPhase_Exp1"
-                                    }
-                                ],
+                                        "@id": "#AddLiquidTask_Exp1_StartOffset"
+                                    },
+                                "ex:hasTransferredStream":
+                                    {
+                                        "@id": "#AddLiquidStream_Exp1"
+                                    },
+                                "ex:generatesPhase":
+                                    [
+                                        {
+                                            "@id": "#LiquidPhase_Exp1"
+                                        }
+                                    ],
                                 "ex:isInstanceOf":
-                                {
-                                    "@id": "#AddLiquidTask"
-                                }
+                                    {
+                                        "@id": "#AddLiquidTask"
+                                    }
                             }
 
                         · · · (J) - 1.1b - 1  · · · · · · Add Liquid Task: Specific - Experiment 1  — END · · ·},
@@ -10860,10 +10859,9 @@
                                 [
                                 ],
                                 "ex:hasStartOffset":
-                                {
-                                    "value": "PT2M",
-                                    "ex:hasProvenanceType": "ex:Estimated"
-                                },
+                                    {
+                                        "@id": "#AddSolidTask_Exp1_StartOffset"
+                                    },
                                 "ex:hasTransferredStream":
                                 {
                                     "@id": "#AddSolidStream_Exp1"
@@ -10968,27 +10966,26 @@
                                 "schema:name": "Adding Catalyst - Experiment 1",
                                 "schema:description": "Transfer of the catalyst into the reactor during Experiment 1",
                                 "ex:describesContext":
-                                [
-                                ],
+                                    [
+                                    ],
                                 "ex:hasStartOffset":
-                                {
-                                    "value": "PT2M",
-                                    "ex:hasProvenanceType": "ex:Estimated"
-                                },
-                                "ex:hasTransferredStream":
-                                {
-                                    "@id": "#AddCatalystStream_Exp1"
-                                },
-                                "ex:generatesPhase":
-                                [
                                     {
-                                        "@id": "#CatalystPhase_Exp1"
-                                    }
-                                ],
+                                        "@id": "#AddingCatalystTask_Exp1_StartOffset"
+                                    },
+                                "ex:hasTransferredStream":
+                                    {
+                                        "@id": "#AddCatalystStream_Exp1"
+                                    },
+                                "ex:generatesPhase":
+                                    [
+                                        {
+                                            "@id": "#CatalystPhase_Exp1"
+                                        }
+                                    ],
                                 "ex:isInstanceOf":
-                                {
-                                    "@id": "#AddingCatalystTask"
-                                }
+                                    {
+                                        "@id": "#AddingCatalystTask"
+                                    }
                             }
 
                         · · · (J) - 1.3b - 1  · · · · · · Add Catalyst Task: Specific - Experiment 1  — END · · ·},
@@ -11073,21 +11070,20 @@
                                 "schema:name": "Remove Liquid - Experiment 1",
                                 "schema:description": "Transfer of the liquid stream out of the reactor during Experiment 1",
                                 "ex:describesContext":
-                                [
-                                ],
+                                    [
+                                    ],
                                 "ex:hasStartOffset":
-                                {
-                                    "value": "PT2M",
-                                    "ex:hasProvenanceType": "ex:Estimated"
-                                },
+                                    {
+                                        "@id": "#RemoveLiquidTask_Exp1_StartOffset"
+                                    },
                                 "ex:hasTransferredStream":
-                                {
-                                    "@id": "#RemoveLiquidStream_Exp1"
-                                },
+                                    {
+                                        "@id": "#RemoveLiquidStream_Exp1"
+                                    },
                                 "ex:isInstanceOf":
-                                {
-                                    "@id": "#RemoveLiquidTask"
-                                }
+                                    {
+                                        "@id": "#RemoveLiquidTask"
+                                    }
                             }
 
                         · · · (J) - 1.4b - 1  · · · · · · Remove Liquid Task: Specific - Experiment 1  — END · · ·},
@@ -11172,21 +11168,20 @@
                                 "schema:name": "Remove Solid - Experiment 1",
                                 "schema:description": "Transfer of the solid stream out of the reactor during Experiment 1",
                                 "ex:describesContext":
-                                [
-                                ],
+                                    [
+                                    ],
                                 "ex:hasStartOffset":
-                                {
-                                    "value": "PT2M",
-                                    "ex:hasProvenanceType": "ex:Estimated"
-                                },
+                                    {
+                                        "@id": "#RemoveSolidTask_Exp1_StartOffset"
+                                    },
                                 "ex:hasTransferredStream":
-                                {
-                                    "@id": "#RemoveSolidStream_Exp1"
-                                },
+                                    {
+                                        "@id": "#RemoveSolidStream_Exp1"
+                                    },
                                 "ex:isInstanceOf":
-                                {
-                                    "@id": "#RemoveSolidTask"
-                                }
+                                    {
+                                        "@id": "#RemoveSolidTask"
+                                    }
                             }
 
                         · · · (J) - 1.5b - 1  · · · · · · Remove Solid Task: Specific - Experiment 1  — END · · ·},
@@ -11271,21 +11266,20 @@
                                 "schema:name": "Remove Catalyst - Experiment 1",
                                 "schema:description": "Transfer of the catalyst out of the reactor during Experiment 1",
                                 "ex:describesContext":
-                                [
-                                ],
+                                    [
+                                    ],
                                 "ex:hasStartOffset":
-                                {
-                                    "value": "PT2M",
-                                    "ex:hasProvenanceType": "ex:Estimated"
-                                },
+                                    {
+                                        "@id": "#RemoveCatalystTask_Exp1_StartOffset"
+                                    },
                                 "ex:hasTransferredStream":
-                                {
-                                    "@id": "#RemoveCatalystStream_Exp1"
-                                },
+                                    {
+                                        "@id": "#RemoveCatalystStream_Exp1"
+                                    },
                                 "ex:isInstanceOf":
-                                {
-                                    "@id": "#RemoveCatalystTask"
-                                }
+                                    {
+                                        "@id": "#RemoveCatalystTask"
+                                    }
                             }
 
                         · · · (J) - 1.6b - 1  · · · · · · Remove Catalyst Task: Specific - Experiment 1  — END · · ·},
@@ -11370,25 +11364,24 @@
                                 "schema:name": "Stirring - Experiment 1",
                                 "schema:description": "Stirring of the reactor according to the specified RPM profile during Experiment 1",
                                 "ex:describesContext":
-                                [
-                                ],
+                                    [
+                                    ],
                                 "ex:usedEquipment":
-                                {
-                                    "@id": "#Stirrer_Exp1"
-                                },
-                                "ex:hasStartTime":
-                                {
-                                    "value": "2026-07-28T10:00:00Z",
-                                    "ex:hasProvenanceType": "ex:Estimated"
-                                },
+                                    {
+                                        "@id": "#Stirrer_Exp1"
+                                    },
+                                "ex:hasStartOffset":
+                                    {
+                                        "@id": "#StirringTask_Exp1_StartOffset"
+                                    },
                                 "ex:hasSetProfile":
-                                {
-                                    "@id": "#RPMProfile_Exp1"
-                                },
+                                    {
+                                        "@id": "#RPMProfile_Exp1"
+                                    },
                                 "ex:isInstanceOf":
-                                {
-                                    "@id": "#StirringTask"
-                                }
+                                    {
+                                        "@id": "#StirringTask"
+                                    }
                             }
 
                         · · · (J) - 1.7b - 1  · · · · · · Stirring: Specific - Experiment 1  — END · · ·},
@@ -11469,25 +11462,24 @@
                                 "schema:name": "Pressurize Reactor - Experiment 1",
                                 "schema:description": "Pressurizing of the reactor according to the specified pressure profile during Experiment 1",
                                 "ex:describesContext":
-                                [
-                                ],
+                                    [
+                                    ],
                                 "ex:usedEquipment":
-                                {
-                                    "@id": "#Vessel_Exp1"
-                                },
-                                "ex:hasStartTime":
-                                {
-                                    "value": "2026-07-28T10:00:00Z",
-                                    "ex:hasProvenanceType": "ex:Estimated"
-                                },
+                                    {
+                                        "@id": "#Vessel_Exp1"
+                                    },
+                                "ex:hasStartOffset":
+                                    {
+                                        "@id": "#PressurizeReactorTask_Exp1_StartOffset"
+                                    },
                                 "ex:hasSetProfile":
-                                {
-                                    "@id": "#ReactorPressureProfile_Exp1"
-                                },
+                                    {
+                                        "@id": "#ReactorPressureProfile_Exp1"
+                                    },
                                 "ex:isInstanceOf":
-                                {
-                                    "@id": "#PressurizeReactorTask"
-                                }
+                                    {
+                                        "@id": "#PressurizeReactorTask"
+                                    }
                             }
 
                         · · · (J) - 1.8b - 1  · · · · · · Pressurizing: Specific - Experiment 1  — END · · ·},
@@ -11572,29 +11564,28 @@
                                 "schema:name": "Sparging - Experiment 1",
                                 "schema:description": "Sparging of the reactor according to the specified sparger pressure profile during Experiment 1",
                                 "ex:describesContext":
-                                [
-                                ],
+                                    [
+                                    ],
                                 "ex:generatesPhase":
-                                {
-                                    "@id": "#HydrogenSpargerPhase_Exp1"
-                                },
-                                "ex:hasStartTime":
-                                {
-                                    "value": "2026-07-28T10:00:00Z",
-                                    "ex:hasProvenanceType": "ex:Estimated"
-                                },
+                                    {
+                                        "@id": "#HydrogenSpargerPhase_Exp1"
+                                    },
+                                "ex:hasStartOffset":
+                                    {
+                                        "@id": "#SpargingTask_Exp1_StartOffset"
+                                    },
                                 "ex:usedEquipment":
-                                {
-                                    "@id": "#Sparger_Exp1"
-                                },
+                                    {
+                                        "@id": "#Sparger_Exp1"
+                                    },
                                 "ex:hasSetProfile":
-                                {
-                                    "@id": "#SpargerPressureProfile_Exp1"
-                                },
+                                    {
+                                        "@id": "#SpargerPressureProfile_Exp1"
+                                    },
                                 "ex:isInstanceOf":
-                                {
-                                    "@id": "#SpargingTask"
-                                }
+                                    {
+                                        "@id": "#SpargingTask"
+                                    }
                             }
 
                         · · · (J) - 1.9b - 1  · · · · · · Sparging: Specific - Experiment 1  — END · · ·},
@@ -11686,36 +11677,35 @@
                                 "schema:name": "Cooling - Experiment 1",
                                 "schema:description": "Cooling of the reactor according to the specified cooling fluid flowrate and reactor temperature profiles during Experiment 1",
                                 "ex:describesContext":
-                                [
-                                ],
+                                    [
+                                    ],
                                 "ex:usedEquipment":
-                                {
-                                    "@id": "#Jacket_Exp1"
-                                },
-                                "ex:hasStartTime":
-                                {
-                                    "value": "2026-07-28T10:00:00Z",
-                                    "ex:hasProvenanceType": "ex:Estimated"
-                                },
-                                "ex:hasSetProfile":
-                                [
                                     {
-                                        "@id": "#CoolingFluidFlowrateProfile_Exp1"
+                                        "@id": "#Jacket_Exp1"
                                     },
+                                "ex:hasStartOffset":
                                     {
-                                        "@id": "#ReactorTemperatureProfile_Exp1"
-                                    }
-                                ],
+                                        "@id": "#CoolingTask_Exp1_StartOffset"
+                                    },
+                                "ex:hasSetProfile":
+                                    [
+                                        {
+                                            "@id": "#CoolingFluidFlowrateProfile_Exp1"
+                                        },
+                                        {
+                                            "@id": "#ReactorTemperatureProfile_Exp1"
+                                        }
+                                    ],
                                 "ex:generatesPhase":
-                                [
-                                    {
-                                        "@id": "#CoolingFluidPhase_Exp1"
-                                    }
-                                ],
+                                    [
+                                        {
+                                            "@id": "#CoolingFluidPhase_Exp1"
+                                        }
+                                    ],
                                 "ex:isInstanceOf":
-                                {
-                                    "@id": "#CoolingTask"
-                                }
+                                    {
+                                        "@id": "#CoolingTask"
+                                    }
                             }
 
                         · · · (J) - 1.10b - 1  · · · · · · Cooling: Specific - Experiment 1  — END · · ·},
@@ -11828,43 +11818,42 @@
                     "schema:name": "Vessel Cleaning Procedure - Experiment 1",
                     "schema:description": "Procedure for cleaning the reactor vessel and stirrer after Experiment 1",
                     "ex:describesContext":
-                    [
-                    ],
+                        [
+                        ],
                     "schema:hasPart":
-                    [
-                        {
-                            "@id": "#AddCleaningFluidTask_Exp1"
-                        },
-                        {
-                            "@id": "#StirCleaningFluidTask_Exp1"
-                        },
-                        {
-                            "@id": "#RemoveCleaningFluidTask_Exp1"
-                        }
-                    ],
+                        [
+                            {
+                                "@id": "#AddCleaningFluidTask_Exp1"
+                            },
+                            {
+                                "@id": "#StirCleaningFluidTask_Exp1"
+                            },
+                            {
+                                "@id": "#RemoveCleaningFluidTask_Exp1"
+                            }
+                        ],
                     "ex:hasStartTime":
-                    {
-                        "value": "2026-07-28T12:00:00Z",
-                        "ex:hasProvenanceType": "ex:Estimated"
-                    },
+                        {
+                            "@id": "#Vessel_Stirrer_CleaningProcedure_Exp1_StartTime"
+                        },
                     "ex:usedEquipment":
-                    [
-                        {
-                            "@id": "#Vessel_Exp1"
-                        },
-                        {
-                            "@id": "#Stirrer_Exp1"
-                        },
-                    ],
+                        [
+                            {
+                                "@id": "#Vessel_Exp1"
+                            },
+                            {
+                                "@id": "#Stirrer_Exp1"
+                            },
+                        ],
                 
                     "ex:isInstanceOf":
-                    {
-                        "@id": "#Vessel_Stirrer_CleaningProcedure"
-                    },
+                        {
+                            "@id": "#Vessel_Stirrer_CleaningProcedure"
+                        },
                     "ex:isProcedureOf":
-                    {
-                        "@id": "#Experiment1"
-                    }
+                        {
+                            "@id": "#Experiment1"
+                        }
                 }
                 
 
@@ -11953,27 +11942,26 @@
                             "schema:name": "Add Cleaning Fluid - Experiment 1",
                             "schema:description": "Task for supplying cleaning fluid to the reactor vessel during the cleaning procedure after Experiment 1",
                             "ex:describesContext":
-                            [
-                            ],
-                            "ex:hasStartTime":
-                            {
-                                "value": "2026-07-28T12:00:00Z",
-                                "ex:hasProvenanceType": "ex:Estimated"
-                            },
-                            "ex:hasTransferredStream":
-                            {
-                                "@id": "#AddCleaningFluidStream_Exp1"
-                            },
-                            "ex:generatesPhase":
-                            [
+                                [
+                                ],
+                            "ex:hasStartOffset":
                                 {
-                                    "@id": "#CleaningFluidPhase_Exp1"
-                                }
-                            ],
+                                    "@id": "#AddCleaningFluidTask_Exp1_StartOffset"
+                                },
+                            "ex:hasTransferredStream":
+                                {
+                                    "@id": "#AddCleaningFluidStream_Exp1"
+                                },
+                            "ex:generatesPhase":
+                                [
+                                    {
+                                        "@id": "#CleaningFluidPhase_Exp1"
+                                    }
+                                ],
                             "ex:isInstanceOf":
-                            {
-                                "@id": "#AddCleaningFluidTask"
-                            }
+                                {
+                                    "@id": "#AddCleaningFluidTask"
+                                }
                         }
 
                     · · · (J) - 2.1b - 1  · · · · · · Add Cleaning Fluid: Specific - Experiment 1  — END · · ·},
@@ -12062,27 +12050,26 @@
                             "schema:name": "Stir Cleaning Fluid - Experiment 1",
                             "schema:description": "Task for stirring the cleaning fluid inside the reactor vessel during the cleaning procedure following Experiment 1",
                             "ex:describesContext":
-                            [
-                            ],
-                            "ex:hasStartTime":
-                            {
-                                "value": "2026-07-28T12:10:00Z",
-                                "ex:hasProvenanceType": "ex:Estimated"
-                            },
-                            "ex:usedEquipment":
-                            {
-                                "@id": "#Stirrer_Exp1"
-                            },
-                            "ex:generatesPhase":
-                            [
+                                [
+                                ],
+                            "ex:hasStartOffset":
                                 {
-                                    "@id": "#CleaningFluidPhase_Exp1"
-                                }
-                            ],
+                                    "@id": "#StirCleaningFluidTask_Exp1_StartOffset"
+                                },
+                            "ex:usedEquipment":
+                                {
+                                    "@id": "#Stirrer_Exp1"
+                                },
+                            "ex:generatesPhase":
+                                [
+                                    {
+                                        "@id": "#CleaningFluidPhase_Exp1"
+                                    }
+                                ],
                             "ex:isInstanceOf":
-                            {
-                                "@id": "#StirCleaningFluidTask"
-                            }
+                                {
+                                    "@id": "#StirCleaningFluidTask"
+                                }
                         }
 
 
@@ -12287,8 +12274,7 @@
                         ],
                         "ex:hasStartTime":
                         {
-                            "value": "2026-07-28T10:00:00Z",
-                            "ex:hasProvenanceType": "ex:Estimated"
+                            "@id": "#WeighingTask_StartMassRDY_Exp1_StartTime"
                         },
                         "ex:hasMeasuredVariable":
                         {
@@ -12296,7 +12282,7 @@
                         },
                         "ex:isInstanceOf":
                         {
-                            "@id": "#WeighingTask"
+                            "@id": "#WeighingTask_StartMassRDY"
                         }
                     }
 
@@ -12383,21 +12369,20 @@
                         "schema:name": "Weighing Final Mass RDY - Experiment 1",
                         "schema:description": "Measurement of the final mass of RDY at the end of Experiment 1",
                         "ex:describesContext":
-                        [
-                        ],
+                            [
+                            ],
                         "ex:hasStartTime":
-                        {
-                            "value": "2026-07-28T10:00:00Z",
-                            "ex:hasProvenanceType": "ex:Recorded"
-                        },
+                            {
+                                "@id": "#WeighingTask_FinalMass_RDY_Exp1_StartTime"
+                            },
                         "ex:hasMeasuredVariable":
-                        {
-                            "@id": "#FinalMass_RDY_Exp1"
-                        },
+                            {
+                                "@id": "#FinalMass_RDY_Exp1"
+                            },
                         "ex:isInstanceOf":
-                        {
-                            "@id": "#WeighingTask"
-                        }
+                            {
+                                "@id": "#WeighingTask_FinalMass_RDY"
+                            }
                     }
 
 
@@ -12483,21 +12468,20 @@
                         "schema:name": "Weighing Final Mass RDEt - Experiment 1",
                         "schema:description": "Measurement of the final mass of RDEt at the end of Experiment 1",
                         "ex:describesContext":
-                        [
-                        ],
+                            [
+                            ],
                         "ex:hasStartTime":
-                        {
-                            "value": "2026-07-28T10:00:00Z",
-                            "ex:hasProvenanceType": "ex:Recorded"
-                        },
+                            {
+                                "@id": "#WeighingTask_FinalMass_RDEt_Exp1_StartTime"
+                            },
                         "ex:hasMeasuredVariable":
-                        {
-                            "@id": "#FinalMass_RDEt_Exp1"
-                        },
+                            {
+                                "@id": "#FinalMass_RDEt_Exp1"
+                            },
                         "ex:isInstanceOf":
-                        {
-                            "@id": "#WeighingTask"
-                        }
+                            {
+                                "@id": "#WeighingTask"
+                            }
                     }
 
                 · · · (J) - 5.3b - 1 · · · · · · Weighing: Final Mass RDEt: Specific - Experiment 1  — END · · ·},
@@ -12582,21 +12566,20 @@
                         "schema:name": "Weighing Final Mass Dimer - Experiment 1",
                         "schema:description": "Measurement of the final mass of the dimer at the end of Experiment 1",
                         "ex:describesContext":
-                        [
-                        ],
+                            [
+                            ],
                         "ex:hasStartTime":
-                        {
-                            "value": "2026-07-28T10:00:00Z",
-                            "ex:hasProvenanceType": "ex:Recorded"
-                        },
+                            {
+                                "@id": "#WeighingTask_FinalMass_Dimer_Exp1_StartTime"
+                            },
                         "ex:hasMeasuredVariable":
-                        {
-                            "@id": "#FinalMass_Dimer_Exp1"
-                        },
+                            {
+                                "@id": "#FinalMass_Dimer_Exp1"
+                            },
                         "ex:isInstanceOf":
-                        {
-                            "@id": "#WeighingTask"
-                        }
+                            {
+                                "@id": "#WeighingTask"
+                            }
                     }
 
                 · · · (J) - 5.4b - 1 · · · · · · Weighing: Final Mass Dimer: Specific - Experiment 1  — END · · ·},
@@ -12680,21 +12663,21 @@
                     "schema:name": "Temperature Measurement - Experiment 1",
                     "schema:description": "Measurement of the reactor temperature during Experiment 1",
                     "ex:describesContext":
-                    [
-                    ],
-                    "ex:hasStartTime":
-                    {
-                        "value": "2026-07-28T10:00:00Z",
-                        "ex:hasProvenanceType": "ex:Recorded"
-                    },
+                        [
+                        ],
+                    "ex:hasRecordingStartTime":
+                        {
+                            "@value": "2026-07-28T10:00:00Z",
+                            "@type": "xsd:dateTimeStamp"
+                        },
                     "ex:hasMeasuredVariable":
-                    {
-                        "@id": "#RecordedTemperature_Reactor_Exp1"
-                    },
+                        {
+                            "@id": "#RecordedTemperature_Reactor_Exp1"
+                        },
                     "ex:isInstanceOf":
-                    {
-                        "@id": "#TemperatureMeasurementTask"
-                    }
+                        {
+                            "@id": "#TemperatureMeasurementTask"
+                        }
                 }
 
             · · · (J) - 6b - 1  · · · · · · Measuring Temperature: Specific - Experiment 1  — END · · ·},
@@ -12775,21 +12758,21 @@
                     "schema:name": "Pressure Measurement - Experiment 1",
                     "schema:description": "Measurement of the reactor pressure during Experiment 1",
                     "ex:describesContext":
-                    [
-                    ],
-                    "ex:hasStartTime":
-                    {
-                        "value": "2026-07-28T10:00:00Z",
-                        "ex:hasProvenanceType": "ex:Recorded"
-                    },
+                        [
+                        ],
+                    "ex:hasRecordingStartTime":
+                        {
+                            "@value": "2026-07-28T10:00:00Z",
+                            "@type": "xsd:dateTimeStamp"
+                        },
                     "ex:hasMeasuredVariable":
-                    {
-                        "@id": "#RecordedPressure_Reactor_Exp1"
-                    },
+                        {
+                            "@id": "#RecordedPressure_Reactor_Exp1"
+                        },
                     "ex:isInstanceOf":
-                    {
-                        "@id": "#PressureMeasurementTask"
-                    }
+                        {
+                            "@id": "#PressureMeasurementTask"
+                        }
                 }
 
             · · · (J) - 7b - 1  · · · · · · Measuring Pressure: Specific - Experiment 1  — END · · ·},
@@ -12870,21 +12853,21 @@
                     "schema:name": "Gas Volume Measurement - Experiment 1",
                     "schema:description": "Measurement of the gas volume during Experiment 1",
                     "ex:describesContext":
-                    [
-                    ],
-                    "ex:hasStartTime":
-                    {
-                        "value": "2026-07-28T10:00:00Z",
-                        "ex:hasProvenanceType": "ex:Recorded"
-                    },
+                        [
+                        ],
+                    "ex:hasRecordingStartTime":
+                        {
+                            "@value": "2026-07-28T10:00:00Z",
+                            "@type": "xsd:dateTimeStamp"
+                        },
                     "ex:hasMeasuredVariable":
-                    {
-                        "@id": "#GasVolume_Exp1"
-                    },
+                        {
+                            "@id": "#GasVolume_Exp1"
+                        },
                     "ex:isInstanceOf":
-                    {
-                        "@id": "#GasVolumeMeasurementTask"
-                    }
+                        {
+                            "@id": "#GasVolumeMeasurementTask"
+                        }
                 }
 
             · · · (J) - 8b - 1  · · · · · · Measuring Gas Volume: Specific - Experiment 1  — END · · ·},
@@ -14358,118 +14341,424 @@
 
 {=== (N) Times =========================================================================================================================================
 
+    {
+        "@id": "#LastServicedTime_Reactor",
+        "@type": "time:Instance",
+        "schema:name": "LastServicedTime Reactor",
+        "@comment": "time:Instance means one specific point in time (other possible versions: time:Duration, time:Interval, time:TemporalEntity) ",
+        "ex:describesContext": 
+            {
+                "@id": "#ReactorTime"
+            },
+        "rdf:value": 
+            { 
+                "@value": "2026-07-28T10:00:00Z", 
+                "@type": "xsd:dateTime" 
+            }
+    },
+
+    {
+        "@id": "#LastUsedTime_Reactor",
+        "@type": "time:Instance",
+        "schema:name": "LastUsedTime Reactor",
+        "@comment": "time:Instance means one specific point in time (other possible versions: time:Duration, time:Interval, time:TemporalEntity) ",
+        "ex:describesContext": 
+            {
+                "@id": "#ReactorTime"
+            },
+        "rdf:value": 
+            { 
+                "@value": "2026-07-28T10:00:00Z", 
+                "@type": "xsd:dateTime" 
+            }
+    },
+
+
         {
-                "@id": "#LastServicedTime_Reactor",
-                "@type": "time:Instance",
-                "schema:name": "LastServicedTime Reactor",
-                "@comment": "time:Instance means one specific point in time (other possible versions: time:Duration, time:Interval, time:TemporalEntity) ",
-                "ex:describesContext": 
-                    {
-                        "@id": "#ReactorTime"
-                    },
-                "rdf:value": 
-                    { 
-                        "@value": "2026-07-28T10:00:00Z", 
-                        "@type": "xsd:dateTime" 
-                    }
-            },
-
+        "@id": "#LastUsedTime_Stirrer",
+        "@type": "ex:Timestamp",
+        "schema:name": "LastUsedTime Stirrer",
+        "schema:description": "The time of when the stirrer was used last",
+        "ex:describesContext": 
             {
-                "@id": "#LastUsedTime_Reactor",
-                "@type": "time:Instance",
-                "schema:name": "LastUsedTime Reactor",
-                "@comment": "time:Instance means one specific point in time (other possible versions: time:Duration, time:Interval, time:TemporalEntity) ",
-                "ex:describesContext": 
-                    {
-                        "@id": "#ReactorTime"
-                    },
-                "rdf:value": 
-                    { 
-                        "@value": "2026-07-28T10:00:00Z", 
-                        "@type": "xsd:dateTime" 
-                    }
+                "@id": "#StirrerInformation"
             },
+        "rdf:value":
+            {  
+                "@value": "2026-07-28T10:00:00Z",  
+                "@type": "xsd:dateTime" 
+            }
 
+    },
 
-             {
-                "@id": "#LastUsedTime_Stirrer",
-                "@type": "ex:Timestamp",
-                "schema:name": "LastUsedTime Stirrer",
-                "schema:description": "The time of when the stirrer was used last",
-                "ex:describesContext": 
-                    {
-                        "@id": "#StirrerInformation"
-                    },
-                "rdf:value":
-                    {  
-                        "@value": "2026-07-28T10:00:00Z",  
-                        "@type": "xsd:dateTime" 
-                    }
-
-            },
-
-             {
-                "@id": "#LastUsedTime_Sparger",
-                "@type": "ex:Timestamp",
-                "schema:name": "LastUsedTime Sparger",
-                "schema:description": "The time of when the sparger was used last",
-                "ex:describesContext": 
-                    {
-                        "@id": "#SpargerTime"
-                    },
-                "rdf:value":
-                    {  
-                        "@value": "2026-07-28T10:00:00Z",  
-                        "@type": "xsd:dateTime" 
-                    }
-            },
-
+        {
+        "@id": "#LastUsedTime_Sparger",
+        "@type": "ex:Timestamp",
+        "schema:name": "LastUsedTime Sparger",
+        "schema:description": "The time of when the sparger was used last",
+        "ex:describesContext": 
             {
-                "@id": "#LastUsedTime_Jacket",
-                "@type": "ex:Timestamp",
-                "schema:name": "LastUsedTime Jacket",
-                "schema:description": "The time of when the jacket was used last",
-                "ex:describesContext": 
-                    {
-                        "@id": "#JacketTime"
-                    },
-                "rdf:value":
-                    {  
-                        "@value": "2026-07-28T10:00:00Z",  
-                        "@type": "xsd:dateTime" 
-                    }
+                "@id": "#SpargerTime"
             },
+        "rdf:value":
+            {  
+                "@value": "2026-07-28T10:00:00Z",  
+                "@type": "xsd:dateTime" 
+            }
+    },
 
-
-
-
+    {
+        "@id": "#LastUsedTime_Jacket",
+        "@type": "ex:Timestamp",
+        "schema:name": "LastUsedTime Jacket",
+        "schema:description": "The time of when the jacket was used last",
+        "ex:describesContext": 
             {
-                "@id": "#TransferTaskDuration",
-                "@type": "time:Duration",
-                "schema:name": "Transfer Task Duration",
-                "schema:description": "Estimated time for a transfer of substances in these experiments",
-                "ex:describesContext": 
-                [
-
-                ],
-                "rdf:value": "PT30S",
-                "ex:hasProvenanceType": "ex:Estimated",
+                "@id": "#JacketTime"
             },
+        "rdf:value":
+            {  
+                "@value": "2026-07-28T10:00:00Z",  
+                "@type": "xsd:dateTime" 
+            }
+    },
 
 
 
-            {
-                "@id": "#ExperimentalProcedure_Exp1_StartTime",
-                "@type": "time:Instance",
-                "schema:name": "ExperimentalProcedure_Exp1_StartTime",
-                "schema:description": "Start time of the experimental procedure for experiment 1",
-                "rdf:value":
-                    {  
-                        "@value": "2026-07-28T10:00:00Z",  
-                        "@type": "xsd:dateTimeStamp" 
-                    },
-                "ex:hasProvenanceType": "ex:Estimated",
-            },
+
+    {
+        "@id": "#TransferTaskDuration",
+        "@type": "time:Duration",
+        "schema:name": "Transfer Task Duration",
+        "schema:description": "Estimated time for a transfer of substances in these experiments",
+        "ex:describesContext": 
+        [
+
+        ],
+        "rdf:value": "PT30S",
+        "ex:hasProvenanceType": "ex:Estimated",
+    },
+
+
+
+    {· · · (N)  · · · · · · Experimental Procedure · · ·
+
+        {
+            "@id": "#ExperimentalProcedure_Exp1_StartTime",
+            "@type": "time:Instance",
+            "schema:name": "ExperimentalProcedure_Exp1_StartTime",
+            "schema:description": "Start time of the experimental procedure for experiment 1",
+            "rdf:value":
+                {  
+                    "@value": "2026-07-28T10:00:00Z",  
+                    "@type": "xsd:dateTimeStamp" 
+                },
+            "ex:hasProvenanceType": "ex:Estimated",
+        },
+        
+    · · · (N)  · · · · · · Experimental Procedure  — END · · ·},
+
+
+    {· · · (N)  · · · · · · Add Liquid · · ·
+
+        {
+            "@id": "#AddLiquidTask_Exp1_StartOffset",
+            "@type": "time:Duration",
+            "schema:name": "AddLiquidTask_Exp1_StartOffset",
+            "schema:description": "Start offset of the add liquid task for experiment 1",
+            "rdf:value":
+                {
+                    "@value": "PT2M",
+                    "@type": "xsd:duration"
+                },
+            "ex:hasProvenanceType": "ex:Estimated",
+        },
+
+    · · · (N)  · · · · · · Add Liquid  — END · · ·},
+
+
+    {· · · (N)  · · · · · · Add Solid · · ·
+
+        {
+            "@id": "#AddSolidTask_Exp1_StartOffset",
+            "@type": "time:Duration",
+            "schema:name": "AddSolidTask_Exp1_StartOffset",
+            "schema:description": "Start offset of the add solid task for experiment 1",
+            "rdf:value":
+                {
+                    "@value": "PT2M",
+                    "@type": "xsd:duration"
+                },
+            "ex:hasProvenanceType": "ex:Estimated",
+        },
+
+    · · · (N)  · · · · · · Add Solid  — END · · ·},
+
+
+    {· · · (N)  · · · · · · Add Catalyst · · ·
+
+        {
+            "@id": "#AddingCatalystTask_Exp1_StartOffset",
+            "@type": "time:Duration",
+            "schema:name": "AddingCatalystTask_Exp1_StartOffset",
+            "schema:description": "Start offset of the adding catalyst task for experiment 1",
+            "rdf:value":
+                {
+                    "@value": "PT2M",
+                    "@type": "xsd:duration"
+                },
+            "ex:hasProvenanceType": "ex:Estimated",
+        },
+    · · · (N)  · · · · · · Add Catalyst  — END · · ·},
+
+
+    {· · · (N)  · · · · · · Remove Liquid · · ·
+
+        {
+            "@id": "#RemoveLiquidTask_Exp1_StartOffset",
+            "@type": "time:Duration",
+            "schema:name": "RemoveLiquidTask_Exp1_StartOffset",
+            "schema:description": "Start offset of the remove liquid task for experiment 1",
+            "rdf:value":
+                {
+                    "@value": "PT2M",
+                    "@type": "xsd:duration"
+                },
+            "ex:hasProvenanceType": "ex:Estimated",
+        },
+
+    · · · (N)  · · · · · · Remove Liquid  — END · · ·},
+
+
+    {· · · (N)  · · · · · · Remove Solid · · ·
+
+        {
+            "@id": "#RemoveSolidTask_Exp1_StartOffset",
+            "@type": "time:Duration",
+            "schema:name": "RemoveSolidTask_Exp1_StartOffset",
+            "schema:description": "Start offset of the remove solid task for experiment 1",
+            "rdf:value":
+                {
+                    "@value": "PT2M",
+                    "@type": "xsd:duration"
+                },
+            "ex:hasProvenanceType": "ex:Estimated",
+        },
+    · · · (N)  · · · · · · Remove Solid  — END · · ·},
+
+
+    {· · · (N)  · · · · · · Remove Catalyst · · ·
+
+        {
+            "@id": "#RemoveCatalystTask_Exp1_StartOffset",
+            "@type": "time:Duration",
+            "schema:name": "RemoveCatalystTask_Exp1_StartOffset",
+            "schema:description": "Start offset of the remove catalyst task for experiment 1",
+            "rdf:value":
+                {
+                    "@value": "PT2M",
+                    "@type": "xsd:duration"
+                },
+            "ex:hasProvenanceType": "ex:Estimated",
+        },
+    · · · (N)  · · · · · · Remove Catalyst  — END · · ·},
+
+
+    {· · · (N)  · · · · · · Stirring · · ·
+
+        {
+            "@id": "#StirringTask_Exp1_StartOffset",
+            "@type": "time:Duration",
+            "schema:name": "StirringTask_Exp1_StartOffset",
+            "schema:description": "Start offset of the stirring task for experiment 1",
+            "rdf:value":
+                {
+                    "@value": "PT2M",
+                    "@type": "xsd:duration"
+                },
+            "ex:hasProvenanceType": "ex:Estimated",
+        },
+
+    · · · (N)  · · · · · · Stirring  — END · · ·},
+
+
+    {· · · (N)  · · · · · · Pressurizing · · ·
+
+        {
+            "@id": "#PressurizeReactorTask_Exp1_StartOffset",
+            "@type": "time:Duration",
+            "schema:name": "PressurizeReactorTask_Exp1_StartOffset",
+            "schema:description": "Start offset of the pressurize reactor task for experiment 1",
+            "rdf:value":
+                {
+                    "@value": "PT2M",
+                    "@type": "xsd:duration"
+                },
+            "ex:hasProvenanceType": "ex:Estimated",
+        },
+
+    · · · (N)  · · · · · · Pressurizing  — END · · ·},
+
+
+    {· · · (N)  · · · · · · Sparging · · ·
+
+        {
+            "@id": "#SpargingTask_Exp1_StartOffset",
+            "@type": "time:Duration",
+            "schema:name": "SpargingTask_Exp1_StartOffset",
+            "schema:description": "Start offset of the sparging task for experiment 1",
+            "rdf:value":
+                {
+                    "@value": "PT2M",
+                    "@type": "xsd:duration"
+                },
+            "ex:hasProvenanceType": "ex:Estimated",
+        },
+
+    · · · (N)  · · · · · · Sparging  — END · · ·},
+
+
+    {· · · (N)  · · · · · · Cooling · · ·
+
+        {
+            "@id": "#CoolingTask_Exp1_StartOffset",
+            "@type": "time:Duration",
+            "schema:name": "CoolingTask_Exp1_StartOffset",
+            "schema:description": "Start offset of the cooling task for experiment 1",
+            "rdf:value":
+                {
+                    "@value": "PT2M",
+                    "@type": "xsd:duration"
+                },
+            "ex:hasProvenanceType": "ex:Estimated",
+        },
+
+    · · · (N)  · · · · · · Cooling  — END · · ·},
+
+
+
+
+    {· · · (N)  · · · · · · Cleaning Procedure Vessel and Stirrer · · ·
+
+        {
+            "@id": "#Vessel_Stirrer_CleaningProcedure_Exp1_StartTime",
+            "@type": "time:Instance",
+            "schema:name": "Vessel_Stirrer_CleaningProcedure_Exp1_StartTime",
+            "schema:description": "Start time of the vessel and stirrer cleaning procedure for experiment 1",
+            "rdf:value":
+                {
+                    "@value": "2026-07-28T12:00:00Z",
+                    "@type": "xsd:dateTimeStamp"
+                },
+            "ex:hasProvenanceType": "ex:Estimated",
+        },
+
+        {
+            "@id": "#AddCleaningFluidTask_Exp1_StartOffset",
+            "@type": "time:Duration",
+            "schema:name": "AddCleaningFluidTask_Exp1_StartOffset",
+            "schema:description": "Start offset of the add cleaning fluid task for experiment 1",
+            "rdf:value":
+                {
+                    "@value": "PT0M",
+                    "@type": "xsd:duration"
+                },
+            "ex:hasProvenanceType": "ex:Estimated",
+        },
+
+
+        {
+            "@id": "#StirCleaningFluidTask_Exp1_StartOffset",
+            "@type": "time:Duration",
+            "schema:name": "StirCleaningFluidTask_Exp1_StartOffset",
+            "schema:description": "Start offset of the stir cleaning fluid task for experiment 1",
+            "rdf:value":
+                {
+                    "@value": "PT10M",
+                    "@type": "xsd:duration"
+                },
+            "ex:hasProvenanceType": "ex:Estimated",
+        },
+
+    · · · (N)  · · · · · · Cleaning Procedure Vessel and Stirrer  — END · · ·},
+
+
+    {· · · (N)  · · · · · · Weighing: Start Mass RDY · · ·
+
+        {
+            "@id": "#WeighingTask_StartMassRDY_Exp1_StartTime",
+            "@type": "time:Instance",
+            "schema:name": "WeighingTask_StartMassRDY_Exp1_StartTime",
+            "schema:description": "Start time of the start mass RDY weighing task for experiment 1",
+            "rdf:value":
+                {
+                    "@value": "2026-07-28T10:00:00Z",
+                    "@type": "xsd:dateTimeStamp"
+                },
+            "ex:hasProvenanceType": "ex:Estimated",
+        },
+
+    · · · (N)  · · · · · · Weighing: Start Mass RDY  — END · · ·},
+
+
+    {· · · (N)  · · · · · · Weighing: Final Mass RDY · · ·
+
+        {
+            "@id": "#WeighingTask_FinalMass_RDY_Exp1_StartTime",
+            "@type": "time:Instance",
+            "schema:name": "WeighingTask_FinalMass_RDY_Exp1_StartTime",
+            "schema:description": "Start time of the final mass RDY weighing task for experiment 1",
+            "rdf:value":
+                {
+                    "@value": "2026-07-28T10:00:00Z",
+                    "@type": "xsd:dateTimeStamp"
+                },
+            "ex:hasProvenanceType": "ex:Recorded",
+        },
+
+    · · · (N)  · · · · · · Weighing: Final Mass RDY  — END · · ·},
+
+
+    {· · · (N)  · · · · · · Weighing: Final Mass RDEt · · ·
+
+        {
+            "@id": "#WeighingTask_FinalMass_RDEt_Exp1_StartTime",
+            "@type": "time:Instance",
+            "schema:name": "WeighingTask_FinalMass_RDEt_Exp1_StartTime",
+            "schema:description": "Start time of the final mass RDEt weighing task for experiment 1",
+            "rdf:value":
+                {
+                    "@value": "2026-07-28T10:00:00Z",
+                    "@type": "xsd:dateTimeStamp"
+                },
+            "ex:hasProvenanceType": "ex:Recorded",
+        },
+
+    · · · (N)  · · · · · · Weighing: Final Mass RDEt  — END · · ·},
+
+
+    {· · · (N)  · · · · · · Weighing: Final Mass Dimer · · ·
+
+        {
+            "@id": "#WeighingTask_FinalMass_Dimer_Exp1_StartTime",
+            "@type": "time:Instance",
+            "schema:name": "WeighingTask_FinalMass_Dimer_Exp1_StartTime",
+            "schema:description": "Start time of the final mass dimer weighing task for experiment 1",
+            "rdf:value":
+                {
+                    "@value": "2026-07-28T10:00:00Z",
+                    "@type": "xsd:dateTimeStamp"
+                },
+            "ex:hasProvenanceType": "ex:Recorded",
+        },
+
+    · · · (N)  · · · · · · Weighing: Final Mass Dimer  — END · · ·},
+
+
+
+            
+
+           
 
 ==== (N) Times — END ======================================================================================================================================}
 
