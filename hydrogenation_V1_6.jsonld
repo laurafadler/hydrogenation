@@ -9739,6 +9739,164 @@
 
     · · · (H) - 1.7  · · · · · · MFM  — END · · ·},
 
+
+    {· · · (H) - 8  · · · · · · Balance · · ·
+
+        {· · · (H) - 8a  · · · · · · Balance: General · · ·
+
+            {
+                "@id": "#Balance",
+                "@type": "sosa:Sensor",
+
+                "schema:name": "Balance",
+                "schema:description": "Balance for measuring the mass of substances and devices",
+
+                "ex:hasDigitalObjectID":
+                    {
+                        "@id": "#DigitalObjectID_Balance"
+                    },
+                % noch haben wir keine Procedures
+                "sosa:implements":
+                    {
+                        "@id": "#WeighingProcedure"
+                    },
+                % das muss noch irgendwie anders ausgedrückt werden
+                "ex:location":
+                    {
+                        "@id": "#Laboratory"
+                    },
+
+                "sosa:observes":
+                    [
+                        {
+                            "@id": "#StartMassRDY"
+                        },
+                        {
+                            "@id": "#FinalMassRDY"
+                        },
+                        {
+                            "@id": "#FinalMassRDEt"
+                        },
+                        {
+                            "@id": "#FinalMassDimer"
+                        }
+                    ],
+
+                "ex:hasInstances":
+                    [
+                        {
+                            "@id": "#Balance_Exp1"
+                        },
+                        {
+                            "@id": "#Balance_Exp2"
+                        },
+                        {
+                            "@id": "#Balance_Exp3"
+                        },
+                        {
+                            "@id": "#Balance_Exp4"
+                        },
+                        {
+                            "@id": "#Balance_Exp5"
+                        },
+                        {
+                            "@id": "#Balance_Exp6"
+                        },
+                        {
+                            "@id": "#Balance_Exp7"
+                        },
+                        {
+                            "@id": "#Balance_Exp8"
+                        },
+                        {
+                            "@id": "#Balance_Exp9"
+                        }
+                    ]
+            }
+
+            {· · · (H) - 8a - Context  · · · · · · Context of Balance: General · · ·
+
+                % contexts of entity here (all six context entities)
+
+
+            · · · (H) - 8a - Context  · · · · · · Context of Balance: General · · ·},
+
+        · · · (H) - 8a · · · · · · Balance: General  — END · · ·},
+
+        {· · · (H) - 8b  · · · · · · Balance: Specific · · ·
+
+            {· · · (H) - 8b - 1  · · · · · · Balance - Experiment 1 · · ·
+
+                {
+                    "@id": "#Balance_Exp1",
+                    "@type": "sosa:Sensor",
+
+                    "schema:name": "Balance",
+                    "schema:description": "Balance used for weighing substances and devices during experiment 1",
+
+                    "ex:isInstanceOf":
+                        {
+                            "@id": "#Balance"
+                        },
+
+                    "ex:lastUsedTime":
+                        {
+                            "@id": "#LastUsedTime_Balance_BeforeFirstUse"
+                        },
+
+                    "ex:lastUsedPurpose":
+                        {
+                            "@id": "#LastUsedPurpose_Balance_BeforeFirstUse"
+                        },
+
+                    "sosa:madeObservation":
+                        {
+                            "@id": "#WeighingTask_Exp1"
+                        },
+
+                    "sosa:observes":
+                        [
+                            {
+                                "@id": "#StartMassRDY_Exp1"
+                            },
+                            {
+                                "@id": "#FinalMassRDY_Exp1"
+                            },
+                            {
+                                "@id": "#FinalMassRDEt_Exp1"
+                            },
+                            {
+                                "@id": "#FinalMassDimer_Exp1"
+                            }
+                        ]
+                }
+
+                {· · · (H) - 8b - 1 - Context  · · · · · · Context of Balance: Specific · · ·
+
+                    % contexts of entity here (all six context entities)
+
+
+                · · · (H) - 8b - 1 - Context  · · · · · · Context of Balance: Specific · · ·},
+
+            · · · (H) - 8b - 1  · · · · · · Balance: Specific - Experiment 1  — END · · ·},
+
+            {· · · (H) - 8b - 2  · · · · · · Balance - Experiment 2 · · ·
+
+                % entity here
+
+                {· · · (H) - 8b - 2 - Context  · · · · · · Context of Balance: Specific · · ·
+
+                    % contexts of entity here (all six context entities)
+
+
+                · · · (H) - 8b - 2 - Context  · · · · · · Context of Balance: Specific · · ·},
+
+            · · · (H) - 8b - 2  · · · · · · Balance: Specific - Experiment 2  — END · · ·},
+
+        · · · (H) - 8b · · · · · · Balance: Specific  — END · · ·},
+
+    · · · (H) - 8  · · · · · · Balance  — END · · ·},
+
 ==== (H) Devices — END =====================================================================================================================================}
 
 
