@@ -969,7 +969,7 @@ hydrogenation_V1_6
                 "ex:hasParticipant":
                     [      
                         {
-                            "@id": "#Participant_R1_46_RYA"
+                            "@id": "#Participant_R1_6_RYA"
                         },
                         {
                             "@id": "#Participant_R1_6_cat-H"
@@ -7370,22 +7370,22 @@ hydrogenation_V1_6
                     "ex:hasContext": 
                         [
                             {
-                                "@id": "#Reactor_Exp1_Information"
+                                "@id": "#ReactorInformation_Exp1"
                             },
                             {
-                                "@id": "#Reactor_Exp1_Energy"
+                                "@id": "#ReactorEnergy_Exp1"
                             },
                             {
-                                "@id": "#Reactor_Exp1_Time"
+                                "@id": "#ReactorTime_Exp1"
                             },
                             {
-                                "@id": "#Reactor_Exp1_Space"
+                                "@id": "#ReactorSpace_Exp1"
                             },
                             {
-                                "@id": "#Reactor_Exp1_Structure"
+                                "@id": "#ReactorStructure_Exp1"
                             },
                             {
-                                "@id": "#Reactor_Exp1_Substance"
+                                "@id": "#ReactorSubstance_Exp1"
                             }
                         ],
                     
@@ -9331,6 +9331,27 @@ hydrogenation_V1_6
 
                 "schema:name": "Temperature Sensor",
                 "schema:description": "Sensor for measuring the temperature of the reactor",
+                "ex:hasContext":
+                    [
+                        {
+                            "@id": "#TemperatureSensor_Information"
+                        },
+                        {
+                            "@id": "#TemperatureSensor_Energy"
+                        },
+                        {
+                            "@id": "#TemperatureSensor_Time"
+                        },
+                        {
+                            "@id": "#TemperatureSensor_Space"
+                        },
+                        {
+                            "@id": "#TemperatureSensor_Structure"
+                        },
+                        {
+                            "@id": "#TemperatureSensor_Substance"
+                        }
+                    ],
 
                 "ex:hasDigitalObjectID":
                     {
@@ -9393,10 +9414,259 @@ hydrogenation_V1_6
 
             {· · · (H) - 1.5a - Context  · · · · · · Context of Temperature Sensor: General · · ·
 
-                % contexts of entity here (all six context entities)
+                {
+                    "@id": "#TemperatureSensor_Information",
+                    "@type": "ex:InformationContext",
+                    "schema:name": "Temperature Sensor Information",
+                    "ex:describedBy":
+                        [
+                            {
+                                "@id": "#..."
+                            }
+                        ],
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#TemperatureSensor_Information_Exp1"
+                            },
+                            {
+                                "@id": "#TemperatureSensor_Information_Exp2"
+                            },
+                            {
+                                "@id": "#TemperatureSensor_Information_Exp3"
+                            },
+                            {
+                                "@id": "#TemperatureSensor_Information_Exp4"
+                            },
+                            {
+                                "@id": "#TemperatureSensor_Information_Exp5"
+                            },
+                            {
+                                "@id": "#TemperatureSensor_Information_Exp6"
+                            },
+                            {
+                                "@id": "#TemperatureSensor_Information_Exp7"
+                            },
+                            {
+                                "@id": "#TemperatureSensor_Information_Exp8"
+                            },
+                            {
+                                "@id": "#TemperatureSensor_Information_Exp9"
+                            }
+                        ]
+                },
 
+                {
+                    "@id": "#TemperatureSensor_Energy",
+                    "@type": "ex:EnergyContext",
+                    "schema:name": "Temperature Sensor Energy",
+                    "ex:describedBy":
+                        [
+                            {
+                                "@id": "#..."
+                            }
+                        ],
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#TemperatureSensor_Energy_Exp1"
+                            },
+                            {
+                                "@id": "#TemperatureSensor_Energy_Exp2"
+                            },
+                            {
+                                "@id": "#TemperatureSensor_Energy_Exp3"
+                            },
+                            {
+                                "@id": "#TemperatureSensor_Energy_Exp4"
+                            },
+                            {
+                                "@id": "#TemperatureSensor_Energy_Exp5"
+                            },
+                            {
+                                "@id": "#TemperatureSensor_Energy_Exp6"
+                            },
+                            {
+                                "@id": "#TemperatureSensor_Energy_Exp7"
+                            },
+                            {
+                                "@id": "#TemperatureSensor_Energy_Exp8"
+                            },
+                            {
+                                "@id": "#TemperatureSensor_Energy_Exp9"
+                            }
+                        ]
+                },
 
-            · · · (H) - 1.5a - Context  · · · · · · Context of Temperature Sensor: General · · ·},
+                {
+                    "@id": "#TemperatureSensor_Time",
+                    "@type": "ex:TimeContext",
+                    "schema:name": "Temperature Sensor Time",
+                    "ex:describedBy":
+                        [
+                            {
+                                "@id": "#..."
+                            }
+                        ],
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#TemperatureSensor_Time_Exp1"
+                            },
+                            {
+                                "@id": "#TemperatureSensor_Time_Exp2"
+                            },
+                            {
+                                "@id": "#TemperatureSensor_Time_Exp3"
+                            },
+                            {
+                                "@id": "#TemperatureSensor_Time_Exp4"
+                            },
+                            {
+                                "@id": "#TemperatureSensor_Time_Exp5"
+                            },
+                            {
+                                "@id": "#TemperatureSensor_Time_Exp6"
+                            },
+                            {
+                                "@id": "#TemperatureSensor_Time_Exp7"
+                            },
+                            {
+                                "@id": "#TemperatureSensor_Time_Exp8"
+                            },
+                            {
+                                "@id": "#TemperatureSensor_Time_Exp9"
+                            }
+                        ]
+                },
+
+                {
+                    "@id": "#TemperatureSensor_Space",
+                    "@type": "ex:SpaceContext",
+                    "schema:name": "Temperature Sensor Space",
+                    "ex:describedBy":
+                        [
+                            {
+                                "@id": "#..."
+                            }
+                        ],
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#TemperatureSensor_Space_Exp1"
+                            },
+                            {
+                                "@id": "#TemperatureSensor_Space_Exp2"
+                            },
+                            {
+                                "@id": "#TemperatureSensor_Space_Exp3"
+                            },
+                            {
+                                "@id": "#TemperatureSensor_Space_Exp4"
+                            },
+                            {
+                                "@id": "#TemperatureSensor_Space_Exp5"
+                            },
+                            {
+                                "@id": "#TemperatureSensor_Space_Exp6"
+                            },
+                            {
+                                "@id": "#TemperatureSensor_Space_Exp7"
+                            },
+                            {
+                                "@id": "#TemperatureSensor_Space_Exp8"
+                            },
+                            {
+                                "@id": "#TemperatureSensor_Space_Exp9"
+                            }
+                        ]
+                },
+
+                {
+                    "@id": "#TemperatureSensor_Structure",
+                    "@type": "ex:StructureContext",
+                    "schema:name": "Temperature Sensor Structure",
+                    "ex:describedBy":
+                        [
+                            {
+                                "@id": "#..."
+                            }
+                        ],
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#TemperatureSensor_Structure_Exp1"
+                            },
+                            {
+                                "@id": "#TemperatureSensor_Structure_Exp2"
+                            },
+                            {
+                                "@id": "#TemperatureSensor_Structure_Exp3"
+                            },
+                            {
+                                "@id": "#TemperatureSensor_Structure_Exp4"
+                            },
+                            {
+                                "@id": "#TemperatureSensor_Structure_Exp5"
+                            },
+                            {
+                                "@id": "#TemperatureSensor_Structure_Exp6"
+                            },
+                            {
+                                "@id": "#TemperatureSensor_Structure_Exp7"
+                            },
+                            {
+                                "@id": "#TemperatureSensor_Structure_Exp8"
+                            },
+                            {
+                                "@id": "#TemperatureSensor_Structure_Exp9"
+                            }
+                        ]
+                },
+
+                {
+                    "@id": "#TemperatureSensor_Substance",
+                    "@type": "ex:SubstanceContext",
+                    "schema:name": "Temperature Sensor Substance",
+                    "ex:describedBy":
+                        [
+                            {
+                                "@id": "#..."
+                            }
+                        ],
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#TemperatureSensor_Substance_Exp1"
+                            },
+                            {
+                                "@id": "#TemperatureSensor_Substance_Exp2"
+                            },
+                            {
+                                "@id": "#TemperatureSensor_Substance_Exp3"
+                            },
+                            {
+                                "@id": "#TemperatureSensor_Substance_Exp4"
+                            },
+                            {
+                                "@id": "#TemperatureSensor_Substance_Exp5"
+                            },
+                            {
+                                "@id": "#TemperatureSensor_Substance_Exp6"
+                            },
+                            {
+                                "@id": "#TemperatureSensor_Substance_Exp7"
+                            },
+                            {
+                                "@id": "#TemperatureSensor_Substance_Exp8"
+                            },
+                            {
+                                "@id": "#TemperatureSensor_Substance_Exp9"
+                            }
+                        ]
+                }
+
+            · · · (H) - 1.5a - Context  · · · · · · Context of Temperature Sensor: General -END · · ·},
 
         · · · (H) - 1.5a · · · · · · Temperature Sensor: General  — END · · ·},
 
@@ -9409,7 +9679,27 @@ hydrogenation_V1_6
                     "@type": "sosa:Sensor",
                     "schema:name": "Temperature Sensor Reactor",
                     "schema:description": "Temperature sensor used for measuring the temperature in the reactor",
-
+                    "ex:hasContext":
+                        [
+                            {
+                                "@id": "#TemperatureSensor_Information_Exp1"
+                            },
+                            {
+                                "@id": "#TemperatureSensor_Energy_Exp1"
+                            },
+                            {
+                                "@id": "#TemperatureSensor_Time_Exp1"
+                            },
+                            {
+                                "@id": "#TemperatureSensor_Space_Exp1"
+                            },
+                            {
+                                "@id": "#TemperatureSensor_Structure_Exp1"
+                            },
+                            {
+                                "@id": "#TemperatureSensor_Substance_Exp1"
+                            }
+                        ],
                     "ex:isInstanceOf":
                         {
                             "@id": "#TemperatureSensor"
@@ -9444,7 +9734,101 @@ hydrogenation_V1_6
 
                 {· · · (H) - 1.5b - 1 - Context  · · · · · · Context of Temperature Sensor: Specific · · ·
 
-                    % contexts of entity here (all six context entities)
+                    {
+                        "@id": "#TemperatureSensor_Information_Exp1",
+                        "@type": "ex:InformationContext",
+                        "schema:name": "Temperature Sensor Information Exp1",
+                        "ex:describedBy":
+                            [
+                                {
+                                    "@id": "#..."
+                                }
+                            ],
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#TemperatureSensor_Information"
+                            }
+                    },
+
+                    {
+                        "@id": "#TemperatureSensor_Energy_Exp1",
+                        "@type": "ex:EnergyContext",
+                        "schema:name": "Temperature Sensor Energy Exp1",
+                        "ex:describedBy":
+                            [
+                                {
+                                    "@id": "#..."
+                                }
+                            ],
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#TemperatureSensor_Energy"
+                            }
+                    },
+
+                    {
+                        "@id": "#TemperatureSensor_Time_Exp1",
+                        "@type": "ex:TimeContext",
+                        "schema:name": "Temperature Sensor Time Exp1",
+                        "ex:describedBy":
+                            [
+                                {
+                                    "@id": "#..."
+                                }
+                            ],
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#TemperatureSensor_Time"
+                            }
+                    },
+
+                    {
+                        "@id": "#TemperatureSensor_Space_Exp1",
+                        "@type": "ex:SpaceContext",
+                        "schema:name": "Temperature Sensor Space Exp1",
+                        "ex:describedBy":
+                            [
+                                {
+                                    "@id": "#..."
+                                }
+                            ],
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#TemperatureSensor_Space"
+                            }
+                    },
+
+                    {
+                        "@id": "#TemperatureSensor_Structure_Exp1",
+                        "@type": "ex:StructureContext",
+                        "schema:name": "Temperature Sensor Structure Exp1",
+                        "ex:describedBy":
+                            [
+                                {
+                                    "@id": "#..."
+                                }
+                            ],
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#TemperatureSensor_Structure"
+                            }
+                    },
+
+                    {
+                        "@id": "#TemperatureSensor_Substance_Exp1",
+                        "@type": "ex:SubstanceContext",
+                        "schema:name": "Temperature Sensor Substance Exp1",
+                        "ex:describedBy":
+                            [
+                                {
+                                    "@id": "#..."
+                                }
+                            ],
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#TemperatureSensor_Substance"
+                            }
+                    }
 
 
                 · · · (H) - 1.5b - 1 - Context  · · · · · · Context of Temperature Sensor: Specific · · ·},
@@ -9478,7 +9862,27 @@ hydrogenation_V1_6
                 "@type": "sosa:Sensor",
                 "schema:name": "Pressure Sensor",
                 "schema:description": "Sensor for measuring the pressure of the reactor",
-
+                "ex:hasContext":
+                    [
+                        {
+                            "@id": "#PressureSensor_Information"
+                        },
+                        {
+                            "@id": "#PressureSensor_Energy"
+                        },
+                        {
+                            "@id": "#PressureSensor_Time"
+                        },
+                        {
+                            "@id": "#PressureSensor_Space"
+                        },
+                        {
+                            "@id": "#PressureSensor_Structure"
+                        },
+                        {
+                            "@id": "#PressureSensor_Substance"
+                        }
+                    ],
                 "ex:hasDigitalObjectID":
                     {
                         "@id": "#DigitalObjectID_PressureSensor"
@@ -9539,7 +9943,257 @@ hydrogenation_V1_6
 
             {· · · (H) - 1.6a - Context  · · · · · · Context of Pressure Sensor: General · · ·
 
-                % contexts of entity here (all six context entities)
+                {
+                    "@id": "#PressureSensor_Information",
+                    "@type": "ex:InformationContext",
+                    "schema:name": "Pressure Sensor Information",
+                    "ex:describedBy":
+                        [
+                            {
+                                "@id": "#..."
+                            }
+                        ],
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#PressureSensor_Information_Exp1"
+                            },
+                            {
+                                "@id": "#PressureSensor_Information_Exp2"
+                            },
+                            {
+                                "@id": "#PressureSensor_Information_Exp3"
+                            },
+                            {
+                                "@id": "#PressureSensor_Information_Exp4"
+                            },
+                            {
+                                "@id": "#PressureSensor_Information_Exp5"
+                            },
+                            {
+                                "@id": "#PressureSensor_Information_Exp6"
+                            },
+                            {
+                                "@id": "#PressureSensor_Information_Exp7"
+                            },
+                            {
+                                "@id": "#PressureSensor_Information_Exp8"
+                            },
+                            {
+                                "@id": "#PressureSensor_Information_Exp9"
+                            }
+                        ]
+                },
+
+                {
+                    "@id": "#PressureSensor_Energy",
+                    "@type": "ex:EnergyContext",
+                    "schema:name": "Pressure Sensor Energy",
+                    "ex:describedBy":
+                        [
+                            {
+                                "@id": "#..."
+                            }
+                        ],
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#PressureSensor_Energy_Exp1"
+                            },
+                            {
+                                "@id": "#PressureSensor_Energy_Exp2"
+                            },
+                            {
+                                "@id": "#PressureSensor_Energy_Exp3"
+                            },
+                            {
+                                "@id": "#PressureSensor_Energy_Exp4"
+                            },
+                            {
+                                "@id": "#PressureSensor_Energy_Exp5"
+                            },
+                            {
+                                "@id": "#PressureSensor_Energy_Exp6"
+                            },
+                            {
+                                "@id": "#PressureSensor_Energy_Exp7"
+                            },
+                            {
+                                "@id": "#PressureSensor_Energy_Exp8"
+                            },
+                            {
+                                "@id": "#PressureSensor_Energy_Exp9"
+                            }
+                        ]
+                },
+
+                {
+                    "@id": "#PressureSensor_Time",
+                    "@type": "ex:TimeContext",
+                    "schema:name": "Pressure Sensor Time",
+                    "ex:describedBy":
+                        [
+                            {
+                                "@id": "#..."
+                            }
+                        ],
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#PressureSensor_Time_Exp1"
+                            },
+                            {
+                                "@id": "#PressureSensor_Time_Exp2"
+                            },
+                            {
+                                "@id": "#PressureSensor_Time_Exp3"
+                            },
+                            {
+                                "@id": "#PressureSensor_Time_Exp4"
+                            },
+                            {
+                                "@id": "#PressureSensor_Time_Exp5"
+                            },
+                            {
+                                "@id": "#PressureSensor_Time_Exp6"
+                            },
+                            {
+                                "@id": "#PressureSensor_Time_Exp7"
+                            },
+                            {
+                                "@id": "#PressureSensor_Time_Exp8"
+                            },
+                            {
+                                "@id": "#PressureSensor_Time_Exp9"
+                            }
+                        ]
+                },
+
+                {
+                    "@id": "#PressureSensor_Space",
+                    "@type": "ex:SpaceContext",
+                    "schema:name": "Pressure Sensor Space",
+                    "ex:describedBy":
+                        [
+                            {
+                                "@id": "#..."
+                            }
+                        ],
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#PressureSensor_Space_Exp1"
+                            },
+                            {
+                                "@id": "#PressureSensor_Space_Exp2"
+                            },
+                            {
+                                "@id": "#PressureSensor_Space_Exp3"
+                            },
+                            {
+                                "@id": "#PressureSensor_Space_Exp4"
+                            },
+                            {
+                                "@id": "#PressureSensor_Space_Exp5"
+                            },
+                            {
+                                "@id": "#PressureSensor_Space_Exp6"
+                            },
+                            {
+                                "@id": "#PressureSensor_Space_Exp7"
+                            },
+                            {
+                                "@id": "#PressureSensor_Space_Exp8"
+                            },
+                            {
+                                "@id": "#PressureSensor_Space_Exp9"
+                            }
+                        ]
+                },
+
+                {
+                    "@id": "#PressureSensor_Structure",
+                    "@type": "ex:StructureContext",
+                    "schema:name": "Pressure Sensor Structure",
+                    "ex:describedBy":
+                        [
+                            {
+                                "@id": "#..."
+                            }
+                        ],
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#PressureSensor_Structure_Exp1"
+                            },
+                            {
+                                "@id": "#PressureSensor_Structure_Exp2"
+                            },
+                            {
+                                "@id": "#PressureSensor_Structure_Exp3"
+                            },
+                            {
+                                "@id": "#PressureSensor_Structure_Exp4"
+                            },
+                            {
+                                "@id": "#PressureSensor_Structure_Exp5"
+                            },
+                            {
+                                "@id": "#PressureSensor_Structure_Exp6"
+                            },
+                            {
+                                "@id": "#PressureSensor_Structure_Exp7"
+                            },
+                            {
+                                "@id": "#PressureSensor_Structure_Exp8"
+                            },
+                            {
+                                "@id": "#PressureSensor_Structure_Exp9"
+                            }
+                        ]
+                },
+
+                {
+                    "@id": "#PressureSensor_Substance",
+                    "@type": "ex:SubstanceContext",
+                    "schema:name": "Pressure Sensor Substance",
+                    "ex:describedBy":
+                        [
+                            {
+                                "@id": "#..."
+                            }
+                        ],
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#PressureSensor_Substance_Exp1"
+                            },
+                            {
+                                "@id": "#PressureSensor_Substance_Exp2"
+                            },
+                            {
+                                "@id": "#PressureSensor_Substance_Exp3"
+                            },
+                            {
+                                "@id": "#PressureSensor_Substance_Exp4"
+                            },
+                            {
+                                "@id": "#PressureSensor_Substance_Exp5"
+                            },
+                            {
+                                "@id": "#PressureSensor_Substance_Exp6"
+                            },
+                            {
+                                "@id": "#PressureSensor_Substance_Exp7"
+                            },
+                            {
+                                "@id": "#PressureSensor_Substance_Exp8"
+                            },
+                            {
+                                "@id": "#PressureSensor_Substance_Exp9"
+                            }
+                        ]
+                }
 
 
             · · · (H) - 1.6a - Context  · · · · · · Context of Pressure Sensor: General · · ·},
@@ -9553,10 +10207,29 @@ hydrogenation_V1_6
                 {
                     "@id": "#PressureSensor_Exp1",
                     "@type": "sosa:Sensor",
-
                     "schema:name": "Pressure Sensor Reactor",
                     "schema:description": "Pressure sensor used for measuring the pressure in the reactor",
-
+                    "ex:hasContext":
+                        [
+                            {
+                                "@id": "#PressureSensor_Information_Exp1"
+                            },
+                            {
+                                "@id": "#PressureSensor_Energy_Exp1"
+                            },
+                            {
+                                "@id": "#PressureSensor_Time_Exp1"
+                            },
+                            {
+                                "@id": "#PressureSensor_Space_Exp1"
+                            },
+                            {
+                                "@id": "#PressureSensor_Structure_Exp1"
+                            },
+                            {
+                                "@id": "#PressureSensor_Substance_Exp1"
+                            }
+                        ],
                     "ex:isInstanceOf":
                         {
                             "@id": "#PressureSensor"
@@ -9587,7 +10260,101 @@ hydrogenation_V1_6
 
                 {· · · (H) - 1.6b - 1 - Context  · · · · · · Context of Pressure Sensor: Specific · · ·
 
-                    % contexts of entity here (all six context entities)
+                    {
+                        "@id": "#PressureSensor_Information_Exp1",
+                        "@type": "ex:InformationContext",
+                        "schema:name": "Pressure Sensor Information Exp1",
+                        "ex:describedBy":
+                            [
+                                {
+                                    "@id": "#..."
+                                }
+                            ],
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#PressureSensor_Information"
+                            }
+                    },
+
+                    {
+                        "@id": "#PressureSensor_Energy_Exp1",
+                        "@type": "ex:EnergyContext",
+                        "schema:name": "Pressure Sensor Energy Exp1",
+                        "ex:describedBy":
+                            [
+                                {
+                                    "@id": "#..."
+                                }
+                            ],
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#PressureSensor_Energy"
+                            }
+                    },
+
+                    {
+                        "@id": "#PressureSensor_Time_Exp1",
+                        "@type": "ex:TimeContext",
+                        "schema:name": "Pressure Sensor Time Exp1",
+                        "ex:describedBy":
+                            [
+                                {
+                                    "@id": "#..."
+                                }
+                            ],
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#PressureSensor_Time"
+                            }
+                    },
+
+                    {
+                        "@id": "#PressureSensor_Space_Exp1",
+                        "@type": "ex:SpaceContext",
+                        "schema:name": "Pressure Sensor Space Exp1",
+                        "ex:describedBy":
+                            [
+                                {
+                                    "@id": "#..."
+                                }
+                            ],
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#PressureSensor_Space"
+                            }
+                    },
+
+                    {
+                        "@id": "#PressureSensor_Structure_Exp1",
+                        "@type": "ex:StructureContext",
+                        "schema:name": "Pressure Sensor Structure Exp1",
+                        "ex:describedBy":
+                            [
+                                {
+                                    "@id": "#..."
+                                }
+                            ],
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#PressureSensor_Structure"
+                            }
+                    },
+
+                    {
+                        "@id": "#PressureSensor_Substance_Exp1",
+                        "@type": "ex:SubstanceContext",
+                        "schema:name": "Pressure Sensor Substance Exp1",
+                        "ex:describedBy":
+                            [
+                                {
+                                    "@id": "#..."
+                                }
+                            ],
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#PressureSensor_Substance"
+                            }
+                    }
 
 
                 · · · (H) - 1.6b - 1 - Context  · · · · · · Context of Pressure Sensor: Specific · · ·},
@@ -9619,10 +10386,29 @@ hydrogenation_V1_6
             {
                 "@id": "#MassFlowMeter",
                 "@type": "sosa:Sensor",
-
                 "schema:name": "Mass Flow Meter",
                 "schema:description": "Mass flow meter for measuring the used gas volume",
-
+                "ex:hasContext":
+                    [
+                        {
+                            "@id": "#MassFlowMeter_Information"
+                        },
+                        {
+                            "@id": "#MassFlowMeter_Energy"
+                        },
+                        {
+                            "@id": "#MassFlowMeter_Time"
+                        },
+                        {
+                            "@id": "#MassFlowMeter_Space"
+                        },
+                        {
+                            "@id": "#MassFlowMeter_Structure"
+                        },
+                        {
+                            "@id": "#MassFlowMeter_Substance"
+                        }
+                    ],
                 "ex:hasDigitalObjectID":
                     {
                         "@id": "#DigitalObjectID_MassFlowMeter"
@@ -9683,7 +10469,257 @@ hydrogenation_V1_6
 
             {· · · (H) - 1.7a - Context  · · · · · · Context of MFM: General · · ·
 
-                % contexts of entity here (all six context entities)
+                {
+                    "@id": "#MassFlowMeter_Information",
+                    "@type": "ex:InformationContext",
+                    "schema:name": "Mass Flow Meter Information",
+                    "ex:describedBy":
+                        [
+                            {
+                                "@id": "#..."
+                            }
+                        ],
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#MassFlowMeter_Information_Exp1"
+                            },
+                            {
+                                "@id": "#MassFlowMeter_Information_Exp2"
+                            },
+                            {
+                                "@id": "#MassFlowMeter_Information_Exp3"
+                            },
+                            {
+                                "@id": "#MassFlowMeter_Information_Exp4"
+                            },
+                            {
+                                "@id": "#MassFlowMeter_Information_Exp5"
+                            },
+                            {
+                                "@id": "#MassFlowMeter_Information_Exp6"
+                            },
+                            {
+                                "@id": "#MassFlowMeter_Information_Exp7"
+                            },
+                            {
+                                "@id": "#MassFlowMeter_Information_Exp8"
+                            },
+                            {
+                                "@id": "#MassFlowMeter_Information_Exp9"
+                            }
+                        ]
+                },
+
+                {
+                    "@id": "#MassFlowMeter_Energy",
+                    "@type": "ex:EnergyContext",
+                    "schema:name": "Mass Flow Meter Energy",
+                    "ex:describedBy":
+                        [
+                            {
+                                "@id": "#..."
+                            }
+                        ],
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#MassFlowMeter_Energy_Exp1"
+                            },
+                            {
+                                "@id": "#MassFlowMeter_Energy_Exp2"
+                            },
+                            {
+                                "@id": "#MassFlowMeter_Energy_Exp3"
+                            },
+                            {
+                                "@id": "#MassFlowMeter_Energy_Exp4"
+                            },
+                            {
+                                "@id": "#MassFlowMeter_Energy_Exp5"
+                            },
+                            {
+                                "@id": "#MassFlowMeter_Energy_Exp6"
+                            },
+                            {
+                                "@id": "#MassFlowMeter_Energy_Exp7"
+                            },
+                            {
+                                "@id": "#MassFlowMeter_Energy_Exp8"
+                            },
+                            {
+                                "@id": "#MassFlowMeter_Energy_Exp9"
+                            }
+                        ]
+                },
+
+                {
+                    "@id": "#MassFlowMeter_Time",
+                    "@type": "ex:TimeContext",
+                    "schema:name": "Mass Flow Meter Time",
+                    "ex:describedBy":
+                        [
+                            {
+                                "@id": "#..."
+                            }
+                        ],
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#MassFlowMeter_Time_Exp1"
+                            },
+                            {
+                                "@id": "#MassFlowMeter_Time_Exp2"
+                            },
+                            {
+                                "@id": "#MassFlowMeter_Time_Exp3"
+                            },
+                            {
+                                "@id": "#MassFlowMeter_Time_Exp4"
+                            },
+                            {
+                                "@id": "#MassFlowMeter_Time_Exp5"
+                            },
+                            {
+                                "@id": "#MassFlowMeter_Time_Exp6"
+                            },
+                            {
+                                "@id": "#MassFlowMeter_Time_Exp7"
+                            },
+                            {
+                                "@id": "#MassFlowMeter_Time_Exp8"
+                            },
+                            {
+                                "@id": "#MassFlowMeter_Time_Exp9"
+                            }
+                        ]
+                },
+
+                {
+                    "@id": "#MassFlowMeter_Space",
+                    "@type": "ex:SpaceContext",
+                    "schema:name": "Mass Flow Meter Space",
+                    "ex:describedBy":
+                        [
+                            {
+                                "@id": "#..."
+                            }
+                        ],
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#MassFlowMeter_Space_Exp1"
+                            },
+                            {
+                                "@id": "#MassFlowMeter_Space_Exp2"
+                            },
+                            {
+                                "@id": "#MassFlowMeter_Space_Exp3"
+                            },
+                            {
+                                "@id": "#MassFlowMeter_Space_Exp4"
+                            },
+                            {
+                                "@id": "#MassFlowMeter_Space_Exp5"
+                            },
+                            {
+                                "@id": "#MassFlowMeter_Space_Exp6"
+                            },
+                            {
+                                "@id": "#MassFlowMeter_Space_Exp7"
+                            },
+                            {
+                                "@id": "#MassFlowMeter_Space_Exp8"
+                            },
+                            {
+                                "@id": "#MassFlowMeter_Space_Exp9"
+                            }
+                        ]
+                },
+
+                {
+                    "@id": "#MassFlowMeter_Structure",
+                    "@type": "ex:StructureContext",
+                    "schema:name": "Mass Flow Meter Structure",
+                    "ex:describedBy":
+                        [
+                            {
+                                "@id": "#..."
+                            }
+                        ],
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#MassFlowMeter_Structure_Exp1"
+                            },
+                            {
+                                "@id": "#MassFlowMeter_Structure_Exp2"
+                            },
+                            {
+                                "@id": "#MassFlowMeter_Structure_Exp3"
+                            },
+                            {
+                                "@id": "#MassFlowMeter_Structure_Exp4"
+                            },
+                            {
+                                "@id": "#MassFlowMeter_Structure_Exp5"
+                            },
+                            {
+                                "@id": "#MassFlowMeter_Structure_Exp6"
+                            },
+                            {
+                                "@id": "#MassFlowMeter_Structure_Exp7"
+                            },
+                            {
+                                "@id": "#MassFlowMeter_Structure_Exp8"
+                            },
+                            {
+                                "@id": "#MassFlowMeter_Structure_Exp9"
+                            }
+                        ]
+                },
+
+                {
+                    "@id": "#MassFlowMeter_Substance",
+                    "@type": "ex:SubstanceContext",
+                    "schema:name": "Mass Flow Meter Substance",
+                    "ex:describedBy":
+                        [
+                            {
+                                "@id": "#..."
+                            }
+                        ],
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#MassFlowMeter_Substance_Exp1"
+                            },
+                            {
+                                "@id": "#MassFlowMeter_Substance_Exp2"
+                            },
+                            {
+                                "@id": "#MassFlowMeter_Substance_Exp3"
+                            },
+                            {
+                                "@id": "#MassFlowMeter_Substance_Exp4"
+                            },
+                            {
+                                "@id": "#MassFlowMeter_Substance_Exp5"
+                            },
+                            {
+                                "@id": "#MassFlowMeter_Substance_Exp6"
+                            },
+                            {
+                                "@id": "#MassFlowMeter_Substance_Exp7"
+                            },
+                            {
+                                "@id": "#MassFlowMeter_Substance_Exp8"
+                            },
+                            {
+                                "@id": "#MassFlowMeter_Substance_Exp9"
+                            }
+                        ]
+                }
 
 
             · · · (H) - 1.7a - Context  · · · · · · Context of MFM: General · · ·},
@@ -9697,10 +10733,29 @@ hydrogenation_V1_6
                 {
                     "@id": "#MassFlowMeter_Exp1",
                     "@type": "sosa:Sensor",
-
                     "schema:name": "Mass Flow Meter",
                     "schema:description": "Mass flow meter used for measuring the used gas volume during experiment 1",
-
+                    "ex:hasContext":
+                        [
+                            {
+                                "@id": "#MassFlowMeter_Information_Exp1"
+                            },
+                            {
+                                "@id": "#MassFlowMeter_Energy_Exp1"
+                            },
+                            {
+                                "@id": "#MassFlowMeter_Time_Exp1"
+                            },
+                            {
+                                "@id": "#MassFlowMeter_Space_Exp1"
+                            },
+                            {
+                                "@id": "#MassFlowMeter_Structure_Exp1"
+                            },
+                            {
+                                "@id": "#MassFlowMeter_Substance_Exp1"
+                            }
+                        ],
                     "ex:isInstanceOf":
                         {
                             "@id": "#MassFlowMeter"
@@ -9731,7 +10786,101 @@ hydrogenation_V1_6
 
                 {· · · (H) - 1.7b - 1 - Context  · · · · · · Context of MFM: Specific · · ·
 
-                    % contexts of entity here (all six context entities)
+                    {
+                        "@id": "#MassFlowMeter_Information_Exp1",
+                        "@type": "ex:InformationContext",
+                        "schema:name": "Mass Flow Meter Information Exp1",
+                        "ex:describedBy":
+                            [
+                                {
+                                    "@id": "#..."
+                                }
+                            ],
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#MassFlowMeter_Information"
+                            }
+                    },
+
+                    {
+                        "@id": "#MassFlowMeter_Energy_Exp1",
+                        "@type": "ex:EnergyContext",
+                        "schema:name": "Mass Flow Meter Energy Exp1",
+                        "ex:describedBy":
+                            [
+                                {
+                                    "@id": "#..."
+                                }
+                            ],
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#MassFlowMeter_Energy"
+                            }
+                    },
+
+                    {
+                        "@id": "#MassFlowMeter_Time_Exp1",
+                        "@type": "ex:TimeContext",
+                        "schema:name": "Mass Flow Meter Time Exp1",
+                        "ex:describedBy":
+                            [
+                                {
+                                    "@id": "#..."
+                                }
+                            ],
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#MassFlowMeter_Time"
+                            }
+                    },
+
+                    {
+                        "@id": "#MassFlowMeter_Space_Exp1",
+                        "@type": "ex:SpaceContext",
+                        "schema:name": "Mass Flow Meter Space Exp1",
+                        "ex:describedBy":
+                            [
+                                {
+                                    "@id": "#..."
+                                }
+                            ],
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#MassFlowMeter_Space"
+                            }
+                    },
+
+                    {
+                        "@id": "#MassFlowMeter_Structure_Exp1",
+                        "@type": "ex:StructureContext",
+                        "schema:name": "Mass Flow Meter Structure Exp1",
+                        "ex:describedBy":
+                            [
+                                {
+                                    "@id": "#..."
+                                }
+                            ],
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#MassFlowMeter_Structure"
+                            }
+                    },
+
+                    {
+                        "@id": "#MassFlowMeter_Substance_Exp1",
+                        "@type": "ex:SubstanceContext",
+                        "schema:name": "Mass Flow Meter Substance Exp1",
+                        "ex:describedBy":
+                            [
+                                {
+                                    "@id": "#..."
+                                }
+                            ],
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#MassFlowMeter_Substance"
+                            }
+                    }
 
 
                 · · · (H) - 1.7b - 1 - Context  · · · · · · Context of MFM: Specific · · ·},
@@ -9763,10 +10912,29 @@ hydrogenation_V1_6
             {
                 "@id": "#Balance",
                 "@type": "sosa:Sensor",
-
                 "schema:name": "Balance",
                 "schema:description": "Balance for measuring the mass of substances and devices",
-
+                "ex:hasContext":
+                    [
+                        {
+                            "@id": "#Balance_Information"
+                        },
+                        {
+                            "@id": "#Balance_Energy"
+                        },
+                        {
+                            "@id": "#Balance_Time"
+                        },
+                        {
+                            "@id": "#Balance_Space"
+                        },
+                        {
+                            "@id": "#Balance_Structure"
+                        },
+                        {
+                            "@id": "#Balance_Substance"
+                        }
+                    ],
                 "ex:hasDigitalObjectID":
                     {
                         "@id": "#DigitalObjectID_Balance"
@@ -9847,7 +11015,257 @@ hydrogenation_V1_6
 
             {· · · (H) - 8a - Context  · · · · · · Context of Balance: General · · ·
 
-                % contexts of entity here (all six context entities)
+                {
+                    "@id": "#Balance_Information",
+                    "@type": "ex:InformationContext",
+                    "schema:name": "Balance Information",
+                    "ex:describedBy":
+                        [
+                            {
+                                "@id": "#..."
+                            }
+                        ],
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#Balance_Information_Exp1"
+                            },
+                            {
+                                "@id": "#Balance_Information_Exp2"
+                            },
+                            {
+                                "@id": "#Balance_Information_Exp3"
+                            },
+                            {
+                                "@id": "#Balance_Information_Exp4"
+                            },
+                            {
+                                "@id": "#Balance_Information_Exp5"
+                            },
+                            {
+                                "@id": "#Balance_Information_Exp6"
+                            },
+                            {
+                                "@id": "#Balance_Information_Exp7"
+                            },
+                            {
+                                "@id": "#Balance_Information_Exp8"
+                            },
+                            {
+                                "@id": "#Balance_Information_Exp9"
+                            }
+                        ]
+                },
+
+                {
+                    "@id": "#Balance_Energy",
+                    "@type": "ex:EnergyContext",
+                    "schema:name": "Balance Energy",
+                    "ex:describedBy":
+                        [
+                            {
+                                "@id": "#..."
+                            }
+                        ],
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#Balance_Energy_Exp1"
+                            },
+                            {
+                                "@id": "#Balance_Energy_Exp2"
+                            },
+                            {
+                                "@id": "#Balance_Energy_Exp3"
+                            },
+                            {
+                                "@id": "#Balance_Energy_Exp4"
+                            },
+                            {
+                                "@id": "#Balance_Energy_Exp5"
+                            },
+                            {
+                                "@id": "#Balance_Energy_Exp6"
+                            },
+                            {
+                                "@id": "#Balance_Energy_Exp7"
+                            },
+                            {
+                                "@id": "#Balance_Energy_Exp8"
+                            },
+                            {
+                                "@id": "#Balance_Energy_Exp9"
+                            }
+                        ]
+                },
+
+                {
+                    "@id": "#Balance_Time",
+                    "@type": "ex:TimeContext",
+                    "schema:name": "Balance Time",
+                    "ex:describedBy":
+                        [
+                            {
+                                "@id": "#..."
+                            }
+                        ],
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#Balance_Time_Exp1"
+                            },
+                            {
+                                "@id": "#Balance_Time_Exp2"
+                            },
+                            {
+                                "@id": "#Balance_Time_Exp3"
+                            },
+                            {
+                                "@id": "#Balance_Time_Exp4"
+                            },
+                            {
+                                "@id": "#Balance_Time_Exp5"
+                            },
+                            {
+                                "@id": "#Balance_Time_Exp6"
+                            },
+                            {
+                                "@id": "#Balance_Time_Exp7"
+                            },
+                            {
+                                "@id": "#Balance_Time_Exp8"
+                            },
+                            {
+                                "@id": "#Balance_Time_Exp9"
+                            }
+                        ]
+                },
+
+                {
+                    "@id": "#Balance_Space",
+                    "@type": "ex:SpaceContext",
+                    "schema:name": "Balance Space",
+                    "ex:describedBy":
+                        [
+                            {
+                                "@id": "#..."
+                            }
+                        ],
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#Balance_Space_Exp1"
+                            },
+                            {
+                                "@id": "#Balance_Space_Exp2"
+                            },
+                            {
+                                "@id": "#Balance_Space_Exp3"
+                            },
+                            {
+                                "@id": "#Balance_Space_Exp4"
+                            },
+                            {
+                                "@id": "#Balance_Space_Exp5"
+                            },
+                            {
+                                "@id": "#Balance_Space_Exp6"
+                            },
+                            {
+                                "@id": "#Balance_Space_Exp7"
+                            },
+                            {
+                                "@id": "#Balance_Space_Exp8"
+                            },
+                            {
+                                "@id": "#Balance_Space_Exp9"
+                            }
+                        ]
+                },
+
+                {
+                    "@id": "#Balance_Structure",
+                    "@type": "ex:StructureContext",
+                    "schema:name": "Balance Structure",
+                    "ex:describedBy":
+                        [
+                            {
+                                "@id": "#..."
+                            }
+                        ],
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#Balance_Structure_Exp1"
+                            },
+                            {
+                                "@id": "#Balance_Structure_Exp2"
+                            },
+                            {
+                                "@id": "#Balance_Structure_Exp3"
+                            },
+                            {
+                                "@id": "#Balance_Structure_Exp4"
+                            },
+                            {
+                                "@id": "#Balance_Structure_Exp5"
+                            },
+                            {
+                                "@id": "#Balance_Structure_Exp6"
+                            },
+                            {
+                                "@id": "#Balance_Structure_Exp7"
+                            },
+                            {
+                                "@id": "#Balance_Structure_Exp8"
+                            },
+                            {
+                                "@id": "#Balance_Structure_Exp9"
+                            }
+                        ]
+                },
+
+                {
+                    "@id": "#Balance_Substance",
+                    "@type": "ex:SubstanceContext",
+                    "schema:name": "Balance Substance",
+                    "ex:describedBy":
+                        [
+                            {
+                                "@id": "#..."
+                            }
+                        ],
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#Balance_Substance_Exp1"
+                            },
+                            {
+                                "@id": "#Balance_Substance_Exp2"
+                            },
+                            {
+                                "@id": "#Balance_Substance_Exp3"
+                            },
+                            {
+                                "@id": "#Balance_Substance_Exp4"
+                            },
+                            {
+                                "@id": "#Balance_Substance_Exp5"
+                            },
+                            {
+                                "@id": "#Balance_Substance_Exp6"
+                            },
+                            {
+                                "@id": "#Balance_Substance_Exp7"
+                            },
+                            {
+                                "@id": "#Balance_Substance_Exp8"
+                            },
+                            {
+                                "@id": "#Balance_Substance_Exp9"
+                            }
+                        ]
+                }
 
 
             · · · (H) - 8a - Context  · · · · · · Context of Balance: General · · ·},
@@ -9861,10 +11279,29 @@ hydrogenation_V1_6
                 {
                     "@id": "#Balance_Exp1",
                     "@type": "sosa:Sensor",
-
                     "schema:name": "Balance",
                     "schema:description": "Balance used for weighing substances and devices during experiment 1",
-
+                    "ex:hasContext":
+                        [
+                            {
+                                "@id": "#Balance_Information_Exp1"
+                            },
+                            {
+                                "@id": "#Balance_Energy_Exp1"
+                            },
+                            {
+                                "@id": "#Balance_Time_Exp1"
+                            },
+                            {
+                                "@id": "#Balance_Space_Exp1"
+                            },
+                            {
+                                "@id": "#Balance_Structure_Exp1"
+                            },
+                            {
+                                "@id": "#Balance_Substance_Exp1"
+                            }
+                        ],
                     "ex:isInstanceOf":
                         {
                             "@id": "#Balance"
@@ -9914,7 +11351,101 @@ hydrogenation_V1_6
 
                 {· · · (H) - 8b - 1 - Context  · · · · · · Context of Balance: Specific · · ·
 
-                    % contexts of entity here (all six context entities)
+                    {
+                        "@id": "#Balance_Information_Exp1",
+                        "@type": "ex:InformationContext",
+                        "schema:name": "Balance Information Exp1",
+                        "ex:describedBy":
+                            [
+                                {
+                                    "@id": "#..."
+                                }
+                            ],
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#Balance_Information"
+                            }
+                    },
+
+                    {
+                        "@id": "#Balance_Energy_Exp1",
+                        "@type": "ex:EnergyContext",
+                        "schema:name": "Balance Energy Exp1",
+                        "ex:describedBy":
+                            [
+                                {
+                                    "@id": "#..."
+                                }
+                            ],
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#Balance_Energy"
+                            }
+                    },
+
+                    {
+                        "@id": "#Balance_Time_Exp1",
+                        "@type": "ex:TimeContext",
+                        "schema:name": "Balance Time Exp1",
+                        "ex:describedBy":
+                            [
+                                {
+                                    "@id": "#..."
+                                }
+                            ],
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#Balance_Time"
+                            }
+                    },
+
+                    {
+                        "@id": "#Balance_Space_Exp1",
+                        "@type": "ex:SpaceContext",
+                        "schema:name": "Balance Space Exp1",
+                        "ex:describedBy":
+                            [
+                                {
+                                    "@id": "#..."
+                                }
+                            ],
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#Balance_Space"
+                            }
+                    },
+
+                    {
+                        "@id": "#Balance_Structure_Exp1",
+                        "@type": "ex:StructureContext",
+                        "schema:name": "Balance Structure Exp1",
+                        "ex:describedBy":
+                            [
+                                {
+                                    "@id": "#..."
+                                }
+                            ],
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#Balance_Structure"
+                            }
+                    },
+
+                    {
+                        "@id": "#Balance_Substance_Exp1",
+                        "@type": "ex:SubstanceContext",
+                        "schema:name": "Balance Substance Exp1",
+                        "ex:describedBy":
+                            [
+                                {
+                                    "@id": "#..."
+                                }
+                            ],
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#Balance_Substance"
+                            }
+                    }
 
 
                 · · · (H) - 8b - 1 - Context  · · · · · · Context of Balance: Specific · · ·},
