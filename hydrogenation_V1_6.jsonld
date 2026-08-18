@@ -8858,7 +8858,3072 @@ hydrogenation_V1_6
             ··· (G4) - 4b ······· RDY: Specific — END ···},
 
 
-        ··· (G4) - 4 ······· RDY — END ···}
+        ··· (G4) - 4 ······· RDY — END ···},
+
+
+        {··· (G4) - 5 ······· RYE ···
+
+            {··· (G4) - 5a ······· RYE: General ···
+
+                {
+                    "@id": "#RYE",
+                    "@type": "ontospecies:Species",
+                    "schema:name": "",
+                    "ex:hasInchi": "",
+                    "ex:hasSmiles": "",
+                    "ex:hasCas": "",
+
+                    "ex:hasContext":
+                        [
+                            {
+                                "@id": "#RYE_Information"
+                            },
+                            {
+                                "@id": "#RYE_Energy"
+                            },
+                            {
+                                "@id": "#RYE_Time"
+                            },
+                            {
+                                "@id": "#RYE_Space"
+                            },
+                            {
+                                "@id": "#RYE_Structure"
+                            },
+                            {
+                                "@id": "#RYE_Substance"
+                            }
+                        ],
+
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#RYE_Exp1"
+                            },
+                            {
+                                "@id": "#RYE_Exp2"
+                            },
+                            {
+                                "@id": "#RYE_Exp3"
+                            },
+                            {
+                                "@id": "#RYE_Exp4"
+                            },
+                            {
+                                "@id": "#RYE_Exp5"
+                            },
+                            {
+                                "@id": "#RYE_Exp6"
+                            },
+                            {
+                                "@id": "#RYE_Exp7"
+                            },
+                            {
+                                "@id": "#RYE_Exp8"
+                            },
+                            {
+                                "@id": "#RYE_Exp9"
+                            }
+                        ]
+                },
+
+
+                {··· (G4) - 5a - Context ······· Context of RYE: General ···
+
+                    {
+                        "@id": "#RYE_Information",
+                        "@type": "ex:InformationContext",
+                        "schema:name": "RYE Information",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#RYE_Information_Exp1"
+                                },
+                                {
+                                    "@id": "#RYE_Information_Exp2"
+                                },
+                                {
+                                    "@id": "#RYE_Information_Exp3"
+                                },
+                                {
+                                    "@id": "#RYE_Information_Exp4"
+                                },
+                                {
+                                    "@id": "#RYE_Information_Exp5"
+                                },
+                                {
+                                    "@id": "#RYE_Information_Exp6"
+                                },
+                                {
+                                    "@id": "#RYE_Information_Exp7"
+                                },
+                                {
+                                    "@id": "#RYE_Information_Exp8"
+                                },
+                                {
+                                    "@id": "#RYE_Information_Exp9"
+                                }
+                            ]
+                    },
+
+                    {
+                        "@id": "#RYE_Energy",
+                        "@type": "ex:EnergyContext",
+                        "schema:name": "RYE Energy",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#RYE_Energy_Exp1"
+                                },
+                                {
+                                    "@id": "#RYE_Energy_Exp2"
+                                },
+                                {
+                                    "@id": "#RYE_Energy_Exp3"
+                                },
+                                {
+                                    "@id": "#RYE_Energy_Exp4"
+                                },
+                                {
+                                    "@id": "#RYE_Energy_Exp5"
+                                },
+                                {
+                                    "@id": "#RYE_Energy_Exp6"
+                                },
+                                {
+                                    "@id": "#RYE_Energy_Exp7"
+                                },
+                                {
+                                    "@id": "#RYE_Energy_Exp8"
+                                },
+                                {
+                                    "@id": "#RYE_Energy_Exp9"
+                                }
+                            ]
+                    },
+
+                    {
+                        "@id": "#RYE_Time",
+                        "@type": "ex:TimeContext",
+                        "schema:name": "RYE Time",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#RYE_Time_Exp1"
+                                },
+                                {
+                                    "@id": "#RYE_Time_Exp2"
+                                },
+                                {
+                                    "@id": "#RYE_Time_Exp3"
+                                },
+                                {
+                                    "@id": "#RYE_Time_Exp4"
+                                },
+                                {
+                                    "@id": "#RYE_Time_Exp5"
+                                },
+                                {
+                                    "@id": "#RYE_Time_Exp6"
+                                },
+                                {
+                                    "@id": "#RYE_Time_Exp7"
+                                },
+                                {
+                                    "@id": "#RYE_Time_Exp8"
+                                },
+                                {
+                                    "@id": "#RYE_Time_Exp9"
+                                }
+                            ]
+                    },
+
+                    {
+                        "@id": "#RYE_Space",
+                        "@type": "ex:SpaceContext",
+                        "schema:name": "RYE Space",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#RYE_Space_Exp1"
+                                },
+                                {
+                                    "@id": "#RYE_Space_Exp2"
+                                },
+                                {
+                                    "@id": "#RYE_Space_Exp3"
+                                },
+                                {
+                                    "@id": "#RYE_Space_Exp4"
+                                },
+                                {
+                                    "@id": "#RYE_Space_Exp5"
+                                },
+                                {
+                                    "@id": "#RYE_Space_Exp6"
+                                },
+                                {
+                                    "@id": "#RYE_Space_Exp7"
+                                },
+                                {
+                                    "@id": "#RYE_Space_Exp8"
+                                },
+                                {
+                                    "@id": "#RYE_Space_Exp9"
+                                }
+                            ]
+                    },
+
+                    {
+                        "@id": "#RYE_Structure",
+                        "@type": "ex:StructureContext",
+                        "schema:name": "RYE Structure",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#RYE_Structure_Exp1"
+                                },
+                                {
+                                    "@id": "#RYE_Structure_Exp2"
+                                },
+                                {
+                                    "@id": "#RYE_Structure_Exp3"
+                                },
+                                {
+                                    "@id": "#RYE_Structure_Exp4"
+                                },
+                                {
+                                    "@id": "#RYE_Structure_Exp5"
+                                },
+                                {
+                                    "@id": "#RYE_Structure_Exp6"
+                                },
+                                {
+                                    "@id": "#RYE_Structure_Exp7"
+                                },
+                                {
+                                    "@id": "#RYE_Structure_Exp8"
+                                },
+                                {
+                                    "@id": "#RYE_Structure_Exp9"
+                                }
+                            ]
+                    },
+
+                    {
+                        "@id": "#RYE_Substance",
+                        "@type": "ex:SubstanceContext",
+                        "schema:name": "RYE Substance",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#RYE_Substance_Exp1"
+                                },
+                                {
+                                    "@id": "#RYE_Substance_Exp2"
+                                },
+                                {
+                                    "@id": "#RYE_Substance_Exp3"
+                                },
+                                {
+                                    "@id": "#RYE_Substance_Exp4"
+                                },
+                                {
+                                    "@id": "#RYE_Substance_Exp5"
+                                },
+                                {
+                                    "@id": "#RYE_Substance_Exp6"
+                                },
+                                {
+                                    "@id": "#RYE_Substance_Exp7"
+                                },
+                                {
+                                    "@id": "#RYE_Substance_Exp8"
+                                },
+                                {
+                                    "@id": "#RYE_Substance_Exp9"
+                                }
+                            ]
+                    }
+
+                ··· (G4) - 5a - Context ······· Context of RYE: General — END ···},
+
+
+            ··· (G4) - 5a ······· RYE: General — END ···},
+
+
+            {··· (G4) - 5b ······· RYE: Specific ···
+
+
+                {··· (G4) - 5b - 1 ······· RYE: Specific - Experiment 1 ···
+
+                    {
+                        "@id": "#RYE_Exp1",
+                        "@type": "ontospecies:Species",
+                        "schema:name": "RYE Exp1",
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#RYE"
+                            },
+                        "ex:hasContext":
+                            [
+                                {
+                                    "@id": "#RYE_Information_Exp1"
+                                },
+                                {
+                                    "@id": "#RYE_Energy_Exp1"
+                                },
+                                {
+                                    "@id": "#RYE_Time_Exp1"
+                                },
+                                {
+                                    "@id": "#RYE_Space_Exp1"
+                                },
+                                {
+                                    "@id": "#RYE_Structure_Exp1"
+                                },
+                                {
+                                    "@id": "#RYE_Substance_Exp1"
+                                }
+                            ]
+                    },
+
+
+                    {··· (G4) - 5b - 1 - Context ······· Context of RYE: Specific - Experiment 1 ···
+
+                        {
+                            "@id": "#RYE_Information_Exp1",
+                            "@type": "ex:InformationContext",
+                            "schema:name": "RYE Information Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#RYE_Information"
+                                }
+                        },
+
+                        {
+                            "@id": "#RYE_Energy_Exp1",
+                            "@type": "ex:EnergyContext",
+                            "schema:name": "RYE Energy Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#RYE_Energy"
+                                }
+                        },
+
+                        {
+                            "@id": "#RYE_Time_Exp1",
+                            "@type": "ex:TimeContext",
+                            "schema:name": "RYE Time Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#RYE_Time"
+                                }
+                        },
+
+                        {
+                            "@id": "#RYE_Space_Exp1",
+                            "@type": "ex:SpaceContext",
+                            "schema:name": "RYE Space Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#RYE_Space"
+                                }
+                        },
+
+                        {
+                            "@id": "#RYE_Structure_Exp1",
+                            "@type": "ex:StructureContext",
+                            "schema:name": "RYE Structure Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#RYE_Structure"
+                                }
+                        },
+
+                        {
+                            "@id": "#RYE_Substance_Exp1",
+                            "@type": "ex:SubstanceContext",
+                            "schema:name": "RYE Substance Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#RYE_Substance"
+                                }
+                        }
+
+                    ··· (G4) - 5b - 1 - Context ······· Context of RYE: Specific - Experiment 1 — END ···},
+
+
+                ··· (G4) - 5b - 1 ······· RYE: Specific - Experiment 1 — END ···}
+
+
+            ··· (G4) - 5b ······· RYE: Specific — END ···},
+
+
+        ··· (G4) - 5 ······· RYE — END ···},
+
+
+        {··· (G4) - 6 ······· RYA ···
+
+            {··· (G4) - 6a ······· RYA: General ···
+
+                {
+                    "@id": "#RYA",
+                    "@type": "ontospecies:Species",
+                    "schema:name": "",
+                    "ex:hasInchi": "",
+                    "ex:hasSmiles": "",
+                    "ex:hasCas": "",
+
+                    "ex:hasContext":
+                        [
+                            {
+                                "@id": "#RYA_Information"
+                            },
+                            {
+                                "@id": "#RYA_Energy"
+                            },
+                            {
+                                "@id": "#RYA_Time"
+                            },
+                            {
+                                "@id": "#RYA_Space"
+                            },
+                            {
+                                "@id": "#RYA_Structure"
+                            },
+                            {
+                                "@id": "#RYA_Substance"
+                            }
+                        ],
+
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#RYA_Exp1"
+                            },
+                            {
+                                "@id": "#RYA_Exp2"
+                            },
+                            {
+                                "@id": "#RYA_Exp3"
+                            },
+                            {
+                                "@id": "#RYA_Exp4"
+                            },
+                            {
+                                "@id": "#RYA_Exp5"
+                            },
+                            {
+                                "@id": "#RYA_Exp6"
+                            },
+                            {
+                                "@id": "#RYA_Exp7"
+                            },
+                            {
+                                "@id": "#RYA_Exp8"
+                            },
+                            {
+                                "@id": "#RYA_Exp9"
+                            }
+                        ]
+                },
+
+
+                {··· (G4) - 6a - Context ······· Context of RYA: General ···
+
+                    {
+                        "@id": "#RYA_Information",
+                        "@type": "ex:InformationContext",
+                        "schema:name": "RYA Information",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#RYA_Information_Exp1"
+                                },
+                                {
+                                    "@id": "#RYA_Information_Exp2"
+                                },
+                                {
+                                    "@id": "#RYA_Information_Exp3"
+                                },
+                                {
+                                    "@id": "#RYA_Information_Exp4"
+                                },
+                                {
+                                    "@id": "#RYA_Information_Exp5"
+                                },
+                                {
+                                    "@id": "#RYA_Information_Exp6"
+                                },
+                                {
+                                    "@id": "#RYA_Information_Exp7"
+                                },
+                                {
+                                    "@id": "#RYA_Information_Exp8"
+                                },
+                                {
+                                    "@id": "#RYA_Information_Exp9"
+                                }
+                            ]
+                    },
+
+                    {
+                        "@id": "#RYA_Energy",
+                        "@type": "ex:EnergyContext",
+                        "schema:name": "RYA Energy",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#RYA_Energy_Exp1"
+                                },
+                                {
+                                    "@id": "#RYA_Energy_Exp2"
+                                },
+                                {
+                                    "@id": "#RYA_Energy_Exp3"
+                                },
+                                {
+                                    "@id": "#RYA_Energy_Exp4"
+                                },
+                                {
+                                    "@id": "#RYA_Energy_Exp5"
+                                },
+                                {
+                                    "@id": "#RYA_Energy_Exp6"
+                                },
+                                {
+                                    "@id": "#RYA_Energy_Exp7"
+                                },
+                                {
+                                    "@id": "#RYA_Energy_Exp8"
+                                },
+                                {
+                                    "@id": "#RYA_Energy_Exp9"
+                                }
+                            ]
+                    },
+
+                    {
+                        "@id": "#RYA_Time",
+                        "@type": "ex:TimeContext",
+                        "schema:name": "RYA Time",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#RYA_Time_Exp1"
+                                },
+                                {
+                                    "@id": "#RYA_Time_Exp2"
+                                },
+                                {
+                                    "@id": "#RYA_Time_Exp3"
+                                },
+                                {
+                                    "@id": "#RYA_Time_Exp4"
+                                },
+                                {
+                                    "@id": "#RYA_Time_Exp5"
+                                },
+                                {
+                                    "@id": "#RYA_Time_Exp6"
+                                },
+                                {
+                                    "@id": "#RYA_Time_Exp7"
+                                },
+                                {
+                                    "@id": "#RYA_Time_Exp8"
+                                },
+                                {
+                                    "@id": "#RYA_Time_Exp9"
+                                }
+                            ]
+                    },
+
+                    {
+                        "@id": "#RYA_Space",
+                        "@type": "ex:SpaceContext",
+                        "schema:name": "RYA Space",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#RYA_Space_Exp1"
+                                },
+                                {
+                                    "@id": "#RYA_Space_Exp2"
+                                },
+                                {
+                                    "@id": "#RYA_Space_Exp3"
+                                },
+                                {
+                                    "@id": "#RYA_Space_Exp4"
+                                },
+                                {
+                                    "@id": "#RYA_Space_Exp5"
+                                },
+                                {
+                                    "@id": "#RYA_Space_Exp6"
+                                },
+                                {
+                                    "@id": "#RYA_Space_Exp7"
+                                },
+                                {
+                                    "@id": "#RYA_Space_Exp8"
+                                },
+                                {
+                                    "@id": "#RYA_Space_Exp9"
+                                }
+                            ]
+                    },
+
+                    {
+                        "@id": "#RYA_Structure",
+                        "@type": "ex:StructureContext",
+                        "schema:name": "RYA Structure",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#RYA_Structure_Exp1"
+                                },
+                                {
+                                    "@id": "#RYA_Structure_Exp2"
+                                },
+                                {
+                                    "@id": "#RYA_Structure_Exp3"
+                                },
+                                {
+                                    "@id": "#RYA_Structure_Exp4"
+                                },
+                                {
+                                    "@id": "#RYA_Structure_Exp5"
+                                },
+                                {
+                                    "@id": "#RYA_Structure_Exp6"
+                                },
+                                {
+                                    "@id": "#RYA_Structure_Exp7"
+                                },
+                                {
+                                    "@id": "#RYA_Structure_Exp8"
+                                },
+                                {
+                                    "@id": "#RYA_Structure_Exp9"
+                                }
+                            ]
+                    },
+
+                    {
+                        "@id": "#RYA_Substance",
+                        "@type": "ex:SubstanceContext",
+                        "schema:name": "RYA Substance",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#RYA_Substance_Exp1"
+                                },
+                                {
+                                    "@id": "#RYA_Substance_Exp2"
+                                },
+                                {
+                                    "@id": "#RYA_Substance_Exp3"
+                                },
+                                {
+                                    "@id": "#RYA_Substance_Exp4"
+                                },
+                                {
+                                    "@id": "#RYA_Substance_Exp5"
+                                },
+                                {
+                                    "@id": "#RYA_Substance_Exp6"
+                                },
+                                {
+                                    "@id": "#RYA_Substance_Exp7"
+                                },
+                                {
+                                    "@id": "#RYA_Substance_Exp8"
+                                },
+                                {
+                                    "@id": "#RYA_Substance_Exp9"
+                                }
+                            ]
+                    }
+
+                ··· (G4) - 6a - Context ······· Context of RYA: General — END ···},
+
+
+            ··· (G4) - 6a ······· RYA: General — END ···},
+
+
+            {··· (G4) - 6b ······· RYA: Specific ···
+
+
+                {··· (G4) - 6b - 1 ······· RYA: Specific - Experiment 1 ···
+
+                    {
+                        "@id": "#RYA_Exp1",
+                        "@type": "ontospecies:Species",
+                        "schema:name": "RYA Exp1",
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#RYA"
+                            },
+                        "ex:hasContext":
+                            [
+                                {
+                                    "@id": "#RYA_Information_Exp1"
+                                },
+                                {
+                                    "@id": "#RYA_Energy_Exp1"
+                                },
+                                {
+                                    "@id": "#RYA_Time_Exp1"
+                                },
+                                {
+                                    "@id": "#RYA_Space_Exp1"
+                                },
+                                {
+                                    "@id": "#RYA_Structure_Exp1"
+                                },
+                                {
+                                    "@id": "#RYA_Substance_Exp1"
+                                }
+                            ]
+                    },
+
+
+                    {··· (G4) - 6b - 1 - Context ······· Context of RYA: Specific - Experiment 1 ···
+
+                        {
+                            "@id": "#RYA_Information_Exp1",
+                            "@type": "ex:InformationContext",
+                            "schema:name": "RYA Information Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#RYA_Information"
+                                }
+                        },
+
+                        {
+                            "@id": "#RYA_Energy_Exp1",
+                            "@type": "ex:EnergyContext",
+                            "schema:name": "RYA Energy Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#RYA_Energy"
+                                }
+                        },
+
+                        {
+                            "@id": "#RYA_Time_Exp1",
+                            "@type": "ex:TimeContext",
+                            "schema:name": "RYA Time Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#RYA_Time"
+                                }
+                        },
+
+                        {
+                            "@id": "#RYA_Space_Exp1",
+                            "@type": "ex:SpaceContext",
+                            "schema:name": "RYA Space Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#RYA_Space"
+                                }
+                        },
+
+                        {
+                            "@id": "#RYA_Structure_Exp1",
+                            "@type": "ex:StructureContext",
+                            "schema:name": "RYA Structure Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#RYA_Structure"
+                                }
+                        },
+
+                        {
+                            "@id": "#RYA_Substance_Exp1",
+                            "@type": "ex:SubstanceContext",
+                            "schema:name": "RYA Substance Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#RYA_Substance"
+                                }
+                        }
+
+                    ··· (G4) - 6b - 1 - Context ······· Context of RYA: Specific - Experiment 1 — END ···},
+
+
+                ··· (G4) - 6b - 1 ······· RYA: Specific - Experiment 1 — END ···}
+
+
+            ··· (G4) - 6b ······· RYA: Specific — END ···},
+
+
+        ··· (G4) - 6 ······· RYA — END ···}
+
+
+        {··· (G4) - 7 ······· REA ···
+
+            {··· (G4) - 7a ······· REA: General ···
+
+                {
+                    "@id": "#REA",
+                    "@type": "ontospecies:Species",
+                    "schema:name": "",
+                    "ex:hasInchi": "",
+                    "ex:hasSmiles": "",
+                    "ex:hasCas": "",
+
+                    "ex:hasContext":
+                        [
+                            {
+                                "@id": "#REA_Information"
+                            },
+                            {
+                                "@id": "#REA_Energy"
+                            },
+                            {
+                                "@id": "#REA_Time"
+                            },
+                            {
+                                "@id": "#REA_Space"
+                            },
+                            {
+                                "@id": "#REA_Structure"
+                            },
+                            {
+                                "@id": "#REA_Substance"
+                            }
+                        ],
+
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#REA_Exp1"
+                            },
+                            {
+                                "@id": "#REA_Exp2"
+                            },
+                            {
+                                "@id": "#REA_Exp3"
+                            },
+                            {
+                                "@id": "#REA_Exp4"
+                            },
+                            {
+                                "@id": "#REA_Exp5"
+                            },
+                            {
+                                "@id": "#REA_Exp6"
+                            },
+                            {
+                                "@id": "#REA_Exp7"
+                            },
+                            {
+                                "@id": "#REA_Exp8"
+                            },
+                            {
+                                "@id": "#REA_Exp9"
+                            }
+                        ]
+                },
+
+
+                {··· (G4) - 7a - Context ······· Context of REA: General ···
+
+                    {
+                        "@id": "#REA_Information",
+                        "@type": "ex:InformationContext",
+                        "schema:name": "REA Information",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#REA_Information_Exp1"
+                                },
+                                {
+                                    "@id": "#REA_Information_Exp2"
+                                },
+                                {
+                                    "@id": "#REA_Information_Exp3"
+                                },
+                                {
+                                    "@id": "#REA_Information_Exp4"
+                                },
+                                {
+                                    "@id": "#REA_Information_Exp5"
+                                },
+                                {
+                                    "@id": "#REA_Information_Exp6"
+                                },
+                                {
+                                    "@id": "#REA_Information_Exp7"
+                                },
+                                {
+                                    "@id": "#REA_Information_Exp8"
+                                },
+                                {
+                                    "@id": "#REA_Information_Exp9"
+                                }
+                            ]
+                    },
+
+                    {
+                        "@id": "#REA_Energy",
+                        "@type": "ex:EnergyContext",
+                        "schema:name": "REA Energy",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#REA_Energy_Exp1"
+                                },
+                                {
+                                    "@id": "#REA_Energy_Exp2"
+                                },
+                                {
+                                    "@id": "#REA_Energy_Exp3"
+                                },
+                                {
+                                    "@id": "#REA_Energy_Exp4"
+                                },
+                                {
+                                    "@id": "#REA_Energy_Exp5"
+                                },
+                                {
+                                    "@id": "#REA_Energy_Exp6"
+                                },
+                                {
+                                    "@id": "#REA_Energy_Exp7"
+                                },
+                                {
+                                    "@id": "#REA_Energy_Exp8"
+                                },
+                                {
+                                    "@id": "#REA_Energy_Exp9"
+                                }
+                            ]
+                    },
+
+                    {
+                        "@id": "#REA_Time",
+                        "@type": "ex:TimeContext",
+                        "schema:name": "REA Time",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#REA_Time_Exp1"
+                                },
+                                {
+                                    "@id": "#REA_Time_Exp2"
+                                },
+                                {
+                                    "@id": "#REA_Time_Exp3"
+                                },
+                                {
+                                    "@id": "#REA_Time_Exp4"
+                                },
+                                {
+                                    "@id": "#REA_Time_Exp5"
+                                },
+                                {
+                                    "@id": "#REA_Time_Exp6"
+                                },
+                                {
+                                    "@id": "#REA_Time_Exp7"
+                                },
+                                {
+                                    "@id": "#REA_Time_Exp8"
+                                },
+                                {
+                                    "@id": "#REA_Time_Exp9"
+                                }
+                            ]
+                    },
+
+                    {
+                        "@id": "#REA_Space",
+                        "@type": "ex:SpaceContext",
+                        "schema:name": "REA Space",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#REA_Space_Exp1"
+                                },
+                                {
+                                    "@id": "#REA_Space_Exp2"
+                                },
+                                {
+                                    "@id": "#REA_Space_Exp3"
+                                },
+                                {
+                                    "@id": "#REA_Space_Exp4"
+                                },
+                                {
+                                    "@id": "#REA_Space_Exp5"
+                                },
+                                {
+                                    "@id": "#REA_Space_Exp6"
+                                },
+                                {
+                                    "@id": "#REA_Space_Exp7"
+                                },
+                                {
+                                    "@id": "#REA_Space_Exp8"
+                                },
+                                {
+                                    "@id": "#REA_Space_Exp9"
+                                }
+                            ]
+                    },
+
+                    {
+                        "@id": "#REA_Structure",
+                        "@type": "ex:StructureContext",
+                        "schema:name": "REA Structure",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#REA_Structure_Exp1"
+                                },
+                                {
+                                    "@id": "#REA_Structure_Exp2"
+                                },
+                                {
+                                    "@id": "#REA_Structure_Exp3"
+                                },
+                                {
+                                    "@id": "#REA_Structure_Exp4"
+                                },
+                                {
+                                    "@id": "#REA_Structure_Exp5"
+                                },
+                                {
+                                    "@id": "#REA_Structure_Exp6"
+                                },
+                                {
+                                    "@id": "#REA_Structure_Exp7"
+                                },
+                                {
+                                    "@id": "#REA_Structure_Exp8"
+                                },
+                                {
+                                    "@id": "#REA_Structure_Exp9"
+                                }
+                            ]
+                    },
+
+                    {
+                        "@id": "#REA_Substance",
+                        "@type": "ex:SubstanceContext",
+                        "schema:name": "REA Substance",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#REA_Substance_Exp1"
+                                },
+                                {
+                                    "@id": "#REA_Substance_Exp2"
+                                },
+                                {
+                                    "@id": "#REA_Substance_Exp3"
+                                },
+                                {
+                                    "@id": "#REA_Substance_Exp4"
+                                },
+                                {
+                                    "@id": "#REA_Substance_Exp5"
+                                },
+                                {
+                                    "@id": "#REA_Substance_Exp6"
+                                },
+                                {
+                                    "@id": "#REA_Substance_Exp7"
+                                },
+                                {
+                                    "@id": "#REA_Substance_Exp8"
+                                },
+                                {
+                                    "@id": "#REA_Substance_Exp9"
+                                }
+                            ]
+                    }
+
+                ··· (G4) - 7a - Context ······· Context of REA: General — END ···},
+
+
+            ··· (G4) - 7a ······· REA: General — END ···},
+
+
+            {··· (G4) - 7b ······· REA: Specific ···
+
+
+                {··· (G4) - 7b - 1 ······· REA: Specific - Experiment 1 ···
+
+                    {
+                        "@id": "#REA_Exp1",
+                        "@type": "ontospecies:Species",
+                        "schema:name": "REA Exp1",
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#REA"
+                            },
+                        "ex:hasContext":
+                            [
+                                {
+                                    "@id": "#REA_Information_Exp1"
+                                },
+                                {
+                                    "@id": "#REA_Energy_Exp1"
+                                },
+                                {
+                                    "@id": "#REA_Time_Exp1"
+                                },
+                                {
+                                    "@id": "#REA_Space_Exp1"
+                                },
+                                {
+                                    "@id": "#REA_Structure_Exp1"
+                                },
+                                {
+                                    "@id": "#REA_Substance_Exp1"
+                                }
+                            ]
+                    },
+
+
+                    {··· (G4) - 7b - 1 - Context ······· Context of REA: Specific - Experiment 1 ···
+
+                        {
+                            "@id": "#REA_Information_Exp1",
+                            "@type": "ex:InformationContext",
+                            "schema:name": "REA Information Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#REA_Information"
+                                }
+                        },
+
+                        {
+                            "@id": "#REA_Energy_Exp1",
+                            "@type": "ex:EnergyContext",
+                            "schema:name": "REA Energy Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#REA_Energy"
+                                }
+                        },
+
+                        {
+                            "@id": "#REA_Time_Exp1",
+                            "@type": "ex:TimeContext",
+                            "schema:name": "REA Time Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#REA_Time"
+                                }
+                        },
+
+                        {
+                            "@id": "#REA_Space_Exp1",
+                            "@type": "ex:SpaceContext",
+                            "schema:name": "REA Space Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#REA_Space"
+                                }
+                        },
+
+                        {
+                            "@id": "#REA_Structure_Exp1",
+                            "@type": "ex:StructureContext",
+                            "schema:name": "REA Structure Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#REA_Structure"
+                                }
+                        },
+
+                        {
+                            "@id": "#REA_Substance_Exp1",
+                            "@type": "ex:SubstanceContext",
+                            "schema:name": "REA Substance Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#REA_Substance"
+                                }
+                        }
+
+                    ··· (G4) - 7b - 1 - Context ······· Context of REA: Specific - Experiment 1 — END ···},
+
+
+                ··· (G4) - 7b - 1 ······· REA: Specific - Experiment 1 — END ···}
+
+
+            ··· (G4) - 7b ······· REA: Specific — END ···},
+
+
+        ··· (G4) - 7 ······· REA — END ···},
+
+
+        {··· (G4) - 8 ······· RDEt ···
+
+            {··· (G4) - 8a ······· RDEt: General ···
+
+                {
+                    "@id": "#RDEt",
+                    "@type": "ontospecies:Species",
+                    "schema:name": "",
+                    "ex:hasInchi": "",
+                    "ex:hasSmiles": "",
+                    "ex:hasCas": "",
+
+                    "ex:hasContext":
+                        [
+                            {
+                                "@id": "#RDEt_Information"
+                            },
+                            {
+                                "@id": "#RDEt_Energy"
+                            },
+                            {
+                                "@id": "#RDEt_Time"
+                            },
+                            {
+                                "@id": "#RDEt_Space"
+                            },
+                            {
+                                "@id": "#RDEt_Structure"
+                            },
+                            {
+                                "@id": "#RDEt_Substance"
+                            }
+                        ],
+
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#RDEt_Exp1"
+                            },
+                            {
+                                "@id": "#RDEt_Exp2"
+                            },
+                            {
+                                "@id": "#RDEt_Exp3"
+                            },
+                            {
+                                "@id": "#RDEt_Exp4"
+                            },
+                            {
+                                "@id": "#RDEt_Exp5"
+                            },
+                            {
+                                "@id": "#RDEt_Exp6"
+                            },
+                            {
+                                "@id": "#RDEt_Exp7"
+                            },
+                            {
+                                "@id": "#RDEt_Exp8"
+                            },
+                            {
+                                "@id": "#RDEt_Exp9"
+                            }
+                        ]
+                },
+
+
+                {··· (G4) - 8a - Context ······· Context of RDEt: General ···
+
+                    {
+                        "@id": "#RDEt_Information",
+                        "@type": "ex:InformationContext",
+                        "schema:name": "RDEt Information",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#RDEt_Information_Exp1"
+                                },
+                                {
+                                    "@id": "#RDEt_Information_Exp2"
+                                },
+                                {
+                                    "@id": "#RDEt_Information_Exp3"
+                                },
+                                {
+                                    "@id": "#RDEt_Information_Exp4"
+                                },
+                                {
+                                    "@id": "#RDEt_Information_Exp5"
+                                },
+                                {
+                                    "@id": "#RDEt_Information_Exp6"
+                                },
+                                {
+                                    "@id": "#RDEt_Information_Exp7"
+                                },
+                                {
+                                    "@id": "#RDEt_Information_Exp8"
+                                },
+                                {
+                                    "@id": "#RDEt_Information_Exp9"
+                                }
+                            ]
+                    },
+
+                    {
+                        "@id": "#RDEt_Energy",
+                        "@type": "ex:EnergyContext",
+                        "schema:name": "RDEt Energy",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#RDEt_Energy_Exp1"
+                                },
+                                {
+                                    "@id": "#RDEt_Energy_Exp2"
+                                },
+                                {
+                                    "@id": "#RDEt_Energy_Exp3"
+                                },
+                                {
+                                    "@id": "#RDEt_Energy_Exp4"
+                                },
+                                {
+                                    "@id": "#RDEt_Energy_Exp5"
+                                },
+                                {
+                                    "@id": "#RDEt_Energy_Exp6"
+                                },
+                                {
+                                    "@id": "#RDEt_Energy_Exp7"
+                                },
+                                {
+                                    "@id": "#RDEt_Energy_Exp8"
+                                },
+                                {
+                                    "@id": "#RDEt_Energy_Exp9"
+                                }
+                            ]
+                    },
+
+                    {
+                        "@id": "#RDEt_Time",
+                        "@type": "ex:TimeContext",
+                        "schema:name": "RDEt Time",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#RDEt_Time_Exp1"
+                                },
+                                {
+                                    "@id": "#RDEt_Time_Exp2"
+                                },
+                                {
+                                    "@id": "#RDEt_Time_Exp3"
+                                },
+                                {
+                                    "@id": "#RDEt_Time_Exp4"
+                                },
+                                {
+                                    "@id": "#RDEt_Time_Exp5"
+                                },
+                                {
+                                    "@id": "#RDEt_Time_Exp6"
+                                },
+                                {
+                                    "@id": "#RDEt_Time_Exp7"
+                                },
+                                {
+                                    "@id": "#RDEt_Time_Exp8"
+                                },
+                                {
+                                    "@id": "#RDEt_Time_Exp9"
+                                }
+                            ]
+                    },
+
+                    {
+                        "@id": "#RDEt_Space",
+                        "@type": "ex:SpaceContext",
+                        "schema:name": "RDEt Space",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#RDEt_Space_Exp1"
+                                },
+                                {
+                                    "@id": "#RDEt_Space_Exp2"
+                                },
+                                {
+                                    "@id": "#RDEt_Space_Exp3"
+                                },
+                                {
+                                    "@id": "#RDEt_Space_Exp4"
+                                },
+                                {
+                                    "@id": "#RDEt_Space_Exp5"
+                                },
+                                {
+                                    "@id": "#RDEt_Space_Exp6"
+                                },
+                                {
+                                    "@id": "#RDEt_Space_Exp7"
+                                },
+                                {
+                                    "@id": "#RDEt_Space_Exp8"
+                                },
+                                {
+                                    "@id": "#RDEt_Space_Exp9"
+                                }
+                            ]
+                    },
+
+                    {
+                        "@id": "#RDEt_Structure",
+                        "@type": "ex:StructureContext",
+                        "schema:name": "RDEt Structure",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#RDEt_Structure_Exp1"
+                                },
+                                {
+                                    "@id": "#RDEt_Structure_Exp2"
+                                },
+                                {
+                                    "@id": "#RDEt_Structure_Exp3"
+                                },
+                                {
+                                    "@id": "#RDEt_Structure_Exp4"
+                                },
+                                {
+                                    "@id": "#RDEt_Structure_Exp5"
+                                },
+                                {
+                                    "@id": "#RDEt_Structure_Exp6"
+                                },
+                                {
+                                    "@id": "#RDEt_Structure_Exp7"
+                                },
+                                {
+                                    "@id": "#RDEt_Structure_Exp8"
+                                },
+                                {
+                                    "@id": "#RDEt_Structure_Exp9"
+                                }
+                            ]
+                    },
+
+                    {
+                        "@id": "#RDEt_Substance",
+                        "@type": "ex:SubstanceContext",
+                        "schema:name": "RDEt Substance",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#RDEt_Substance_Exp1"
+                                },
+                                {
+                                    "@id": "#RDEt_Substance_Exp2"
+                                },
+                                {
+                                    "@id": "#RDEt_Substance_Exp3"
+                                },
+                                {
+                                    "@id": "#RDEt_Substance_Exp4"
+                                },
+                                {
+                                    "@id": "#RDEt_Substance_Exp5"
+                                },
+                                {
+                                    "@id": "#RDEt_Substance_Exp6"
+                                },
+                                {
+                                    "@id": "#RDEt_Substance_Exp7"
+                                },
+                                {
+                                    "@id": "#RDEt_Substance_Exp8"
+                                },
+                                {
+                                    "@id": "#RDEt_Substance_Exp9"
+                                }
+                            ]
+                    }
+
+                ··· (G4) - 8a - Context ······· Context of RDEt: General — END ···},
+
+
+            ··· (G4) - 8a ······· RDEt: General — END ···},
+
+
+            {··· (G4) - 8b ······· RDEt: Specific ···
+
+
+                {··· (G4) - 8b - 1 ······· RDEt: Specific - Experiment 1 ···
+
+                    {
+                        "@id": "#RDEt_Exp1",
+                        "@type": "ontospecies:Species",
+                        "schema:name": "RDEt Exp1",
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#RDEt"
+                            },
+                        "ex:hasContext":
+                            [
+                                {
+                                    "@id": "#RDEt_Information_Exp1"
+                                },
+                                {
+                                    "@id": "#RDEt_Energy_Exp1"
+                                },
+                                {
+                                    "@id": "#RDEt_Time_Exp1"
+                                },
+                                {
+                                    "@id": "#RDEt_Space_Exp1"
+                                },
+                                {
+                                    "@id": "#RDEt_Structure_Exp1"
+                                },
+                                {
+                                    "@id": "#RDEt_Substance_Exp1"
+                                }
+                            ]
+                    },
+
+
+                    {··· (G4) - 8b - 1 - Context ······· Context of RDEt: Specific - Experiment 1 ···
+
+                        {
+                            "@id": "#RDEt_Information_Exp1",
+                            "@type": "ex:InformationContext",
+                            "schema:name": "RDEt Information Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#RDEt_Information"
+                                }
+                        },
+
+                        {
+                            "@id": "#RDEt_Energy_Exp1",
+                            "@type": "ex:EnergyContext",
+                            "schema:name": "RDEt Energy Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#RDEt_Energy"
+                                }
+                        },
+
+                        {
+                            "@id": "#RDEt_Time_Exp1",
+                            "@type": "ex:TimeContext",
+                            "schema:name": "RDEt Time Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#RDEt_Time"
+                                }
+                        },
+
+                        {
+                            "@id": "#RDEt_Space_Exp1",
+                            "@type": "ex:SpaceContext",
+                            "schema:name": "RDEt Space Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#RDEt_Space"
+                                }
+                        },
+
+                        {
+                            "@id": "#RDEt_Structure_Exp1",
+                            "@type": "ex:StructureContext",
+                            "schema:name": "RDEt Structure Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#RDEt_Structure"
+                                }
+                        },
+
+                        {
+                            "@id": "#RDEt_Substance_Exp1",
+                            "@type": "ex:SubstanceContext",
+                            "schema:name": "RDEt Substance Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#RDEt_Substance"
+                                }
+                        }
+
+                    ··· (G4) - 8b - 1 - Context ······· Context of RDEt: Specific - Experiment 1 — END ···},
+
+
+                ··· (G4) - 8b - 1 ······· RDEt: Specific - Experiment 1 — END ···}
+
+
+            ··· (G4) - 8b ······· RDEt: Specific — END ···},
+
+
+        ··· (G4) - 8 ······· RDEt — END ···},
+
+
+        {··· (G4) - 9 ······· Dimer1 ···
+
+            {··· (G4) - 9a ······· Dimer1: General ···
+
+                {
+                    "@id": "#Dimer1",
+                    "@type": "ontospecies:Species",
+                    "schema:name": "",
+                    "ex:hasInchi": "",
+                    "ex:hasSmiles": "",
+                    "ex:hasCas": "",
+
+                    "ex:hasContext":
+                        [
+                            {
+                                "@id": "#Dimer1_Information"
+                            },
+                            {
+                                "@id": "#Dimer1_Energy"
+                            },
+                            {
+                                "@id": "#Dimer1_Time"
+                            },
+                            {
+                                "@id": "#Dimer1_Space"
+                            },
+                            {
+                                "@id": "#Dimer1_Structure"
+                            },
+                            {
+                                "@id": "#Dimer1_Substance"
+                            }
+                        ],
+
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#Dimer1_Exp1"
+                            },
+                            {
+                                "@id": "#Dimer1_Exp2"
+                            },
+                            {
+                                "@id": "#Dimer1_Exp3"
+                            },
+                            {
+                                "@id": "#Dimer1_Exp4"
+                            },
+                            {
+                                "@id": "#Dimer1_Exp5"
+                            },
+                            {
+                                "@id": "#Dimer1_Exp6"
+                            },
+                            {
+                                "@id": "#Dimer1_Exp7"
+                            },
+                            {
+                                "@id": "#Dimer1_Exp8"
+                            },
+                            {
+                                "@id": "#Dimer1_Exp9"
+                            }
+                        ]
+                },
+
+
+                {··· (G4) - 9a - Context ······· Context of Dimer1: General ···
+
+                    {
+                        "@id": "#Dimer1_Information",
+                        "@type": "ex:InformationContext",
+                        "schema:name": "Dimer1 Information",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#Dimer1_Information_Exp1"
+                                },
+                                {
+                                    "@id": "#Dimer1_Information_Exp2"
+                                },
+                                {
+                                    "@id": "#Dimer1_Information_Exp3"
+                                },
+                                {
+                                    "@id": "#Dimer1_Information_Exp4"
+                                },
+                                {
+                                    "@id": "#Dimer1_Information_Exp5"
+                                },
+                                {
+                                    "@id": "#Dimer1_Information_Exp6"
+                                },
+                                {
+                                    "@id": "#Dimer1_Information_Exp7"
+                                },
+                                {
+                                    "@id": "#Dimer1_Information_Exp8"
+                                },
+                                {
+                                    "@id": "#Dimer1_Information_Exp9"
+                                }
+                            ]
+                    },
+
+                    {
+                        "@id": "#Dimer1_Energy",
+                        "@type": "ex:EnergyContext",
+                        "schema:name": "Dimer1 Energy",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#Dimer1_Energy_Exp1"
+                                },
+                                {
+                                    "@id": "#Dimer1_Energy_Exp2"
+                                },
+                                {
+                                    "@id": "#Dimer1_Energy_Exp3"
+                                },
+                                {
+                                    "@id": "#Dimer1_Energy_Exp4"
+                                },
+                                {
+                                    "@id": "#Dimer1_Energy_Exp5"
+                                },
+                                {
+                                    "@id": "#Dimer1_Energy_Exp6"
+                                },
+                                {
+                                    "@id": "#Dimer1_Energy_Exp7"
+                                },
+                                {
+                                    "@id": "#Dimer1_Energy_Exp8"
+                                },
+                                {
+                                    "@id": "#Dimer1_Energy_Exp9"
+                                }
+                            ]
+                    },
+
+                    {
+                        "@id": "#Dimer1_Time",
+                        "@type": "ex:TimeContext",
+                        "schema:name": "Dimer1 Time",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#Dimer1_Time_Exp1"
+                                },
+                                {
+                                    "@id": "#Dimer1_Time_Exp2"
+                                },
+                                {
+                                    "@id": "#Dimer1_Time_Exp3"
+                                },
+                                {
+                                    "@id": "#Dimer1_Time_Exp4"
+                                },
+                                {
+                                    "@id": "#Dimer1_Time_Exp5"
+                                },
+                                {
+                                    "@id": "#Dimer1_Time_Exp6"
+                                },
+                                {
+                                    "@id": "#Dimer1_Time_Exp7"
+                                },
+                                {
+                                    "@id": "#Dimer1_Time_Exp8"
+                                },
+                                {
+                                    "@id": "#Dimer1_Time_Exp9"
+                                }
+                            ]
+                    },
+
+                    {
+                        "@id": "#Dimer1_Space",
+                        "@type": "ex:SpaceContext",
+                        "schema:name": "Dimer1 Space",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#Dimer1_Space_Exp1"
+                                },
+                                {
+                                    "@id": "#Dimer1_Space_Exp2"
+                                },
+                                {
+                                    "@id": "#Dimer1_Space_Exp3"
+                                },
+                                {
+                                    "@id": "#Dimer1_Space_Exp4"
+                                },
+                                {
+                                    "@id": "#Dimer1_Space_Exp5"
+                                },
+                                {
+                                    "@id": "#Dimer1_Space_Exp6"
+                                },
+                                {
+                                    "@id": "#Dimer1_Space_Exp7"
+                                },
+                                {
+                                    "@id": "#Dimer1_Space_Exp8"
+                                },
+                                {
+                                    "@id": "#Dimer1_Space_Exp9"
+                                }
+                            ]
+                    },
+
+                    {
+                        "@id": "#Dimer1_Structure",
+                        "@type": "ex:StructureContext",
+                        "schema:name": "Dimer1 Structure",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#Dimer1_Structure_Exp1"
+                                },
+                                {
+                                    "@id": "#Dimer1_Structure_Exp2"
+                                },
+                                {
+                                    "@id": "#Dimer1_Structure_Exp3"
+                                },
+                                {
+                                    "@id": "#Dimer1_Structure_Exp4"
+                                },
+                                {
+                                    "@id": "#Dimer1_Structure_Exp5"
+                                },
+                                {
+                                    "@id": "#Dimer1_Structure_Exp6"
+                                },
+                                {
+                                    "@id": "#Dimer1_Structure_Exp7"
+                                },
+                                {
+                                    "@id": "#Dimer1_Structure_Exp8"
+                                },
+                                {
+                                    "@id": "#Dimer1_Structure_Exp9"
+                                }
+                            ]
+                    },
+
+                    {
+                        "@id": "#Dimer1_Substance",
+                        "@type": "ex:SubstanceContext",
+                        "schema:name": "Dimer1 Substance",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#Dimer1_Substance_Exp1"
+                                },
+                                {
+                                    "@id": "#Dimer1_Substance_Exp2"
+                                },
+                                {
+                                    "@id": "#Dimer1_Substance_Exp3"
+                                },
+                                {
+                                    "@id": "#Dimer1_Substance_Exp4"
+                                },
+                                {
+                                    "@id": "#Dimer1_Substance_Exp5"
+                                },
+                                {
+                                    "@id": "#Dimer1_Substance_Exp6"
+                                },
+                                {
+                                    "@id": "#Dimer1_Substance_Exp7"
+                                },
+                                {
+                                    "@id": "#Dimer1_Substance_Exp8"
+                                },
+                                {
+                                    "@id": "#Dimer1_Substance_Exp9"
+                                }
+                            ]
+                    }
+
+                ··· (G4) - 9a - Context ······· Context of Dimer1: General — END ···},
+
+
+            ··· (G4) - 9a ······· Dimer1: General — END ···},
+
+
+            {··· (G4) - 9b ······· Dimer1: Specific ···
+
+
+                {··· (G4) - 9b - 1 ······· Dimer1: Specific - Experiment 1 ···
+
+                    {
+                        "@id": "#Dimer1_Exp1",
+                        "@type": "ontospecies:Species",
+                        "schema:name": "Dimer1 Exp1",
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#Dimer1"
+                            },
+                        "ex:hasContext":
+                            [
+                                {
+                                    "@id": "#Dimer1_Information_Exp1"
+                                },
+                                {
+                                    "@id": "#Dimer1_Energy_Exp1"
+                                },
+                                {
+                                    "@id": "#Dimer1_Time_Exp1"
+                                },
+                                {
+                                    "@id": "#Dimer1_Space_Exp1"
+                                },
+                                {
+                                    "@id": "#Dimer1_Structure_Exp1"
+                                },
+                                {
+                                    "@id": "#Dimer1_Substance_Exp1"
+                                }
+                            ]
+                    },
+
+
+                    {··· (G4) - 9b - 1 - Context ······· Context of Dimer1: Specific - Experiment 1 ···
+
+                        {
+                            "@id": "#Dimer1_Information_Exp1",
+                            "@type": "ex:InformationContext",
+                            "schema:name": "Dimer1 Information Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#Dimer1_Information"
+                                }
+                        },
+
+                        {
+                            "@id": "#Dimer1_Energy_Exp1",
+                            "@type": "ex:EnergyContext",
+                            "schema:name": "Dimer1 Energy Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#Dimer1_Energy"
+                                }
+                        },
+
+                        {
+                            "@id": "#Dimer1_Time_Exp1",
+                            "@type": "ex:TimeContext",
+                            "schema:name": "Dimer1 Time Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#Dimer1_Time"
+                                }
+                        },
+
+                        {
+                            "@id": "#Dimer1_Space_Exp1",
+                            "@type": "ex:SpaceContext",
+                            "schema:name": "Dimer1 Space Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#Dimer1_Space"
+                                }
+                        },
+
+                        {
+                            "@id": "#Dimer1_Structure_Exp1",
+                            "@type": "ex:StructureContext",
+                            "schema:name": "Dimer1 Structure Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#Dimer1_Structure"
+                                }
+                        },
+
+                        {
+                            "@id": "#Dimer1_Substance_Exp1",
+                            "@type": "ex:SubstanceContext",
+                            "schema:name": "Dimer1 Substance Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#Dimer1_Substance"
+                                }
+                        }
+
+                    ··· (G4) - 9b - 1 - Context ······· Context of Dimer1: Specific - Experiment 1 — END ···},
+
+
+                ··· (G4) - 9b - 1 ······· Dimer1: Specific - Experiment 1 — END ···}
+
+
+            ··· (G4) - 9b ······· Dimer1: Specific — END ···},
+
+
+        ··· (G4) - 9 ······· Dimer1 — END ···},
+
+
+        {··· (G4) - 10 ······· Dimer2 ···
+
+            {··· (G4) - 10a ······· Dimer2: General ···
+
+                {
+                    "@id": "#Dimer2",
+                    "@type": "ontospecies:Species",
+                    "schema:name": "",
+                    "ex:hasInchi": "",
+                    "ex:hasSmiles": "",
+                    "ex:hasCas": "",
+
+                    "ex:hasContext":
+                        [
+                            {
+                                "@id": "#Dimer2_Information"
+                            },
+                            {
+                                "@id": "#Dimer2_Energy"
+                            },
+                            {
+                                "@id": "#Dimer2_Time"
+                            },
+                            {
+                                "@id": "#Dimer2_Space"
+                            },
+                            {
+                                "@id": "#Dimer2_Structure"
+                            },
+                            {
+                                "@id": "#Dimer2_Substance"
+                            }
+                        ],
+
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#Dimer2_Exp1"
+                            },
+                            {
+                                "@id": "#Dimer2_Exp2"
+                            },
+                            {
+                                "@id": "#Dimer2_Exp3"
+                            },
+                            {
+                                "@id": "#Dimer2_Exp4"
+                            },
+                            {
+                                "@id": "#Dimer2_Exp5"
+                            },
+                            {
+                                "@id": "#Dimer2_Exp6"
+                            },
+                            {
+                                "@id": "#Dimer2_Exp7"
+                            },
+                            {
+                                "@id": "#Dimer2_Exp8"
+                            },
+                            {
+                                "@id": "#Dimer2_Exp9"
+                            }
+                        ]
+                },
+
+
+                {··· (G4) - 10a - Context ······· Context of Dimer2: General ···
+
+                    {
+                        "@id": "#Dimer2_Information",
+                        "@type": "ex:InformationContext",
+                        "schema:name": "Dimer2 Information",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#Dimer2_Information_Exp1"
+                                },
+                                {
+                                    "@id": "#Dimer2_Information_Exp2"
+                                },
+                                {
+                                    "@id": "#Dimer2_Information_Exp3"
+                                },
+                                {
+                                    "@id": "#Dimer2_Information_Exp4"
+                                },
+                                {
+                                    "@id": "#Dimer2_Information_Exp5"
+                                },
+                                {
+                                    "@id": "#Dimer2_Information_Exp6"
+                                },
+                                {
+                                    "@id": "#Dimer2_Information_Exp7"
+                                },
+                                {
+                                    "@id": "#Dimer2_Information_Exp8"
+                                },
+                                {
+                                    "@id": "#Dimer2_Information_Exp9"
+                                }
+                            ]
+                    },
+
+                    {
+                        "@id": "#Dimer2_Energy",
+                        "@type": "ex:EnergyContext",
+                        "schema:name": "Dimer2 Energy",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#Dimer2_Energy_Exp1"
+                                },
+                                {
+                                    "@id": "#Dimer2_Energy_Exp2"
+                                },
+                                {
+                                    "@id": "#Dimer2_Energy_Exp3"
+                                },
+                                {
+                                    "@id": "#Dimer2_Energy_Exp4"
+                                },
+                                {
+                                    "@id": "#Dimer2_Energy_Exp5"
+                                },
+                                {
+                                    "@id": "#Dimer2_Energy_Exp6"
+                                },
+                                {
+                                    "@id": "#Dimer2_Energy_Exp7"
+                                },
+                                {
+                                    "@id": "#Dimer2_Energy_Exp8"
+                                },
+                                {
+                                    "@id": "#Dimer2_Energy_Exp9"
+                                }
+                            ]
+                    },
+
+                    {
+                        "@id": "#Dimer2_Time",
+                        "@type": "ex:TimeContext",
+                        "schema:name": "Dimer2 Time",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#Dimer2_Time_Exp1"
+                                },
+                                {
+                                    "@id": "#Dimer2_Time_Exp2"
+                                },
+                                {
+                                    "@id": "#Dimer2_Time_Exp3"
+                                },
+                                {
+                                    "@id": "#Dimer2_Time_Exp4"
+                                },
+                                {
+                                    "@id": "#Dimer2_Time_Exp5"
+                                },
+                                {
+                                    "@id": "#Dimer2_Time_Exp6"
+                                },
+                                {
+                                    "@id": "#Dimer2_Time_Exp7"
+                                },
+                                {
+                                    "@id": "#Dimer2_Time_Exp8"
+                                },
+                                {
+                                    "@id": "#Dimer2_Time_Exp9"
+                                }
+                            ]
+                    },
+
+                    {
+                        "@id": "#Dimer2_Space",
+                        "@type": "ex:SpaceContext",
+                        "schema:name": "Dimer2 Space",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#Dimer2_Space_Exp1"
+                                },
+                                {
+                                    "@id": "#Dimer2_Space_Exp2"
+                                },
+                                {
+                                    "@id": "#Dimer2_Space_Exp3"
+                                },
+                                {
+                                    "@id": "#Dimer2_Space_Exp4"
+                                },
+                                {
+                                    "@id": "#Dimer2_Space_Exp5"
+                                },
+                                {
+                                    "@id": "#Dimer2_Space_Exp6"
+                                },
+                                {
+                                    "@id": "#Dimer2_Space_Exp7"
+                                },
+                                {
+                                    "@id": "#Dimer2_Space_Exp8"
+                                },
+                                {
+                                    "@id": "#Dimer2_Space_Exp9"
+                                }
+                            ]
+                    },
+
+                    {
+                        "@id": "#Dimer2_Structure",
+                        "@type": "ex:StructureContext",
+                        "schema:name": "Dimer2 Structure",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#Dimer2_Structure_Exp1"
+                                },
+                                {
+                                    "@id": "#Dimer2_Structure_Exp2"
+                                },
+                                {
+                                    "@id": "#Dimer2_Structure_Exp3"
+                                },
+                                {
+                                    "@id": "#Dimer2_Structure_Exp4"
+                                },
+                                {
+                                    "@id": "#Dimer2_Structure_Exp5"
+                                },
+                                {
+                                    "@id": "#Dimer2_Structure_Exp6"
+                                },
+                                {
+                                    "@id": "#Dimer2_Structure_Exp7"
+                                },
+                                {
+                                    "@id": "#Dimer2_Structure_Exp8"
+                                },
+                                {
+                                    "@id": "#Dimer2_Structure_Exp9"
+                                }
+                            ]
+                    },
+
+                    {
+                        "@id": "#Dimer2_Substance",
+                        "@type": "ex:SubstanceContext",
+                        "schema:name": "Dimer2 Substance",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#Dimer2_Substance_Exp1"
+                                },
+                                {
+                                    "@id": "#Dimer2_Substance_Exp2"
+                                },
+                                {
+                                    "@id": "#Dimer2_Substance_Exp3"
+                                },
+                                {
+                                    "@id": "#Dimer2_Substance_Exp4"
+                                },
+                                {
+                                    "@id": "#Dimer2_Substance_Exp5"
+                                },
+                                {
+                                    "@id": "#Dimer2_Substance_Exp6"
+                                },
+                                {
+                                    "@id": "#Dimer2_Substance_Exp7"
+                                },
+                                {
+                                    "@id": "#Dimer2_Substance_Exp8"
+                                },
+                                {
+                                    "@id": "#Dimer2_Substance_Exp9"
+                                }
+                            ]
+                    }
+
+                ··· (G4) - 10a - Context ······· Context of Dimer2: General — END ···},
+
+
+            ··· (G4) - 10a ······· Dimer2: General — END ···},
+
+
+            {··· (G4) - 10b ······· Dimer2: Specific ···
+
+
+                {··· (G4) - 10b - 1 ······· Dimer2: Specific - Experiment 1 ···
+
+                    {
+                        "@id": "#Dimer2_Exp1",
+                        "@type": "ontospecies:Species",
+                        "schema:name": "Dimer2 Exp1",
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#Dimer2"
+                            },
+                        "ex:hasContext":
+                            [
+                                {
+                                    "@id": "#Dimer2_Information_Exp1"
+                                },
+                                {
+                                    "@id": "#Dimer2_Energy_Exp1"
+                                },
+                                {
+                                    "@id": "#Dimer2_Time_Exp1"
+                                },
+                                {
+                                    "@id": "#Dimer2_Space_Exp1"
+                                },
+                                {
+                                    "@id": "#Dimer2_Structure_Exp1"
+                                },
+                                {
+                                    "@id": "#Dimer2_Substance_Exp1"
+                                }
+                            ]
+                    },
+
+
+                    {··· (G4) - 10b - 1 - Context ······· Context of Dimer2: Specific - Experiment 1 ···
+
+                        {
+                            "@id": "#Dimer2_Information_Exp1",
+                            "@type": "ex:InformationContext",
+                            "schema:name": "Dimer2 Information Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#Dimer2_Information"
+                                }
+                        },
+
+                        {
+                            "@id": "#Dimer2_Energy_Exp1",
+                            "@type": "ex:EnergyContext",
+                            "schema:name": "Dimer2 Energy Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#Dimer2_Energy"
+                                }
+                        },
+
+                        {
+                            "@id": "#Dimer2_Time_Exp1",
+                            "@type": "ex:TimeContext",
+                            "schema:name": "Dimer2 Time Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#Dimer2_Time"
+                                }
+                        },
+
+                        {
+                            "@id": "#Dimer2_Space_Exp1",
+                            "@type": "ex:SpaceContext",
+                            "schema:name": "Dimer2 Space Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#Dimer2_Space"
+                                }
+                        },
+
+                        {
+                            "@id": "#Dimer2_Structure_Exp1",
+                            "@type": "ex:StructureContext",
+                            "schema:name": "Dimer2 Structure Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#Dimer2_Structure"
+                                }
+                        },
+
+                        {
+                            "@id": "#Dimer2_Substance_Exp1",
+                            "@type": "ex:SubstanceContext",
+                            "schema:name": "Dimer2 Substance Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#Dimer2_Substance"
+                                }
+                        }
+
+                    ··· (G4) - 10b - 1 - Context ······· Context of Dimer2: Specific - Experiment 1 — END ···},
+
+
+                ··· (G4) - 10b - 1 ······· Dimer2: Specific - Experiment 1 — END ···}
+
+
+            ··· (G4) - 10b ······· Dimer2: Specific — END ···},
+
+
+        ··· (G4) - 10 ······· Dimer2 — END ···},
+
+        {··· (G4) - 11 ······· Pt ···
+
+            {··· (G4) - 11a ······· Pt: General ···
+
+                {
+                    "@id": "#Pt",
+                    "@type": "ontospecies:Species",
+                    "schema:name": "",
+                    "ex:hasInchi": "",
+                    "ex:hasSmiles": "",
+                    "ex:hasCas": "",
+
+                    "ex:hasContext":
+                        [
+                            {
+                                "@id": "#Pt_Information"
+                            },
+                            {
+                                "@id": "#Pt_Energy"
+                            },
+                            {
+                                "@id": "#Pt_Time"
+                            },
+                            {
+                                "@id": "#Pt_Space"
+                            },
+                            {
+                                "@id": "#Pt_Structure"
+                            },
+                            {
+                                "@id": "#Pt_Substance"
+                            }
+                        ],
+
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#Pt_Exp1"
+                            },
+                            {
+                                "@id": "#Pt_Exp2"
+                            },
+                            {
+                                "@id": "#Pt_Exp3"
+                            },
+                            {
+                                "@id": "#Pt_Exp4"
+                            },
+                            {
+                                "@id": "#Pt_Exp5"
+                            },
+                            {
+                                "@id": "#Pt_Exp6"
+                            },
+                            {
+                                "@id": "#Pt_Exp7"
+                            },
+                            {
+                                "@id": "#Pt_Exp8"
+                            },
+                            {
+                                "@id": "#Pt_Exp9"
+                            }
+                        ]
+                },
+
+
+                {··· (G4) - 11a - Context ······· Context of Pt: General ···
+
+                    {
+                        "@id": "#Pt_Information",
+                        "@type": "ex:InformationContext",
+                        "schema:name": "Pt Information",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#Pt_Information_Exp1"
+                                },
+                                {
+                                    "@id": "#Pt_Information_Exp2"
+                                },
+                                {
+                                    "@id": "#Pt_Information_Exp3"
+                                },
+                                {
+                                    "@id": "#Pt_Information_Exp4"
+                                },
+                                {
+                                    "@id": "#Pt_Information_Exp5"
+                                },
+                                {
+                                    "@id": "#Pt_Information_Exp6"
+                                },
+                                {
+                                    "@id": "#Pt_Information_Exp7"
+                                },
+                                {
+                                    "@id": "#Pt_Information_Exp8"
+                                },
+                                {
+                                    "@id": "#Pt_Information_Exp9"
+                                }
+                            ]
+                    },
+
+                    {
+                        "@id": "#Pt_Energy",
+                        "@type": "ex:EnergyContext",
+                        "schema:name": "Pt Energy",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#Pt_Energy_Exp1"
+                                },
+                                {
+                                    "@id": "#Pt_Energy_Exp2"
+                                },
+                                {
+                                    "@id": "#Pt_Energy_Exp3"
+                                },
+                                {
+                                    "@id": "#Pt_Energy_Exp4"
+                                },
+                                {
+                                    "@id": "#Pt_Energy_Exp5"
+                                },
+                                {
+                                    "@id": "#Pt_Energy_Exp6"
+                                },
+                                {
+                                    "@id": "#Pt_Energy_Exp7"
+                                },
+                                {
+                                    "@id": "#Pt_Energy_Exp8"
+                                },
+                                {
+                                    "@id": "#Pt_Energy_Exp9"
+                                }
+                            ]
+                    },
+
+                    {
+                        "@id": "#Pt_Time",
+                        "@type": "ex:TimeContext",
+                        "schema:name": "Pt Time",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#Pt_Time_Exp1"
+                                },
+                                {
+                                    "@id": "#Pt_Time_Exp2"
+                                },
+                                {
+                                    "@id": "#Pt_Time_Exp3"
+                                },
+                                {
+                                    "@id": "#Pt_Time_Exp4"
+                                },
+                                {
+                                    "@id": "#Pt_Time_Exp5"
+                                },
+                                {
+                                    "@id": "#Pt_Time_Exp6"
+                                },
+                                {
+                                    "@id": "#Pt_Time_Exp7"
+                                },
+                                {
+                                    "@id": "#Pt_Time_Exp8"
+                                },
+                                {
+                                    "@id": "#Pt_Time_Exp9"
+                                }
+                            ]
+                    },
+
+                    {
+                        "@id": "#Pt_Space",
+                        "@type": "ex:SpaceContext",
+                        "schema:name": "Pt Space",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#Pt_Space_Exp1"
+                                },
+                                {
+                                    "@id": "#Pt_Space_Exp2"
+                                },
+                                {
+                                    "@id": "#Pt_Space_Exp3"
+                                },
+                                {
+                                    "@id": "#Pt_Space_Exp4"
+                                },
+                                {
+                                    "@id": "#Pt_Space_Exp5"
+                                },
+                                {
+                                    "@id": "#Pt_Space_Exp6"
+                                },
+                                {
+                                    "@id": "#Pt_Space_Exp7"
+                                },
+                                {
+                                    "@id": "#Pt_Space_Exp8"
+                                },
+                                {
+                                    "@id": "#Pt_Space_Exp9"
+                                }
+                            ]
+                    },
+
+                    {
+                        "@id": "#Pt_Structure",
+                        "@type": "ex:StructureContext",
+                        "schema:name": "Pt Structure",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#Pt_Structure_Exp1"
+                                },
+                                {
+                                    "@id": "#Pt_Structure_Exp2"
+                                },
+                                {
+                                    "@id": "#Pt_Structure_Exp3"
+                                },
+                                {
+                                    "@id": "#Pt_Structure_Exp4"
+                                },
+                                {
+                                    "@id": "#Pt_Structure_Exp5"
+                                },
+                                {
+                                    "@id": "#Pt_Structure_Exp6"
+                                },
+                                {
+                                    "@id": "#Pt_Structure_Exp7"
+                                },
+                                {
+                                    "@id": "#Pt_Structure_Exp8"
+                                },
+                                {
+                                    "@id": "#Pt_Structure_Exp9"
+                                }
+                            ]
+                    },
+
+                    {
+                        "@id": "#Pt_Substance",
+                        "@type": "ex:SubstanceContext",
+                        "schema:name": "Pt Substance",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#Pt_Substance_Exp1"
+                                },
+                                {
+                                    "@id": "#Pt_Substance_Exp2"
+                                },
+                                {
+                                    "@id": "#Pt_Substance_Exp3"
+                                },
+                                {
+                                    "@id": "#Pt_Substance_Exp4"
+                                },
+                                {
+                                    "@id": "#Pt_Substance_Exp5"
+                                },
+                                {
+                                    "@id": "#Pt_Substance_Exp6"
+                                },
+                                {
+                                    "@id": "#Pt_Substance_Exp7"
+                                },
+                                {
+                                    "@id": "#Pt_Substance_Exp8"
+                                },
+                                {
+                                    "@id": "#Pt_Substance_Exp9"
+                                }
+                            ]
+                    }
+
+                ··· (G4) - 11a - Context ······· Context of Pt: General — END ···},
+
+
+            ··· (G4) - 11a ······· Pt: General — END ···},
+
+
+            {··· (G4) - 11b ······· Pt: Specific ···
+
+
+                {··· (G4) - 11b - 1 ······· Pt: Specific - Experiment 1 ···
+
+                    {
+                        "@id": "#Pt_Exp1",
+                        "@type": "ontospecies:Species",
+                        "schema:name": "Pt Exp1",
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#Pt"
+                            },
+                        "ex:hasContext":
+                            [
+                                {
+                                    "@id": "#Pt_Information_Exp1"
+                                },
+                                {
+                                    "@id": "#Pt_Energy_Exp1"
+                                },
+                                {
+                                    "@id": "#Pt_Time_Exp1"
+                                },
+                                {
+                                    "@id": "#Pt_Space_Exp1"
+                                },
+                                {
+                                    "@id": "#Pt_Structure_Exp1"
+                                },
+                                {
+                                    "@id": "#Pt_Substance_Exp1"
+                                }
+                            ]
+                    },
+
+
+                    {··· (G4) - 11b - 1 - Context ······· Context of Pt: Specific - Experiment 1 ···
+
+                        {
+                            "@id": "#Pt_Information_Exp1",
+                            "@type": "ex:InformationContext",
+                            "schema:name": "Pt Information Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#Pt_Information"
+                                }
+                        },
+
+                        {
+                            "@id": "#Pt_Energy_Exp1",
+                            "@type": "ex:EnergyContext",
+                            "schema:name": "Pt Energy Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#Pt_Energy"
+                                }
+                        },
+
+                        {
+                            "@id": "#Pt_Time_Exp1",
+                            "@type": "ex:TimeContext",
+                            "schema:name": "Pt Time Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#Pt_Time"
+                                }
+                        },
+
+                        {
+                            "@id": "#Pt_Space_Exp1",
+                            "@type": "ex:SpaceContext",
+                            "schema:name": "Pt Space Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#Pt_Space"
+                                }
+                        },
+
+                        {
+                            "@id": "#Pt_Structure_Exp1",
+                            "@type": "ex:StructureContext",
+                            "schema:name": "Pt Structure Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#Pt_Structure"
+                                }
+                        },
+
+                        {
+                            "@id": "#Pt_Substance_Exp1",
+                            "@type": "ex:SubstanceContext",
+                            "schema:name": "Pt Substance Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#Pt_Substance"
+                                }
+                        }
+
+                    ··· (G4) - 11b - 1 - Context ······· Context of Pt: Specific - Experiment 1 — END ···},
+
+
+                ··· (G4) - 11b - 1 ······· Pt: Specific - Experiment 1 — END ···}
+
+
+            ··· (G4) - 11b ······· Pt: Specific — END ···},
+
+
+        ··· (G4) - 11 ······· Pt — END ···}
 
     — (G4) Molecules — END -----------------------------------------------------------------------------------------------------------------------}
 
