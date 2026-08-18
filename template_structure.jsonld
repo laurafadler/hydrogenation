@@ -46,7 +46,7 @@
             % contexts of entity here (all six context entities)
 
 
-        · · · (X) - Ya - Context  · · · · · · Context of Main Entity: General · · ·},
+        · · · (X) - Ya - Context  · · · · · · Context of Main Entity: General - END · · ·},
 
 
     · · · (X) - Ya · · · · · · Main Entity: General  — END · · ·},
@@ -58,12 +58,12 @@
 
             % entity here
             
-            {· · · (X) - Yb - 1 - Context  · · · · · · Context of Main Entity: Specific · · ·
+            {· · · (X) - Yb - 1 - Context  · · · · · · Context of Main Entity: Specific - Experiment 1 · · ·
 
                 % contexts of entity here (all six context entities)
 
 
-            · · · (X) - Yb - 1 - Context  · · · · · · Context of Main Entity: Specific · · ·},
+            · · · (X) - Yb - 1 - Context  · · · · · · Context of Main Entity: Specific - Experiment 1 - END · · ·},
 
         · · · (X) - Yb - 1  · · · · · · Main Entity: Specific - Experiment 1  — END · · ·},
 

@@ -7107,6 +7107,1759 @@ hydrogenation_V1_6
             "ex:hasCas": "" 
         },
 
+        % -----------------------------Aufteilung general und specific ------------------------------------------------------------------------------------
+
+
+        {··· (G4) - 1 ······· Hydrogen ···
+
+            {··· (G4) - 1a ······· Hydrogen: General ···
+
+                {
+                    "@id": "#H2",
+                    "@type": "ontospecies:Species",
+                    "schema:name": "Hydrogen",
+                    "ex:hasInchi": "",
+                    "ex:hasSmiles": "",
+                    "ex:hasCas": "",
+
+                    "ex:hasContext":
+                        [
+                            {
+                                "@id": "#H2_Information"
+                            },
+                            {
+                                "@id": "#H2_Energy"
+                            },
+                            {
+                                "@id": "#H2_Time"
+                            },
+                            {
+                                "@id": "#H2_Space"
+                            },
+                            {
+                                "@id": "#H2_Structure"
+                            },
+                            {
+                                "@id": "#H2_Substance"
+                            }
+                        ],
+
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#H2_Exp1"
+                            },
+                            {
+                                "@id": "#H2_Exp2"
+                            },
+                            {
+                                "@id": "#H2_Exp3"
+                            },
+                            {
+                                "@id": "#H2_Exp4"
+                            },
+                            {
+                                "@id": "#H2_Exp5"
+                            },
+                            {
+                                "@id": "#H2_Exp6"
+                            },
+                            {
+                                "@id": "#H2_Exp7"
+                            },
+                            {
+                                "@id": "#H2_Exp8"
+                            },
+                            {
+                                "@id": "#H2_Exp9"
+                            }
+                        ]
+                },
+
+
+                {··· (G4) - 1a - Context ······· Context of Hydrogen: General ···
+
+                    {
+                        "@id": "#H2_Information",
+                        "@type": "ex:InformationContext",
+                        "schema:name": "Hydrogen Information",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#H2_Information_Exp1"
+                                },
+                                {
+                                    "@id": "#H2_Information_Exp2"
+                                },
+                                {
+                                    "@id": "#H2_Information_Exp3"
+                                },
+                                {
+                                    "@id": "#H2_Information_Exp4"
+                                },
+                                {
+                                    "@id": "#H2_Information_Exp5"
+                                },
+                                {
+                                    "@id": "#H2_Information_Exp6"
+                                },
+                                {
+                                    "@id": "#H2_Information_Exp7"
+                                },
+                                {
+                                    "@id": "#H2_Information_Exp8"
+                                },
+                                {
+                                    "@id": "#H2_Information_Exp9"
+                                }
+                            ]
+                    },
+
+                    {
+                        "@id": "#H2_Energy",
+                        "@type": "ex:EnergyContext",
+                        "schema:name": "Hydrogen Energy",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#H2_Energy_Exp1"
+                                },
+                                {
+                                    "@id": "#H2_Energy_Exp2"
+                                },
+                                {
+                                    "@id": "#H2_Energy_Exp3"
+                                },
+                                {
+                                    "@id": "#H2_Energy_Exp4"
+                                },
+                                {
+                                    "@id": "#H2_Energy_Exp5"
+                                },
+                                {
+                                    "@id": "#H2_Energy_Exp6"
+                                },
+                                {
+                                    "@id": "#H2_Energy_Exp7"
+                                },
+                                {
+                                    "@id": "#H2_Energy_Exp8"
+                                },
+                                {
+                                    "@id": "#H2_Energy_Exp9"
+                                }
+                            ]
+                    },
+
+                    {
+                        "@id": "#H2_Time",
+                        "@type": "ex:TimeContext",
+                        "schema:name": "Hydrogen Time",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#H2_Time_Exp1"
+                                },
+                                {
+                                    "@id": "#H2_Time_Exp2"
+                                },
+                                {
+                                    "@id": "#H2_Time_Exp3"
+                                },
+                                {
+                                    "@id": "#H2_Time_Exp4"
+                                },
+                                {
+                                    "@id": "#H2_Time_Exp5"
+                                },
+                                {
+                                    "@id": "#H2_Time_Exp6"
+                                },
+                                {
+                                    "@id": "#H2_Time_Exp7"
+                                },
+                                {
+                                    "@id": "#H2_Time_Exp8"
+                                },
+                                {
+                                    "@id": "#H2_Time_Exp9"
+                                }
+                            ]
+                    },
+
+                    {
+                        "@id": "#H2_Space",
+                        "@type": "ex:SpaceContext",
+                        "schema:name": "Hydrogen Space",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#H2_Space_Exp1"
+                                },
+                                {
+                                    "@id": "#H2_Space_Exp2"
+                                },
+                                {
+                                    "@id": "#H2_Space_Exp3"
+                                },
+                                {
+                                    "@id": "#H2_Space_Exp4"
+                                },
+                                {
+                                    "@id": "#H2_Space_Exp5"
+                                },
+                                {
+                                    "@id": "#H2_Space_Exp6"
+                                },
+                                {
+                                    "@id": "#H2_Space_Exp7"
+                                },
+                                {
+                                    "@id": "#H2_Space_Exp8"
+                                },
+                                {
+                                    "@id": "#H2_Space_Exp9"
+                                }
+                            ]
+                    },
+
+                    {
+                        "@id": "#H2_Structure",
+                        "@type": "ex:StructureContext",
+                        "schema:name": "Hydrogen Structure",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#H2_Structure_Exp1"
+                                },
+                                {
+                                    "@id": "#H2_Structure_Exp2"
+                                },
+                                {
+                                    "@id": "#H2_Structure_Exp3"
+                                },
+                                {
+                                    "@id": "#H2_Structure_Exp4"
+                                },
+                                {
+                                    "@id": "#H2_Structure_Exp5"
+                                },
+                                {
+                                    "@id": "#H2_Structure_Exp6"
+                                },
+                                {
+                                    "@id": "#H2_Structure_Exp7"
+                                },
+                                {
+                                    "@id": "#H2_Structure_Exp8"
+                                },
+                                {
+                                    "@id": "#H2_Structure_Exp9"
+                                }
+                            ]
+                    },
+
+                    {
+                        "@id": "#H2_Substance",
+                        "@type": "ex:SubstanceContext",
+                        "schema:name": "Hydrogen Substance",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#H2_Substance_Exp1"
+                                },
+                                {
+                                    "@id": "#H2_Substance_Exp2"
+                                },
+                                {
+                                    "@id": "#H2_Substance_Exp3"
+                                },
+                                {
+                                    "@id": "#H2_Substance_Exp4"
+                                },
+                                {
+                                    "@id": "#H2_Substance_Exp5"
+                                },
+                                {
+                                    "@id": "#H2_Substance_Exp6"
+                                },
+                                {
+                                    "@id": "#H2_Substance_Exp7"
+                                },
+                                {
+                                    "@id": "#H2_Substance_Exp8"
+                                },
+                                {
+                                    "@id": "#H2_Substance_Exp9"
+                                }
+                            ]
+                    }
+
+                ··· (G4) - 1a - Context ······· Context of Hydrogen: General — END ···},
+
+
+            ··· (G4) - 1a ······· Hydrogen: General — END ···},
+
+
+            {··· (G4) - 1b ······· Hydrogen: Specific ···
+
+
+                {··· (G4) - 1b - 1 ······· Hydrogen: Specific - Experiment 1 ···
+
+                    {
+                        "@id": "#H2_Exp1",
+                        "@type": "ontospecies:Species",
+                        "schema:name": "Hydrogen Exp1",
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#H2"
+                            },
+                        "ex:hasContext":
+                            [
+                                {
+                                    "@id": "#H2_Information_Exp1"
+                                },
+                                {
+                                    "@id": "#H2_Energy_Exp1"
+                                },
+                                {
+                                    "@id": "#H2_Time_Exp1"
+                                },
+                                {
+                                    "@id": "#H2_Space_Exp1"
+                                },
+                                {
+                                    "@id": "#H2_Structure_Exp1"
+                                },
+                                {
+                                    "@id": "#H2_Substance_Exp1"
+                                }
+                            ]
+                    },
+
+
+                    {··· (G4) - 1b - 1 - Context ······· Context of Hydrogen: Specific - Experiment 1 ···
+
+                        {
+                            "@id": "#H2_Information_Exp1",
+                            "@type": "ex:InformationContext",
+                            "schema:name": "Hydrogen Information Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#H2_Information"
+                                }
+                        },
+
+                        {
+                            "@id": "#H2_Energy_Exp1",
+                            "@type": "ex:EnergyContext",
+                            "schema:name": "Hydrogen Energy Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#H2_Energy"
+                                }
+                        },
+
+                        {
+                            "@id": "#H2_Time_Exp1",
+                            "@type": "ex:TimeContext",
+                            "schema:name": "Hydrogen Time Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#H2_Time"
+                                }
+                        },
+
+                        {
+                            "@id": "#H2_Space_Exp1",
+                            "@type": "ex:SpaceContext",
+                            "schema:name": "Hydrogen Space Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#H2_Space"
+                                }
+                        },
+
+                        {
+                            "@id": "#H2_Structure_Exp1",
+                            "@type": "ex:StructureContext",
+                            "schema:name": "Hydrogen Structure Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#H2_Structure"
+                                }
+                        },
+
+                        {
+                            "@id": "#H2_Substance_Exp1",
+                            "@type": "ex:SubstanceContext",
+                            "schema:name": "Hydrogen Substance Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#H2_Substance"
+                                }
+                        }
+
+                    ··· (G4) - 1b - 1 - Context ······· Context of Hydrogen: Specific - Experiment 1 — END ···},
+
+
+                ··· (G4) - 1b - 1 ······· Hydrogen: Specific - Experiment 1 — END ···}
+
+
+            ··· (G4) - 1b ······· Hydrogen: Specific — END ···},
+
+
+        ··· (G4) - 1 ······· Hydrogen — END ···},
+
+
+        {··· (G4) - 2 ······· Water ···
+
+            {··· (G4) - 2a ······· Water: General ···
+
+                {
+                    "@id": "#H2O",
+                    "@type": "ontospecies:Species",
+                    "schema:name": "Water",
+                    "ex:hasInchi": "",
+                    "ex:hasSmiles": "",
+                    "ex:hasCas": "",
+
+                    "ex:hasContext":
+                        [
+                            {
+                                "@id": "#H2O_Information"
+                            },
+                            {
+                                "@id": "#H2O_Energy"
+                            },
+                            {
+                                "@id": "#H2O_Time"
+                            },
+                            {
+                                "@id": "#H2O_Space"
+                            },
+                            {
+                                "@id": "#H2O_Structure"
+                            },
+                            {
+                                "@id": "#H2O_Substance"
+                            }
+                        ],
+
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#H2O_Exp1"
+                            },
+                            {
+                                "@id": "#H2O_Exp2"
+                            },
+                            {
+                                "@id": "#H2O_Exp3"
+                            },
+                            {
+                                "@id": "#H2O_Exp4"
+                            },
+                            {
+                                "@id": "#H2O_Exp5"
+                            },
+                            {
+                                "@id": "#H2O_Exp6"
+                            },
+                            {
+                                "@id": "#H2O_Exp7"
+                            },
+                            {
+                                "@id": "#H2O_Exp8"
+                            },
+                            {
+                                "@id": "#H2O_Exp9"
+                            }
+                        ]
+                },
+
+
+                {··· (G4) - 2a - Context ······· Context of Water: General ···
+
+                    {
+                        "@id": "#H2O_Information",
+                        "@type": "ex:InformationContext",
+                        "schema:name": "Water Information",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#H2O_Information_Exp1"
+                                },
+                                {
+                                    "@id": "#H2O_Information_Exp2"
+                                },
+                                {
+                                    "@id": "#H2O_Information_Exp3"
+                                },
+                                {
+                                    "@id": "#H2O_Information_Exp4"
+                                },
+                                {
+                                    "@id": "#H2O_Information_Exp5"
+                                },
+                                {
+                                    "@id": "#H2O_Information_Exp6"
+                                },
+                                {
+                                    "@id": "#H2O_Information_Exp7"
+                                },
+                                {
+                                    "@id": "#H2O_Information_Exp8"
+                                },
+                                {
+                                    "@id": "#H2O_Information_Exp9"
+                                }
+                            ]
+                    },
+
+                    {
+                        "@id": "#H2O_Energy",
+                        "@type": "ex:EnergyContext",
+                        "schema:name": "Water Energy",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#H2O_Energy_Exp1"
+                                },
+                                {
+                                    "@id": "#H2O_Energy_Exp2"
+                                },
+                                {
+                                    "@id": "#H2O_Energy_Exp3"
+                                },
+                                {
+                                    "@id": "#H2O_Energy_Exp4"
+                                },
+                                {
+                                    "@id": "#H2O_Energy_Exp5"
+                                },
+                                {
+                                    "@id": "#H2O_Energy_Exp6"
+                                },
+                                {
+                                    "@id": "#H2O_Energy_Exp7"
+                                },
+                                {
+                                    "@id": "#H2O_Energy_Exp8"
+                                },
+                                {
+                                    "@id": "#H2O_Energy_Exp9"
+                                }
+                            ]
+                    },
+
+                    {
+                        "@id": "#H2O_Time",
+                        "@type": "ex:TimeContext",
+                        "schema:name": "Water Time",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#H2O_Time_Exp1"
+                                },
+                                {
+                                    "@id": "#H2O_Time_Exp2"
+                                },
+                                {
+                                    "@id": "#H2O_Time_Exp3"
+                                },
+                                {
+                                    "@id": "#H2O_Time_Exp4"
+                                },
+                                {
+                                    "@id": "#H2O_Time_Exp5"
+                                },
+                                {
+                                    "@id": "#H2O_Time_Exp6"
+                                },
+                                {
+                                    "@id": "#H2O_Time_Exp7"
+                                },
+                                {
+                                    "@id": "#H2O_Time_Exp8"
+                                },
+                                {
+                                    "@id": "#H2O_Time_Exp9"
+                                }
+                            ]
+                    },
+
+                    {
+                        "@id": "#H2O_Space",
+                        "@type": "ex:SpaceContext",
+                        "schema:name": "Water Space",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#H2O_Space_Exp1"
+                                },
+                                {
+                                    "@id": "#H2O_Space_Exp2"
+                                },
+                                {
+                                    "@id": "#H2O_Space_Exp3"
+                                },
+                                {
+                                    "@id": "#H2O_Space_Exp4"
+                                },
+                                {
+                                    "@id": "#H2O_Space_Exp5"
+                                },
+                                {
+                                    "@id": "#H2O_Space_Exp6"
+                                },
+                                {
+                                    "@id": "#H2O_Space_Exp7"
+                                },
+                                {
+                                    "@id": "#H2O_Space_Exp8"
+                                },
+                                {
+                                    "@id": "#H2O_Space_Exp9"
+                                }
+                            ]
+                    },
+
+                    {
+                        "@id": "#H2O_Structure",
+                        "@type": "ex:StructureContext",
+                        "schema:name": "Water Structure",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#H2O_Structure_Exp1"
+                                },
+                                {
+                                    "@id": "#H2O_Structure_Exp2"
+                                },
+                                {
+                                    "@id": "#H2O_Structure_Exp3"
+                                },
+                                {
+                                    "@id": "#H2O_Structure_Exp4"
+                                },
+                                {
+                                    "@id": "#H2O_Structure_Exp5"
+                                },
+                                {
+                                    "@id": "#H2O_Structure_Exp6"
+                                },
+                                {
+                                    "@id": "#H2O_Structure_Exp7"
+                                },
+                                {
+                                    "@id": "#H2O_Structure_Exp8"
+                                },
+                                {
+                                    "@id": "#H2O_Structure_Exp9"
+                                }
+                            ]
+                    },
+
+                    {
+                        "@id": "#H2O_Substance",
+                        "@type": "ex:SubstanceContext",
+                        "schema:name": "Water Substance",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#H2O_Substance_Exp1"
+                                },
+                                {
+                                    "@id": "#H2O_Substance_Exp2"
+                                },
+                                {
+                                    "@id": "#H2O_Substance_Exp3"
+                                },
+                                {
+                                    "@id": "#H2O_Substance_Exp4"
+                                },
+                                {
+                                    "@id": "#H2O_Substance_Exp5"
+                                },
+                                {
+                                    "@id": "#H2O_Substance_Exp6"
+                                },
+                                {
+                                    "@id": "#H2O_Substance_Exp7"
+                                },
+                                {
+                                    "@id": "#H2O_Substance_Exp8"
+                                },
+                                {
+                                    "@id": "#H2O_Substance_Exp9"
+                                }
+                            ]
+                    }
+
+                ··· (G4) - 2a - Context ······· Context of Water: General — END ···},
+
+
+            ··· (G4) - 2a ······· Water: General — END ···},
+
+
+            {··· (G4) - 2b ······· Water: Specific ···
+
+
+                {··· (G4) - 2b - 1 ······· Water: Specific - Experiment 1 ···
+
+                    {
+                        "@id": "#H2O_Exp1",
+                        "@type": "ontospecies:Species",
+                        "schema:name": "Water Exp1",
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#H2O"
+                            },
+                        "ex:hasContext":
+                            [
+                                {
+                                    "@id": "#H2O_Information_Exp1"
+                                },
+                                {
+                                    "@id": "#H2O_Energy_Exp1"
+                                },
+                                {
+                                    "@id": "#H2O_Time_Exp1"
+                                },
+                                {
+                                    "@id": "#H2O_Space_Exp1"
+                                },
+                                {
+                                    "@id": "#H2O_Structure_Exp1"
+                                },
+                                {
+                                    "@id": "#H2O_Substance_Exp1"
+                                }
+                            ]
+                    },
+
+
+                    {··· (G4) - 2b - 1 - Context ······· Context of Water: Specific - Experiment 1 ···
+
+                        {
+                            "@id": "#H2O_Information_Exp1",
+                            "@type": "ex:InformationContext",
+                            "schema:name": "Water Information Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#H2O_Information"
+                                }
+                        },
+
+                        {
+                            "@id": "#H2O_Energy_Exp1",
+                            "@type": "ex:EnergyContext",
+                            "schema:name": "Water Energy Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#H2O_Energy"
+                                }
+                        },
+
+                        {
+                            "@id": "#H2O_Time_Exp1",
+                            "@type": "ex:TimeContext",
+                            "schema:name": "Water Time Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#H2O_Time"
+                                }
+                        },
+
+                        {
+                            "@id": "#H2O_Space_Exp1",
+                            "@type": "ex:SpaceContext",
+                            "schema:name": "Water Space Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#H2O_Space"
+                                }
+                        },
+
+                        {
+                            "@id": "#H2O_Structure_Exp1",
+                            "@type": "ex:StructureContext",
+                            "schema:name": "Water Structure Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#H2O_Structure"
+                                }
+                        },
+
+                        {
+                            "@id": "#H2O_Substance_Exp1",
+                            "@type": "ex:SubstanceContext",
+                            "schema:name": "Water Substance Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#H2O_Substance"
+                                }
+                        }
+
+                    ··· (G4) - 2b - 1 - Context ······· Context of Water: Specific - Experiment 1 — END ···},
+
+
+                ··· (G4) - 2b - 1 ······· Water: Specific - Experiment 1 — END ···}
+
+
+            ··· (G4) - 2b ······· Water: Specific — END ···},
+
+
+        ··· (G4) - 2 ······· Water — END ···}
+
+        {··· (G4) - 3 ······· Isopropanol ···
+
+            {··· (G4) - 3a ······· Isopropanol: General ···
+
+                {
+                    "@id": "#Solvent",
+                    "@type": "ontospecies:Species",
+                    "schema:name": "Isopropanol",
+                    "ex:hasInchi": "",
+                    "ex:hasSmiles": "",
+                    "ex:hasCas": "",
+
+                    "ex:hasContext":
+                        [
+                            {
+                                "@id": "#Solvent_Information"
+                            },
+                            {
+                                "@id": "#Solvent_Energy"
+                            },
+                            {
+                                "@id": "#Solvent_Time"
+                            },
+                            {
+                                "@id": "#Solvent_Space"
+                            },
+                            {
+                                "@id": "#Solvent_Structure"
+                            },
+                            {
+                                "@id": "#Solvent_Substance"
+                            }
+                        ],
+
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#Solvent_Exp1"
+                            },
+                            {
+                                "@id": "#Solvent_Exp2"
+                            },
+                            {
+                                "@id": "#Solvent_Exp3"
+                            },
+                            {
+                                "@id": "#Solvent_Exp4"
+                            },
+                            {
+                                "@id": "#Solvent_Exp5"
+                            },
+                            {
+                                "@id": "#Solvent_Exp6"
+                            },
+                            {
+                                "@id": "#Solvent_Exp7"
+                            },
+                            {
+                                "@id": "#Solvent_Exp8"
+                            },
+                            {
+                                "@id": "#Solvent_Exp9"
+                            }
+                        ]
+                },
+
+
+                {··· (G4) - 3a - Context ······· Context of Isopropanol: General ···
+
+                    {
+                        "@id": "#Solvent_Information",
+                        "@type": "ex:InformationContext",
+                        "schema:name": "Isopropanol Information",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#Solvent_Information_Exp1"
+                                },
+                                {
+                                    "@id": "#Solvent_Information_Exp2"
+                                },
+                                {
+                                    "@id": "#Solvent_Information_Exp3"
+                                },
+                                {
+                                    "@id": "#Solvent_Information_Exp4"
+                                },
+                                {
+                                    "@id": "#Solvent_Information_Exp5"
+                                },
+                                {
+                                    "@id": "#Solvent_Information_Exp6"
+                                },
+                                {
+                                    "@id": "#Solvent_Information_Exp7"
+                                },
+                                {
+                                    "@id": "#Solvent_Information_Exp8"
+                                },
+                                {
+                                    "@id": "#Solvent_Information_Exp9"
+                                }
+                            ]
+                    },
+
+                    {
+                        "@id": "#Solvent_Energy",
+                        "@type": "ex:EnergyContext",
+                        "schema:name": "Isopropanol Energy",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#Solvent_Energy_Exp1"
+                                },
+                                {
+                                    "@id": "#Solvent_Energy_Exp2"
+                                },
+                                {
+                                    "@id": "#Solvent_Energy_Exp3"
+                                },
+                                {
+                                    "@id": "#Solvent_Energy_Exp4"
+                                },
+                                {
+                                    "@id": "#Solvent_Energy_Exp5"
+                                },
+                                {
+                                    "@id": "#Solvent_Energy_Exp6"
+                                },
+                                {
+                                    "@id": "#Solvent_Energy_Exp7"
+                                },
+                                {
+                                    "@id": "#Solvent_Energy_Exp8"
+                                },
+                                {
+                                    "@id": "#Solvent_Energy_Exp9"
+                                }
+                            ]
+                    },
+
+                    {
+                        "@id": "#Solvent_Time",
+                        "@type": "ex:TimeContext",
+                        "schema:name": "Isopropanol Time",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#Solvent_Time_Exp1"
+                                },
+                                {
+                                    "@id": "#Solvent_Time_Exp2"
+                                },
+                                {
+                                    "@id": "#Solvent_Time_Exp3"
+                                },
+                                {
+                                    "@id": "#Solvent_Time_Exp4"
+                                },
+                                {
+                                    "@id": "#Solvent_Time_Exp5"
+                                },
+                                {
+                                    "@id": "#Solvent_Time_Exp6"
+                                },
+                                {
+                                    "@id": "#Solvent_Time_Exp7"
+                                },
+                                {
+                                    "@id": "#Solvent_Time_Exp8"
+                                },
+                                {
+                                    "@id": "#Solvent_Time_Exp9"
+                                }
+                            ]
+                    },
+
+                    {
+                        "@id": "#Solvent_Space",
+                        "@type": "ex:SpaceContext",
+                        "schema:name": "Isopropanol Space",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#Solvent_Space_Exp1"
+                                },
+                                {
+                                    "@id": "#Solvent_Space_Exp2"
+                                },
+                                {
+                                    "@id": "#Solvent_Space_Exp3"
+                                },
+                                {
+                                    "@id": "#Solvent_Space_Exp4"
+                                },
+                                {
+                                    "@id": "#Solvent_Space_Exp5"
+                                },
+                                {
+                                    "@id": "#Solvent_Space_Exp6"
+                                },
+                                {
+                                    "@id": "#Solvent_Space_Exp7"
+                                },
+                                {
+                                    "@id": "#Solvent_Space_Exp8"
+                                },
+                                {
+                                    "@id": "#Solvent_Space_Exp9"
+                                }
+                            ]
+                    },
+
+                    {
+                        "@id": "#Solvent_Structure",
+                        "@type": "ex:StructureContext",
+                        "schema:name": "Isopropanol Structure",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#Solvent_Structure_Exp1"
+                                },
+                                {
+                                    "@id": "#Solvent_Structure_Exp2"
+                                },
+                                {
+                                    "@id": "#Solvent_Structure_Exp3"
+                                },
+                                {
+                                    "@id": "#Solvent_Structure_Exp4"
+                                },
+                                {
+                                    "@id": "#Solvent_Structure_Exp5"
+                                },
+                                {
+                                    "@id": "#Solvent_Structure_Exp6"
+                                },
+                                {
+                                    "@id": "#Solvent_Structure_Exp7"
+                                },
+                                {
+                                    "@id": "#Solvent_Structure_Exp8"
+                                },
+                                {
+                                    "@id": "#Solvent_Structure_Exp9"
+                                }
+                            ]
+                    },
+
+                    {
+                        "@id": "#Solvent_Substance",
+                        "@type": "ex:SubstanceContext",
+                        "schema:name": "Isopropanol Substance",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#Solvent_Substance_Exp1"
+                                },
+                                {
+                                    "@id": "#Solvent_Substance_Exp2"
+                                },
+                                {
+                                    "@id": "#Solvent_Substance_Exp3"
+                                },
+                                {
+                                    "@id": "#Solvent_Substance_Exp4"
+                                },
+                                {
+                                    "@id": "#Solvent_Substance_Exp5"
+                                },
+                                {
+                                    "@id": "#Solvent_Substance_Exp6"
+                                },
+                                {
+                                    "@id": "#Solvent_Substance_Exp7"
+                                },
+                                {
+                                    "@id": "#Solvent_Substance_Exp8"
+                                },
+                                {
+                                    "@id": "#Solvent_Substance_Exp9"
+                                }
+                            ]
+                    }
+
+                ··· (G4) - 3a - Context ······· Context of Isopropanol: General — END ···},
+
+
+            ··· (G4) - 3a ······· Isopropanol: General — END ···},
+
+
+            {··· (G4) - 3b ······· Isopropanol: Specific ···
+
+
+                {··· (G4) - 3b - 1 ······· Isopropanol: Specific - Experiment 1 ···
+
+                    {
+                        "@id": "#Solvent_Exp1",
+                        "@type": "ontospecies:Species",
+                        "schema:name": "Isopropanol Exp1",
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#Solvent"
+                            },
+                        "ex:hasContext":
+                            [
+                                {
+                                    "@id": "#Solvent_Information_Exp1"
+                                },
+                                {
+                                    "@id": "#Solvent_Energy_Exp1"
+                                },
+                                {
+                                    "@id": "#Solvent_Time_Exp1"
+                                },
+                                {
+                                    "@id": "#Solvent_Space_Exp1"
+                                },
+                                {
+                                    "@id": "#Solvent_Structure_Exp1"
+                                },
+                                {
+                                    "@id": "#Solvent_Substance_Exp1"
+                                }
+                            ]
+                    },
+
+
+                    {··· (G4) - 3b - 1 - Context ······· Context of Isopropanol: Specific - Experiment 1 ···
+
+                        {
+                            "@id": "#Solvent_Information_Exp1",
+                            "@type": "ex:InformationContext",
+                            "schema:name": "Isopropanol Information Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#Solvent_Information"
+                                }
+                        },
+
+                        {
+                            "@id": "#Solvent_Energy_Exp1",
+                            "@type": "ex:EnergyContext",
+                            "schema:name": "Isopropanol Energy Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#Solvent_Energy"
+                                }
+                        },
+
+                        {
+                            "@id": "#Solvent_Time_Exp1",
+                            "@type": "ex:TimeContext",
+                            "schema:name": "Isopropanol Time Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#Solvent_Time"
+                                }
+                        },
+
+                        {
+                            "@id": "#Solvent_Space_Exp1",
+                            "@type": "ex:SpaceContext",
+                            "schema:name": "Isopropanol Space Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#Solvent_Space"
+                                }
+                        },
+
+                        {
+                            "@id": "#Solvent_Structure_Exp1",
+                            "@type": "ex:StructureContext",
+                            "schema:name": "Isopropanol Structure Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#Solvent_Structure"
+                                }
+                        },
+
+                        {
+                            "@id": "#Solvent_Substance_Exp1",
+                            "@type": "ex:SubstanceContext",
+                            "schema:name": "Isopropanol Substance Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#Solvent_Substance"
+                                }
+                        }
+
+                    ··· (G4) - 3b - 1 - Context ······· Context of Isopropanol: Specific - Experiment 1 — END ···},
+
+
+                ··· (G4) - 3b - 1 ······· Isopropanol: Specific - Experiment 1 — END ···}
+
+
+            ··· (G4) - 3b ······· Isopropanol: Specific — END ···},
+
+
+        ··· (G4) - 3 ······· Isopropanol — END ···}
+
+
+        {··· (G4) - 4 ······· RDY ···
+
+            {··· (G4) - 4a ······· RDY: General ···
+
+                {
+                    "@id": "#RDY",
+                    "@type": "ontospecies:Species",
+                    "schema:name": "",
+                    "ex:hasInchi": "",
+                    "ex:hasSmiles": "",
+                    "ex:hasCas": "",
+
+                    "ex:hasContext":
+                        [
+                            {
+                                "@id": "#RDY_Information"
+                            },
+                            {
+                                "@id": "#RDY_Energy"
+                            },
+                            {
+                                "@id": "#RDY_Time"
+                            },
+                            {
+                                "@id": "#RDY_Space"
+                            },
+                            {
+                                "@id": "#RDY_Structure"
+                            },
+                            {
+                                "@id": "#RDY_Substance"
+                            }
+                        ],
+
+                    "ex:hasInstances":
+                        [
+                            {
+                                "@id": "#RDY_Exp1"
+                            },
+                            {
+                                "@id": "#RDY_Exp2"
+                            },
+                            {
+                                "@id": "#RDY_Exp3"
+                            },
+                            {
+                                "@id": "#RDY_Exp4"
+                            },
+                            {
+                                "@id": "#RDY_Exp5"
+                            },
+                            {
+                                "@id": "#RDY_Exp6"
+                            },
+                            {
+                                "@id": "#RDY_Exp7"
+                            },
+                            {
+                                "@id": "#RDY_Exp8"
+                            },
+                            {
+                                "@id": "#RDY_Exp9"
+                            }
+                        ]
+                },
+
+
+                {··· (G4) - 4a - Context ······· Context of RDY: General ···
+
+                    {
+                        "@id": "#RDY_Information",
+                        "@type": "ex:InformationContext",
+                        "schema:name": "RDY Information",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#RDY_Information_Exp1"
+                                },
+                                {
+                                    "@id": "#RDY_Information_Exp2"
+                                },
+                                {
+                                    "@id": "#RDY_Information_Exp3"
+                                },
+                                {
+                                    "@id": "#RDY_Information_Exp4"
+                                },
+                                {
+                                    "@id": "#RDY_Information_Exp5"
+                                },
+                                {
+                                    "@id": "#RDY_Information_Exp6"
+                                },
+                                {
+                                    "@id": "#RDY_Information_Exp7"
+                                },
+                                {
+                                    "@id": "#RDY_Information_Exp8"
+                                },
+                                {
+                                    "@id": "#RDY_Information_Exp9"
+                                }
+                            ]
+                    },
+
+                    {
+                        "@id": "#RDY_Energy",
+                        "@type": "ex:EnergyContext",
+                        "schema:name": "RDY Energy",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#RDY_Energy_Exp1"
+                                },
+                                {
+                                    "@id": "#RDY_Energy_Exp2"
+                                },
+                                {
+                                    "@id": "#RDY_Energy_Exp3"
+                                },
+                                {
+                                    "@id": "#RDY_Energy_Exp4"
+                                },
+                                {
+                                    "@id": "#RDY_Energy_Exp5"
+                                },
+                                {
+                                    "@id": "#RDY_Energy_Exp6"
+                                },
+                                {
+                                    "@id": "#RDY_Energy_Exp7"
+                                },
+                                {
+                                    "@id": "#RDY_Energy_Exp8"
+                                },
+                                {
+                                    "@id": "#RDY_Energy_Exp9"
+                                }
+                            ]
+                    },
+
+                    {
+                        "@id": "#RDY_Time",
+                        "@type": "ex:TimeContext",
+                        "schema:name": "RDY Time",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#RDY_Time_Exp1"
+                                },
+                                {
+                                    "@id": "#RDY_Time_Exp2"
+                                },
+                                {
+                                    "@id": "#RDY_Time_Exp3"
+                                },
+                                {
+                                    "@id": "#RDY_Time_Exp4"
+                                },
+                                {
+                                    "@id": "#RDY_Time_Exp5"
+                                },
+                                {
+                                    "@id": "#RDY_Time_Exp6"
+                                },
+                                {
+                                    "@id": "#RDY_Time_Exp7"
+                                },
+                                {
+                                    "@id": "#RDY_Time_Exp8"
+                                },
+                                {
+                                    "@id": "#RDY_Time_Exp9"
+                                }
+                            ]
+                    },
+
+                    {
+                        "@id": "#RDY_Space",
+                        "@type": "ex:SpaceContext",
+                        "schema:name": "RDY Space",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#RDY_Space_Exp1"
+                                },
+                                {
+                                    "@id": "#RDY_Space_Exp2"
+                                },
+                                {
+                                    "@id": "#RDY_Space_Exp3"
+                                },
+                                {
+                                    "@id": "#RDY_Space_Exp4"
+                                },
+                                {
+                                    "@id": "#RDY_Space_Exp5"
+                                },
+                                {
+                                    "@id": "#RDY_Space_Exp6"
+                                },
+                                {
+                                    "@id": "#RDY_Space_Exp7"
+                                },
+                                {
+                                    "@id": "#RDY_Space_Exp8"
+                                },
+                                {
+                                    "@id": "#RDY_Space_Exp9"
+                                }
+                            ]
+                    },
+
+                    {
+                        "@id": "#RDY_Structure",
+                        "@type": "ex:StructureContext",
+                        "schema:name": "RDY Structure",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#RDY_Structure_Exp1"
+                                },
+                                {
+                                    "@id": "#RDY_Structure_Exp2"
+                                },
+                                {
+                                    "@id": "#RDY_Structure_Exp3"
+                                },
+                                {
+                                    "@id": "#RDY_Structure_Exp4"
+                                },
+                                {
+                                    "@id": "#RDY_Structure_Exp5"
+                                },
+                                {
+                                    "@id": "#RDY_Structure_Exp6"
+                                },
+                                {
+                                    "@id": "#RDY_Structure_Exp7"
+                                },
+                                {
+                                    "@id": "#RDY_Structure_Exp8"
+                                },
+                                {
+                                    "@id": "#RDY_Structure_Exp9"
+                                }
+                            ]
+                    },
+
+                    {
+                        "@id": "#RDY_Substance",
+                        "@type": "ex:SubstanceContext",
+                        "schema:name": "RDY Substance",
+                        "ex:hasInstances":
+                            [
+                                {
+                                    "@id": "#RDY_Substance_Exp1"
+                                },
+                                {
+                                    "@id": "#RDY_Substance_Exp2"
+                                },
+                                {
+                                    "@id": "#RDY_Substance_Exp3"
+                                },
+                                {
+                                    "@id": "#RDY_Substance_Exp4"
+                                },
+                                {
+                                    "@id": "#RDY_Substance_Exp5"
+                                },
+                                {
+                                    "@id": "#RDY_Substance_Exp6"
+                                },
+                                {
+                                    "@id": "#RDY_Substance_Exp7"
+                                },
+                                {
+                                    "@id": "#RDY_Substance_Exp8"
+                                },
+                                {
+                                    "@id": "#RDY_Substance_Exp9"
+                                }
+                            ]
+                    }
+
+                ··· (G4) - 4a - Context ······· Context of RDY: General — END ···},
+
+
+            ··· (G4) - 4a ······· RDY: General — END ···},
+
+
+            {··· (G4) - 4b ······· RDY: Specific ···
+
+
+                {··· (G4) - 4b - 1 ······· RDY: Specific - Experiment 1 ···
+
+                    {
+                        "@id": "#RDY_Exp1",
+                        "@type": "ontospecies:Species",
+                        "schema:name": "RDY Exp1",
+                        "ex:isInstanceOf":
+                            {
+                                "@id": "#RDY"
+                            },
+                        "ex:hasContext":
+                            [
+                                {
+                                    "@id": "#RDY_Information_Exp1"
+                                },
+                                {
+                                    "@id": "#RDY_Energy_Exp1"
+                                },
+                                {
+                                    "@id": "#RDY_Time_Exp1"
+                                },
+                                {
+                                    "@id": "#RDY_Space_Exp1"
+                                },
+                                {
+                                    "@id": "#RDY_Structure_Exp1"
+                                },
+                                {
+                                    "@id": "#RDY_Substance_Exp1"
+                                }
+                            ]
+                    },
+
+
+                    {··· (G4) - 4b - 1 - Context ······· Context of RDY: Specific - Experiment 1 ···
+
+                        {
+                            "@id": "#RDY_Information_Exp1",
+                            "@type": "ex:InformationContext",
+                            "schema:name": "RDY Information Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#RDY_Information"
+                                }
+                        },
+
+                        {
+                            "@id": "#RDY_Energy_Exp1",
+                            "@type": "ex:EnergyContext",
+                            "schema:name": "RDY Energy Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#RDY_Energy"
+                                }
+                        },
+
+                        {
+                            "@id": "#RDY_Time_Exp1",
+                            "@type": "ex:TimeContext",
+                            "schema:name": "RDY Time Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#RDY_Time"
+                                }
+                        },
+
+                        {
+                            "@id": "#RDY_Space_Exp1",
+                            "@type": "ex:SpaceContext",
+                            "schema:name": "RDY Space Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#RDY_Space"
+                                }
+                        },
+
+                        {
+                            "@id": "#RDY_Structure_Exp1",
+                            "@type": "ex:StructureContext",
+                            "schema:name": "RDY Structure Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#RDY_Structure"
+                                }
+                        },
+
+                        {
+                            "@id": "#RDY_Substance_Exp1",
+                            "@type": "ex:SubstanceContext",
+                            "schema:name": "RDY Substance Exp1",
+                            "ex:describedBy":
+                                [
+                                    {
+                                        "@id": "#..."
+                                    }
+                                ],
+                            "ex:isInstanceOf":
+                                {
+                                    "@id": "#RDY_Substance"
+                                }
+                        }
+
+                    ··· (G4) - 4b - 1 - Context ······· Context of RDY: Specific - Experiment 1 — END ···},
+
+
+                ··· (G4) - 4b - 1 ······· RDY: Specific - Experiment 1 — END ···}
+
+
+            ··· (G4) - 4b ······· RDY: Specific — END ···},
+
+
+        ··· (G4) - 4 ······· RDY — END ···}
+
     — (G4) Molecules — END -----------------------------------------------------------------------------------------------------------------------}
 
 ==== (G) Materials — END ==================================================================================================================================}
@@ -13309,7 +15062,7 @@ hydrogenation_V1_6
                             },
                             "ex:hasSetProfile":
                             {
-                                "@id": "#RPMProfile"
+                                "@id": "#SetRPMProfile_Reactor"
                             },
                             "ex:hasInstance":
                             [
@@ -13367,7 +15120,7 @@ hydrogenation_V1_6
                                     },
                                 "ex:hasSetProfile":
                                     {
-                                        "@id": "#RPMProfile_Exp1"
+                                        "@id": "#SetRPMProfile_Reactor_Exp1"
                                     },
                                 "ex:isInstanceOf":
                                     {
