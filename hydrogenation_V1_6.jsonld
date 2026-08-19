@@ -83,7 +83,7 @@
 
 % Wenn ich eine Liste mit allen entities erstellen will, die in der Datei verwendet werden: 
 
-% python extract_entityIDs.py hydrogenation_V1_6.jsonld output.txt
+% python extract_entityIDs.py hydrogenation_V1_6.jsonld extracted_entityIDs.txt
 
 % Reihenfolge ist dabei python datei - ro crate - output datei
 
