@@ -1,0 +1,175 @@
+[
+    {
+        "@id": "#Reactor_Information",
+        "ex:contextDescribedBy": [
+            "#DigitalObjectID_Reactor",
+            "#LastUsedPurpose_Reactor_BeforeFirstUse",
+            "#OperatingMode_Reactor"
+        ]
+    },
+    {
+        "@id": "#Reactor_Energy",
+        "ex:contextDescribedBy": [
+            "#TemperatureSensor_Energy",
+            "#PressureSensor_Energy",
+            "#SetPressureProfile_Reactor",
+            "#SetTemperatureProfile_Reactor"
+        ]
+    },
+    {
+        "@id": "#Reactor_Time",
+        "ex:contextDescribedBy": [
+            "#LastUsedTime_Reactor",
+            "#LastServicedTime_Reactor",
+            "#ExperimentalProcedure"
+        ]
+    },
+    {
+        "@id": "#Vessel_Information",
+        "ex:contextDescribedBy": [
+            "#DigitalObjectID_Vessel",
+            "#LastUsedPurpose_Vessel_BeforeFirstUse"
+        ]
+    },
+    {
+        "@id": "#Vessel_Energy",
+        "ex:contextDescribedBy": [
+            "#Reactor_Energy"
+        ]
+    },
+    {
+        "@id": "#Vessel_Time",
+        "ex:contextDescribedBy": [
+            "#LastUsedTime_Vessel"
+        ]
+    },
+    {
+        "@id": "#LiquidPhase_Energy",
+        "ex:contextDescribedBy": [
+            "#Vessel_Energy"
+        ]
+    },
+    {
+        "@id": "#LiquidPhase_Space",
+        "ex:contextDescribedBy": [
+            "#Vessel_Space",
+            "#Vessel_Structure",
+            "#MaterialVolume_Reactor",
+            "#InitialVolume_LiquidPhase"
+        ]
+    },
+    {
+        "@id": "#DigitalObjectID_Reactor",
+        "ex:describesContext": [
+            "#Reactor_Information"
+        ]
+    },
+    {
+        "@id": "#LastUsedPurpose_Reactor_BeforeFirstUse",
+        "ex:describesContext": [
+            "#Reactor_Information"
+        ]
+    },
+    {
+        "@id": "#OperatingMode_Reactor",
+        "ex:describesContext": [
+            "#Reactor_Information"
+        ]
+    },
+    {
+        "@id": "#TemperatureSensor_Energy",
+        "ex:describesContext": [
+            "#Reactor_Energy"
+        ]
+    },
+    {
+        "@id": "#PressureSensor_Energy",
+        "ex:describesContext": [
+            "#Reactor_Energy"
+        ]
+    },
+    {
+        "@id": "#SetPressureProfile_Reactor",
+        "ex:describesContext": [
+            "#Reactor_Energy"
+        ]
+    },
+    {
+        "@id": "#SetTemperatureProfile_Reactor",
+        "ex:describesContext": [
+            "#Reactor_Energy"
+        ]
+    },
+    {
+        "@id": "#LastUsedTime_Reactor",
+        "ex:describesContext": [
+            "#Reactor_Time"
+        ]
+    },
+    {
+        "@id": "#LastServicedTime_Reactor",
+        "ex:describesContext": [
+            "#Reactor_Time"
+        ]
+    },
+    {
+        "@id": "#ExperimentalProcedure",
+        "ex:describesContext": [
+            "#Reactor_Time"
+        ]
+    },
+    {
+        "@id": "#DigitalObjectID_Vessel",
+        "ex:describesContext": [
+            "#Vessel_Information"
+        ]
+    },
+    {
+        "@id": "#LastUsedPurpose_Vessel_BeforeFirstUse",
+        "ex:describesContext": [
+            "#Vessel_Information"
+        ]
+    },
+    {
+        "@id": "#Reactor_Energy",
+        "ex:describesContext": [
+            "#Vessel_Energy"
+        ]
+    },
+    {
+        "@id": "#LastUsedTime_Vessel",
+        "ex:describesContext": [
+            "#Vessel_Time"
+        ]
+    },
+    {
+        "@id": "#Vessel_Energy",
+        "ex:describesContext": [
+            "#LiquidPhase_Energy"
+        ]
+    },
+    {
+        "@id": "#Vessel_Space",
+        "ex:describesContext": [
+            "#LiquidPhase_Space"
+        ]
+    },
+    {
+        "@id": "#Vessel_Structure",
+        "ex:describesContext": [
+            "#LiquidPhase_Space"
+        ]
+    },
+    {
+        "@id": "#MaterialVolume_Reactor",
+        "ex:describesContext": [
+            "#LiquidPhase_Space"
+        ]
+    },
+    {
+        "@id": "#InitialVolume_LiquidPhase",
+        "ex:describesContext": [
+            "#LiquidPhase_Space"
+        ]
+    }
+]
