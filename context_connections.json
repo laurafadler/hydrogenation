@@ -4,7 +4,8 @@
         "ex:contextDescribedBy": [
             "#DigitalObjectID_Reactor",
             "#LastUsedPurpose_Reactor_BeforeFirstUse",
-            "#OperatingMode_Reactor"
+            "#OperatingMode_Reactor",
+            "0"
         ]
     },
     {
@@ -21,7 +22,64 @@
         "ex:contextDescribedBy": [
             "#LastUsedTime_Reactor",
             "#LastServicedTime_Reactor",
-            "#ExperimentalProcedure"
+            "#ExperimentalProcedure",
+            "0"
+        ]
+    },
+    {
+        "@id": "#Reactor_Space",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#Reactor_Structure",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#Reactor_Substance",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "0_Information",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "0_Energy",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "0_Time",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "0_Space",
+        "ex:contextDescribedBy": [
+            "0",
+            "#InitialMassFraction_Water_LiquidPhase",
+            "#InitialMassFraction_Solvent_LiquidPhase"
+        ]
+    },
+    {
+        "@id": "0_Structure",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "0_Substance",
+        "ex:contextDescribedBy": [
+            "0"
         ]
     },
     {
@@ -34,19 +92,324 @@
     {
         "@id": "#Vessel_Energy",
         "ex:contextDescribedBy": [
-            "#Reactor_Energy"
+            "#Reactor_Energy",
+            "0"
         ]
     },
     {
         "@id": "#Vessel_Time",
         "ex:contextDescribedBy": [
-            "#LastUsedTime_Vessel"
+            "#LastUsedTime_Vessel",
+            "#Reactor_Time"
+        ]
+    },
+    {
+        "@id": "#Vessel_Space",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#Vessel_Structure",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#Vessel_Substance",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#Stirrer_Information",
+        "ex:contextDescribedBy": [
+            "#DigitalObjectID_Stirrer",
+            "#LastUsedPurpose_Stirrer_BeforeFirstUse"
+        ]
+    },
+    {
+        "@id": "#Stirrer_Energy",
+        "ex:contextDescribedBy": [
+            "#Reactor_Energy",
+            "#SetRPMProfile_Reactor"
+        ]
+    },
+    {
+        "@id": "#Stirrer_Time",
+        "ex:contextDescribedBy": [
+            "#LastUsedTime_Stirrer",
+            "#Reactor_Time"
+        ]
+    },
+    {
+        "@id": "#Stirrer_Space",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#Stirrer_Structure",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#Stirrer_Substance",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#Sparger_Information",
+        "ex:contextDescribedBy": [
+            "#DigitalObjectID_Sparger",
+            "#LastUsedPurpose_Sparger_BeforeFirstUse"
+        ]
+    },
+    {
+        "@id": "#Sparger_Energy",
+        "ex:contextDescribedBy": [
+            "#Reactor_Energy",
+            "#SetPressureProfile_Sparger"
+        ]
+    },
+    {
+        "@id": "#Sparger_Time",
+        "ex:contextDescribedBy": [
+            "#LastUsedTime_Sparger",
+            "#Reactor_Time"
+        ]
+    },
+    {
+        "@id": "#Sparger_Space",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#Sparger_Structure",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#Sparger_Substance",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#Jacket_Information",
+        "ex:contextDescribedBy": [
+            "#DigitalObjectID_Jacket",
+            "#LastUsedPurpose_Jacket_BeforeFirstUse"
+        ]
+    },
+    {
+        "@id": "#Jacket_Energy",
+        "ex:contextDescribedBy": [
+            "#Reactor_Energy",
+            "#SetFlowrateProfile_Jacket"
+        ]
+    },
+    {
+        "@id": "#Jacket_Time",
+        "ex:contextDescribedBy": [
+            "#LastUsedTime_Jacket",
+            "#Reactor_Time"
+        ]
+    },
+    {
+        "@id": "#Jacket_Space",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#Jacket_Structure",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#Jacket_Substance",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#TemperatureSensor_Information",
+        "ex:contextDescribedBy": [
+            "#LastUsedPurpose_TemperatureSensor_BeforeFirstUse",
+            "#DigitalObjectID_TemperatureSensor"
+        ]
+    },
+    {
+        "@id": "#TemperatureSensor_Energy",
+        "ex:contextDescribedBy": [
+            "#Reactor_Energy",
+            "#RecordedTemperature_Reactor"
+        ]
+    },
+    {
+        "@id": "#TemperatureSensor_Time",
+        "ex:contextDescribedBy": [
+            "#Reactor_Time",
+            "#LastUsedTime_TemperatureSensor"
+        ]
+    },
+    {
+        "@id": "#TemperatureSensor_Space",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#TemperatureSensor_Structure",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#TemperatureSensor_Substance",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#PressureSensor_Information",
+        "ex:contextDescribedBy": [
+            "#LastUsedPurpose_PressureSensor_BeforeFirstUse",
+            "#DigitalObjectID_PressureSensor"
+        ]
+    },
+    {
+        "@id": "#PressureSensor_Energy",
+        "ex:contextDescribedBy": [
+            "#Reactor_Energy",
+            "#RecordedPressure_Reactor"
+        ]
+    },
+    {
+        "@id": "#PressureSensor_Time",
+        "ex:contextDescribedBy": [
+            "#Reactor_Time",
+            "#LastUsedTime_PressureSensor"
+        ]
+    },
+    {
+        "@id": "#PressureSensor_Space",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#PressureSensor_Structure",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#PressureSensor_Substance",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#MassFlowMeter_Information",
+        "ex:contextDescribedBy": [
+            "#LastUsedPurpose_MassFlowMeter_BeforeFirstUse",
+            "#DigitalObjectID_MassFlowMeter"
+        ]
+    },
+    {
+        "@id": "#MassFlowMeter_Energy",
+        "ex:contextDescribedBy": [
+            "#Reactor_Energy",
+            "#UsedGasVolume_H2"
+        ]
+    },
+    {
+        "@id": "#MassFlowMeter_Time",
+        "ex:contextDescribedBy": [
+            "#Reactor_Time",
+            "#LastUsedTime_MassFlowMeter"
+        ]
+    },
+    {
+        "@id": "#MassFlowMeter_Space",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#MassFlowMeter_Structure",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#MassFlowMeter_Substance",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#Balance_Information",
+        "ex:contextDescribedBy": [
+            "#LastUsedPurpose_Balance_BeforeFirstUse",
+            "#DigitalObjectID_Balance"
+        ]
+    },
+    {
+        "@id": "#Balance_Energy",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#Balance_Time",
+        "ex:contextDescribedBy": [
+            "#LastUsedTime_Balance",
+            "0"
+        ]
+    },
+    {
+        "@id": "#Balance_Space",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#Balance_Structure",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#Balance_Substance",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#LiquidPhase_Information",
+        "ex:contextDescribedBy": [
+            "0"
         ]
     },
     {
         "@id": "#LiquidPhase_Energy",
         "ex:contextDescribedBy": [
-            "#Vessel_Energy"
+            "#Vessel_Energy",
+            "0"
+        ]
+    },
+    {
+        "@id": "#LiquidPhase_Time",
+        "ex:contextDescribedBy": [
+            "0"
         ]
     },
     {
@@ -56,6 +419,654 @@
             "#Vessel_Structure",
             "#MaterialVolume_Reactor",
             "#InitialVolume_LiquidPhase"
+        ]
+    },
+    {
+        "@id": "#LiquidPhase_Structure",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#LiquidPhase_Substance",
+        "ex:contextDescribedBy": [
+            "#InitialMassFraction_Solvent_LiquidPhase",
+            "#InitialMassFraction_Water_LiquidPhase",
+            "0"
+        ]
+    },
+    {
+        "@id": "#SolidPhase_Information",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#SolidPhase_Energy",
+        "ex:contextDescribedBy": [
+            "#Vessel_Energy",
+            "0"
+        ]
+    },
+    {
+        "@id": "#SolidPhase_Time",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#SolidPhase_Space",
+        "ex:contextDescribedBy": [
+            "#Vessel_Space",
+            "#Vessel_Structure",
+            "#MaterialVolume_Reactor"
+        ]
+    },
+    {
+        "@id": "#SolidPhase_Structure",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#SolidPhase_Substance",
+        "ex:contextDescribedBy": [
+            "#RDY_Energy",
+            "0"
+        ]
+    },
+    {
+        "@id": "#CatalystPhase_Information",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#CatalystPhase_Energy",
+        "ex:contextDescribedBy": [
+            "#Vessel_Energy",
+            "0"
+        ]
+    },
+    {
+        "@id": "#CatalystPhase_Time",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#CatalystPhase_Space",
+        "ex:contextDescribedBy": [
+            "#Vessel_Space",
+            "#Vessel_Structure",
+            "#MaterialVolume_Reactor"
+        ]
+    },
+    {
+        "@id": "#CatalystPhase_Structure",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#CatalystPhase_Substance",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#GasPhase_Information",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#GasPhase_Energy",
+        "ex:contextDescribedBy": [
+            "#Vessel_Energy",
+            "0"
+        ]
+    },
+    {
+        "@id": "#GasPhase_Time",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#GasPhase_Space",
+        "ex:contextDescribedBy": [
+            "#Vessel_Space",
+            "#Vessel_Structure",
+            "#MaterialVolume_Reactor"
+        ]
+    },
+    {
+        "@id": "#GasPhase_Structure",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#GasPhase_Substance",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#DispersedGasPhase_Information",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#DispersedGasPhase_Energy",
+        "ex:contextDescribedBy": [
+            "#Vessel_Energy",
+            "0"
+        ]
+    },
+    {
+        "@id": "#DispersedGasPhase_Time",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#DispersedGasPhase_Space",
+        "ex:contextDescribedBy": [
+            "#Vessel_Space",
+            "#Vessel_Structure",
+            "#MaterialVolume_Reactor"
+        ]
+    },
+    {
+        "@id": "#DispersedGasPhase_Structure",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#DispersedGasPhase_Substance",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#CoolingFluidPhase_Information",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#CoolingFluidPhase_Energy",
+        "ex:contextDescribedBy": [
+            "#Jacket_Energy",
+            "#SetFlowrateProfile_Jacket",
+            "0"
+        ]
+    },
+    {
+        "@id": "#CoolingFluidPhase_Time",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#CoolingFluidPhase_Space",
+        "ex:contextDescribedBy": [
+            "#Jacket_Space",
+            "#Jacket_Structure",
+            "#CoolingFluidStream"
+        ]
+    },
+    {
+        "@id": "#CoolingFluidPhase_Structure",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#CoolingFluidPhase_Substance",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#HydrogenSpargerPhase_Information",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#HydrogenSpargerPhase_Energy",
+        "ex:contextDescribedBy": [
+            "#Sparger_Energy",
+            "0"
+        ]
+    },
+    {
+        "@id": "#HydrogenSpargerPhase_Time",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#HydrogenSpargerPhase_Space",
+        "ex:contextDescribedBy": [
+            "#Sparger_Space",
+            "#Sparger_Structure",
+            "#HydrogenStream"
+        ]
+    },
+    {
+        "@id": "#HydrogenSpargerPhase_Structure",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#HydrogenSpargerPhase_Substance",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#CleaningFluidPhase_Information",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#CleaningFluidPhase_Energy",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#CleaningFluidPhase_Time",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#CleaningFluidPhase_Space",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#CleaningFluidPhase_Structure",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#CleaningFluidPhase_Substance",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#H2_Information",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#H2_Energy",
+        "ex:contextDescribedBy": [
+            "#GasPhase_Energy"
+        ]
+    },
+    {
+        "@id": "#H2_Time",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#H2_Space",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#H2_Structure",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#H2_Substance",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#H3_Information",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#H3_Energy",
+        "ex:contextDescribedBy": [
+            "#DispersedGasPhase_Energy"
+        ]
+    },
+    {
+        "@id": "#H3_Time",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#H3_Space",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#H3_Structure",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#H3_Substance",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#H4_Information",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#H4_Energy",
+        "ex:contextDescribedBy": [
+            "#HydrogenSpargerPhase_Energy"
+        ]
+    },
+    {
+        "@id": "#H4_Time",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#H4_Space",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#H4_Structure",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#H4_Substance",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#H2O_Information",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#H2O_Energy",
+        "ex:contextDescribedBy": [
+            "#LiquidPhase_Energy"
+        ]
+    },
+    {
+        "@id": "#H2O_Time",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#H2O_Space",
+        "ex:contextDescribedBy": [
+            "#LiquidPhase_Space"
+        ]
+    },
+    {
+        "@id": "#H2O_Structure",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#H2O_Substance",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#Solvent_Information",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#Solvent_Energy",
+        "ex:contextDescribedBy": [
+            "#LiquidPhase_Energy"
+        ]
+    },
+    {
+        "@id": "#Solvent_Time",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#Solvent_Space",
+        "ex:contextDescribedBy": [
+            "#LiquidPhase_Space"
+        ]
+    },
+    {
+        "@id": "#Solvent_Structure",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#Solvent_Substance",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#RDY_Information",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#RDY_Energy",
+        "ex:contextDescribedBy": [
+            "#SolidPhase_Energy",
+            "#StartMass_RDY",
+            "#FinalMass_RDY"
+        ]
+    },
+    {
+        "@id": "#RDY_Time",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#RDY_Space",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#RDY_Structure",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#RDY_Substance",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#RDEt_Information",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#RDEt_Energy",
+        "ex:contextDescribedBy": [
+            "#FinalMassRDEt"
+        ]
+    },
+    {
+        "@id": "#RDEt_Time",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#RDEt_Space",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#RDEt_Structure",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#RDEt_Substance",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#Dimer1_Information",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#Dimer1_Energy",
+        "ex:contextDescribedBy": [
+            "#FinalMass_Dimer"
+        ]
+    },
+    {
+        "@id": "#Dimer1_Time",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#Dimer1_Space",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#Dimer1_Structure",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#Dimer1_Substance",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#Dimer2_Information",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#Dimer2_Energy",
+        "ex:contextDescribedBy": [
+            "#FinalMass_Dimer"
+        ]
+    },
+    {
+        "@id": "#Dimer2_Time",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#Dimer2_Space",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#Dimer2_Structure",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#Dimer2_Substance",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#Pt_Information",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#Pt_Energy",
+        "ex:contextDescribedBy": [
+            "#CatalystPhase_Energy"
+        ]
+    },
+    {
+        "@id": "#Pt_Time",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#Pt_Space",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#Pt_Structure",
+        "ex:contextDescribedBy": [
+            "0"
+        ]
+    },
+    {
+        "@id": "#Pt_Substance",
+        "ex:contextDescribedBy": [
+            "0"
         ]
     },
     {
@@ -74,6 +1085,138 @@
         "@id": "#OperatingMode_Reactor",
         "ex:describesContext": [
             "#Reactor_Information"
+        ]
+    },
+    {
+        "@id": "0",
+        "ex:describesContext": [
+            "#Reactor_Information",
+            "#Reactor_Time",
+            "#Reactor_Space",
+            "#Reactor_Structure",
+            "#Reactor_Substance",
+            "0_Information",
+            "0_Energy",
+            "0_Time",
+            "0_Space",
+            "0_Structure",
+            "0_Substance",
+            "#Vessel_Energy",
+            "#Vessel_Space",
+            "#Vessel_Structure",
+            "#Vessel_Substance",
+            "#Stirrer_Space",
+            "#Stirrer_Structure",
+            "#Stirrer_Substance",
+            "#Sparger_Space",
+            "#Sparger_Structure",
+            "#Sparger_Substance",
+            "#Jacket_Space",
+            "#Jacket_Structure",
+            "#Jacket_Substance",
+            "#TemperatureSensor_Space",
+            "#TemperatureSensor_Structure",
+            "#TemperatureSensor_Substance",
+            "#PressureSensor_Space",
+            "#PressureSensor_Structure",
+            "#PressureSensor_Substance",
+            "#MassFlowMeter_Space",
+            "#MassFlowMeter_Structure",
+            "#MassFlowMeter_Substance",
+            "#Balance_Energy",
+            "#Balance_Time",
+            "#Balance_Space",
+            "#Balance_Structure",
+            "#Balance_Substance",
+            "#LiquidPhase_Information",
+            "#LiquidPhase_Energy",
+            "#LiquidPhase_Time",
+            "#LiquidPhase_Structure",
+            "#LiquidPhase_Substance",
+            "#SolidPhase_Information",
+            "#SolidPhase_Energy",
+            "#SolidPhase_Time",
+            "#SolidPhase_Structure",
+            "#SolidPhase_Substance",
+            "#CatalystPhase_Information",
+            "#CatalystPhase_Energy",
+            "#CatalystPhase_Time",
+            "#CatalystPhase_Structure",
+            "#CatalystPhase_Substance",
+            "#GasPhase_Information",
+            "#GasPhase_Energy",
+            "#GasPhase_Time",
+            "#GasPhase_Structure",
+            "#GasPhase_Substance",
+            "#DispersedGasPhase_Information",
+            "#DispersedGasPhase_Energy",
+            "#DispersedGasPhase_Time",
+            "#DispersedGasPhase_Structure",
+            "#DispersedGasPhase_Substance",
+            "#CoolingFluidPhase_Information",
+            "#CoolingFluidPhase_Energy",
+            "#CoolingFluidPhase_Time",
+            "#CoolingFluidPhase_Structure",
+            "#CoolingFluidPhase_Substance",
+            "#HydrogenSpargerPhase_Information",
+            "#HydrogenSpargerPhase_Energy",
+            "#HydrogenSpargerPhase_Time",
+            "#HydrogenSpargerPhase_Structure",
+            "#HydrogenSpargerPhase_Substance",
+            "#CleaningFluidPhase_Information",
+            "#CleaningFluidPhase_Energy",
+            "#CleaningFluidPhase_Time",
+            "#CleaningFluidPhase_Space",
+            "#CleaningFluidPhase_Structure",
+            "#CleaningFluidPhase_Substance",
+            "#H2_Information",
+            "#H2_Time",
+            "#H2_Space",
+            "#H2_Structure",
+            "#H2_Substance",
+            "#H3_Information",
+            "#H3_Time",
+            "#H3_Space",
+            "#H3_Structure",
+            "#H3_Substance",
+            "#H4_Information",
+            "#H4_Time",
+            "#H4_Space",
+            "#H4_Structure",
+            "#H4_Substance",
+            "#H2O_Information",
+            "#H2O_Time",
+            "#H2O_Structure",
+            "#H2O_Substance",
+            "#Solvent_Information",
+            "#Solvent_Time",
+            "#Solvent_Structure",
+            "#Solvent_Substance",
+            "#RDY_Information",
+            "#RDY_Time",
+            "#RDY_Space",
+            "#RDY_Structure",
+            "#RDY_Substance",
+            "#RDEt_Information",
+            "#RDEt_Time",
+            "#RDEt_Space",
+            "#RDEt_Structure",
+            "#RDEt_Substance",
+            "#Dimer1_Information",
+            "#Dimer1_Time",
+            "#Dimer1_Space",
+            "#Dimer1_Structure",
+            "#Dimer1_Substance",
+            "#Dimer2_Information",
+            "#Dimer2_Time",
+            "#Dimer2_Space",
+            "#Dimer2_Structure",
+            "#Dimer2_Substance",
+            "#Pt_Information",
+            "#Pt_Time",
+            "#Pt_Space",
+            "#Pt_Structure",
+            "#Pt_Substance"
         ]
     },
     {
@@ -119,6 +1262,20 @@
         ]
     },
     {
+        "@id": "#InitialMassFraction_Water_LiquidPhase",
+        "ex:describesContext": [
+            "0_Space",
+            "#LiquidPhase_Substance"
+        ]
+    },
+    {
+        "@id": "#InitialMassFraction_Solvent_LiquidPhase",
+        "ex:describesContext": [
+            "0_Space",
+            "#LiquidPhase_Substance"
+        ]
+    },
+    {
         "@id": "#DigitalObjectID_Vessel",
         "ex:describesContext": [
             "#Vessel_Information"
@@ -133,7 +1290,13 @@
     {
         "@id": "#Reactor_Energy",
         "ex:describesContext": [
-            "#Vessel_Energy"
+            "#Vessel_Energy",
+            "#Stirrer_Energy",
+            "#Sparger_Energy",
+            "#Jacket_Energy",
+            "#TemperatureSensor_Energy",
+            "#PressureSensor_Energy",
+            "#MassFlowMeter_Energy"
         ]
     },
     {
@@ -143,33 +1306,347 @@
         ]
     },
     {
+        "@id": "#Reactor_Time",
+        "ex:describesContext": [
+            "#Vessel_Time",
+            "#Stirrer_Time",
+            "#Sparger_Time",
+            "#Jacket_Time",
+            "#TemperatureSensor_Time",
+            "#PressureSensor_Time",
+            "#MassFlowMeter_Time"
+        ]
+    },
+    {
+        "@id": "#DigitalObjectID_Stirrer",
+        "ex:describesContext": [
+            "#Stirrer_Information"
+        ]
+    },
+    {
+        "@id": "#LastUsedPurpose_Stirrer_BeforeFirstUse",
+        "ex:describesContext": [
+            "#Stirrer_Information"
+        ]
+    },
+    {
+        "@id": "#SetRPMProfile_Reactor",
+        "ex:describesContext": [
+            "#Stirrer_Energy"
+        ]
+    },
+    {
+        "@id": "#LastUsedTime_Stirrer",
+        "ex:describesContext": [
+            "#Stirrer_Time"
+        ]
+    },
+    {
+        "@id": "#DigitalObjectID_Sparger",
+        "ex:describesContext": [
+            "#Sparger_Information"
+        ]
+    },
+    {
+        "@id": "#LastUsedPurpose_Sparger_BeforeFirstUse",
+        "ex:describesContext": [
+            "#Sparger_Information"
+        ]
+    },
+    {
+        "@id": "#SetPressureProfile_Sparger",
+        "ex:describesContext": [
+            "#Sparger_Energy"
+        ]
+    },
+    {
+        "@id": "#LastUsedTime_Sparger",
+        "ex:describesContext": [
+            "#Sparger_Time"
+        ]
+    },
+    {
+        "@id": "#DigitalObjectID_Jacket",
+        "ex:describesContext": [
+            "#Jacket_Information"
+        ]
+    },
+    {
+        "@id": "#LastUsedPurpose_Jacket_BeforeFirstUse",
+        "ex:describesContext": [
+            "#Jacket_Information"
+        ]
+    },
+    {
+        "@id": "#SetFlowrateProfile_Jacket",
+        "ex:describesContext": [
+            "#Jacket_Energy",
+            "#CoolingFluidPhase_Energy"
+        ]
+    },
+    {
+        "@id": "#LastUsedTime_Jacket",
+        "ex:describesContext": [
+            "#Jacket_Time"
+        ]
+    },
+    {
+        "@id": "#LastUsedPurpose_TemperatureSensor_BeforeFirstUse",
+        "ex:describesContext": [
+            "#TemperatureSensor_Information"
+        ]
+    },
+    {
+        "@id": "#DigitalObjectID_TemperatureSensor",
+        "ex:describesContext": [
+            "#TemperatureSensor_Information"
+        ]
+    },
+    {
+        "@id": "#RecordedTemperature_Reactor",
+        "ex:describesContext": [
+            "#TemperatureSensor_Energy"
+        ]
+    },
+    {
+        "@id": "#LastUsedTime_TemperatureSensor",
+        "ex:describesContext": [
+            "#TemperatureSensor_Time"
+        ]
+    },
+    {
+        "@id": "#LastUsedPurpose_PressureSensor_BeforeFirstUse",
+        "ex:describesContext": [
+            "#PressureSensor_Information"
+        ]
+    },
+    {
+        "@id": "#DigitalObjectID_PressureSensor",
+        "ex:describesContext": [
+            "#PressureSensor_Information"
+        ]
+    },
+    {
+        "@id": "#RecordedPressure_Reactor",
+        "ex:describesContext": [
+            "#PressureSensor_Energy"
+        ]
+    },
+    {
+        "@id": "#LastUsedTime_PressureSensor",
+        "ex:describesContext": [
+            "#PressureSensor_Time"
+        ]
+    },
+    {
+        "@id": "#LastUsedPurpose_MassFlowMeter_BeforeFirstUse",
+        "ex:describesContext": [
+            "#MassFlowMeter_Information"
+        ]
+    },
+    {
+        "@id": "#DigitalObjectID_MassFlowMeter",
+        "ex:describesContext": [
+            "#MassFlowMeter_Information"
+        ]
+    },
+    {
+        "@id": "#UsedGasVolume_H2",
+        "ex:describesContext": [
+            "#MassFlowMeter_Energy"
+        ]
+    },
+    {
+        "@id": "#LastUsedTime_MassFlowMeter",
+        "ex:describesContext": [
+            "#MassFlowMeter_Time"
+        ]
+    },
+    {
+        "@id": "#LastUsedPurpose_Balance_BeforeFirstUse",
+        "ex:describesContext": [
+            "#Balance_Information"
+        ]
+    },
+    {
+        "@id": "#DigitalObjectID_Balance",
+        "ex:describesContext": [
+            "#Balance_Information"
+        ]
+    },
+    {
+        "@id": "#LastUsedTime_Balance",
+        "ex:describesContext": [
+            "#Balance_Time"
+        ]
+    },
+    {
         "@id": "#Vessel_Energy",
         "ex:describesContext": [
-            "#LiquidPhase_Energy"
+            "#LiquidPhase_Energy",
+            "#SolidPhase_Energy",
+            "#CatalystPhase_Energy",
+            "#GasPhase_Energy",
+            "#DispersedGasPhase_Energy"
         ]
     },
     {
         "@id": "#Vessel_Space",
         "ex:describesContext": [
-            "#LiquidPhase_Space"
+            "#LiquidPhase_Space",
+            "#SolidPhase_Space",
+            "#CatalystPhase_Space",
+            "#GasPhase_Space",
+            "#DispersedGasPhase_Space"
         ]
     },
     {
         "@id": "#Vessel_Structure",
         "ex:describesContext": [
-            "#LiquidPhase_Space"
+            "#LiquidPhase_Space",
+            "#SolidPhase_Space",
+            "#CatalystPhase_Space",
+            "#GasPhase_Space",
+            "#DispersedGasPhase_Space"
         ]
     },
     {
         "@id": "#MaterialVolume_Reactor",
         "ex:describesContext": [
-            "#LiquidPhase_Space"
+            "#LiquidPhase_Space",
+            "#SolidPhase_Space",
+            "#CatalystPhase_Space",
+            "#GasPhase_Space",
+            "#DispersedGasPhase_Space"
         ]
     },
     {
         "@id": "#InitialVolume_LiquidPhase",
         "ex:describesContext": [
             "#LiquidPhase_Space"
+        ]
+    },
+    {
+        "@id": "#RDY_Energy",
+        "ex:describesContext": [
+            "#SolidPhase_Substance"
+        ]
+    },
+    {
+        "@id": "#Jacket_Energy",
+        "ex:describesContext": [
+            "#CoolingFluidPhase_Energy"
+        ]
+    },
+    {
+        "@id": "#Jacket_Space",
+        "ex:describesContext": [
+            "#CoolingFluidPhase_Space"
+        ]
+    },
+    {
+        "@id": "#Jacket_Structure",
+        "ex:describesContext": [
+            "#CoolingFluidPhase_Space"
+        ]
+    },
+    {
+        "@id": "#CoolingFluidStream",
+        "ex:describesContext": [
+            "#CoolingFluidPhase_Space"
+        ]
+    },
+    {
+        "@id": "#Sparger_Energy",
+        "ex:describesContext": [
+            "#HydrogenSpargerPhase_Energy"
+        ]
+    },
+    {
+        "@id": "#Sparger_Space",
+        "ex:describesContext": [
+            "#HydrogenSpargerPhase_Space"
+        ]
+    },
+    {
+        "@id": "#Sparger_Structure",
+        "ex:describesContext": [
+            "#HydrogenSpargerPhase_Space"
+        ]
+    },
+    {
+        "@id": "#HydrogenStream",
+        "ex:describesContext": [
+            "#HydrogenSpargerPhase_Space"
+        ]
+    },
+    {
+        "@id": "#GasPhase_Energy",
+        "ex:describesContext": [
+            "#H2_Energy"
+        ]
+    },
+    {
+        "@id": "#DispersedGasPhase_Energy",
+        "ex:describesContext": [
+            "#H3_Energy"
+        ]
+    },
+    {
+        "@id": "#HydrogenSpargerPhase_Energy",
+        "ex:describesContext": [
+            "#H4_Energy"
+        ]
+    },
+    {
+        "@id": "#LiquidPhase_Energy",
+        "ex:describesContext": [
+            "#H2O_Energy",
+            "#Solvent_Energy"
+        ]
+    },
+    {
+        "@id": "#LiquidPhase_Space",
+        "ex:describesContext": [
+            "#H2O_Space",
+            "#Solvent_Space"
+        ]
+    },
+    {
+        "@id": "#SolidPhase_Energy",
+        "ex:describesContext": [
+            "#RDY_Energy"
+        ]
+    },
+    {
+        "@id": "#StartMass_RDY",
+        "ex:describesContext": [
+            "#RDY_Energy"
+        ]
+    },
+    {
+        "@id": "#FinalMass_RDY",
+        "ex:describesContext": [
+            "#RDY_Energy"
+        ]
+    },
+    {
+        "@id": "#FinalMassRDEt",
+        "ex:describesContext": [
+            "#RDEt_Energy"
+        ]
+    },
+    {
+        "@id": "#FinalMass_Dimer",
+        "ex:describesContext": [
+            "#Dimer1_Energy",
+            "#Dimer2_Energy"
+        ]
+    },
+    {
+        "@id": "#CatalystPhase_Energy",
+        "ex:describesContext": [
+            "#Pt_Energy"
         ]
     }
 ]
