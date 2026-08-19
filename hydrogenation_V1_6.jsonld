@@ -1125,7 +1125,7 @@ hydrogenation_V1_6
                             "@id": "#Participant_R2_1_cat(X)"
                         },
                         {
-                            "@id": "#Participant_R2_1_catx-RDEt"
+                            "@id": "#Participant_R2_1_catX-RDEt"
                         }
                     ],
                 "ex:occursBetweenPhases": 
@@ -1160,7 +1160,7 @@ hydrogenation_V1_6
                             "@id": "#Participant_R2_2_catX-RDEt"
                         },
                         {
-                            "@id": "#Participant_R2_2_dimer"
+                            "@id": "#Participant_R2_2_Dimer1"
                         },
                         {
                             "@id": "#Participant_R2_2_cat(X)"
@@ -1188,13 +1188,13 @@ hydrogenation_V1_6
                 "ex:hasParticipant":
                     [      
                         {
-                            "@id": "#Participant_R_2_REA"
+                            "@id": "#Participant_R3_2_REA"
                         },
                         {
                             "@id": "#Participant_R3_2_catX-RDEt"
                         },
                         {
-                            "@id": "#Participant_R3_2_dimer2"
+                            "@id": "#Participant_R3_2_Dimer2"
                         },
                         {
                             "@id": "#Participant_R3_2_cat(X)"
@@ -2024,7 +2024,7 @@ hydrogenation_V1_6
             },
 
             {
-                "@id": "#Participant_R2_2_dimer",
+                "@id": "#Participant_R2_2_Dimer1",
                 "@type": "ex:ReactionParticipant",
                 "ex:participatesIn": { "@id": "#Reaction2_2" },
                 "ex:hasSpecies":
@@ -2080,7 +2080,7 @@ hydrogenation_V1_6
             },
 
             {
-                "@id": "#Participant_R3_2_dimer",
+                "@id": "#Participant_R3_2_Dimer2",
                 "@type": "ex:ReactionParticipant",
                 "ex:participatesIn": { "@id": "#Reaction3_2" },
                 "ex:hasSpecies":
@@ -3293,17 +3293,17 @@ hydrogenation_V1_6
                         {
                             "@id": "#LiquidPhase_Substance"
                         }
-                    ]
+                    ],
                     "ex:hasAggregateState": "ex:liquid",
                     "ex:hasPhaseComponents":
                     [
                         {
-                            "@id": "#Water"
+                            "@id": "#H2O"
                         },
                         {
                             "@id": "#Solvent"
                         }
-                    ]
+                    ],
                     "ex:isPartIn":
                     [
                         {
@@ -3315,7 +3315,7 @@ hydrogenation_V1_6
                         {
                             "@id": "#RemoveLiquidStream"
                         }
-                    ]
+                    ],
                     "ex:describedBy":
                     [
                         {
@@ -3327,7 +3327,7 @@ hydrogenation_V1_6
                         {
                             "@id": "#InitialVolume_LiquidPhase"
                         }
-                    ]
+                    ],
                     "ex:hasInstances":
                     [
                         {
@@ -3617,7 +3617,7 @@ hydrogenation_V1_6
                         "ex:hasPhaseComponents":
                         [
                             {
-                                "@id": "#Water"
+                                "@id": "#H2O"
                             },
                             {
                                 "@id": "#Solvent"
@@ -5572,7 +5572,7 @@ hydrogenation_V1_6
                     "ex:hasPhaseComponents":
                     [
                         {
-                            "@id": "#Water"
+                            "@id": "#H2O"
                         }
                     ]
                     "ex:isPartIn":
@@ -5882,7 +5882,7 @@ hydrogenation_V1_6
                         "ex:hasPhaseComponents":
                         [
                             {
-                                "@id": "#Water"
+                                "@id": "#H2O"
                             }
                         ]
                         "ex:isPartIn":
@@ -6484,7 +6484,7 @@ hydrogenation_V1_6
                     "ex:hasPhaseComponents":
                     [
                         {
-                            "@id": "#Water"
+                            "@id": "#H2O"
                         }
                     ],
                     "ex:isPartIn":
@@ -6791,7 +6791,7 @@ hydrogenation_V1_6
                         "ex:hasPhaseComponents":
                         [
                             {
-                                "@id": "#Water"
+                                "@id": "#H2O"
                             }
                         ]
                         "ex:isPartIn":
@@ -12719,7 +12719,8 @@ hydrogenation_V1_6
                     {
                         "@id": "#DigitalObjectID_Jacket"
                     },
-                
+                % da die Flowrate überall gleich ist, brauchen wir das nicht in die specif instances zu schreiben
+                % Was sich ändert, ist die Temperatur, die setzen wir aber am Reaktor fest, und basierend darauf wird die Temperatur des CoolingFluids festgelegt, aber das wissen wir nicht wie
                 "ex:hasSetSetpointProfiles": 
                     {
                         "@id": "#SetFlowrateProfile_Jacket"
@@ -13001,7 +13002,7 @@ hydrogenation_V1_6
             {· · · (H) - 1.2b - 1  · · · · · · Jacket - Experiment 1 · · ·
 
                 {
-                    "@id": "#Jacket",
+                    "@id": "#Jacket_Exp1",
                     "@type": "ex:Jacket",
                     "schema:name": "Jacket",
                     "schema:description": "Jacket with which the reactor is cooled",
@@ -13037,10 +13038,6 @@ hydrogenation_V1_6
                             % den process muss ich noch erstellen
                             "@id": "#CleaningProcess_Jacket_BeforeFirstUse"
                         },
-                    "ex:hasSetSetpointProfiles": 
-                        {
-                            "@id": "#SetFlowrateProfile_Jacket_Exp1"
-                        },
                     "ex:hasContainedMaterial": 
                         {
                             "@id": "#CoolingFluidStream_Exp1"
@@ -13051,7 +13048,7 @@ hydrogenation_V1_6
                         },
                     "ex:hasOutgoingStream": 
                         {
-                            "@id": "#HCoolingFluidOutletStream_Exp1"
+                            "@id": "#CoolingFluidOutletStream_Exp1"
                         },
                     "ex:isInstanceOf": 
                         {
@@ -15141,7 +15138,7 @@ hydrogenation_V1_6
 
                 "sosa:implements":
                     {
-                        "@id": "#UsedGasVolumeObservingProcedure"
+                        "@id": "#UsedGasVolume_H2_ObservingProcedure"
                     },
 
                 "ex:location":
@@ -15150,13 +15147,13 @@ hydrogenation_V1_6
                     },
                 "sosa:madeObservation":
                         {
-                            "@id": "#UsedGasVolumeMeasurementTask"
+                            "@id": "#GasVolumeMeasurementTask"
                         },
 
                 "sosa:observes":
                     [
                         {
-                            "@id": "#UsedGasVolume"
+                            "@id": "#UsedGasVolume_H2"
                         }
                     ],
 
@@ -15498,13 +15495,13 @@ hydrogenation_V1_6
 
                     "sosa:madeObservation":
                         {
-                            "@id": "#UsedGasVolumeMeasurementTask_Exp1"
+                            "@id": "#GasVolumeMeasurementTask_Exp1"
                         },
 
                     "sosa:observes":
                         [
                             {
-                                "@id": "#UsedGasVolume_Exp1"
+                                "@id": "#UsedGasVolume_H2_Exp1"
                             }
                         ]
                 }
@@ -15696,13 +15693,13 @@ hydrogenation_V1_6
                             "@id": "#StartMassRDY"
                         },
                         {
-                            "@id": "#FinalMassRDY"
+                            "@id": "#FinalMass_RDY"
                         },
                         {
-                            "@id": "#FinalMassRDEt"
+                            "@id": "#FinalMass_RDEt"
                         },
                         {
-                            "@id": "#FinalMassDimer"
+                            "@id": "#FinalMass_Dimer"
                         }
                     ],
 
@@ -16063,13 +16060,13 @@ hydrogenation_V1_6
                                 "@id": "#StartMassRDY_Exp1"
                             },
                             {
-                                "@id": "#FinalMassRDY_Exp1"
+                                "@id": "#FinalMass_RDY_Exp1"
                             },
                             {
-                                "@id": "#FinalMassRDEt_Exp1"
+                                "@id": "#FinalMass_RDEt_Exp1"
                             },
                             {
-                                "@id": "#FinalMassDimer_Exp1"
+                                "@id": "#FinalMass_Dimer_Exp1"
                             }
                         ]
                 }
@@ -18334,10 +18331,11 @@ hydrogenation_V1_6
                             {
                                 "@id": "#Jacket"
                             },
+                            % da sich das Flowrate Profile in der Jacket nicht ändert, reicht es das hier in der general Task zu verlinken
                             "ex:hasSetProfile":
                             [
                                 {
-                                    "@id": "#CoolingFluidFlowrateProfile"
+                                    "@id": "#SetFlowrateProfile_Jacket"
                                 },
                                 {
                                     "@id": "#ReactorTemperatureProfile"
@@ -18405,9 +18403,6 @@ hydrogenation_V1_6
                                     },
                                 "ex:hasSetProfile":
                                     [
-                                        {
-                                            "@id": "#CoolingFluidFlowrateProfile_Exp1"
-                                        },
                                         {
                                             "@id": "#ReactorTemperatureProfile_Exp1"
                                         }
@@ -19019,7 +19014,7 @@ hydrogenation_V1_6
             {· · · (J) - 5.2a  · · · · · · Weighing: Final Mass RDY: General · · ·
 
                 {
-                    "@id": "#WeighingTask_FinalMassRDY",
+                    "@id": "#WeighingTask_FinalMass_RDY",
                     "@type": "ex:Task",
                     "schema:name": "Weighing",
                     "schema:description": "Task for measuring the final mass of RDY using a balance",
@@ -19043,31 +19038,31 @@ hydrogenation_V1_6
                     "ex:hasInstance":
                     [
                         {
-                            "@id": "#WeighingTask_FinalMassRDY_Exp1"
+                            "@id": "#WeighingTask_FinalMass_RDY_Exp1"
                         },
                         {
-                            "@id": "#WeighingTask_FinalMassRDY_Exp2"
+                            "@id": "#WeighingTask_FinalMass_RDY_Exp2"
                         },
                         {
-                            "@id": "#WeighingTask_FinalMassRDY_Exp3"
+                            "@id": "#WeighingTask_FinalMass_RDY_Exp3"
                         },
                         {
-                            "@id": "#WeighingTask_FinalMassRDY_Exp4"
+                            "@id": "#WeighingTask_FinalMass_RDY_Exp4"
                         },
                         {
-                            "@id": "#WeighingTask_FinalMassRDY_Exp5"
+                            "@id": "#WeighingTask_FinalMass_RDY_Exp5"
                         },
                         {
-                            "@id": "#WeighingTask_FinalMassRDY_Exp6"
+                            "@id": "#WeighingTask_FinalMass_RDY_Exp6"
                         },
                         {
-                            "@id": "#WeighingTask_FinalMassRDY_Exp7"
+                            "@id": "#WeighingTask_FinalMass_RDY_Exp7"
                         },
                         {
-                            "@id": "#WeighingTask_FinalMassRDY_Exp8"
+                            "@id": "#WeighingTask_FinalMass_RDY_Exp8"
                         },
                         {
-                            "@id": "#WeighingTask_FinalMassRDY_Exp9"
+                            "@id": "#WeighingTask_FinalMass_RDY_Exp9"
                         }
                     ]
                 },
