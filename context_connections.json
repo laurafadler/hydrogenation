@@ -270,8 +270,7 @@
     {
         "@id": "#CoolingFluidPhase_Energy",
         "ex:contextDescribedBy": [
-            "#Jacket_Energy",
-            "#SetFlowrateProfile_Jacket"
+            "#Jacket_Energy"
         ]
     },
     {
@@ -535,8 +534,7 @@
     {
         "@id": "#SetFlowrateProfile_Jacket",
         "ex:describesContext": [
-            "#Jacket_Energy",
-            "#CoolingFluidPhase_Energy"
+            "#Jacket_Energy"
         ]
     },
     {
