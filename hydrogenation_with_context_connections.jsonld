@@ -3437,8 +3437,11 @@ hydrogenation_V1_6
                             {
                                 "@id": "#LiquidPhase_Energy_Exp9"
                             }
+                        ],
+                        "ex:contextDescribedBy": [
+                        "#Vessel_Energy"
                         ]
-                    },
+},
 
                     {
                         "@id": "#LiquidPhase_Time",
@@ -3509,8 +3512,14 @@ hydrogenation_V1_6
                             {
                                 "@id": "#LiquidPhase_Space_Exp9"
                             }
+                        ],
+                        "ex:contextDescribedBy": [
+                        "#Vessel_Space",
+                        "#Vessel_Structure",
+                        "#MaterialVolume_Reactor",
+                        "#InitialVolume_LiquidPhase"
                         ]
-                    },
+},
 
                     {
                         "@id": "#LiquidPhase_Structure",
@@ -3581,8 +3590,12 @@ hydrogenation_V1_6
                             {
                                 "@id": "#LiquidPhase_Substance_Exp9"
                             }
+                        ],
+                        "ex:contextDescribedBy": [
+                        "#InitialMassFraction_Solvent_LiquidPhase",
+                        "#InitialMassFraction_Water_LiquidPhase"
                         ]
-                    },
+},
 
 
                 · · · (G2) - 1a - Context  · · · · · · Context of Liquid Phase: General · · ·},
@@ -3902,8 +3915,11 @@ hydrogenation_V1_6
                             {
                                 "@id": "#SolidPhase_Energy_Exp9"
                             }
+                        ],
+                        "ex:contextDescribedBy": [
+                        "#Vessel_Energy"
                         ]
-                    },
+},
 
                     {
                         "@id": "#SolidPhase_Time",
@@ -3974,8 +3990,13 @@ hydrogenation_V1_6
                             {
                                 "@id": "#SolidPhase_Space_Exp9"
                             }
+                        ],
+                        "ex:contextDescribedBy": [
+                        "#Vessel_Space",
+                        "#Vessel_Structure",
+                        "#MaterialVolume_Reactor"
                         ]
-                    },
+},
 
                     {
                         "@id": "#SolidPhase_Structure",
@@ -4046,8 +4067,11 @@ hydrogenation_V1_6
                             {
                                 "@id": "#SolidPhase_Substance_Exp9"
                             }
+                        ],
+                        "ex:contextDescribedBy": [
+                        "#RDY_Energy"
                         ]
-                    },
+},
 
 
                 · · · (G2) - 2a - Context  · · · · · · Context of Solid Phase: General · · ·},
@@ -4358,8 +4382,11 @@ hydrogenation_V1_6
                             {
                                 "@id": "#CatalystPhase_Energy_Exp9"
                             }
+                        ],
+                        "ex:contextDescribedBy": [
+                        "#Vessel_Energy"
                         ]
-                    },
+},
 
                     {
                         "@id": "#CatalystPhase_Time",
@@ -4430,8 +4457,13 @@ hydrogenation_V1_6
                             {
                                 "@id": "#CatalystPhase_Space_Exp9"
                             }
+                        ],
+                        "ex:contextDescribedBy": [
+                        "#Vessel_Space",
+                        "#Vessel_Structure",
+                        "#MaterialVolume_Reactor"
                         ]
-                    },
+},
 
                     {
                         "@id": "#CatalystPhase_Structure",
@@ -4808,8 +4840,11 @@ hydrogenation_V1_6
                             {
                                 "@id": "#GasPhase_Energy_Exp9"
                             }
+                        ],
+                        "ex:contextDescribedBy": [
+                        "#Vessel_Energy"
                         ]
-                    },
+},
 
                     {
                         "@id": "#GasPhase_Time",
@@ -4880,8 +4915,13 @@ hydrogenation_V1_6
                             {
                                 "@id": "#GasPhase_Space_Exp9"
                             }
+                        ],
+                        "ex:contextDescribedBy": [
+                        "#Vessel_Space",
+                        "#Vessel_Structure",
+                        "#MaterialVolume_Reactor"
                         ]
-                    },
+},
 
                     {
                         "@id": "#GasPhase_Structure",
@@ -5252,8 +5292,11 @@ hydrogenation_V1_6
                             {
                                 "@id": "#DispersedGasPhase_Energy_Exp9"
                             }
+                        ],
+                        "ex:contextDescribedBy": [
+                        "#Vessel_Energy"
                         ]
-                    },
+},
 
                     {
                         "@id": "#DispersedGasPhase_Time",
@@ -5324,8 +5367,13 @@ hydrogenation_V1_6
                             {
                                 "@id": "#DispersedGasPhase_Space_Exp9"
                             }
+                        ],
+                        "ex:contextDescribedBy": [
+                        "#Vessel_Space",
+                        "#Vessel_Structure",
+                        "#MaterialVolume_Reactor"
                         ]
-                    },
+},
 
                     {
                         "@id": "#DispersedGasPhase_Structure",
@@ -5702,8 +5750,11 @@ hydrogenation_V1_6
                             {
                                 "@id": "#CoolingFluidPhase_Energy_Exp9"
                             }
+                        ],
+                        "ex:contextDescribedBy": [
+                        "#Jacket_Energy"
                         ]
-                    },
+},
 
                     {
                         "@id": "#CoolingFluidPhase_Time",
@@ -5774,8 +5825,13 @@ hydrogenation_V1_6
                             {
                                 "@id": "#CoolingFluidPhase_Space_Exp9"
                             }
+                        ],
+                        "ex:contextDescribedBy": [
+                        "#Jacket_Space",
+                        "#Jacket_Structure",
+                        "#CoolingFluidStream"
                         ]
-                    },
+},
 
                     {
                         "@id": "#CoolingFluidPhase_Structure",
@@ -6158,8 +6214,11 @@ hydrogenation_V1_6
                             {
                                 "@id": "#HydrogenSpargerPhase_Energy_Exp9"
                             }
+                        ],
+                        "ex:contextDescribedBy": [
+                        "#Sparger_Energy"
                         ]
-                    },
+},
 
                     {
                         "@id": "#HydrogenSpargerPhase_Time",
@@ -6230,8 +6289,13 @@ hydrogenation_V1_6
                             {
                                 "@id": "#HydrogenSpargerPhase_Space_Exp9"
                             }
+                        ],
+                        "ex:contextDescribedBy": [
+                        "#Sparger_Space",
+                        "#Sparger_Structure",
+                        "#HydrogenStream"
                         ]
-                    },
+},
 
                     {
                         "@id": "#HydrogenSpargerPhase_Structure",
@@ -7161,8 +7225,11 @@ hydrogenation_V1_6
                                 {
                                     "@id": "#H2_Energy_Exp9"
                                 }
+                            ],
+                            "ex:contextDescribedBy": [
+                            "#GasPhase_Energy"
                             ]
-                    },
+},
 
                     {
                         "@id": "#H2_Time",
@@ -7599,8 +7666,11 @@ hydrogenation_V1_6
                                 {
                                     "@id": "#H2O_Energy_Exp9"
                                 }
+                            ],
+                            "ex:contextDescribedBy": [
+                            "#LiquidPhase_Energy"
                             ]
-                    },
+},
 
                     {
                         "@id": "#H2O_Time",
@@ -7671,8 +7741,11 @@ hydrogenation_V1_6
                                 {
                                     "@id": "#H2O_Space_Exp9"
                                 }
+                            ],
+                            "ex:contextDescribedBy": [
+                            "#LiquidPhase_Space"
                             ]
-                    },
+},
 
                     {
                         "@id": "#H2O_Structure",
@@ -8036,8 +8109,11 @@ hydrogenation_V1_6
                                 {
                                     "@id": "#Solvent_Energy_Exp9"
                                 }
+                            ],
+                            "ex:contextDescribedBy": [
+                            "#LiquidPhase_Energy"
                             ]
-                    },
+},
 
                     {
                         "@id": "#Solvent_Time",
@@ -8108,8 +8184,11 @@ hydrogenation_V1_6
                                 {
                                     "@id": "#Solvent_Space_Exp9"
                                 }
+                            ],
+                            "ex:contextDescribedBy": [
+                            "#LiquidPhase_Space"
                             ]
-                    },
+},
 
                     {
                         "@id": "#Solvent_Structure",
@@ -8474,8 +8553,13 @@ hydrogenation_V1_6
                                 {
                                     "@id": "#RDY_Energy_Exp9"
                                 }
+                            ],
+                            "ex:contextDescribedBy": [
+                            "#SolidPhase_Energy",
+                            "#StartMass_RDY",
+                            "#FinalMass_RDY"
                             ]
-                    },
+},
 
                     {
                         "@id": "#RDY_Time",
@@ -10226,8 +10310,11 @@ hydrogenation_V1_6
                                 {
                                     "@id": "#RDEt_Energy_Exp9"
                                 }
+                            ],
+                            "ex:contextDescribedBy": [
+                            "#FinalMassRDEt"
                             ]
-                    },
+},
 
                     {
                         "@id": "#RDEt_Time",
@@ -10664,8 +10751,11 @@ hydrogenation_V1_6
                                 {
                                     "@id": "#Dimer1_Energy_Exp9"
                                 }
+                            ],
+                            "ex:contextDescribedBy": [
+                            "#FinalMass_Dimer"
                             ]
-                    },
+},
 
                     {
                         "@id": "#Dimer1_Time",
@@ -11102,8 +11192,11 @@ hydrogenation_V1_6
                                 {
                                     "@id": "#Dimer2_Energy_Exp9"
                                 }
+                            ],
+                            "ex:contextDescribedBy": [
+                            "#FinalMass_Dimer"
                             ]
-                    },
+},
 
                     {
                         "@id": "#Dimer2_Time",
@@ -11539,8 +11632,11 @@ hydrogenation_V1_6
                                 {
                                     "@id": "#Pt_Energy_Exp9"
                                 }
+                            ],
+                            "ex:contextDescribedBy": [
+                            "#CatalystPhase_Energy"
                             ]
-                    },
+},
 
                     {
                         "@id": "#Pt_Time",
@@ -11978,8 +12074,13 @@ hydrogenation_V1_6
                             { "@id": "#Reactor_Information_Exp7" },
                             { "@id": "#Reactor_Information_Exp8" },
                             { "@id": "#Reactor_Information_Exp9" }
+                        ],
+                        "ex:contextDescribedBy": [
+                        "#DigitalObjectID_Reactor",
+                        "#LastUsedPurpose_Reactor_BeforeFirstUse",
+                        "#OperatingMode_Reactor"
                         ]
-                },
+},
 
                 {
                     "@id": "#Reactor_Energy",
@@ -11996,8 +12097,14 @@ hydrogenation_V1_6
                             { "@id": "#Reactor_Energy_Exp7" },
                             { "@id": "#Reactor_Energy_Exp8" },
                             { "@id": "#Reactor_Energy_Exp9" }
+                        ],
+                        "ex:contextDescribedBy": [
+                        "#TemperatureSensor_Energy",
+                        "#PressureSensor_Energy",
+                        "#SetPressureProfile_Reactor",
+                        "#SetTemperatureProfile_Reactor"
                         ]
-                },
+},
 
                 {
                     "@id": "#Reactor_Time",
@@ -12014,8 +12121,13 @@ hydrogenation_V1_6
                             { "@id": "#Reactor_Time_Exp7" },
                             { "@id": "#Reactor_Time_Exp8" },
                             { "@id": "#Reactor_Time_Exp9" }
+                        ],
+                        "ex:contextDescribedBy": [
+                        "#LastUsedTime_Reactor",
+                        "#LastServicedTime_Reactor",
+                        "#ExperimentalProcedure"
                         ]
-                },
+},
 
                 {
                     "@id": "#Reactor_Space",
@@ -12357,8 +12469,12 @@ hydrogenation_V1_6
                             {
                                 "@id": "#Vessel_Information_Exp9"
                             }
+                        ],
+                        "ex:contextDescribedBy": [
+                        "#DigitalObjectID_Vessel",
+                        "#LastUsedPurpose_Vessel_BeforeFirstUse"
                         ]
-                },
+},
 
                 {
                     "@id": "#Vessel_Energy",
@@ -12393,8 +12509,11 @@ hydrogenation_V1_6
                             {
                                 "@id": "#Vessel_Energy_Exp9"
                             }
+                        ],
+                        "ex:contextDescribedBy": [
+                        "#Reactor_Energy"
                         ]
-                },
+},
 
                 {
                     "@id": "#Vessel_Time",
@@ -12429,8 +12548,12 @@ hydrogenation_V1_6
                             {
                                 "@id": "#Vessel_Time_Exp9"
                             }
+                        ],
+                        "ex:contextDescribedBy": [
+                        "#LastUsedTime_Vessel",
+                        "#Reactor_Time"
                         ]
-                },
+},
 
                 {
                     "@id": "#Vessel_Space",
@@ -12816,8 +12939,12 @@ hydrogenation_V1_6
                             {
                                 "@id": "#Jacket_Information_Exp9"
                             }
+                        ],
+                        "ex:contextDescribedBy": [
+                        "#DigitalObjectID_Jacket",
+                        "#LastUsedPurpose_Jacket_BeforeFirstUse"
                         ]
-                },
+},
 
                 {
                     "@id": "#Jacket_Energy",
@@ -12852,8 +12979,12 @@ hydrogenation_V1_6
                             {
                                 "@id": "#Jacket_Energy_Exp9"
                             }
+                        ],
+                        "ex:contextDescribedBy": [
+                        "#Reactor_Energy",
+                        "#SetFlowrateProfile_Jacket"
                         ]
-                },
+},
 
                 {
                     "@id": "#Jacket_Time",
@@ -12888,8 +13019,12 @@ hydrogenation_V1_6
                             {
                                 "@id": "#Jacket_Time_Exp9"
                             }
+                        ],
+                        "ex:contextDescribedBy": [
+                        "#LastUsedTime_Jacket",
+                        "#Reactor_Time"
                         ]
-                },
+},
 
                 {
                     "@id": "#Jacket_Space",
@@ -13276,8 +13411,12 @@ hydrogenation_V1_6
                             {
                                 "@id": "#Sparger_Information_Exp9"
                             }
+                        ],
+                        "ex:contextDescribedBy": [
+                        "#DigitalObjectID_Sparger",
+                        "#LastUsedPurpose_Sparger_BeforeFirstUse"
                         ]
-                },
+},
 
                 {
                     "@id": "#Sparger_Energy",
@@ -13312,8 +13451,12 @@ hydrogenation_V1_6
                             {
                                 "@id": "#Sparger_Energy_Exp9"
                             }
+                        ],
+                        "ex:contextDescribedBy": [
+                        "#Reactor_Energy",
+                        "#SetPressureProfile_Sparger"
                         ]
-                },
+},
 
                 {
                     "@id": "#Sparger_Time",
@@ -13348,8 +13491,12 @@ hydrogenation_V1_6
                             {
                                 "@id": "#Sparger_Time_Exp9"
                             }
+                        ],
+                        "ex:contextDescribedBy": [
+                        "#LastUsedTime_Sparger",
+                        "#Reactor_Time"
                         ]
-                },
+},
 
                 {
                     "@id": "#Sparger_Space",
@@ -13722,8 +13869,12 @@ hydrogenation_V1_6
                             {
                                 "@id": "#Stirrer_Information_Exp9"
                             }
+                        ],
+                        "ex:contextDescribedBy": [
+                        "#DigitalObjectID_Stirrer",
+                        "#LastUsedPurpose_Stirrer_BeforeFirstUse"
                         ]
-                },
+},
 
                 {
                     "@id": "#Stirrer_Energy",
@@ -13758,8 +13909,12 @@ hydrogenation_V1_6
                             {
                                 "@id": "#Stirrer_Energy_Exp9"
                             }
+                        ],
+                        "ex:contextDescribedBy": [
+                        "#Reactor_Energy",
+                        "#SetRPMProfile_Reactor"
                         ]
-                },
+},
 
                 {
                     "@id": "#Stirrer_Time",
@@ -13794,8 +13949,12 @@ hydrogenation_V1_6
                             {
                                 "@id": "#Stirrer_Time_Exp9"
                             }
+                        ],
+                        "ex:contextDescribedBy": [
+                        "#LastUsedTime_Stirrer",
+                        "#Reactor_Time"
                         ]
-                },
+},
 
                 {
                     "@id": "#Stirrer_Space",
@@ -14181,8 +14340,12 @@ hydrogenation_V1_6
                             {
                                 "@id": "#TemperatureSensor_Information_Exp9"
                             }
+                        ],
+                        "ex:contextDescribedBy": [
+                        "#LastUsedPurpose_TemperatureSensor_BeforeFirstUse",
+                        "#DigitalObjectID_TemperatureSensor"
                         ]
-                },
+},
 
                 {
                     "@id": "#TemperatureSensor_Energy",
@@ -14223,8 +14386,12 @@ hydrogenation_V1_6
                             {
                                 "@id": "#TemperatureSensor_Energy_Exp9"
                             }
+                        ],
+                        "ex:contextDescribedBy": [
+                        "#Reactor_Energy",
+                        "#RecordedTemperature_Reactor"
                         ]
-                },
+},
 
                 {
                     "@id": "#TemperatureSensor_Time",
@@ -14265,8 +14432,12 @@ hydrogenation_V1_6
                             {
                                 "@id": "#TemperatureSensor_Time_Exp9"
                             }
+                        ],
+                        "ex:contextDescribedBy": [
+                        "#Reactor_Time",
+                        "#LastUsedTime_TemperatureSensor"
                         ]
-                },
+},
 
                 {
                     "@id": "#TemperatureSensor_Space",
@@ -14710,8 +14881,12 @@ hydrogenation_V1_6
                             {
                                 "@id": "#PressureSensor_Information_Exp9"
                             }
+                        ],
+                        "ex:contextDescribedBy": [
+                        "#LastUsedPurpose_PressureSensor_BeforeFirstUse",
+                        "#DigitalObjectID_PressureSensor"
                         ]
-                },
+},
 
                 {
                     "@id": "#PressureSensor_Energy",
@@ -14752,8 +14927,12 @@ hydrogenation_V1_6
                             {
                                 "@id": "#PressureSensor_Energy_Exp9"
                             }
+                        ],
+                        "ex:contextDescribedBy": [
+                        "#Reactor_Energy",
+                        "#RecordedPressure_Reactor"
                         ]
-                },
+},
 
                 {
                     "@id": "#PressureSensor_Time",
@@ -14794,8 +14973,12 @@ hydrogenation_V1_6
                             {
                                 "@id": "#PressureSensor_Time_Exp9"
                             }
+                        ],
+                        "ex:contextDescribedBy": [
+                        "#Reactor_Time",
+                        "#LastUsedTime_PressureSensor"
                         ]
-                },
+},
 
                 {
                     "@id": "#PressureSensor_Space",
@@ -15236,8 +15419,12 @@ hydrogenation_V1_6
                             {
                                 "@id": "#MassFlowMeter_Information_Exp9"
                             }
+                        ],
+                        "ex:contextDescribedBy": [
+                        "#LastUsedPurpose_MassFlowMeter_BeforeFirstUse",
+                        "#DigitalObjectID_MassFlowMeter"
                         ]
-                },
+},
 
                 {
                     "@id": "#MassFlowMeter_Energy",
@@ -15278,8 +15465,12 @@ hydrogenation_V1_6
                             {
                                 "@id": "#MassFlowMeter_Energy_Exp9"
                             }
+                        ],
+                        "ex:contextDescribedBy": [
+                        "#Reactor_Energy",
+                        "#UsedGasVolume_H2"
                         ]
-                },
+},
 
                 {
                     "@id": "#MassFlowMeter_Time",
@@ -15320,8 +15511,12 @@ hydrogenation_V1_6
                             {
                                 "@id": "#MassFlowMeter_Time_Exp9"
                             }
+                        ],
+                        "ex:contextDescribedBy": [
+                        "#Reactor_Time",
+                        "#LastUsedTime_MassFlowMeter"
                         ]
-                },
+},
 
                 {
                     "@id": "#MassFlowMeter_Space",
@@ -15782,8 +15977,12 @@ hydrogenation_V1_6
                             {
                                 "@id": "#Balance_Information_Exp9"
                             }
+                        ],
+                        "ex:contextDescribedBy": [
+                        "#LastUsedPurpose_Balance_BeforeFirstUse",
+                        "#DigitalObjectID_Balance"
                         ]
-                },
+},
 
                 {
                     "@id": "#Balance_Energy",
@@ -15866,8 +16065,11 @@ hydrogenation_V1_6
                             {
                                 "@id": "#Balance_Time_Exp9"
                             }
+                        ],
+                        "ex:contextDescribedBy": [
+                        "#LastUsedTime_Balance"
                         ]
-                },
+},
 
                 {
                     "@id": "#Balance_Space",

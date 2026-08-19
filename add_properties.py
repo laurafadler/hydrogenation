@@ -7,7 +7,7 @@ from pathlib import Path
 # ============================================================
 
 MAIN_FILE = Path("hydrogenation_V1_6.jsonld")
-CONNECTION_FILE = Path("context_connections.jsonld")
+CONNECTION_FILE = Path("context_connections.json")
 OUTPUT_FILE = Path("hydrogenation_with_context_connections.jsonld")
 
 

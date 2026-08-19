@@ -55,18 +55,20 @@ for _, row in df.iterrows():
         # Context-ID erzeugen
         context_id = f"{entity}_{context_type}"
 
-        # Context anlegen, falls noch nicht vorhanden
+        # Context anlegen
         if context_id not in contexts:
             contexts[context_id] = {
                 "@id": context_id,
                 "ex:contextDescribedBy": []
             }
 
-        # Entity als beschreibende Entity hinzufügen
-        if described_entity not in contexts[context_id]["ex:contextDescribedBy"]:
-            contexts[context_id]["ex:contextDescribedBy"].append(
-                described_entity
-            )
+        # Entity als JSON-Objekt hinzufügen
+        reference = {
+            "@id": described_entity
+        }
+
+        if reference not in contexts[context_id]["ex:contextDescribedBy"]:
+            contexts[context_id]["ex:contextDescribedBy"].append(reference)
 
 
 # --------------------------------------------------
@@ -77,7 +79,9 @@ entities = {}
 
 for context_id, context_data in contexts.items():
 
-    for described_entity in context_data["ex:contextDescribedBy"]:
+    for reference in context_data["ex:contextDescribedBy"]:
+
+        described_entity = reference["@id"]
 
         if described_entity not in entities:
             entities[described_entity] = {
@@ -85,9 +89,13 @@ for context_id, context_data in contexts.items():
                 "ex:describesContext": []
             }
 
-        if context_id not in entities[described_entity]["ex:describesContext"]:
+        context_reference = {
+            "@id": context_id
+        }
+
+        if context_reference not in entities[described_entity]["ex:describesContext"]:
             entities[described_entity]["ex:describesContext"].append(
-                context_id
+                context_reference
             )
 
 
@@ -97,10 +105,7 @@ for context_id, context_data in contexts.items():
 
 output = []
 
-# Context Entities
 output.extend(contexts.values())
-
-# Describing Entities
 output.extend(entities.values())
 
 
@@ -109,6 +114,11 @@ output.extend(entities.values())
 # --------------------------------------------------
 
 with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-    json.dump(output, f, indent=4, ensure_ascii=False)
+    json.dump(
+        output,
+        f,
+        indent=4,
+        ensure_ascii=False
+    )
 
 print(f"JSON erfolgreich erstellt: {OUTPUT_FILE}")
