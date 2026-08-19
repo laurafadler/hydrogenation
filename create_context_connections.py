@@ -33,9 +33,9 @@ contexts = {}
 
 for _, row in df.iterrows():
 
-    entity = row.iloc[0]
+    entity = row["Entity"]
 
-    if pd.isna(entity):
+    if pd.isna(entity) or entity == 0:
         continue
 
     entity = str(entity).strip()
@@ -44,7 +44,7 @@ for _, row in df.iterrows():
 
         value = row[context_type]
 
-        if pd.isna(value):
+        if pd.isna(value) or value == 0:
             continue
 
         described_entity = str(value).strip()
