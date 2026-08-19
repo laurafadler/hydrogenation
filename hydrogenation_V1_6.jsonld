@@ -5533,7 +5533,7 @@ hydrogenation_V1_6
 
         {· · · (G2) - 6  · · · · · · Cooling Fluid Phase · · ·
 
-{· · · (G2) - 6a  · · · · · · Cooling Fluid Phase: General · · ·
+            {· · · (G2) - 6a  · · · · · · Cooling Fluid Phase: General · · ·
 
                 {
                     "@id": "#CoolingFluidPhase",
@@ -12113,7 +12113,7 @@ hydrogenation_V1_6
                         },
                     "ex:lastUsedPurpose": 
                         {
-                            "@id": "#CleaningProcedure_Reactor_BeforeFirstUse"
+                            "@id": "#LastUsedPurpose_Reactor_BeforeFirstUse"
                         },
                     "ex:hasSetPointProfiles": 
                         [
@@ -21090,6 +21090,50 @@ hydrogenation_V1_6
         "rdf:value": "id_jacket789"
     },
 
+    {
+        "@id": "#DigitalObjectID_TemperatureSensor",
+        "@type": "ex:DigitalObjectID",
+        "schema:name": "DigitalObjectID Temperature Sensor",
+        "ex:describesContext":
+            {
+                "@id": "#TemperatureSensor_Information"
+            },
+        "rdf:value": "id_temperatureSensor123"
+    },
+
+    {
+        "@id": "#DigitalObjectID_PressureSensor",
+        "@type": "ex:DigitalObjectID",
+        "schema:name": "DigitalObjectID Pressure Sensor",
+        "ex:describesContext":
+            {
+                "@id": "#PressureSensor_Information"
+            },
+        "rdf:value": "id_pressureSensor123"
+    },
+
+    {
+        "@id": "#DigitalObjectID_MassFlowMeter",
+        "@type": "ex:DigitalObjectID",
+        "schema:name": "DigitalObjectID Mass Flow Meter",
+        "ex:describesContext":
+            {
+                "@id": "#MassFlowMeter_Information"
+            },
+        "rdf:value": "id_massFlowMeter123"
+    },
+
+    {
+        "@id": "#DigitalObjectID_Balance",
+        "@type": "ex:DigitalObjectID",
+        "schema:name": "DigitalObjectID Balance",
+        "ex:describesContext":
+            {
+                "@id": "#Balance_Information"
+            },
+        "rdf:value": "id_balance123"
+    },
+
 ==== (M) Property Values — END ==============================================================================================================================}
 
 
@@ -21253,6 +21297,111 @@ hydrogenation_V1_6
         · · · (N)  · · · · · · Last Used Time  — END · · ·},
 
     · · · (N)  · · · · · · Jacket  — END · · ·},
+
+
+    {· · · (N)  · · · · · · TemperatureSensor · · ·
+
+        {· · · (N)  · · · · · · Last Used Time · · ·
+
+            {
+                "@id": "#LastUsedTime_TemperatureSensor_BeforeFirstUse",
+                "@type": "time:Instance",
+                "schema:name": "LastUsedTime TemperatureSensor",
+                "schema:description": "The time of when the temperature sensor was used last",
+                "ex:describesContext":
+                    {
+                        "@id": "#TemperatureSensor_Time_Exp1"
+                    },
+                "rdf:value":
+                    {
+                        "@value": "2026-07-28T10:00:00Z",
+                        "@type": "xsd:dateTimeStamp"
+                    }
+            },
+
+        · · · (N)  · · · · · · Last Used Time  — END · · ·},
+
+    · · · (N)  · · · · · · TemperatureSensor  — END · · ·},
+
+
+    {· · · (N)  · · · · · · PressureSensor · · ·
+
+            {· · · (N)  · · · · · · Last Used Time · · ·
+
+                {
+                    "@id": "#LastUsedTime_PressureSensor",
+                    "@type": "time:Instance",
+                    "schema:name": "LastUsedTime PressureSensor",
+                    "schema:description": "The time of when the pressure sensor was used last",
+                    "ex:describesContext":
+                        {
+                            "@id": "#PressureSensor_Time"
+                        },
+                    "rdf:value":
+                        {
+                            "@value": "2026-07-28T10:00:00Z",
+                            "@type": "xsd:dateTimeStamp"
+                        }
+                },
+
+            · · · (N)  · · · · · · Last Used Time  — END · · ·},
+
+        · · · (N)  · · · · · · PressureSensor  — END · · ·},
+
+
+    {· · · (N)  · · · · · · MassFlowMeter · · ·
+
+            {· · · (N)  · · · · · · Last Used Time · · ·
+
+                {
+                    "@id": "#LastUsedTime_MassFlowMeter",
+                    "@type": "time:Instance",
+                    "schema:name": "LastUsedTime MassFlowMeter",
+                    "schema:description": "The time of when the mass flow meter was used last",
+                    "ex:describesContext":
+                        {
+                            "@id": "#MassFlowMeter_Time"
+                        },
+                    "rdf:value":
+                        {
+                            "@value": "2026-07-28T10:00:00Z",
+                            "@type": "xsd:dateTimeStamp"
+                        }
+                },
+
+            · · · (N)  · · · · · · Last Used Time  — END · · ·},
+
+        · · · (N)  · · · · · · MassFlowMeter  — END · · ·},
+
+
+    {· · · (N)  · · · · · · Balance · · ·
+
+            {· · · (N)  · · · · · · Last Used Time · · ·
+
+                {
+                    "@id": "#LastUsedTime_Balance",
+                    "@type": "time:Instance",
+                    "schema:name": "LastUsedTime Balance",
+                    "schema:description": "The time of when the balance was used last",
+                    "ex:describesContext":
+                        {
+                            "@id": "#Balance_Time"
+                        },
+                    "rdf:value":
+                        {
+                            "@value": "2026-07-28T10:00:00Z",
+                            "@type": "xsd:dateTimeStamp"
+                        }
+                },
+
+            · · · (N)  · · · · · · Last Used Time  — END · · ·},
+
+        · · · (N)  · · · · · · Balance  — END · · ·},
+
+
+
+
+    ------------------------- Task Times and Offsets -----------------------------------------------------------
 
 
 
@@ -21578,19 +21727,7 @@ hydrogenation_V1_6
 ==== (N) Times — END ======================================================================================================================================}
 
 
-% Sensoren etc Liste die ich noch erstellen muss/bezeichnung anpassen muss
-    {
-        "@id": "#TemperatureSensor"
-    },
-    {
-        "@id": "#PressureSensor"
-    },
-    {
-        "@id": "#GasFlowMeter"
-    },
-    {
-        "@id": "#Balance"
-    },
+
 
 
     ]
