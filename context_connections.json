@@ -284,6 +284,23 @@
         ]
     },
     {
+        "@id": "#Balance_Energy",
+        "ex:contextDescribedBy": [
+            {
+                "@id": "#StartMass_RDY"
+            },
+            {
+                "@id": "#FinalMass_RDY"
+            },
+            {
+                "@id": "#FinalMass_RDEt"
+            },
+            {
+                "@id": "#FinalMass_Dimer"
+            }
+        ]
+    },
+    {
         "@id": "#Balance_Time",
         "ex:contextDescribedBy": [
             {
@@ -324,6 +341,15 @@
             },
             {
                 "@id": "#InitialMassFraction_Water_LiquidPhase"
+            },
+            {
+                "@id": "#Reaction1"
+            },
+            {
+                "@id": "#Reaction2"
+            },
+            {
+                "@id": "#Reaction3"
             }
         ]
     },
@@ -354,6 +380,9 @@
         "ex:contextDescribedBy": [
             {
                 "@id": "#RDY_Energy"
+            },
+            {
+                "@id": "#Reaction1"
             }
         ]
     },
@@ -376,6 +405,20 @@
             },
             {
                 "@id": "#MaterialVolume_Reactor"
+            }
+        ]
+    },
+    {
+        "@id": "#CatalystPhase_Substance",
+        "ex:contextDescribedBy": [
+            {
+                "@id": "#Reaction1"
+            },
+            {
+                "@id": "#Reaction2"
+            },
+            {
+                "@id": "#Reaction3"
             }
         ]
     },
@@ -420,6 +463,14 @@
             },
             {
                 "@id": "#MaterialVolume_Reactor"
+            }
+        ]
+    },
+    {
+        "@id": "#DispersedGasPhase_Substance",
+        "ex:contextDescribedBy": [
+            {
+                "@id": "#Reaction1"
             }
         ]
     },
@@ -531,7 +582,7 @@
         "@id": "#RDEt_Energy",
         "ex:contextDescribedBy": [
             {
-                "@id": "#FinalMassRDEt"
+                "@id": "#FinalMass_RDEt"
             }
         ]
     },
@@ -924,6 +975,53 @@
         ]
     },
     {
+        "@id": "#StartMass_RDY",
+        "ex:describesContext": [
+            {
+                "@id": "#Balance_Energy"
+            },
+            {
+                "@id": "#RDY_Energy"
+            }
+        ]
+    },
+    {
+        "@id": "#FinalMass_RDY",
+        "ex:describesContext": [
+            {
+                "@id": "#Balance_Energy"
+            },
+            {
+                "@id": "#RDY_Energy"
+            }
+        ]
+    },
+    {
+        "@id": "#FinalMass_RDEt",
+        "ex:describesContext": [
+            {
+                "@id": "#Balance_Energy"
+            },
+            {
+                "@id": "#RDEt_Energy"
+            }
+        ]
+    },
+    {
+        "@id": "#FinalMass_Dimer",
+        "ex:describesContext": [
+            {
+                "@id": "#Balance_Energy"
+            },
+            {
+                "@id": "#Dimer1_Energy"
+            },
+            {
+                "@id": "#Dimer2_Energy"
+            }
+        ]
+    },
+    {
         "@id": "#LastUsedTime_Balance",
         "ex:describesContext": [
             {
@@ -1032,6 +1130,45 @@
         "ex:describesContext": [
             {
                 "@id": "#LiquidPhase_Substance"
+            }
+        ]
+    },
+    {
+        "@id": "#Reaction1",
+        "ex:describesContext": [
+            {
+                "@id": "#LiquidPhase_Substance"
+            },
+            {
+                "@id": "#SolidPhase_Substance"
+            },
+            {
+                "@id": "#CatalystPhase_Substance"
+            },
+            {
+                "@id": "#DispersedGasPhase_Substance"
+            }
+        ]
+    },
+    {
+        "@id": "#Reaction2",
+        "ex:describesContext": [
+            {
+                "@id": "#LiquidPhase_Substance"
+            },
+            {
+                "@id": "#CatalystPhase_Substance"
+            }
+        ]
+    },
+    {
+        "@id": "#Reaction3",
+        "ex:describesContext": [
+            {
+                "@id": "#LiquidPhase_Substance"
+            },
+            {
+                "@id": "#CatalystPhase_Substance"
             }
         ]
     },
@@ -1158,41 +1295,6 @@
         "ex:describesContext": [
             {
                 "@id": "#RDY_Energy"
-            }
-        ]
-    },
-    {
-        "@id": "#StartMass_RDY",
-        "ex:describesContext": [
-            {
-                "@id": "#RDY_Energy"
-            }
-        ]
-    },
-    {
-        "@id": "#FinalMass_RDY",
-        "ex:describesContext": [
-            {
-                "@id": "#RDY_Energy"
-            }
-        ]
-    },
-    {
-        "@id": "#FinalMassRDEt",
-        "ex:describesContext": [
-            {
-                "@id": "#RDEt_Energy"
-            }
-        ]
-    },
-    {
-        "@id": "#FinalMass_Dimer",
-        "ex:describesContext": [
-            {
-                "@id": "#Dimer1_Energy"
-            },
-            {
-                "@id": "#Dimer2_Energy"
             }
         ]
     },

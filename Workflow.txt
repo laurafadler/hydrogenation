@@ -3,32 +3,40 @@
 
 Reinigen der main jsonld file
    
-    python cleanJsonFiles.py hydrogenation_main.jsonld `
-    -o hydrogenation_clean.jsonld `
+    python cleanJsonFiles.py hydrogenation_with_added_properties.jsonld `
+    -o hydrogenation_with_added_properties_clean.jsonld `
     --novacrate-output hydrogenation_fuer_novacrate.json
 
 
+Erstellen von json Context Connections aus der Excel context_connections.xlsx (Output: context_connections.json)
+
+    python create_context_connections.py
+
+
+Hinzufügen der erstellten json Codeabschnitte in die main jsonld file (Output: hydrogenation_with_added_properties.jsonld)
+
+    python add_properties.py
 
 
 
+
+
+
+
+Zum Auslesen/Kontrollieren
+
+Liste mit allen verwendeten IDs erstellen (Input: hydrogenation_main.jsonld, Output: extract_entityIDs.txt)
+
+    python extract_entityIDs.py hydrogenation_main.jsonld extracted_entityIDs.txt
+
+
+
+
+Liste mit allen verwendeten Types und Properties erstellen (Input: hydorgenation_clean.jsonld, Output: hydrogenation_types_and_properties.txt)
     
 %---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-% Aufruf um File zu reinigen (hinten kann man den bereinigten Namen angeben)
-% python cleanJsonFiles.py hydrogenation_V1_2.jsonld
-% python cleanJsonFiles.py hydrogenation_V1_2.jsonld -o bereinigt.jsonld
-% python cleanJsonFiles.py hydrogenation_V1_2.jsonld -o ro-crate-metadata.json
 
-
-
-
-% python cleanJsonFiles.py ro-crate-metadata.json `
-  -o hydrogenation_bereinigt.json `
-  --novacrate-output hydrogenation_fuer_novacrate.json
-
-% ro-crate-metadata.json = Eingabedatei
--o hydrogenation_bereinigt.json = bereinigte JSON-LD-Datei
---novacrate-output hydrogenation_fuer_novacrate.json = zusätzliche NovaCrate-kompatible Datei
 
 %---------------------------------------------------------------------------------------------------------------------------------------------------------------
 

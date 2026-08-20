@@ -63,45 +63,7 @@
 
 
 
-% Aufruf um File zu reinigen (hinten kann man den bereinigten Namen angeben)
-% python cleanJsonFiles.py hydrogenation_V1_2.jsonld
-% python cleanJsonFiles.py hydrogenation_V1_2.jsonld -o bereinigt.jsonld
-% python cleanJsonFiles.py hydrogenation_V1_2.jsonld -o ro-crate-metadata.json
 
-
-
-
-% python cleanJsonFiles.py ro-crate-metadata.json `
-  -o hydrogenation_bereinigt.json `
-  --novacrate-output hydrogenation_fuer_novacrate.json
-
-% ro-crate-metadata.json = Eingabedatei
--o hydrogenation_bereinigt.json = bereinigte JSON-LD-Datei
---novacrate-output hydrogenation_fuer_novacrate.json = zusätzliche NovaCrate-kompatible Datei
-
-%---------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-% Wenn ich eine Liste mit allen entities erstellen will, die in der Datei verwendet werden: 
-
-% python extract_entityIDs.py hydrogenation_main.jsonld extracted_entityIDs.txt
-
-% Reihenfolge ist dabei python datei - ro crate - output datei
-
-hydrogenation_V1_6
-
-%---------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-% python create_context_connections.py
-
-% Um das Skript auszuführen muss die Excel geschlossen sein
-% ggf braucht man noch das:
-% pip install pandas openpyxl
-
-%---------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-
-% python add_properties.py
 
 
 {=== (A) General =====================================================================================================================================
@@ -571,7 +533,7 @@ hydrogenation_V1_6
                     },
                 
                     {
-                        "@id": "#StartMassRDY"
+                        "@id": "#StartMass_RDY"
                     }
                     
                     
@@ -652,7 +614,7 @@ hydrogenation_V1_6
                         "@id": "#SetPressureProfile_Reactor_Exp1"
                     },
                     {
-                        "@id": "#StartMassRDY_Exp1"
+                        "@id": "#StartMass_RDY_Exp1"
                     }
                 ],
             "ex:hasRecordedProcessVariables": 
@@ -701,109 +663,140 @@ hydrogenation_V1_6
     {— (F1) Stoichiometric Reactions -------------------------------------------------------------------------------------------------------------
 
         {
-            "@id": "#Reaction1",
-            "@type": "ex:StoichiometricReaction",
-            "schema:name": "Hydrogenation Reaction",
-            "schema:description": "RDY + 4 H2 > RDEt",
-            % catalyst also in here? if yes, then I'll add the solid catalyst phase as well
-            "schema:comment": "Should I put in catalyst and solvent here as well? How do we include the solvent?",
-            "ex:hasParticipant": 
-                [      
-                    {
-                        "@id": "#Participant_R1_RDY"
-                    },
-                    {
-                        "@id": "#Participant_R1_H2"
-                    },
-                    {
-                        "@id": "#Participant_R1_RDEt"
-                    }
-                    
-                ],
-            "ex:describedByMechanism": 
-                {
-                    "@id": "#ReactionMechanism1"
-                },
-            "ex:occursBetweenPhases": 
-                [
-                    {
-                        "@id": "#LiquidPhase"
-                    },
-                    % solid phase technically not, if we assume RDY is solved in the liquid phase
-                    {
-                        "@id": "#SolidPhase"
-                    },
-                    {
-                        "@id": "#DispersedGasPhase"
-                    }
-                ],
+    "@id": "#Reaction1",
+    "@type": "ex:StoichiometricReaction",
+    "schema:name": "Hydrogenation Reaction",
+    "schema:description": "RDY + 4 H2 > RDEt",
+    "schema:comment": "Should I put in catalyst and solvent here as well? How do we include the solvent?",
+    "ex:hasParticipant": [
+        {
+            "@id": "#Participant_R1_RDY"
         },
+        {
+            "@id": "#Participant_R1_H2"
+        },
+        {
+            "@id": "#Participant_R1_RDEt"
+        },
+        {
+            "@id": "#Participant_R1_Catalyst"
+        }
+    ],
+    "ex:describedByMechanism": {
+        "@id": "#ReactionMechanism1"
+    },
+    "ex:occursBetweenPhases": [
+        {
+            "@id": "#LiquidPhase"
+        },
+        {
+            "@id": "#SolidPhase"
+        },
+        {
+            "@id": "#CatalystPhase"
+        },
+        {
+            "@id": "#DispersedGasPhase"
+        }
+    ],
+    "ex:describesContext": [
+        {
+            "@id": "#LiquidPhase_Substance"
+        },
+        {
+            "@id": "#SolidPhase_Substance"
+        },
+        {
+            "@id": "#CatalystPhase_Substance"
+        },
+        {
+            "@id": "#DispersedGasPhase_Substance"
+        }
+    ]
+},
 
 
         {
-            "@id": "#Reaction2",
-            "@type": "ex:StoichiometricReaction",
-            "schema:name": "Dimerisation 1",
-            "schema:description": "RYE + RDEt > Dimer1",
-            "schema:comment": "Should I put in catalyst and solvent here as well? How do we include the solvent?",
-            "ex:hasParticipant": 
-                [      
-                    {
-                        "@id": "#Participant_R2_RYE"
-                    },
-                    {
-                        "@id": "#Participant_R2_RDEt"
-                    },
-                    {
-                        "@id": "#Participant_R2_Dimer1"
-                    }
-                    
-                ],
-            "ex:describedByMechanism": 
-                {
-                    "@id": "#ReactionMechanism2"
-                },
-            % catalyst also in here? if yes, then I'll add the solid catalyst phase as well
-            "ex:occurrsInPhase": 
-                {
-                    "@id": "#LiquidPhase"
-                },
+    "@id": "#Reaction2",
+    "@type": "ex:StoichiometricReaction",
+    "schema:name": "Dimerisation 1",
+    "schema:description": "RYE + RDEt > Dimer1",
+    "schema:comment": "Should I put in catalyst and solvent here as well? How do we include the solvent?",
+    "ex:hasParticipant": [
+        {
+            "@id": "#Participant_R2_RYE"
         },
+        {
+            "@id": "#Participant_R2_RDEt"
+        },
+        {
+            "@id": "#Participant_R2_Dimer1"
+        },
+        {
+            "@id": "#Participant_R2_Catalyst"
+        }
+    ],
+    "ex:describedByMechanism": {
+        "@id": "#ReactionMechanism2"
+    },
+    "ex:occurrsInPhase": [
+        {
+            "@id": "#LiquidPhase"
+        },
+        {
+            "@id": "#CatalystPhase"
+        }
+    ],
+    "ex:describesContext": [
+        {
+            "@id": "#LiquidPhase_Substance"
+        },
+        {
+            "@id": "#CatalystPhase_Substance"
+        }
+    ]
+},
 
         {
-            "@id": "#Reaction3",
-            "@type": "ex:StoichiometricReaction",
-            "schema:name": "Dimerisation 2",
-            "schema:description": "REA + RDEt > Dimer2",
-            "schema:comment": "Should I put in catalyst and solvent here as well? How do we include the solvent?",
-            "ex:hasParticipant": 
-                [      
-                    {
-                        "@id": "#Participant_R3_REA"
-                    },
-                    {
-                        "@id": "#Participant_R3_RDEt"
-                    },
-                    {
-                        "@id": "#Participant_R3_Dimer2"
-                    }
-                    
-                ],
-            "ex:describedByMechanism": 
-                {
-                    "@id": "#ReactionMechanism3"
-                },
-            % catalyst also in here? if yes, then I'll add the solid catalyst phase as well
-            "ex:occurrsInPhase": 
-                {
-                    "@id": "#LiquidPhase"
-                },
-
-            
-
-
-
+    "@id": "#Reaction3",
+    "@type": "ex:StoichiometricReaction",
+    "schema:name": "Dimerisation 2",
+    "schema:description": "REA + RDEt > Dimer2",
+    "schema:comment": "Should I put in catalyst and solvent here as well? How do we include the solvent?",
+    "ex:hasParticipant": [
+        {
+            "@id": "#Participant_R3_REA"
         },
+        {
+            "@id": "#Participant_R3_RDEt"
+        },
+        {
+            "@id": "#Participant_R3_Dimer2"
+        },
+        {
+            "@id": "#Participant_R3_Catalyst"
+        }
+    ],
+    "ex:describedByMechanism": {
+        "@id": "#ReactionMechanism3"
+    },
+    "ex:occurrsBetweenPhases": [
+        {
+            "@id": "#LiquidPhase"
+        },
+        {
+            "@id": "#CatalystPhase"
+        }
+    ],
+    "ex:describesContext": [
+        {
+            "@id": "#LiquidPhase_Substance"
+        },
+        {
+            "@id": "#CatalystPhase_Substance"
+        }
+    ]
+},
 
     — (F1) Stoichiometric Reactions — END ----------------------------------------------------------------------------------------------------------}
 
@@ -1361,6 +1354,10 @@ hydrogenation_V1_6
                     },
             },
 
+            {
+                "@id": "#Participant_R1_Catalyst"
+            }
+
 
         · · · (F4)  · · · · · · Reaction Participants of Stoichiometric Reaction 1  — END · · ·},
 
@@ -1401,6 +1398,10 @@ hydrogenation_V1_6
                 "ex:hasStoichiometricCoefficient": "1",
                 "ex:hasRole": "Byproduct"
             },
+
+            {
+                "@id": "#Participant_R2_Catalyst"
+            }
 
 
         · · · (F4)  · · · · · · Reaction Participants of Stoichiometric Reaction 2  — END · · ·},
@@ -1443,6 +1444,11 @@ hydrogenation_V1_6
                 "ex:hasStoichiometricCoefficient": "1",
                 "ex:hasRole": "Byproduct"
             },
+
+
+            {
+                "@id": "#Participant_R3_Catalyst"
+            }
 
 
         · · · (F4)  · · · · · · Reaction Participants of Stoichiometric Reaction 3  — END · · ·},
@@ -3644,6 +3650,15 @@ hydrogenation_V1_6
         },
         {
             "@id": "#InitialMassFraction_Water_LiquidPhase"
+        },
+        {
+            "@id": "#Reaction1"
+        },
+        {
+            "@id": "#Reaction2"
+        },
+        {
+            "@id": "#Reaction3"
         }
     ]
 },
@@ -4127,6 +4142,9 @@ hydrogenation_V1_6
     "ex:contextDescribedBy": [
         {
             "@id": "#RDY_Energy"
+        },
+        {
+            "@id": "#Reaction1"
         }
     ]
 },
@@ -4566,40 +4584,50 @@ hydrogenation_V1_6
                     },
 
                     {
-                        "@id": "#CatalystPhase_Substance",
-                        "@type": "ex:SubstanceContext",
-                        "schema:name": "Catalyst phase Substance",
-                        "ex:hasInstances":
-                        [
-                            {
-                                "@id": "#CatalystPhase_Substance_Exp1"
-                            },
-                            {
-                                "@id": "#CatalystPhase_Substance_Exp2"
-                            },
-                            {
-                                "@id": "#CatalystPhase_Substance_Exp3"
-                            },
-                            {
-                                "@id": "#CatalystPhase_Substance_Exp4"
-                            },
-                            {
-                                "@id": "#CatalystPhase_Substance_Exp5"
-                            },
-                            {
-                                "@id": "#CatalystPhase_Substance_Exp6"
-                            },
-                            {
-                                "@id": "#CatalystPhase_Substance_Exp7"
-                            },
-                            {
-                                "@id": "#CatalystPhase_Substance_Exp8"
-                            },
-                            {
-                                "@id": "#CatalystPhase_Substance_Exp9"
-                            }
-                        ]
-                    },
+    "@id": "#CatalystPhase_Substance",
+    "@type": "ex:SubstanceContext",
+    "schema:name": "Catalyst phase Substance",
+    "ex:hasInstances": [
+        {
+            "@id": "#CatalystPhase_Substance_Exp1"
+        },
+        {
+            "@id": "#CatalystPhase_Substance_Exp2"
+        },
+        {
+            "@id": "#CatalystPhase_Substance_Exp3"
+        },
+        {
+            "@id": "#CatalystPhase_Substance_Exp4"
+        },
+        {
+            "@id": "#CatalystPhase_Substance_Exp5"
+        },
+        {
+            "@id": "#CatalystPhase_Substance_Exp6"
+        },
+        {
+            "@id": "#CatalystPhase_Substance_Exp7"
+        },
+        {
+            "@id": "#CatalystPhase_Substance_Exp8"
+        },
+        {
+            "@id": "#CatalystPhase_Substance_Exp9"
+        }
+    ],
+    "ex:contextDescribedBy": [
+        {
+            "@id": "#Reaction1"
+        },
+        {
+            "@id": "#Reaction2"
+        },
+        {
+            "@id": "#Reaction3"
+        }
+    ]
+},
 
 
                 · · · (G2) - 3a - Context  · · · · · · Context of Catalyst Phase: General · · ·},
@@ -5488,40 +5516,44 @@ hydrogenation_V1_6
                     },
 
                     {
-                        "@id": "#DispersedGasPhase_Substance",
-                        "@type": "ex:SubstanceContext",
-                        "schema:name": "Dispersed gas phase Substance",
-                        "ex:hasInstances":
-                        [
-                            {
-                                "@id": "#DispersedGasPhase_Substance_Exp1"
-                            },
-                            {
-                                "@id": "#DispersedGasPhase_Substance_Exp2"
-                            },
-                            {
-                                "@id": "#DispersedGasPhase_Substance_Exp3"
-                            },
-                            {
-                                "@id": "#DispersedGasPhase_Substance_Exp4"
-                            },
-                            {
-                                "@id": "#DispersedGasPhase_Substance_Exp5"
-                            },
-                            {
-                                "@id": "#DispersedGasPhase_Substance_Exp6"
-                            },
-                            {
-                                "@id": "#DispersedGasPhase_Substance_Exp7"
-                            },
-                            {
-                                "@id": "#DispersedGasPhase_Substance_Exp8"
-                            },
-                            {
-                                "@id": "#DispersedGasPhase_Substance_Exp9"
-                            }
-                        ]
-                    },
+    "@id": "#DispersedGasPhase_Substance",
+    "@type": "ex:SubstanceContext",
+    "schema:name": "Dispersed gas phase Substance",
+    "ex:hasInstances": [
+        {
+            "@id": "#DispersedGasPhase_Substance_Exp1"
+        },
+        {
+            "@id": "#DispersedGasPhase_Substance_Exp2"
+        },
+        {
+            "@id": "#DispersedGasPhase_Substance_Exp3"
+        },
+        {
+            "@id": "#DispersedGasPhase_Substance_Exp4"
+        },
+        {
+            "@id": "#DispersedGasPhase_Substance_Exp5"
+        },
+        {
+            "@id": "#DispersedGasPhase_Substance_Exp6"
+        },
+        {
+            "@id": "#DispersedGasPhase_Substance_Exp7"
+        },
+        {
+            "@id": "#DispersedGasPhase_Substance_Exp8"
+        },
+        {
+            "@id": "#DispersedGasPhase_Substance_Exp9"
+        }
+    ],
+    "ex:contextDescribedBy": [
+        {
+            "@id": "#Reaction1"
+        }
+    ]
+},
 
 
                 · · · (G2) - 5a - Context  · · · · · · Context of Dispersed Gas Phase: General · · ·},
@@ -10410,7 +10442,7 @@ hydrogenation_V1_6
     ],
     "ex:contextDescribedBy": [
         {
-            "@id": "#FinalMassRDEt"
+            "@id": "#FinalMass_RDEt"
         }
     ]
 },
@@ -12120,9 +12152,6 @@ hydrogenation_V1_6
                         },
                         {
                             "@id": "#SetPressureProfile_Reactor"
-                        },
-                        {
-                            "@id": "#SetRPMProfile_Reactor"
                         }
                     ],
                 "ex:hasInstances":
@@ -15457,7 +15486,7 @@ hydrogenation_V1_6
                         ]
                 }
 
-                {· · · (H) - 1.6b - 1 - Context  · · · · · · Context of Pressure Sensor: Specific · · ·
+                {· · · (H) - 1.6b - 1 - Context  · · · · · · Context of Pressure Sensor: Specific - Experiment 1 · · ·
 
                     {
                         "@id": "#PressureSensor_Information_Exp1",
@@ -15556,7 +15585,7 @@ hydrogenation_V1_6
                     }
 
 
-                · · · (H) - 1.6b - 1 - Context  · · · · · · Context of Pressure Sensor: Specific · · ·},
+                · · · (H) - 1.6b - 1 - Context  · · · · · · Context of Pressure Sensor: Specific - Experiment 1 · · ·},
 
             · · · (H) - 1.6b - 1  · · · · · · Pressure Sensor: Specific - Experiment 1  — END · · ·},
 
@@ -16185,7 +16214,7 @@ hydrogenation_V1_6
                 "sosa:observes":
                     [
                         {
-                            "@id": "#StartMassRDY"
+                            "@id": "#StartMass_RDY"
                         },
                         {
                             "@id": "#FinalMass_RDY"
@@ -16281,46 +16310,58 @@ hydrogenation_V1_6
 },
 
                 {
-                    "@id": "#Balance_Energy",
-                    "@type": "ex:EnergyContext",
-                    "schema:name": "Balance Energy",
-                    "ex:describedBy":
-                        [
-                            {
-                                "@id": "#..."
-                            }
-                        ],
-                    "ex:hasInstances":
-                        [
-                            {
-                                "@id": "#Balance_Energy_Exp1"
-                            },
-                            {
-                                "@id": "#Balance_Energy_Exp2"
-                            },
-                            {
-                                "@id": "#Balance_Energy_Exp3"
-                            },
-                            {
-                                "@id": "#Balance_Energy_Exp4"
-                            },
-                            {
-                                "@id": "#Balance_Energy_Exp5"
-                            },
-                            {
-                                "@id": "#Balance_Energy_Exp6"
-                            },
-                            {
-                                "@id": "#Balance_Energy_Exp7"
-                            },
-                            {
-                                "@id": "#Balance_Energy_Exp8"
-                            },
-                            {
-                                "@id": "#Balance_Energy_Exp9"
-                            }
-                        ]
-                },
+    "@id": "#Balance_Energy",
+    "@type": "ex:EnergyContext",
+    "schema:name": "Balance Energy",
+    "ex:describedBy": [
+        {
+            "@id": "#..."
+        }
+    ],
+    "ex:hasInstances": [
+        {
+            "@id": "#Balance_Energy_Exp1"
+        },
+        {
+            "@id": "#Balance_Energy_Exp2"
+        },
+        {
+            "@id": "#Balance_Energy_Exp3"
+        },
+        {
+            "@id": "#Balance_Energy_Exp4"
+        },
+        {
+            "@id": "#Balance_Energy_Exp5"
+        },
+        {
+            "@id": "#Balance_Energy_Exp6"
+        },
+        {
+            "@id": "#Balance_Energy_Exp7"
+        },
+        {
+            "@id": "#Balance_Energy_Exp8"
+        },
+        {
+            "@id": "#Balance_Energy_Exp9"
+        }
+    ],
+    "ex:contextDescribedBy": [
+        {
+            "@id": "#StartMass_RDY"
+        },
+        {
+            "@id": "#FinalMass_RDY"
+        },
+        {
+            "@id": "#FinalMass_RDEt"
+        },
+        {
+            "@id": "#FinalMass_Dimer"
+        }
+    ]
+},
 
                 {
     "@id": "#Balance_Time",
@@ -16561,7 +16602,7 @@ hydrogenation_V1_6
                     "sosa:observes":
                         [
                             {
-                                "@id": "#StartMassRDY_Exp1"
+                                "@id": "#StartMass_RDY_Exp1"
                             },
                             {
                                 "@id": "#FinalMass_RDY_Exp1"
@@ -19492,7 +19533,7 @@ hydrogenation_V1_6
                         },
                         "ex:hasMeasuredVariable":
                         {
-                            "@id": "#StartMassRDY_Exp1"
+                            "@id": "#StartMass_RDY_Exp1"
                         },
                         "ex:isInstanceOf":
                         {
@@ -20227,52 +20268,54 @@ hydrogenation_V1_6
             {· · · (K1) - 5a  · · · · · · Start Mass RDY: General · · ·
 
                 {
-                    "@id": "#StartMassRDY",
-                    "@type": "ex:ScalarVariable",
-                    "schema:name": "Hydrogenator set mass of RDY",
-                    "schema:description": "Start Mass of RDY that was added to the reactor before the beginning of the experiment",
-                    "ex:describesContext": 
-                        {
-                            "@id": "#RDYSpace"
-                        },
-                    "ex:quantityKind": "quantitykind:Mass",
-                    "ex:hasUnit": "unit:GM",
-                    "ex:hasProvenanceType": "ex:Set",
-                    "ex:hasProvenance":
-                            {
-                                "@id": "#WeighingTask_StartMassRDY"
-                            },
-                    "ex:hasInstances": 
-                        [
-                            {
-                                "@id": "#StartMassRDY_Exp1"
-                            },
-                            {
-                                "@id": "#StartMassRDY_Exp2"
-                            },
-                            {
-                                "@id": "#StartMassRDY_Exp3"
-                            },
-                            {
-                                "@id": "#StartMassRDY_Exp4"
-                            },
-                            {
-                                "@id": "#StartMassRDY_Exp5"
-                            },
-                            {
-                                "@id": "#StartMassRDY_Exp6"
-                            },
-                            {
-                                "@id": "#StartMassRDY_Exp7"
-                            },
-                            {
-                                "@id": "#StartMassRDY_Exp8"
-                            },
-                            {
-                                "@id": "#StartMassRDY_Exp9"
-                            }
-                        ]
-                    },
+    "@id": "#StartMass_RDY",
+    "@type": "ex:ScalarVariable",
+    "schema:name": "Hydrogenator set mass of RDY",
+    "schema:description": "Start Mass of RDY that was added to the reactor before the beginning of the experiment",
+    "ex:describesContext": [
+        {
+            "@id": "#Balance_Energy"
+        },
+        {
+            "@id": "#RDY_Energy"
+        }
+    ],
+    "ex:quantityKind": "quantitykind:Mass",
+    "ex:hasUnit": "unit:GM",
+    "ex:hasProvenanceType": "ex:Set",
+    "ex:hasProvenance": {
+        "@id": "#WeighingTask_StartMassRDY"
+    },
+    "ex:hasInstances": [
+        {
+            "@id": "#StartMass_RDY_Exp1"
+        },
+        {
+            "@id": "#StartMass_RDY_Exp2"
+        },
+        {
+            "@id": "#StartMass_RDY_Exp3"
+        },
+        {
+            "@id": "#StartMass_RDY_Exp4"
+        },
+        {
+            "@id": "#StartMass_RDY_Exp5"
+        },
+        {
+            "@id": "#StartMass_RDY_Exp6"
+        },
+        {
+            "@id": "#StartMass_RDY_Exp7"
+        },
+        {
+            "@id": "#StartMass_RDY_Exp8"
+        },
+        {
+            "@id": "#StartMass_RDY_Exp9"
+        }
+    ]
+},
 
             · · · (K1) - 5a · · · · · · Start Mass RDY: General  — END · · ·},
 
@@ -20282,14 +20325,14 @@ hydrogenation_V1_6
                 {· · · (K1) - 5b - 1  · · · · · · Start Mass RDY - Experiment 1 · · ·
 
                     {
-                        "@id": "#StartMassRDY_Exp1",
+                        "@id": "#StartMass_RDY_Exp1",
                         "@type": "ex:ScalarVariable",
                         "schema:name": "StartMassRDY_Exp1",
                         "schema:description": "Mass of RDY that is added to the reactor before the beginning of Experiment 1",
                         "ex:value": 87.84,
                         "ex:isInstanceOf":
                             {
-                                "@id": "#StartMassRDY"
+                                "@id": "#StartMass_RDY"
                             }
                     },
 
@@ -20315,6 +20358,9 @@ hydrogenation_V1_6
     "schema:name": "Hydrogenator measured mass of RDY",
     "schema:description": "Final mass of RDY that was measured in the reactor in the end",
     "ex:describesContext": [
+        {
+            "@id": "#Balance_Energy"
+        },
         {
             "@id": "#RDY_Energy"
         }
@@ -20394,52 +20440,54 @@ hydrogenation_V1_6
             {· · · (K1) - 7a  · · · · · · Final Mass RDEt: General · · ·
 
                 {
-                    "@id": "#FinalMass_RDEt",
-                    "@type": "ex:ScalarVariable",
-                    "schema:name": "Hydrogenator measured mass of RDEt",
-                    "schema:description": "Final mass of RDEt that was measured in the reactor in the end",
-                    "ex:describesContext":
-                        {
-                            "@id": "#RDEtSpace"
-                        },
-                    "ex:quantityKind": "quantitykind:Mass",
-                    "ex:hasUnit": "unit:GM",
-                    "ex:hasProvenanceType": "ex:Observed",
-                    "ex:hasProvenance":
-                        {
-                            "@id": "#WeighingTask_FinalMass_RDEt"
-                        },
-                    "ex:hasInstances":
-                        [
-                            {
-                                "@id": "#FinalMass_RDEt_Exp1"
-                            },
-                            {
-                                "@id": "#FinalMass_RDEt_Exp2"
-                            },
-                            {
-                                "@id": "#FinalMass_RDEt_Exp3"
-                            },
-                            {
-                                "@id": "#FinalMass_RDEt_Exp4"
-                            },
-                            {
-                                "@id": "#FinalMass_RDEt_Exp5"
-                            },
-                            {
-                                "@id": "#FinalMass_RDEt_Exp6"
-                            },
-                            {
-                                "@id": "#FinalMass_RDEt_Exp7"
-                            },
-                            {
-                                "@id": "#FinalMass_RDEt_Exp8"
-                            },
-                            {
-                                "@id": "#FinalMass_RDEt_Exp9"
-                            }
-                        ]
-                },
+    "@id": "#FinalMass_RDEt",
+    "@type": "ex:ScalarVariable",
+    "schema:name": "Hydrogenator measured mass of RDEt",
+    "schema:description": "Final mass of RDEt that was measured in the reactor in the end",
+    "ex:describesContext": [
+        {
+            "@id": "#Balance_Energy"
+        },
+        {
+            "@id": "#RDEt_Energy"
+        }
+    ],
+    "ex:quantityKind": "quantitykind:Mass",
+    "ex:hasUnit": "unit:GM",
+    "ex:hasProvenanceType": "ex:Observed",
+    "ex:hasProvenance": {
+        "@id": "#WeighingTask_FinalMass_RDEt"
+    },
+    "ex:hasInstances": [
+        {
+            "@id": "#FinalMass_RDEt_Exp1"
+        },
+        {
+            "@id": "#FinalMass_RDEt_Exp2"
+        },
+        {
+            "@id": "#FinalMass_RDEt_Exp3"
+        },
+        {
+            "@id": "#FinalMass_RDEt_Exp4"
+        },
+        {
+            "@id": "#FinalMass_RDEt_Exp5"
+        },
+        {
+            "@id": "#FinalMass_RDEt_Exp6"
+        },
+        {
+            "@id": "#FinalMass_RDEt_Exp7"
+        },
+        {
+            "@id": "#FinalMass_RDEt_Exp8"
+        },
+        {
+            "@id": "#FinalMass_RDEt_Exp9"
+        }
+    ]
+},
 
             · · · (K1) - 7a · · · · · · Final Mass RDEt: General  — END · · ·},
 
@@ -20481,6 +20529,9 @@ hydrogenation_V1_6
     "schema:name": "Hydrogenator measured mass of the dimer",
     "schema:description": "Final mass of the dimer that was measured in the reactor in the end",
     "ex:describesContext": [
+        {
+            "@id": "#Balance_Energy"
+        },
         {
             "@id": "#Dimer1_Energy"
         },
