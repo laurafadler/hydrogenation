@@ -12,6 +12,10 @@ Reinigen der main jsonld file
 
     python clean_hydrogenation_gemini.py hydrogenation_main.jsonld
 
+    Für meinen aktuellen case:
+
+    python clean_hydrogenation_gemini.py hydrogenation_with_added_properties.jsonld
+
 
 Erstellen von json Context Connections aus der Excel context_connections.xlsx (Output: context_connections.json)
 
