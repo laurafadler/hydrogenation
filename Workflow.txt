@@ -2,8 +2,9 @@
 
 
 Reinigen der main jsonld file
-    python cleanJsonFiles.py hydrogenation_main.jsonld
-    -o hydrogenation_clean.jsonld
+   
+    python cleanJsonFiles.py hydrogenation_main.jsonld `
+    -o hydrogenation_clean.jsonld `
     --novacrate-output hydrogenation_fuer_novacrate.json
 
 
