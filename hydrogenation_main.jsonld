@@ -825,7 +825,7 @@
                 "@id": "#Reaction1_2",
                 "@type": "ex:ElementaryReaction",
                 "schema:name": "RDY + cat-H > cat-RYE",
-                "description": "RDY reacts with one adsorbed hydrogen on the catalyst surface to form intermediate state",
+                "schema:description": "RDY reacts with one adsorbed hydrogen on the catalyst surface to form intermediate state",
                 "ex:reversibility": "ex:Irreversible",
                 "ex:hasParticipant":
                     [      
@@ -855,7 +855,7 @@
                 "@id": "#Reaction1_3",
                 "@type": "ex:ElementaryReaction",
                 "schema:name": "cat-RYE+ cat-H > RYE + 2 cat(H)",
-                "description": "cat-RYE intermediate reacts with one adsorbed hydrogen on the catalyst surface to form RYE, desorbs immediately",
+                "schema:description": "cat-RYE intermediate reacts with one adsorbed hydrogen on the catalyst surface to form RYE, desorbs immediately",
                 "ex:reversibility": "ex:Irreversible",
                 "ex:hasParticipant":
                     [      
@@ -889,7 +889,7 @@
                 "@id": "#Reaction1_4",
                 "@type": "ex:ElementaryReaction",
                 "schema:name": "RYE + cat-H > cat-RYA",
-                "description": "RYE reacts with one adsorbed hydrogen on the catalyst surface to form intermediate state",
+                "schema:description": "RYE reacts with one adsorbed hydrogen on the catalyst surface to form intermediate state",
                 "ex:reversibility": "ex:Irreversible",
                 "ex:hasParticipant":
                     [      
@@ -920,7 +920,7 @@
                 "@id": "#Reaction1_5",
                 "@type": "ex:ElementaryReaction",
                 "schema:name": "cat-RYA+ cat-H > RYA + 2 cat(H)",
-                "description": "cat-RYE intermediate reacts with one adsorbed hydrogen on the catalyst surface to form RYA, desorbs immediately",
+                "schema:description": "cat-RYE intermediate reacts with one adsorbed hydrogen on the catalyst surface to form RYA, desorbs immediately",
                 "ex:reversibility": "ex:Irreversible",
                 "ex:hasParticipant":
                     [      
@@ -953,7 +953,7 @@
                 "@id": "#Reaction1_6",
                 "@type": "ex:ElementaryReaction",
                 "schema:name": "RYA + cat-H > cat-REA",
-                "description": "RYA reacts with one adsorbed hydrogen on the catalyst surface to form intermediate state",
+                "schema:description": "RYA reacts with one adsorbed hydrogen on the catalyst surface to form intermediate state",
                 "ex:reversibility": "ex:Irreversible",
                 "ex:hasParticipant":
                     [      
@@ -986,7 +986,7 @@
                 "@id": "#Reaction1_7",
                 "@type": "ex:ElementaryReaction",
                 "schema:name": "cat-REA+ cat-H > REA + 2 cat(H)",
-                "description": "cat-REA intermediate reacts with one adsorbed hydrogen on the catalyst surface to form REA, desorbs immediately",
+                "schema:description": "cat-REA intermediate reacts with one adsorbed hydrogen on the catalyst surface to form REA, desorbs immediately",
                 "ex:reversibility": "ex:Irreversible",
                 "ex:hasParticipant":
                     [      
@@ -1024,7 +1024,7 @@
                 "@id": "#Reaction1_8",
                 "@type": "ex:ElementaryReaction",
                 "schema:name": "REA + cat-H > cat-RDEt",
-                "description": "REA reacts with one adsorbed hydrogen on the catalyst surface to form intermediate state",
+                "schema:description": "REA reacts with one adsorbed hydrogen on the catalyst surface to form intermediate state",
                 "ex:reversibility": "ex:Irreversible",
                 "ex:hasParticipant":
                     [      
@@ -1057,7 +1057,7 @@
                 "@id": "#Reaction1_9",
                 "@type": "ex:ElementaryReaction",
                 "schema:name": "cat-RDEt+ cat-H > RDEt + 2 cat(H)",
-                "description": "RDEt-cat intermediate reacts with one adsorbed hydrogen on the catalyst surface to form REA, desorbs immediately",
+                "schema:description": "RDEt-cat intermediate reacts with one adsorbed hydrogen on the catalyst surface to form REA, desorbs immediately",
                 "ex:reversibility": "ex:Irreversible",
                 "ex:hasParticipant":
                     [      
@@ -1131,7 +1131,7 @@
                 "@id": "#Reaction2_2",
                 "@type": "ex:ElementaryReaction",
                 "schema:name": "RYE + catX-RDEt > Dimer1 + cat(X)",
-                "description": "RYE reacts with cat-RDET complex to form dimer",
+                "schema:description": "RYE reacts with cat-RDET complex to form dimer",
                 "ex:reversibility": "ex:Irreversible",
                 "ex:hasParticipant":
                     [      
@@ -3164,7 +3164,7 @@
 
                 {
                     "@id": "#AddCleaningFluidStream",
-                    "@type": "ex:TransferStream",
+                    "@type": "ex:Stream",
                     "schema:name": "Add Cleaning Fluid Stream",
                     "schema:description": "Cleaning fluid stream flowing into the vessel",
                     "ex:hasPhase": [{ "@id": "#CleaningFluidPhase" }],
@@ -3194,7 +3194,7 @@
 
                     {
                         "@id": "#AddCleaningFluidStream_Exp1",
-                        "@type": "ex:TransferStream",
+                        "@type": "ex:Stream",
                         "schema:name": "Add Cleaning Fluid Stream Exp1",
                         "schema:description": "Cleaning fluid stream flowing into the vessel during experiment 1",
                         "ex:hasPhase": [{ "@id": "#CleaningFluidPhase_Exp1" }],
@@ -3229,7 +3229,7 @@
 
                 {
                     "@id": "#RemoveCleaningFluidStream",
-                    "@type": "ex:TransferStream",
+                    "@type": "ex:Stream",
                     "schema:name": "Remove Cleaning Fluid Stream",
                     "schema:description": "Cleaning fluid stream flowing out of the vessel",
                     "ex:hasPhase": [{ "@id": "#CleaningFluidPhase" }],
@@ -3259,7 +3259,7 @@
 
                     {
                         "@id": "#RemoveCleaningFluidStream_Exp1",
-                        "@type": "ex:TransferStream",
+                        "@type": "ex:Stream",
                         "schema:name": "Remove Cleaning Fluid Stream Exp1",
                         "schema:description": "Cleaning fluid stream flowing out of the vessel during experiment 1",
                         "ex:hasPhase": [{ "@id": "#CleaningFluidPhase_Exp1" }],
@@ -4666,12 +4666,7 @@
                                 "@id": "#RemoveCatalystStream_Exp1"
                             }
                         ],
-                        "ex:describedBy":
-                        [
-                            {
-                                "@id": "#..."
-                            }
-                        ],
+                        
                         "ex:isInstanceOf":
                         {
                             "@id": "#CatalystPhase"
@@ -6056,12 +6051,7 @@
                                 "@id": "#CoolingFluidOutletStream_Exp1"
                             }
                         ],
-                        "ex:describedBy":
-                        [
-                            {
-                                "@id": "#..."
-                            }
-                        ],
+                        
                         "ex:isInstanceOf":
                         {
                             "@id": "#CoolingFluidPhase"
@@ -6526,12 +6516,7 @@
                                 "@id": "#HydrogenOutletStream_Exp1"
                             }
                         ],
-                        "ex:describedBy":
-                        [
-                            {
-                                "@id": "#..."
-                            }
-                        ],
+                        
                         "ex:isInstanceOf":
                         {
                             "@id": "#HydrogenSpargerPhase"
@@ -14599,11 +14584,7 @@
     "@id": "#TemperatureSensor_Information",
     "@type": "ex:InformationContext",
     "schema:name": "Temperature Sensor Information",
-    "ex:describedBy": [
-        {
-            "@id": "#..."
-        }
-    ],
+    
     "ex:hasInstances": [
         {
             "@id": "#TemperatureSensor_Information_Exp1"
@@ -14647,11 +14628,7 @@
     "@id": "#TemperatureSensor_Energy",
     "@type": "ex:EnergyContext",
     "schema:name": "Temperature Sensor Energy",
-    "ex:describedBy": [
-        {
-            "@id": "#..."
-        }
-    ],
+    
     "ex:hasInstances": [
         {
             "@id": "#TemperatureSensor_Energy_Exp1"
@@ -14692,11 +14669,7 @@
     "@id": "#TemperatureSensor_Time",
     "@type": "ex:TimeContext",
     "schema:name": "Temperature Sensor Time",
-    "ex:describedBy": [
-        {
-            "@id": "#..."
-        }
-    ],
+    
     "ex:hasInstances": [
         {
             "@id": "#TemperatureSensor_Time_Exp1"
@@ -14740,12 +14713,7 @@
                     "@id": "#TemperatureSensor_Space",
                     "@type": "ex:SpaceContext",
                     "schema:name": "Temperature Sensor Space",
-                    "ex:describedBy":
-                        [
-                            {
-                                "@id": "#..."
-                            }
-                        ],
+                    
                     "ex:hasInstances":
                         [
                             {
@@ -14782,12 +14750,7 @@
                     "@id": "#TemperatureSensor_Structure",
                     "@type": "ex:StructureContext",
                     "schema:name": "Temperature Sensor Structure",
-                    "ex:describedBy":
-                        [
-                            {
-                                "@id": "#..."
-                            }
-                        ],
+                    
                     "ex:hasInstances":
                         [
                             {
@@ -14824,12 +14787,7 @@
                     "@id": "#TemperatureSensor_Substance",
                     "@type": "ex:SubstanceContext",
                     "schema:name": "Temperature Sensor Substance",
-                    "ex:describedBy":
-                        [
-                            {
-                                "@id": "#..."
-                            }
-                        ],
+                    
                     "ex:hasInstances":
                         [
                             {
@@ -15143,11 +15101,7 @@
     "@id": "#PressureSensor_Information",
     "@type": "ex:InformationContext",
     "schema:name": "Pressure Sensor Information",
-    "ex:describedBy": [
-        {
-            "@id": "#..."
-        }
-    ],
+    
     "ex:hasInstances": [
         {
             "@id": "#PressureSensor_Information_Exp1"
@@ -15191,11 +15145,7 @@
     "@id": "#PressureSensor_Energy",
     "@type": "ex:EnergyContext",
     "schema:name": "Pressure Sensor Energy",
-    "ex:describedBy": [
-        {
-            "@id": "#..."
-        }
-    ],
+    
     "ex:hasInstances": [
         {
             "@id": "#PressureSensor_Energy_Exp1"
@@ -15236,11 +15186,7 @@
     "@id": "#PressureSensor_Time",
     "@type": "ex:TimeContext",
     "schema:name": "Pressure Sensor Time",
-    "ex:describedBy": [
-        {
-            "@id": "#..."
-        }
-    ],
+    
     "ex:hasInstances": [
         {
             "@id": "#PressureSensor_Time_Exp1"
@@ -15284,12 +15230,7 @@
                     "@id": "#PressureSensor_Space",
                     "@type": "ex:SpaceContext",
                     "schema:name": "Pressure Sensor Space",
-                    "ex:describedBy":
-                        [
-                            {
-                                "@id": "#..."
-                            }
-                        ],
+                    
                     "ex:hasInstances":
                         [
                             {
@@ -15326,12 +15267,7 @@
                     "@id": "#PressureSensor_Structure",
                     "@type": "ex:StructureContext",
                     "schema:name": "Pressure Sensor Structure",
-                    "ex:describedBy":
-                        [
-                            {
-                                "@id": "#..."
-                            }
-                        ],
+                    
                     "ex:hasInstances":
                         [
                             {
@@ -15368,12 +15304,7 @@
                     "@id": "#PressureSensor_Substance",
                     "@type": "ex:SubstanceContext",
                     "schema:name": "Pressure Sensor Substance",
-                    "ex:describedBy":
-                        [
-                            {
-                                "@id": "#..."
-                            }
-                        ],
+                   
                     "ex:hasInstances":
                         [
                             {
@@ -15684,11 +15615,7 @@
     "@id": "#MassFlowMeter_Information",
     "@type": "ex:InformationContext",
     "schema:name": "Mass Flow Meter Information",
-    "ex:describedBy": [
-        {
-            "@id": "#..."
-        }
-    ],
+    
     "ex:hasInstances": [
         {
             "@id": "#MassFlowMeter_Information_Exp1"
@@ -15732,11 +15659,7 @@
     "@id": "#MassFlowMeter_Energy",
     "@type": "ex:EnergyContext",
     "schema:name": "Mass Flow Meter Energy",
-    "ex:describedBy": [
-        {
-            "@id": "#..."
-        }
-    ],
+    
     "ex:hasInstances": [
         {
             "@id": "#MassFlowMeter_Energy_Exp1"
@@ -15780,11 +15703,7 @@
     "@id": "#MassFlowMeter_Time",
     "@type": "ex:TimeContext",
     "schema:name": "Mass Flow Meter Time",
-    "ex:describedBy": [
-        {
-            "@id": "#..."
-        }
-    ],
+    
     "ex:hasInstances": [
         {
             "@id": "#MassFlowMeter_Time_Exp1"
@@ -15828,12 +15747,7 @@
                     "@id": "#MassFlowMeter_Space",
                     "@type": "ex:SpaceContext",
                     "schema:name": "Mass Flow Meter Space",
-                    "ex:describedBy":
-                        [
-                            {
-                                "@id": "#..."
-                            }
-                        ],
+                    
                     "ex:hasInstances":
                         [
                             {
@@ -15870,12 +15784,7 @@
                     "@id": "#MassFlowMeter_Structure",
                     "@type": "ex:StructureContext",
                     "schema:name": "Mass Flow Meter Structure",
-                    "ex:describedBy":
-                        [
-                            {
-                                "@id": "#..."
-                            }
-                        ],
+                    
                     "ex:hasInstances":
                         [
                             {
@@ -15912,12 +15821,7 @@
                     "@id": "#MassFlowMeter_Substance",
                     "@type": "ex:SubstanceContext",
                     "schema:name": "Mass Flow Meter Substance",
-                    "ex:describedBy":
-                        [
-                            {
-                                "@id": "#..."
-                            }
-                        ],
+                    
                     "ex:hasInstances":
                         [
                             {
@@ -16248,11 +16152,6 @@
     "@id": "#Balance_Information",
     "@type": "ex:InformationContext",
     "schema:name": "Balance Information",
-    "ex:describedBy": [
-        {
-            "@id": "#..."
-        }
-    ],
     "ex:hasInstances": [
         {
             "@id": "#Balance_Information_Exp1"
@@ -16296,11 +16195,6 @@
     "@id": "#Balance_Energy",
     "@type": "ex:EnergyContext",
     "schema:name": "Balance Energy",
-    "ex:describedBy": [
-        {
-            "@id": "#..."
-        }
-    ],
     "ex:hasInstances": [
         {
             "@id": "#Balance_Energy_Exp1"
@@ -16350,11 +16244,7 @@
     "@id": "#Balance_Time",
     "@type": "ex:TimeContext",
     "schema:name": "Balance Time",
-    "ex:describedBy": [
-        {
-            "@id": "#..."
-        }
-    ],
+    
     "ex:hasInstances": [
         {
             "@id": "#Balance_Time_Exp1"
@@ -16395,12 +16285,7 @@
                     "@id": "#Balance_Space",
                     "@type": "ex:SpaceContext",
                     "schema:name": "Balance Space",
-                    "ex:describedBy":
-                        [
-                            {
-                                "@id": "#..."
-                            }
-                        ],
+                    
                     "ex:hasInstances":
                         [
                             {
@@ -16437,12 +16322,7 @@
                     "@id": "#Balance_Structure",
                     "@type": "ex:StructureContext",
                     "schema:name": "Balance Structure",
-                    "ex:describedBy":
-                        [
-                            {
-                                "@id": "#..."
-                            }
-                        ],
+                    
                     "ex:hasInstances":
                         [
                             {
@@ -16479,12 +16359,7 @@
                     "@id": "#Balance_Substance",
                     "@type": "ex:SubstanceContext",
                     "schema:name": "Balance Substance",
-                    "ex:describedBy":
-                        [
-                            {
-                                "@id": "#..."
-                            }
-                        ],
+                    
                     "ex:hasInstances":
                         [
                             {
@@ -20181,7 +20056,7 @@
 
             {
     "@id": "#InitialMassFraction_Water_LiquidPhase",
-    "@type": "ScalarVariable",
+    "@type": "ex:ScalarVariable",
     "schema:name": "Initial Mass Fraction of Water in Liquid Phase",
     "schema:description": "Initial mass fraction of water in the liquid phase before the beginning of the experiments",
     "ex:describesContext": [
@@ -20202,7 +20077,7 @@
 
             {
     "@id": "#InitialMassFraction_Solvent_LiquidPhase",
-    "@type": "ScalarVariable",
+    "@type": "ex:ScalarVariable",
     "schema:name": "Initial Mass Fraction of Solvent in Liquid Phase",
     "schema:description": "Initial mass fraction of solvent in the liquid phase before the beginning of the experiments",
     "ex:describesContext": [
@@ -20223,7 +20098,7 @@
 
            {
     "@id": "#InitialVolume_LiquidPhase",
-    "@type": "ScalarVariable",
+    "@type": "ex:ScalarVariable",
     "schema:name": "Initial Volume of Liquid Phase",
     "schema:description": "Initial total volume of the liquid phase containing water and solvent before the beginning of the experiments",
     "ex:describesContext": [
@@ -20568,7 +20443,7 @@
 
                     {
                         "@id": "#FinalMass_Dimer_Exp1",
-                        "@type": "ex",
+                        "@type": "ex:ScalarVariable",
                         "schema:name": "FinalMass_Dimer_Exp1",
                         "schema:description": "Final mass of the dimer that was measured in the reactor at the end of Experiment 1",
                         "ex:value": 3.809745,
@@ -20673,7 +20548,7 @@
                     "@type": "ex:TransitionStep",
                     "schema:name": "",
                     "schema:description": "accelerating the stirrer",
-                    "hasSequenceNumber": 1,
+                    "ex:hasSequenceNumber": 1,
                     "ex:isPartInProfile": 
                         { 
                             "@id": "#SetRPMProfile_Reactor" 
@@ -20692,7 +20567,7 @@
                     "@type": "ex:HoldStep",
                     "schema:name": "",
                     "schema:description": "",
-                    "hasSequenceNumber": 2,
+                    "ex:hasSequenceNumber": 2,
                     "ex:isPartIn": 
                         { 
                             "@id": "#CleaningProcedure_Reactor_Step2_SetRPMProfile_SpecificProfile" 
@@ -20706,7 +20581,7 @@
                     "@type": "ex:TransitionStep",
                     "schema:name": "",
                     "schema:description": "stopping the stirrer",
-                    "hasSequenceNumber": 3,
+                    "ex:hasSequenceNumber": 3,
                     "ex:isPartInProfile": 
                         { 
                             "@id": "#CleaningProcedure_Reactor_Step2_SetRPMProfile_SpecificProfile" 
@@ -20814,7 +20689,7 @@
                             "@type": "ex:TransitionStep",
                             "schema:name": "",
                             "schema:description": "",
-                            "hasSequenceNumber": 1,
+                            "ex:hasSequenceNumber": 1,
                             "ex:isPartInProfile": 
                                 { 
                                     "@id": "#SetTemperatureProfile_Reactor" 
@@ -20841,7 +20716,7 @@
                             "@type": "ex:HoldStep",
                             "schema:name": "",
                             "schema:description": "",
-                            "hasSequenceNumber": 2,
+                            "ex:hasSequenceNumber": 2,
                             "ex:isPartIn": 
                                 { 
                                     "@id": "#SetTemperatureProfile_Reactor" 
@@ -20951,7 +20826,7 @@
                             "@type": "ex:TransitionStep",
                             "schema:name": "SetPressureProfile_Reactor_Exp1_Step1",
                             "schema:description": "build up pressure",
-                            "hasSequenceNumber": 1,
+                            "ex:hasSequenceNumber": 1,
                             "ex:isPartInProfile": 
                                 { 
                                     "@id": "#SetPressureProfile_Reactor" 
@@ -20970,7 +20845,7 @@
                             "@type": "ex:HoldStep",
                             "schema:name": "SetPressureProfile_Reactor_Exp1_Step2",
                             "schema:description": "keep up the set pressure",
-                            "hasSequenceNumber": 2,
+                            "ex:hasSequenceNumber": 2,
                             "ex:isPartIn": 
                                 { 
                                     "@id": "#SetRPMProfile_Reactor" 
@@ -21085,7 +20960,7 @@
                             "@type": "ex:TransitionStep",
                             "schema:name": "",
                             "schema:description": "accelerating the stirrer",
-                            "hasSequenceNumber": 3,
+                            "ex:hasSequenceNumber": 3,
                             "ex:isPartInProfile": 
                                 { 
                                     "@id": "#SetRPMProfile_Reactor" 
@@ -21104,7 +20979,7 @@
                             "@type": "ex:HoldStep",
                             "schema:name": "",
                             "schema:description": "",
-                            "hasSequenceNumber": 2,
+                            "ex:hasSequenceNumber": 2,
                             "ex:isPartIn": 
                                 { 
                                     "@id": "#SetRPMProfile_Reactor" 
@@ -21118,7 +20993,7 @@
                             "@type": "ex:TransitionStep",
                             "schema:name": "",
                             "schema:description": "stopping the stirrer",
-                            "hasSequenceNumber": 1,
+                            "ex:hasSequenceNumber": 1,
                             "ex:isPartInProfile": 
                                 { 
                                     "@id": "#SetRPMProfile_Reactor" 
