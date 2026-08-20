@@ -1,0 +1,54 @@
+Übersicht über die verschiedenen Skripte die ich ausführen kann
+
+
+Reinigen der main jsonld file
+    python cleanJsonFiles.py hydrogenation_main.jsonld
+    -o hydrogenation_clean.jsonld
+    --novacrate-output hydrogenation_fuer_novacrate.json
+
+
+
+
+
+    
+%---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+% Aufruf um File zu reinigen (hinten kann man den bereinigten Namen angeben)
+% python cleanJsonFiles.py hydrogenation_V1_2.jsonld
+% python cleanJsonFiles.py hydrogenation_V1_2.jsonld -o bereinigt.jsonld
+% python cleanJsonFiles.py hydrogenation_V1_2.jsonld -o ro-crate-metadata.json
+
+
+
+
+% python cleanJsonFiles.py ro-crate-metadata.json `
+  -o hydrogenation_bereinigt.json `
+  --novacrate-output hydrogenation_fuer_novacrate.json
+
+% ro-crate-metadata.json = Eingabedatei
+-o hydrogenation_bereinigt.json = bereinigte JSON-LD-Datei
+--novacrate-output hydrogenation_fuer_novacrate.json = zusätzliche NovaCrate-kompatible Datei
+
+%---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+% Wenn ich eine Liste mit allen entities erstellen will, die in der Datei verwendet werden: 
+
+% python extract_entityIDs.py hydrogenation_main.jsonld extracted_entityIDs.txt
+
+% Reihenfolge ist dabei python datei - ro crate - output datei
+
+hydrogenation_V1_6
+
+%---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+% python create_context_connections.py
+
+% Um das Skript auszuführen muss die Excel geschlossen sein
+% ggf braucht man noch das:
+% pip install pandas openpyxl
+
+%---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+% python add_properties.py
