@@ -1,0 +1,204 @@
+=== JSON-LD System-Keywords ===
+@context
+@graph
+@id
+@type
+@value
+
+=== Verwendete Types ===
+@id
+Column
+CreativeWork
+Dataset
+Device
+File
+ScalarVariable
+ex
+ex:DigitalObjectID
+ex:ElementaryReaction
+ex:EnergyContext
+ex:Experiment
+ex:ExperimentalSeries
+ex:HoldStep
+ex:InformationContext
+ex:Jacket
+ex:MaterialVolume
+ex:OccupiedSite
+ex:Ontology
+ex:Phase
+ex:Port
+ex:ProfileVariable
+ex:ReactionMechanism
+ex:ReactionParticipant
+ex:ScalarVariable
+ex:SeriesVariable
+ex:SpaceContext
+ex:Sparger
+ex:Stirrer
+ex:StoichiometricReaction
+ex:Stream
+ex:StructureContext
+ex:SubstanceContext
+ex:Task
+ex:TimeContext
+ex:TransferStream
+ex:TransitionStep
+ex:VacantSite
+foaf:Person
+ontocape:ModeOfOperation
+ontolab:Reactor
+ontospecies:Species
+qudt:QuantityValue
+schema:ItemList
+sosa:ObservableProperty
+sosa:Observation
+sosa:Sensor
+time:Duration
+time:Instance
+xsd:dateTime
+xsd:dateTimeStamp
+xsd:duration
+
+=== Verwendete Properties ===
+   @id (value)
+@comment (value)
+chebi (value)
+csvw (value)
+dcterms (value)
+dcterms:conformsTo (entity)
+description (value)
+ex (value)
+ex:addsToPhase (entity)
+ex:assciatedOrganizations (entity list)
+ex:belongsTo (entity)
+ex:consistsOf (entity)
+ex:containsELementaryReactions (entity list)
+ex:contextDescribedBy (entity list)
+ex:describedBy (entity list, value)
+ex:describedByMechanism (entity)
+ex:describesContext (entity, entity list, value)
+ex:describesReaction (entity)
+ex:flowsFrom (entity)
+ex:flowsTo (entity)
+ex:generated (entity)
+ex:generatedBySoftware (entity)
+ex:generatesPhase (entity, entity list)
+ex:hasAdsorbate (entity)
+ex:hasAggregateState (value)
+ex:hasCas (value)
+ex:hasContainedMaterial (entity, entity list)
+ex:hasContext (entity list)
+ex:hasCreator (entity)
+ex:hasDataReference (entity)
+ex:hasDigitalObjectID (entity)
+ex:hasDuration (entity, value)
+ex:hasExperimentator (value)
+ex:hasHeader (value)
+ex:hasInchi (value)
+ex:hasIngoingStream (entity)
+ex:hasInnerMaterial (entity)
+ex:hasInstance (entity list)
+ex:hasInstances (entity list)
+ex:hasMeasuredVariable (entity)
+ex:hasOutgoingStream (entity)
+ex:hasPart (entity list)
+ex:hasPartialOrder (value)
+ex:hasParticipant (entity list)
+ex:hasPhase (entity list)
+ex:hasPhaseComponents (entity list)
+ex:hasPorts (entity list)
+ex:hasPowerInput (entity)
+ex:hasProcedures (entity list)
+ex:hasProvenance (entity)
+ex:hasProvenanceType (value)
+ex:hasRamp (entity)
+ex:hasReaction (entity list)
+ex:hasRealizationAspect (entity)
+ex:hasRecordedProcessVariables (entity list)
+ex:hasRecordingStartTime (inline value)
+ex:hasReferenceValue (entity, value)
+ex:hasRiskAssessment (entity)
+ex:hasRole (value)
+ex:hasSOP (entity)
+ex:hasSetPointProfiles (entity list)
+ex:hasSetProcessVariables (entity list)
+ex:hasSetProfile (entity, entity list)
+ex:hasSetProfiles (entity list)
+ex:hasSetSetpointProfiles (entity)
+ex:hasSmiles (value)
+ex:hasSpecies (entity)
+ex:hasStartOffset (entity)
+ex:hasStartTime (entity, value)
+ex:hasStoichiometricCoefficient (value)
+ex:hasStream (entity list)
+ex:hasTarget (entity, value)
+ex:hasTimeReference (entity)
+ex:hasTransferredStream (entity)
+ex:hasUnit (value)
+ex:hasVacantSite (entity)
+ex:instanceOf (entity)
+ex:isDataReferenceFor (entity)
+ex:isInstanceOf (entity)
+ex:isLocatedIn (entity)
+ex:isPartIn (entity, entity list)
+ex:isPartInProfile (entity)
+ex:isProcedureOf (entity)
+ex:lastAccessDate (inline value)
+ex:lastServicedTime (entity)
+ex:lastUsedPurpose (entity)
+ex:lastUsedTime (entity)
+ex:location (entity)
+ex:namespace (value)
+ex:occurrsBetweenPhases (entity list)
+ex:occurrsInPhase (entity list)
+ex:occursBetweenPhases (entity list)
+ex:ontologyFile (value)
+ex:participatesIn (entity)
+ex:performedBy (entity)
+ex:quantityKind (value)
+ex:realizes (value)
+ex:removesFromPhase (entity)
+ex:reversibility (value)
+ex:storageLocation (value)
+ex:usedEquipment (entity, entity list)
+ex:usedVersion (value)
+ex:value (value)
+ex:version (value)
+foaf (value)
+hasSequenceNumber (value)
+hlo (value)
+ontocape (value)
+ontocape:hasOperationMode (entity)
+ontokin (value)
+ontolab (value)
+ontospecies (value)
+owl (value)
+prov (value)
+quantitykind (value)
+qudt (value)
+qudt:hasQuantityKind (entity, value)
+qudt:hasUnit (entity, value)
+qudt:quantityKind (entity, value)
+rdf (value)
+rdf:value (inline value, value)
+rdfs (value)
+schema (value)
+schema:about (entity)
+schema:comment (value)
+schema:contentSize (value)
+schema:creator (entity)
+schema:dateCreated (inline value, value)
+schema:dateModified (inline value)
+schema:description (value)
+schema:encodingFormat (value)
+schema:hasPart (entity list, value)
+schema:isPartOf (entity)
+schema:name (value)
+sosa:implements (entity)
+sosa:madeBySensor (entity)
+sosa:madeObservation (entity, entity list)
+sosa:observes (entity list)
+time (value)
+unit (value)
+value (value)
+xsd (value)

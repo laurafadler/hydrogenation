@@ -44,6 +44,9 @@ Liste mit allen verwendeten IDs erstellen (Input: hydrogenation_main.jsonld, Out
 Liste mit allen verwendeten Types und Properties erstellen (Input: hydorgenation_clean.jsonld, Output: hydrogenation_types_and_properties.txt)
 
     python extract_types_properties.py
+
+
+    python extract_types_properties_gemini.py
     
 %---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
