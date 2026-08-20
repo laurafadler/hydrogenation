@@ -118,7 +118,7 @@ def merge_properties(existing_obj, new_properties):
 def main():
     # Dateipfade definieren
     connections_file = "context_connections.json"
-    hydrogenation_file = "hydrogenation_V1_6.jsonld"
+    hydrogenation_file = "hydrogenation_main.jsonld"
     output_file = "hydrogenation_with_added_properties.jsonld"
     
     # Prüfen, ob Fallback-Namen genutzt werden müssen
