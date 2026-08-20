@@ -6,7 +6,7 @@ from pathlib import Path
 # Configuration
 # ============================================================
 
-INPUT_FILE = Path("hydrogenation_clean.jsonld")
+INPUT_FILE = Path("hydrogenation_with_added_properties_clean.jsonld")
 OUTPUT_FILE = Path("hydrogenation_types_and_properties.txt")
 
 

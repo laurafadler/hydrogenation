@@ -3,9 +3,14 @@
 
 Reinigen der main jsonld file
    
-    python cleanJsonFiles.py hydrogenation_with_added_properties.jsonld `
-    -o hydrogenation_with_added_properties_clean.jsonld `
+    python cleanJsonFiles.py hydrogenation_main.jsonld `
+    -o hydrogenation_clean.jsonld `
     --novacrate-output hydrogenation_fuer_novacrate.json
+
+
+    neu
+
+    python clean_hydrogenation_gemini.py hydrogenation_main.jsonld
 
 
 Erstellen von json Context Connections aus der Excel context_connections.xlsx (Output: context_connections.json)
@@ -33,6 +38,8 @@ Liste mit allen verwendeten IDs erstellen (Input: hydrogenation_main.jsonld, Out
 
 
 Liste mit allen verwendeten Types und Properties erstellen (Input: hydorgenation_clean.jsonld, Output: hydrogenation_types_and_properties.txt)
+
+    python extract_types_properties.py
     
 %---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
