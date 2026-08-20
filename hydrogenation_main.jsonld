@@ -717,6 +717,9 @@ hydrogenation_V1_6
                     },
                     {
                         "@id": "#Participant_R1_RDEt"
+                    },
+                    {
+                        "@id": "#Participant_R1_Catalyst"
                     }
                     
                 ],
@@ -732,6 +735,9 @@ hydrogenation_V1_6
                     % solid phase technically not, if we assume RDY is solved in the liquid phase
                     {
                         "@id": "#SolidPhase"
+                    },
+                    {
+                        "@id": "#CatalystPhase"
                     },
                     {
                         "@id": "#DispersedGasPhase"
@@ -756,6 +762,9 @@ hydrogenation_V1_6
                     },
                     {
                         "@id": "#Participant_R2_Dimer1"
+                    },
+                    {
+                        "@id": "#Participant_R2_Catalyst"
                     }
                     
                 ],
@@ -765,9 +774,14 @@ hydrogenation_V1_6
                 },
             % catalyst also in here? if yes, then I'll add the solid catalyst phase as well
             "ex:occurrsInPhase": 
-                {
-                    "@id": "#LiquidPhase"
-                },
+                [
+                    {
+                        "@id": "#LiquidPhase"
+                    },
+                    {
+                        "@id": "#CatalystPhase"
+                    }
+                ]
         },
 
         {
@@ -786,6 +800,9 @@ hydrogenation_V1_6
                     },
                     {
                         "@id": "#Participant_R3_Dimer2"
+                    },
+                    {
+                        "@id": "#Participant_R3_Catalyst"
                     }
                     
                 ],
@@ -794,10 +811,15 @@ hydrogenation_V1_6
                     "@id": "#ReactionMechanism3"
                 },
             % catalyst also in here? if yes, then I'll add the solid catalyst phase as well
-            "ex:occurrsInPhase": 
-                {
-                    "@id": "#LiquidPhase"
-                },
+            "ex:occurrsBetweenPhases": 
+                [
+                    {
+                        "@id": "#LiquidPhase"
+                    },
+                    {
+                        "@id": "#CatalystPhase"
+                    }
+                ]
 
             
 
@@ -1361,6 +1383,10 @@ hydrogenation_V1_6
                     },
             },
 
+            {
+                "@id": "#Participant_R1_Catalyst"
+            }
+
 
         · · · (F4)  · · · · · · Reaction Participants of Stoichiometric Reaction 1  — END · · ·},
 
@@ -1401,6 +1427,10 @@ hydrogenation_V1_6
                 "ex:hasStoichiometricCoefficient": "1",
                 "ex:hasRole": "Byproduct"
             },
+
+            {
+                "@id": "#Participant_R2_Catalyst"
+            }
 
 
         · · · (F4)  · · · · · · Reaction Participants of Stoichiometric Reaction 2  — END · · ·},
@@ -1443,6 +1473,11 @@ hydrogenation_V1_6
                 "ex:hasStoichiometricCoefficient": "1",
                 "ex:hasRole": "Byproduct"
             },
+
+
+            {
+                "@id": "#Participant_R3_Catalyst"
+            }
 
 
         · · · (F4)  · · · · · · Reaction Participants of Stoichiometric Reaction 3  — END · · ·},
@@ -11922,9 +11957,6 @@ hydrogenation_V1_6
                         },
                         {
                             "@id": "#SetPressureProfile_Reactor"
-                        },
-                        {
-                            "@id": "#SetRPMProfile_Reactor"
                         }
                     ],
                 "ex:hasInstances":
@@ -14986,7 +15018,7 @@ hydrogenation_V1_6
                         ]
                 }
 
-                {· · · (H) - 1.6b - 1 - Context  · · · · · · Context of Pressure Sensor: Specific · · ·
+                {· · · (H) - 1.6b - 1 - Context  · · · · · · Context of Pressure Sensor: Specific - Experiment 1 · · ·
 
                     {
                         "@id": "#PressureSensor_Information_Exp1",
@@ -15085,7 +15117,7 @@ hydrogenation_V1_6
                     }
 
 
-                · · · (H) - 1.6b - 1 - Context  · · · · · · Context of Pressure Sensor: Specific · · ·},
+                · · · (H) - 1.6b - 1 - Context  · · · · · · Context of Pressure Sensor: Specific - Experiment 1 · · ·},
 
             · · · (H) - 1.6b - 1  · · · · · · Pressure Sensor: Specific - Experiment 1  — END · · ·},
 
