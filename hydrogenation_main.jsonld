@@ -140,7 +140,7 @@
             "@type": "ex:Ontology",
             "schema:name": "FOAF Ontology",
             "ex:namespace": "http://xmlns.com/foaf/0.1/",
-            "ex:usedVersion": "0.99",
+            "ex:version": "0.99",
             "ex:ontologyFile": "",
             "ex:lastAccessDate": 
                 {
@@ -154,7 +154,7 @@
             "@type": "ex:Ontology",
             "schema:name": "DC Terms Ontology",
             "ex:namespace": "http://dublincore.org/specifications/dublin-core/dcmi-terms/2020-01-20/",
-            "ex:usedVersion": "2020-01-20",
+            "ex:version": "2020-01-20",
             "ex:ontologyFile": "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/",
             "ex:lastAccessDate": 
                 {
@@ -20444,7 +20444,7 @@
                         "schema:name": "FinalMass_Dimer_Exp1",
                         "schema:description": "Final mass of the dimer that was measured in the reactor at the end of Experiment 1",
                         "rdf:value": 3.809745,
-                        "ex:instanceOf":
+                        "ex:isInstanceOf":
                             {
                                 "@id": "#FinalMass_Dimer"
                             }
